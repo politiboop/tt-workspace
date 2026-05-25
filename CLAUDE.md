@@ -790,7 +790,7 @@ The five repos (all on the `politiboop` account, all using the `github-politiboo
 3. `npm install` in each of the four content repos (`node_modules` is not committed).
 4. Install Node.js >= 22.12.0 (required by the research site; set in its `.nvmrc`).
 5. `fetch-article.js` (in `controversial-trump/website/`) uses a headless Chrome browser to bypass bot detection on blocked news sites. Install the browser binary on the new machine (e.g., `npx playwright install chromium`) or it will fail on NYT/WaPo/Politico/Independent/Esquire fetches.
-6. **Memory does not sync through git.** The auto-memory at `C:/Users/<user>/.claude/projects/G--git-politiboop/memory/` is per-machine. Copy that folder to the new machine (same project path) to preserve preferences and project context, or it starts empty.
+6. **Restore auto-memory.** Auto-memory lives per-machine at `C:/Users/<user>/.claude/projects/G--git-politiboop/memory/` and does not sync through Claude Code. A backup copy is kept in this repo at `memory/`. On the new machine, copy `tt-workspace/memory/*.md` into `C:/Users/<user>/.claude/projects/G--git-politiboop/memory/` (create the folder if needed) so preferences and project context are present from the first conversation. Keep the repo copy in sync if memory changes meaningfully.
 
 ### Recurring workflow: processing `research.txt`
 
