@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "us-gov-data": {
+      "command": "npx",
+      "args": ["-y", "us-gov-open-data-mcp"]
+    },
+    "semantic-scholar": {
+      "command": "npx",
+      "args": ["-y", "@xbghc/semanticscholar-mcp"]
+    },
+    "federal-register": {
+      "command": "npx",
+      "args": ["-y", "federal-register-mcp"]
+    }
+  }
+}

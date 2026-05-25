@@ -1,0 +1,4870 @@
+Original Research Reports
+
+Responses to Belief-Conflicting Information:
+Justification of Support for Donald Trump
+
+
+Cindy Harmon-Jones 1, Robin R. Willardt 2, Thomas  F. Denson 3, Eddie Harmon-Jones 3
+
+[1] School of Psychology, Western Sydney University, Bankstown, Australia. [2] Institute of
+Psychology, Julius- Maximilians-Universität, Würzburg, Germany. [3] School of Psychology,
+University  of New South Wales, Sydney, Australia.
+
+
+Journal of Social and Political Psychology, 2026, Vol. 14(1), 33–56,
+https://doi.org/10.5964/jspp.16085
+
+Received:  2024-11-07 • Accepted: 2025-12-12 • Published (VoR): 2026-03-26
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Handling Editor: Klaus Michael Reininger, University Medical Center Hamburg-Eppendorf, Hamburg,
+Germany
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Corresponding Author: Cindy Harmon-Jones, 74 Rickard Road, Bankstown,  NSW 2200, Australia. E-mail:
+C.Harmon-Jones@westernsydney.edu.au
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Supplementary Materials: Materials [see Index of Supplementary Materials]
+Abstract
+These studies  take a dissonance  theory perspective to understanding why individuals support
+Donald Trump as president  of the United States despite accusations that he has engaged in sexual
+misconduct and illegal activity.  Participants from the US  provided open-ended  responses  to
+questions that asked  why they support Trump and how they justify their support given the
+allegations against him. Study 1 was conducted in 2019 two months before Trump was impeached for
+abuse  of power and obstruction of Congress.  In this study,  7  categories  of reasons  for
+supporting Trump, and 3 categories of justification despite allegations, were identified.  Study 2
+was conducted in 2019 two days after a vote to impeach Trump. Study 3 was conducted  in 2022 two
+days after Trump was arraigned for his involvement in the January  6, 2021, attack on the US
+Capitol Building.  Results from Studies 2 and 3 replicated the categories of support and
+justification. Across studies, the reasons given to justify support of Trump despite allegations of
+wrongdoing were stating that they disbelieved the allegation, claiming that others do similar
+misdeeds, and stating that they care about his policies, not his personal life.  The current
+results suggest that individuals in a naturalistic context may choose  a number of different
+strategies in response to information  that  conflicts with  their  important  beliefs, including
+denying the  veracity of information, increasing the importance of consonant  information,
+directing  attention to the immoral acts of others, and making cognitions irrelevant to the
+dissonant relationship.  Study 3 provided evidence that some of these processes may be influenced
+by dissonance discomfort. These
+This is an open access article distributed under the terms of the Creative Commons Attribution  4.0
+ International License,  CC BY 4.0,  which permits unrestricted use, distribution, and reproduction
+in any medium, provided the original work is properly
+cited.
+
+Justifying Support for Trump
+            34
+
+
+
+
+results are unlike those of most laboratory research on dissonance theory, in which participants
+are given only one dissonance reduction  opportunity.
+
+Keywords
+
+cognitive  dissonance, self-justification, motivated reasoning, defensive processing
+
+
+In the vast majority of previous experiments on cognitive dissonance theory, researchers have
+provided participants with a  single opportunity to reduce dissonance and have measured the extent
+to which they changed their attitudes or beliefs in response  to this opportunity. In contrast, the
+current studies use open-ended  responses to explore how participants react to information that
+conflicts with their beliefs when given a free opportunity to do so. In the current studies,
+individuals who were favorable towards President Donald Trump were asked why they support him and
+how they justify their support for him given evidence that he has behaved immorally and illegally.
+The re­ sponses were  content-analyzed,  suggesting several novel means by which individuals
+respond to information that counters their important beliefs. These findings add novel
+understanding to why people continue to support leaders who may have violated moral and legal
+societal standards.
+In his original theory of cognitive  dissonance, Festinger (1957) proposed that cogni­ tions,
+defined broadly as pieces of knowledge,  are either relevant or irrelevant to each other. If they
+are relevant to each other, they exist in a relationship  of consonance or dissonance to each
+other. Inconsistency between cognitions occurs when two cognitions conflict with one another, such
+that one cognition implies that the other ought not to be true. Festinger proposed that the degree
+of dissonance (psychological discomfort) that a person experiences depends on both the number and
+importance of cognitions that are consistent and inconsistent with a particular cognition. Further,
+he proposed that this dissonance motivates  one to do cognitive work to reduce the cognitive
+inconsistency. Individuals can reduce dissonance by adding consonant cognitions or elevating their
+importance, or subtracting dissonant cognitions or reducing their importance. The reduc­ tion of
+the cognitive  discrepancy  (e.g., attitude change) was proposed to work on the cognition that was
+least resistant to change.
+Despite the breadth with which Festinger (1957) framed the theory, most research on dissonance has
+focused on a small number of modes of dissonance reduction. Dissonance experiments are designed to
+constrain participants’ response to a single, easily measured, outcome. Typically, the researcher
+experimentally  evokes dissonance, provides partici­ pants with a single  overt dissonance
+reduction  opportunity, and measures participants’ response to this opportunity (Harmon-Jones,
+2019). This is likely to poorly capture the breadth of responses to holding conflicting cognitions,
+since participants may respond in ways that were not measured.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Journal of Social and Political Psychology
+2026, Vol. 14(1), 33–56 https://doi.org/10.5964/jspp.16085
+
+Harmon-Jones, Willardt, Denson, & Harmon-Jones                                                  35
+
+
+
+
+One way dissonance may be evoked is by “belief disconfirmation,” that is, presenting participants
+with information that challenges their important beliefs. In belief disconfir­ mation studies, the
+dissonance reduction  opportunity typically measures the extent to which participants intensify
+their original belief (Batson, 1975). However,  this measure is unlikely to fully capture the ways
+in which individuals respond to belief-disconfirming information, particularly in a naturalistic
+context in which an explicit route is not neces­ sarily presented.
+In experiments testing dissonance theory,  it is assumed  that participants will  use the
+dissonance-reduction  opportunity that is presented  to them, rather than reduce dissonance by some
+other route. Indeed, a few studies have suggested that when partici­ pants are presented with two
+opportunities to reduce dissonance, they will use the one presented first more than the later one
+(Götz-Marchand et al., 1974; Simon et al., 1995). Presumably this is because reducing dissonance
+via the first opportunity reduces the mo­ tivation to further reduce dissonance. However, it is
+still possible that some participants also reduce dissonance via routes that are not measured
+and/or continue to experience some dissonance after being presented with the dissonance-reduction
+opportunity.
+Belief disconfirmation is one of the lesser-explored  dissonance paradigms.  Never­ theless,
+several  responses  to belief disconfirmation have  previously   been identified. In Festinger,
+Riecken, and Schachter’s  (1956) original participant-observer study of a doomsday cult, the
+participants  sought consensual validation  of their beliefs by proselyt­ izing when the continent
+failed to be destroyed  on the expected day. In a later study, believers in Jesus’ divinity were
+found to intensify this belief when they were exposed to information that claimed that the death
+and resurrection of Jesus was a hoax,  partic­ ularly when they accepted the truth of the
+contradictory information (Batson, 1975). Individuals who believe that God is good and powerful
+have also been found to appeal to a superordinate  belief that would integrate the contradictory
+information (“God works in mysterious ways”), when exposed to a news story about a tragedy
+striking believers as  they prayed for safety (Burris et al., 1997). In addition, individuals look
+longer at evidence that disconfirms their beliefs than information that agrees with their beliefs,
+and judge this disconfirming  evidence as weaker (Edwards & Smith, 1996). Furthermore, in another
+study, individuals who were in favor of or opposed to capital punishment read an article that
+suggested that capital punishment increases crime and another one that suggested that it deters
+crime; they intensified their original belief and judged the evidence in favor of their original
+belief as stronger  than opposing evidence (Lord et al.,
+1979).
+A current  case of collective belief disconfirmation  can be found for the supporters of Donald
+Trump, the 45th and 47th president of the United States. Even before Trump took office in 2017, he
+was confronted with allegations of morally questionable statements and behavior. For instance,
+several women  accused Trump of sexual assault (Nelson & Crockett, 2017). Furthermore,   video
+footage  emerged showing Trump boasting about
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Journal of Social and Political Psychology
+2026, Vol. 14(1), 33–56 https://doi.org/10.5964/jspp.16085
+
+Justifying Support for Trump
+            36
+
+
+
+
+his attempt to seduce a married woman and discussing sexual assault through kissing women without
+consent (Fahrenthold,  2016). Once elected, it was furthermore  reported that Trump’s lawyer paid
+hush money to adult film star Stormy Daniels to prevent her from speaking out about a sexual
+encounter  while Trump was married with his then pregnant wife Melania (Rothfield & Palazzolo,
+2018).
+Given that most individuals are motivated to think of themselves  as moral (Aronson,
+1969),  Trump supporters’ favorability towards Trump along with the awareness  that he has been
+accused of violating their important values should create dissonance. Dur­ ing his presidency,
+supporters were also confronted with information that questioned Trump’s image as a law-abiding
+citizen: Trump, for instance, allegedly pressured Ukrai­ nian president Zelensky to investigate
+claimed wrongdoings  of Joe Biden and his son Hunter Biden. In order to pressure Zelensky, Trump
+was accused of withholding military aid and an invitation to the White House,  which would
+constitute abuse  of power (Barrett et al., 2019). These allegations  were included  in the
+impeachment articles in the first impeachment of Donald Trump (Raju et al., 2019).
+After the loss of the 2020 presidential  election, Trump was again accused of question­ able and
+possibly illegal behavior  as a political figure. For example, his speech on the day of the United
+States Capitol attack on January 6, 2021, contained  misrepresentations about the preceding
+election  (Cabral, 2021). Furthermore,  Trump asked his supporters to “fight”, to "walk down to the
+Capitol", and to prevent the counting of the electoral votes (Blake, 2021). Shortly afterwards,  a
+crowd of 2000 to 2500 people attempted  (with partial success) to storm the US Capitol building.
+His involvement in the attack formed the basis for Trump’s subsequent second impeachment trial
+(Fandos, 2021) charging  him with "incitement of insurrection". Despite these and other incidents
+where information about Trump was discrepant with supporters’  beliefs, many seemed to maintain
+their admiration and support.
+A recent study showed another possible response to belief disconfirmation – drawing attention to
+the foibles of an outgroup member  (Harmon-Jones  et al., 2020).  In this study, participants
+reported their favorability towards President Trump, and then were randomly  assigned to read
+either a neutral  article about the history of space exploration or an article that detailed
+accusations of sexual assault and misconduct that have been brought against Trump.  The sex scandal
+ article began, “President  Donald Trump has been accused of rape, sexual assault, and sexual
+harassment, including non-consensual kissing or groping, by over 20 women  since the 1980s. The
+accusations have resulted in
+3 reported instances of litigation,” and continued to provide the details of each of these
+allegations. The neutral article also included political content  such as, “Space exploration has
+often been used as a proxy competition for geopolitical rivalries such  as the Cold War. The early
+era of space exploration   was driven by a  "Space Race" between   the Soviet Union and the United
+States.” It was non-partisan and included no criticisms of Trump. The sex scandal article was
+expected to evoke dissonance in those participants
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Journal of Social and Political Psychology
+2026, Vol. 14(1), 33–56 https://doi.org/10.5964/jspp.16085
+
+Harmon-Jones, Willardt, Denson, & Harmon-Jones                                                  37
+
+
+
+
+who supported Trump. After reading their assigned article, participants  then rated their
+likelihood to share a meme that derogated Trump’s political rival Hillary Clinton, which served  as
+the measure of dissonance reduction.  As predicted, results showed that, for participants in the
+sex  scandal  condition, those who were highly favorable  towards Trump and had high belief in the
+veracity of the article were more likely to share the meme (Harmon-Jones et al., 2020).
+This published study also included two open-ended questions, one asking why partic­ ipants support
+Trump and one asking how they justify this support given the highly publicized  allegations that he
+has engaged  in sexual misconduct  and illegal activity. In Study 1 of the present research,  we
+performed  secondary data analysis by coding the answers to the two open-ended questions into
+categories to better understand the reasons why Trump is viewed favorably by his supporters and to
+identify naturalistic responses to belief disconfirming information that participants may have
+used.
+
+
+S t u d y 1
+
+Method
+
+Participants were American individuals from MTurk who volunteered in exchange for
+$2.50USD (they were not required to be citizens or voters). This sample was from a larger dataset
+of 409 individuals from which quantitative  results have been previously published (Harmon-Jones et
+al., 2020). Of these, 217 rated their support for Trump a 1 (not at all favorable) and were
+excluded. Another 64 gave a nonsensical  response to the open-ended questions (i.e., examples,
+one-word  answers, text copied from the Internet that did not answer the questions). In this and
+the other studies, these exclusion criteria were based on the guidelines from Chmielewski and
+Kucker  (2020). The remaining  128 (75 men, 53 women;  MAge = 39.05, SD = 11.61) rated their
+favorability towards Trump at least a 2 (slightly favorable) and provided an intelligible answer to
+at least one of the open-ended questions on why they support Trump. Their reported ethnicities were
+White 75.0%, Black  9.4%, Asian 3.1%, Hispanic 7.8%, and Other  4.7%. They participated in this
+study on October 31, 2019 (start and end date), at a time when support was building in the US
+legislature  to call for Trump’s impeachment. All 3 studies in this article were approved by the
+Human  Research Ethics Approval  Panel – C: Behavioral  Sciences at the University of New South
+Wales.
+After participants provided written informed consent, participants  answered demo­ graphic
+questions (gender, age, ethnicity, first language, religious affiliation). They also reported how
+religious they considered themselves (1 = not at all to 7 = very), their employment status (1 =
+unemployed to 6 = employed greater than full time), and their yearly household income (1 = <
+$20,000 to 7 = > $200,000). Then, they answered the fol­ lowing questions: 1) How much do you try
+to follow the rules/stick to the rules/respect
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Journal of Social and Political Psychology
+2026, Vol. 14(1), 33–56 https://doi.org/10.5964/jspp.16085
+
+Justifying Support for Trump
+            38
+
+
+
+
+authority; 2) How much do you care about justice; 3) How much do you believe in one true religion;
+4) How often do you tend to vote for politically liberal candidates? These questions were answered
+on 1 (not at all) to 7 (very much) scales. Next, they were asked to indicate their city and state
+of current residence; which social media platforms  they used (Facebook, Twitter, Instagram,
+Snapchat); how often they used social media sites (1 = never to 8 = several times per day); how
+often they shared memes on social media (1 = never to 8 = several times per day); how often they
+read online or paper newspapers (1 = never to 7 = very often).
+Then, they answered  the following questions:  1) How favorable are  you toward Donald Trump as
+president  of the United States at the current moment (1 = not at all favorable to 7 = very
+favorable); 2) The US House of Representatives recently voted to approve two articles of
+impeachment  against President Trump. To what extent do you agree with this statement? The House of
+Representatives  made the correct decision (to approve impeachment) (1 = disagree completely to 7 =
+agree completely).
+After they responded to these questions, they were instructed to read the following news article
+carefully and that they would be asked “questions about its content and about your thoughts and
+opinions on the article and the events that it reported upon.”
+They were randomly assigned to read one of two articles. One article was titled, “Donald Trump
+sexual misconduct allegations.” It was presented on 3 separate screens and it contained  a total of
+495 words. It summarized the allegations of sexual misconduct by Trump. It was based heavily on the
+summary provided in Wikipedia at the time we created the study. The other article was titled,
+“Space Exploration.” It was also presented on 3 separate screens and it contained  a total of 502
+words. It was a neutral article about the history of space exploration  involving multiple
+countries, and it was also based on a summary  provided  in Wikipedia at the time we created the
+study.  See Supplementary Materials for exact wording. After reading the article, participants
+were asked to report how likely they were to share a meme (these results were previously
+published).
+Next, participants were informed: “We are interested in the reasons why people do or do not support
+Donald Trump as president.” And they were instructed to answer one of the two following open-ended
+questions  based on whether they were favorable or unfavorable toward Trump: 1) “If you are
+favorable toward Donald Trump as president, what are the most important reasons for your support
+for his presidency”; 2) “If you are unfavorable toward Donald Trump as president,  what are the
+most important reasons why you do not support his presidency?” We included these questions to
+provide context to why Trump was supported. We also thought participants might give more honest and
+valid responses if they were asked both positive and negative questions about Trump, as recommended
+in guidelines for methods (Harmon-Jones, Harmon-Jones, et al., 2025).
+After that, participants were informed: “The media has included  many reports that Donald Trump has
+engaged in illegal or sexually immoral activities. We are interested in how people feel about
+this.”  And they were instructed to answer one of the two
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Journal of Social and Political Psychology
+2026, Vol. 14(1), 33–56 https://doi.org/10.5964/jspp.16085
+
+Harmon-Jones, Willardt, Denson, & Harmon-Jones                                                  39
+
+
+
+
+following open-ended  questions  based on whether they were favorable or unfavorable toward Trump:
+1) “If you support Trump, why do you support him?” and 2), “Trump has been accused of sexual
+misconduct;  if you support him, how do you justify your support given these allegations?”  The
+second question  was more specifically relevant to dissonance  because it  explicitly  asked
+participants to justify their support given allegations of misconduct, whereas the first question
+asked for their reasons for support without mentioning  possible misconduct.
+Then, within each article condition,  participants  were asked 4 multiple-choice  ques­ tions
+related to their article, to assess  memory for the article’s contents. Following those questions,
+participants  were asked the following: How accurate do you believe the information presented in
+the newspaper article is? (1 = not at all accurate to 7 = very accurate).
+
+Results
+
+The open-ended responses were coded by a judge (first author) to identify the themes expressed
+therein. This single rater read all of the responses  to get an overall sense of the themes they
+included.  She then created categories that reflected  these themes. She  then reread the responses
+ and assigned  a  1  to the category  if  the participant’s response included the theme and a 0 if
+it did not. Responses were allowed  to fit multiple categories. A second judge independently  coded
+the responses and reliability was good for the categories of economic reasons and not being a
+career politician (ICC > .75; Koo
+& Li, 2016). Reliability  was acceptable for the other categories (ICC > .5), except for good
+character which was poor (ICC < .5), suggesting  that this category may be difficult to categorize.
+Experimental condition did not influence open-ended responses.
+In answer to the question of why participants support Trump,  the most frequent category was
+economic reasons.  This was followed by Trump’s communication style, his competence, Trump's good
+character, that he is not a career politician, that he cares about Americans and is committed to
+making America great, and his specific policies/is­ sues. An additional 18.8% of the responses
+could not be placed in any of these categories (see Table 1).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Journal of Social and Political Psychology
+2026, Vol. 14(1), 33–56 https://doi.org/10.5964/jspp.16085
+
+Justifying Support for Trump
+            40
+
+
+
+
+Table 1
+
+Reasons Given for Supporting Trump
+
+
+Reasons categories          Examples
+         Percent      ICC
+
+
+
+
+
+
+
+
+
+
+Economic                          •  The economy is the best it has done in years.
+•  He is making America get out of debt more than anyone
+ever has.
+
+
+
+
+
+
+
+
+
+
+29.7             .86
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Communication                 •  He does not back down from the media one bit.
+•  He is very communicative with America and talks in a
+VERY informal way.
+•  He isn’t afraid to speak his mind in this era of forced political correctness.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+19.5             .66
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Competence                      •  He’s someone who can get things accomplished.
+•  …he gets things  done.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+21.1             .56
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Good character                  •  He brings honesty to the White House.
+•  Donald Trump is a very genuine person.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+18.0             .47
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Not a politician                   •  He’s not an entrenched politician like those we’ve had in the
+past.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+11.7             .84
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Cares about America           •  He is the only president that has worked for the good of the US
+and not its enemies or the Deep State.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+10.2             .64
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Policies and issues              •  He is keeping illegals from getting in which reduce crime…
+•  Our country  needs a president who cares about babies and our borders and our military.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+8.6             .61
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Unable to categorize           •  let's give him a chance once
+•  i like his stance on almost everthing
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+18.8             .64
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Note. N = 128.
+
+
+Of the participants,  113 answered the second question regarding how they justify their support for
+Trump given the reports of his sexual misconduct.  In response  to this question, three
+non-exclusive categories were identified  (see Table 2). The most common category of responses  was
+explicitly  disbelieving the accusations, and the other two categories were stating that they
+support Trump based on his policies not his personal life,  and pointing out that other politicians
+also behave immorally.  In addition, 9.7% provided responses that could not be placed into these
+categories. A second judge coded the responses and reliability was good (ICC > .75) for all
+categories.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Journal of Social and Political Psychology
+2026, Vol. 14(1), 33–56 https://doi.org/10.5964/jspp.16085
+
+Harmon-Jones, Willardt, Denson, & Harmon-Jones                                                  41
+
+
+
+
+Table 2
+
+Justifications for Supporting Trump Despite Allegations
+
+
+Justifications categories  Examples
+        Percent      ICC
+
+
+
+
+
+
+
+
+
+
+Disbelieve accusations       •  I think the reports of his misconduct are false and fake.
+•  I don’t believe the media’s lies.
+
+
+
+
+
+
+
+
+
+
+52.2             .77
+
+
+
+
+
+
+
+
+
+
+
+
+
+Policies matter, not his personal life
+
+
+
+
+
+
+
+
+
+
+
+
+
+•  The policies are what affect the people, and the policies are what I care about.
+•  …what he does in private is none of the public’s business, since I feel he is running the
+country well
+
+
+
+
+
+
+
+
+
+
+
+
+
+29.2             .93
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Others do similar misdeeds  •  All politicians seem to be caught talking that way.
+•  I don’t doubt that most presidents have been immoral  in
+their personal lives.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+31.0             .78
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Unable to categorize           •  I like his immoral activities I support his behavior and
+encourage others to follow him.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+9.7             .68
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Note. N = 113.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+S t u d y 2
+
+Study 2 was conducted on December  20, 2019 (start and end date), two days after the vote to
+impeach Trump for the first time was passed by the US House of Representatives. The charges brought
+against Trump were abuse of power and obstruction of Congress. Trump was accused of soliciting
+foreign interference in the upcoming election and ille­ gally influencing Ukraine to investigate
+Trump’s political opponent. We were interested to examine whether their reasons  for supporting
+Trump or their justification of this support differed from what was found in Study 1. Because Study
+1’s procedures were already approved by our ethics committee and there was no time to get a new
+ethics approval to coincide with these new allegations, we simply re-started data collection using
+the procedures of Study 1 to assess whether support for Trump had changed.
+
+Method
+
+Similar to Study 1, American participants were recruited from MTurk and paid $2.50
+USD for their participation (they were not required to be citizens or voters). Of the 713
+individuals who participated in this study,  309 rated their favorability towards Trump as a 1 and
+were excluded, another 10 did not answer this question and were excluded. Another 221 participants
+gave non-sensical responses (examples, one-word  answers, text copied from the Internet that did
+not answer the questions). The remaining 173 (105 men,
+68 women,  age M = 37.05, SD = 12.28) rated their favorability towards Trump at least a 2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Journal of Social and Political Psychology
+2026, Vol. 14(1), 33–56 https://doi.org/10.5964/jspp.16085
+
+Justifying Support for Trump
+            42
+
+
+
+
+(slightly favorable) and provided an intelligible answer to at least one of the open-ended
+questions on why they support Trump.  Their reported ethnicities were White 76.3%, Black  4.0%,
+Asian 4.0%, Hispanic 8.7%, and other 6.9%. The open-ended responses were coded by two judges,
+similarly to Study 1.
+Participants completed the same MTurk study that was used in Study 1 and they were prevented from
+completing it if they had already participated in Study 1. They were given the same instructions
+and questions that were used in Study 1.
+
+Results
+
+In answer to the question of why participants support Trump,  similar themes were identified to
+those categorized in Study 1, plus one additional category  (see Table  3). In this sample, the
+most frequent category was economic reasons, followed closely by specific policies/issues. The
+other categories were that Trump cares about America and her people, his competence, his good
+character, his communication  style, and that he is not a  politician. The new category was that
+Trump has been treated unfairly by his enemies. An additional 6.9% of the responses could not be
+placed  in any of these categories.
+The second judge (who also coded Study 1) independently  coded the responses and reliability was
+good for the categories of economic reasons, caring about America, and unfair treatment (ICC >
+.75). It was acceptable for the other categories (ICC > .5; Koo & Li, 2016).
+Of the participants,   164 answered  the second question  regarding  how they justify their support
+for Trump given the reports of his sexual misconduct. In response to this question, three
+non-exclusive categories that were found in Study 1 were again identified (see Table 4). The most
+common  was explicitly disbelieving the accusations, followed  by stating that they support Trump
+based on his policies not his personal life, and pointing out that others also behave immorally. A
+new category also emerged: explicitly stating that they do not care about the allegations (“I
+really don’t care about these activities”, “I don’t care about his sex life in the past”). In
+addition, 17.1% provided responses that could not be placed  into these categories.  A second judge
+coded the responses,  and reliability was good (ICC > .75) for all categories except stating that
+Trump had been treated unfairly, which had adequate reliability (ICC > .5).
+In both Studies  1 and 2, participants  indicated  that they supported Trump because of economic
+issues. To unpack the meaning of economic issues, we collected examples of some direct quotations
+from the open-ended responses: 1) “The economic policies of Donald Trump, which were outlined in
+his campaign pledges, include trade protection­ ism, immigration reduction.”  2) “I would support
+Donald Trump do (sic) to his views on Trade Deals, Taxes, and Economic Issues.”  3) “Almost 4
+million jobs created since election. More Americans are now employed than ever recorded before in
+our history, created more than 400,000 manufacturing jobs.”
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Journal of Social and Political Psychology
+2026, Vol. 14(1), 33–56 https://doi.org/10.5964/jspp.16085
+
+Harmon-Jones, Willardt, Denson, & Harmon-Jones                                                  43
+
+
+
+
+Table 3
+
+Reasons Given for Supporting Trump
+
+
+Reasons categories          Examples
+         Percent      ICC
+
+
+
+
+
+
+
+
+
+
+Economic                          •  The economy is thriving and he has balls.
+•  The economy and the lessening of red tape.
+
+
+
+
+
+
+
+
+
+
+37.0             .83
+
+
+
+
+
+
+
+
+
+
+
+
+
+Communication                 •  He is more transparent than most politicians.
+•  He tells it like it is.
+
+
+
+
+
+
+
+
+
+
+
+
+
+12.7             .65
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Competence                      •  I believe he is doing a good job.
+•  He has what it takes to get the job done.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+20.8             .66
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Good character                  •  I like his willpower.
+•  He is very honorable.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+19.7             .60
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Not a politician                   •  He is NOT a politician.  He is not playing the political
+game.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+11.0             .64
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Cares about America           •  The love he has for the people.
+               21.4             .88
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Policies and issues              •  He is showing that our military is still a force to be feared.
+•  He is for Capitalism and against Socialism, he’s against abortion and for Christianity.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+34.7             .73
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Unfair treatment                 •  I was watching the impeachment hearing yesterday and the
+democrats flat out said they simply dislike him.
+What a horseshit reason to want to impeach a president. I hope these democrats and liberals get
+what they deserve.
+•  He has been put through hatred hell by his insane political enemies.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+12.7             .86
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Unable to categorize           •  I think he is good.
+•  I am always favorable to Donald Trump.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+6.9             .56
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Note. N = 173.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Journal of Social and Political Psychology
+2026, Vol. 14(1), 33–56 https://doi.org/10.5964/jspp.16085
+
+Justifying Support for Trump
+            44
+
+
+
+
+Table 4
+
+Justifications for Supporting Trump Despite Allegations
+
+
+Justifications categories  Examples
+        Percent      ICC
+
+
+
+
+
+
+
+
+
+
+Disbelieve accusations       •  The media has made it a habit to spread spurious lies about Donald
+Trump  because they are still salty that he dared win the election.
+•  If he has done something illegal, show me the evidence.
+
+
+
+
+
+
+
+
+
+
+48.2             .85
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Policies matter, not his personal life
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+•  As for immoral actions, I don't really like Trump  as a person, but I didn't vote for him to be
+my best friend. I voted for him to by my president, and as long as he does good at that, his person
+issues and morality are none of my business anymore than anyone else's.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+29.3             .83
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Others do similar misdeeds  •  He probably did some things in business that all wealthy businessmen
+do that may have been illegal but nothing compared to ruining America,  as most politicians on left
+are trying to do.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+25.0             .76
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Explicitly do not care about •  I don’t care about his sex life or what it does involve.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+15.6             .67
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+the misdeeds
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+•  Things he did in his past are not of interest to me in my current support of him.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Unable to categorize           •  I always stand beside Trump always in any situation.
+17.1             .87
+Note. N = 164.
+
+
+S t u d y 3
+
+Method
+
+This study was conducted on October  17, 2022 (start and end date), two days after
+Trump was arraigned for election interference. There were initially 192 participants,  and
+3 were excluded for rating their support for Trump as a 1. Another 2 were excluded for not
+providing intelligible answers to the questions, leaving 187 for analyses. Of these individuals,
+173 (96 men, 91 women, age M = 45.27, SD = 13.66) responded to at least one of the open-ended
+questions. Their reported ethnicities were White 85.0%, Black 3.2%, Asian 2.7%, Hispanic 5.9%, and
+other  0.5%. These participants  were recruited from Prolific with the pre-screening condition
+being that they indicated they had voted for Trump in 2020. Participants  provided  written
+informed consent. As in the first two studies, the open-ended responses  were  coded by two judges
+(the first author and a new second coder was added to this study). The second open-ended question
+was slightly rephrased: “If you were favorable toward Donald Trump as president,  how do you
+reconcile your
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Journal of Social and Political Psychology
+2026, Vol. 14(1), 33–56 https://doi.org/10.5964/jspp.16085
+
+Harmon-Jones, Willardt, Denson, & Harmon-Jones                                                  45
+
+
+
+
+support for his presidency with the reports that he engaged in illegal activities related to the
+2020 election  and January 6?”.
+As in Studies 1 and 2, prior to responding to the open-ended questions, participants answered
+demographic  questions (gender, age, ethnicity, first language, religious affilia­ tion). They also
+reported how religious they considered themselves (1 = not at all to 7 = very), their employment
+status (1 = unemployed to 6 = employed greater than full time), and their yearly household income
+(1 = < $20,000 to 7 = > $200,000). Then, they answered the following questions: 1) How much do you
+try to follow the rules/stick to the rules/ respect authority; 2) How much do you care about
+justice; 3) How much do you believe in one true religion; 4) How often do you tend to vote for
+politically liberal candidates? These questions were answered on 1 (not at all) to 7 (very much)
+scales. Next, they were asked to indicate their city and state of current residence; which social
+media platforms they used (Facebook, Twitter, Instagram, Snapchat); how often they used social
+media sites (1 = never to 8 = several times per day); and how often they shared memes on social
+media (1 = never to 8 = several times per day); and how often they read online or paper newspapers
+(1 = never to 7 = very often). Then, they answered the following questions:
+1) How favorable were you toward Donald Trump when he was president of the United States (1 = not
+at all favorable to 7 = very favorable); 2) The US Congress  is holding hearings to investigate the
+protest that occurred on January  6, 2021 at the US Capitol. To what extent do you agree with the
+following statement. Congress made the correct decision to investigate these events (1 = disagree
+completely to 7 = agree completely).
+After they responded to these questions, they were instructed to read the following news article
+carefully and that they would be asked “questions about its content and about your thoughts and
+opinions on the article and the events that it reported upon.” The article was titled, “Summary of
+the Hearing on the Events of January 6, 2021.” It was presented on 3 separate screens and it
+contained  a total of 761 words. It summarized the public hearings of the United States House
+Select Committee  on the January 6 attack that occurred between primarily in June and July 2022. It
+was based heavily on the summary provided in Wikipedia at the time we created the study.  See
+Supplementary Materials for exact wording.
+After this article, participants  were asked to indicate whether or not they had read the article.
+Then, they were asked the following: 1) How accurate do you believe the information presented in
+the newspaper article is? (1 = not at all accurate to 7 = very accurate); 2) Thinking back to the
+article you read, to what degree did it contradict or dispute what you had previously  believed? (1
+= It did not contradict what I believe at all to 7 = It contradicted what I believe an extreme
+amount); 3) Thinking back to the article you read, if it contradicted or disputed what you had
+previously believed, to what extent did this cause you to feel bothered, uncomfortable,  or upset?
+(1 = The article did not contradict what I had previously  believed to 8 = The article contradicted
+what I previously  believed and I felt extremely  bothered). This last question was included
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Journal of Social and Political Psychology
+2026, Vol. 14(1), 33–56 https://doi.org/10.5964/jspp.16085
+
+Justifying Support for Trump
+            46
+
+
+
+
+to measure  dissonance  discomfort (Elliot & Devine,  1994; Harmon-Jones,  Willardt, &
+Harmon-Jones, 2025).
+Next, participants were asked 4 multiple-choice   questions to assess  their memory for the article
+they read. One example question was: According  to the news article, in which states did election
+officials say they had been pressured to "find votes" for Donald Trump and change the results in
+their jurisdictions? 1) Massachusetts and Connecticut;
+2) Georgia and Arizona; 3) Oregon and California;  4) Florida and Virginia.
+After these questions,  participants were informed that we were interested  in the reasons  why
+people did or did not support Donald Trump as president.   They were asked to answer only 1 of the
+2 open-ended questions: 1) If you were favorable toward Donald Trump as president,  what are the
+most important reasons for your support for his presidency; 2) If you were unfavorable toward
+Donald Trump as president,  what are the most important reasons why you did not support his
+presidency?
+Next, they were informed that: The media has included  many reports that Donald Trump has engaged
+in illegal activities related to the 2020 election  and January  6. We are interested in how people
+feel about this. Please select only one of the two questions below to answer,  regarding these
+issues.  Select  the question depending  on whether you were favorable or unfavorable  towards
+Donald  Trump's  presidency.  Please write, in detail, your thoughts and feelings about these
+activities.  You will  have one minute to write your response before the button to advance to the
+next page becomes visible.
+The questions were: 1) If you were favorable toward Donald Trump as president,  how do you
+reconcile your support for his presidency with the reports that he engaged in illegal activities
+related to the 2020 election and January 6? 2) If you were unfavorable to­ ward Donald Trump as
+president,  how do the reports that he engaged in illegal activities related to the 2020 election
+and January 6 affect your opinion regarding his presidency?
+Then, participants were to “Please select only one of the two questions below to answer.  Select
+the question depending on whether you were favorable or unfavorable towards Donald Trump's
+presidency and whether your feelings have changed over time. Please write,  in detail, your
+thoughts and feelings about why your views changed. If your favorability toward Donald Trump's
+presidency has not changed, simply write, "My views have not changed." You will have one minute to
+write your response before the button to advance to the next page becomes visible.”
+The questions were: 1) If you were previously  favorable toward Donald Trump as president, but are
+now unfavorable, why did your views change? When did your views change and how have  they changed?
+2) If you were previously  unfavorable toward Donald Trump as president,  but are now favorable,
+why did your views change? When did your views change and how have they changed?
+Finally, participants  were asked to provide any comments they wished to share about the study.
+Then, they were provided  a short explanation of the reasons for conducting the study.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Journal of Social and Political Psychology
+2026, Vol. 14(1), 33–56 https://doi.org/10.5964/jspp.16085
+
+Harmon-Jones, Willardt, Denson, & Harmon-Jones                                                  47
+
+
+
+
+Results
+
+The categories of reasons given for supporting Trump were similar to those in Studies
+1 and 2. The most common categories were policies and issues and economic reasons, followed by that
+Trump cares about America. Communication, competence, good charac­ ter, that he is not a
+politician, and that he had been treated unfairly were less common. Agreement between the raters
+was good (ICC > .75) for economic reasons, not a politi­ cian, cares about America, and treated
+unfairly. Agreement was acceptable (ICC > .5) for communication,  competence, and policies and
+issues. Agreement  was poor (ICC < .5) for unable to categorize and for good character  (see Table
+5).
+
+Table 5
+
+Reasons Given for Supporting Trump
+
+
+Reasons categories            Examples
+                            Percent        ICC
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Economic                             •  He managed our economy so much better than ever! Our
+economy has tanked since.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+43.9                .82
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Communication                   •  because he is an energetic president with the mentality of a
+successful businessman, who tells the truth bluntly.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+14.4                .55
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Competence                        •  He is a strong leader, makes excellent financial  and business
+decisions, and has a great amount of love and pride in the United States.
+•  He is well respected and strong and I share most of his political beliefs.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+15.0                .60
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Good character                     •  He never lied to we the people and he fights for us still.
+                       7.5                .15
+
+Not a politician                      •  He was NOT a politician.
+                                  17.6                .75
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Cares about America             •  Trump stood up for our country. He supported the military and
+added tariffs to keeps jobs in America. I felt safer when he was President.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+30.5                .80
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Policies and issues                •  His energy and foreign policies. The rest of the world were
+scared to mess with the US.
+•  Unemployment was low and minorities gained.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+44.4                .60
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Treated unfairly                     •  All of the liberal lobby was against him. All the networks
+were against him except fox news.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2.1                .75
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Unable to categorize             •  He was the only thing standing in between a societal collapse
+and a great depression with the full robbing of the middle class.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5.3                .23
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Note. N = 177 for ICCs and N = 187 for percentages. The first 10 participants  were mutually coded
+together by the two raters, so these were not included in calculating the ICCs.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Journal of Social and Political Psychology
+2026, Vol. 14(1), 33–56 https://doi.org/10.5964/jspp.16085
+
+Justifying Support for Trump
+            48
+
+
+
+
+In response  to the second question,  on why they continue to support Trump despite allegations
+against him, the categories were also similar to Studies  1 and 2, with the addition of a category
+for those who said they supported Trump in the past but no longer support him. Agreement between
+the raters was good (ICC > .75) for disbelieving the allegations and no longer supporting him.
+Agreement was acceptable (ICC > .5) for others doing similar misdeeds. Agreement was poor (ICC <
+.5) for policies matter not his personal life and not caring about the allegations (see Table 6).
+
+Table 6
+
+Justifications for Supporting Trump Despite Allegations
+
+
+Justifications categories  Examples
+        Percent      ICC
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Disbelieve accusations       •  President Trump did NOT incite violence on J6. He said he knew
+people would be going to PEACEFULLY PROTEST at the capital.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+61.4             .80
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Policies matter, not his personal life
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+•  I reconcile them by looking at his actions while in office. His policies were great for the
+country and made many improvements while in office.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+9.8             .48
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Others do similar misdeeds  •  Every president has probably been involved in some unscrupulous
+activity that we don't hear about.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+12.5             .58
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Do not care                             •  I didn't care. I feel the left used very dirty tricks on
+Trump and created the conditions for hostility.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2.2             .17
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+No longer support               •  After all of the hearings and as information came out, I lost
+respect for Trump. It was fine that he contested the results through the courts, but when the
+courts decided the election was fair, he should have accepted the results. I wish Trump had behaved
+differently.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+13.0             .87
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Unable to categorize           •  I still am unsure what to think about the reports he engaged in
+illegal activities in regards to the election and January 6.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+8.7             .33
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Note. N = 174 for ICCs and N = 184 for percentages. The first 10 participants  were mutually coded
+together by the two raters, so these were not included in calculating the ICCs.
+
+Correlations of Continuous Measures (Discomfort)
+
+Next, we  assessed correlations of how much discomfort participants experienced upon reading about
+Trump’s illegal behaviors (M = 3.45, SD = 2.11) with other relevant varia­ bles. The open-ended
+responses were coded 0 if they were not provided by participants and 1 if they were provided. As
+shown in Table 7, feeling bothered correlated positively with Trump favoritism, religiosity, and
+not believing the accusations. In addition, feeling bothered correlated negatively with the
+“politics-not-personal” and “no-longer-support”
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Journal of Social and Political Psychology
+2026, Vol. 14(1), 33–56 https://doi.org/10.5964/jspp.16085
+
+Harmon-Jones, Willardt, Denson, & Harmon-Jones                                                  49
+
+
+
+
+open-ended  responses,  but these correlations should be regarded  cautiously because there were so
+few responses of these types.
+
+Table 7
+
+Correlations Between Variables
+
+
+Variable                               1                2                3                4
+       5                6                7
+
+1. Bothered                                 –
+2. Fav Trump                      .38***           –
+3. Religious                        .15*           .17*              –
+4. They all do                     -.08           -.04               .09                 –
+5. Don’t believe                      .29***        .29***          .10             -.21**
+  –
+6. Pol-not-person              -.15*          -.13             -.04          -.02           -.35***
+          –
+7. No support                    -.19**         -.37***         -.12          -.14
+-.42***         -.13             –
+Note. Fav Trump  is rated favorability toward Trump. Pol-not-person is politics-not-personal
+open-ended re­
+sponse. No support is no longer support Trump.
+*p < .05. **p < .01. ***p < .001.
+
+
+To explore whether dissonance discomfort mediated the effect of favorability toward Trump on
+disbelieving the accusations, we conducted a mediation  analysis. The indirect effect was
+significant, estimate = 0.03,  SE = 0.01, 95% CI [0.01, 0.05], z = 2.54, p = .011, suggesting that
+mediation occurred. The direct and total effects were also significant, estimate = 0.08, SE = 0.03,
+95% CI [0.03, 0.14], z = 2.84, p = .005; estimate = 0.12, SE = 0.03,
+95% CI [0.06, 0.17], z = 4.05, p < .001.
+
+
+G e n e r a l D i s c u s s i o n
+
+The current research explored ways individuals  react to information that conflicts with their
+beliefs (cognitive  dissonance), using the context of supporters  of US  President Trump during
+times when the news cycle reported allegations that he engaged in illegal and immoral activities.
+In Studies 1 and 2, participants  who supported Trump were asked how they justified this support
+given the allegations of sexual misconduct. In Study  3, they were asked how they reconciled their
+support for his presidency with the reports that he engaged in illegal activities related to the
+2020 election  and January  6. Across studies, participants’  responses fell primarily into 3
+categories:  1) they stated that they disbelieved the accusations; 2) they stated that his policies
+mattered and his personal life did not; and 3) they stated that other politicians engage in similar
+illegal/immoral behaviors. In Studies 2 and 3, an additional  category emerged: 4) Participants
+stated that they do not care about the allegations. In Study  3, a new category emerged: 5) a small
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Journal of Social and Political Psychology
+2026, Vol. 14(1), 33–56 https://doi.org/10.5964/jspp.16085
+
+Justifying Support for Trump
+            50
+
+
+
+
+minority of participants noted that while they supported Trump in the past, they no longer support
+him.
+It appears  that the justifications (dissonance reduction)  participants used differed somewhat
+between the studies that focused on Trump’s sexual misdeeds and the study that focused on his
+misdeeds surrounding  the election. Compared to Studies 1 and 2, in Study 3, participants
+expressed somewhat  greater disbelief  of evidence against Trump and lesser “policies-over-personal
+ behavior” and “others-do-it” justifications.  These dif­ ferences may have occurred  because Study
+3 concerns  evidence  that participants may have found to be less ambiguous (documented behavior
+regarding  January 6) than the evidence presented in Studies 1 and 2 (accusations of sexual
+misconduct). For the January
+6 events, saying  that “others do it” will not work easily  as no other US president  has attempted
+undermine a presential election. In addition, the “policies are more important that personal
+behavior”  may also be a less plausible justification for the January 6 events because undermining
+elections is a problematic  policy in a democratic  country like the US. Because the evidence
+against Trump may have been stronger in Study 3, participants may have been more likely to
+disbelieve the evidence or abandon support for Trump.
+As noted earlier, the open-ended responses were coded in a way that made it possible for one
+participant to provide multiple justifications for Trump’s  misdeeds. Because past dissonance
+research had assumed that participants only use one justification to reduce dissonance,  we
+assessed whether this also occurred in these open-ended responses. In Study 1, 22% of participants
+(N = 24) provided more than one justification. Moreover,
+10 participants  indicated  that they did not believe the accusations and they also gave the
+“politics not personal” justification. Another 12 participants  indicated that they did not believe
+the accusations and they also indicated that “they all do it”. In Study  2, 19% of participants (N
+= 31) provided  more than one justification. Moreover,  11 participants indicated that they did not
+believe the accusations and they also gave the “politics not personal” justification. Another 10
+participants  indicated  that they did not believe the accusations and they also indicated that
+“they all do it”. In Study 3, 7% of participants (N = 12) provided more than one justification.
+Moreover, two participants indicated that they did not believe the accusations and they also
+indicated that “politics not personal”. Another eight participants indicated that they did not
+believe the accusations and they also indicated that “they all do it”.
+The fact that several participants  indicated that they did not believe the accusations while also
+indicating other justifications, especially that “they all do it”, suggests that these participants
+ may have believed the accusations somewhat but claimed that they did not. In other words, it seems
+illogical to say that Trump did not do the action but then say that all politicians do it.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Journal of Social and Political Psychology
+2026, Vol. 14(1), 33–56 https://doi.org/10.5964/jspp.16085
+
+Harmon-Jones, Willardt, Denson, & Harmon-Jones                                                  51
+
+
+
+
+The Relationship of the Current Responses to Methods of
+Dissonance Reduction Found in Past Research
+
+Across all 3 studies,  the most common justification for continuing to support Trump despite the
+allegations against him was that participants disbelieved the allegations. Past research on belief
+disconfirmation from a dissonance perspective  has typically examined responses of individuals who
+believed the belief disconfirming information was accurate (presumably  because of researchers’
+interest in counterintuitive  responses).  However, it is also possible that the current
+participants  believed the disconfirming information enough to experience dissonance, but then
+denied the information as a way to reduce dissonance. This method of reducing  dissonance would be
+conceptually  equivalent  to subtracting a dissonant cognition.
+When individuals state that other politicians engage  in the same  immoral/illegal behaviors, or
+when they state that they “don’t care” about the behaviors, they may be re­ ducing dissonance by
+reducing the importance of the dissonant cognitions, conceptually speaking. This mode of dissonance
+reduction  has been referred  to as “trivialization” in past research (Simon et al., 1995).
+When individuals stated that Trump’s policies mattered and his personal life did not, they may be
+reducing  dissonance by compartmentalizing information about him. In conceptual terms, they may be
+making the information about his immoral/illegal personal life an irrelevant cognition, which is an
+unexplored and novel way of reducing dissonance.
+Dissonance theory predicts that Trump supporters may feel dissonance discomfort upon considering
+Trump’s illegal and immoral behaviors. Correlational evidence in Study
+3 supports  this prediction by showing that the more they favored Trump,  the more discomfort they
+felt after reading about his illegal behaviors. In addition, the more they felt discomfort, the
+more they indicated that they did not believe the accusations (and discomfort mediated  the effect
+of Trump favorability on disbelief).  Moreover,  in the current studies, participants  were asked
+questions that could have reduced dissonance (e.g.,  why they supported  him) prior to the
+open-ended  responses  about why they supported Trump given his misdeeds. This procedure could have
+reduced the dissonance and open-ended justifications.  The current results are also impressive
+because it is likely that this study was not the first time they encountered this dissonant
+information, and participants had thus had plenty of opportunities to reduce this dissonance prior
+to taking part in our studies. Thus, these results suggest that dissonance may persist for long
+periods of time after individuals  have had several chances to reduce it. In contrast, most past
+research had assumed that once dissonance discomfort  is reduced, it stays low (Elliot & Devine,
+1994).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Journal of Social and Political Psychology
+2026, Vol. 14(1), 33–56 https://doi.org/10.5964/jspp.16085
+
+Justifying Support for Trump
+            52
+
+
+
+
+Novel Methods of Reducing Dissonance
+
+Although each of the specific dissonance reduction methods individuals  may have used can be placed
+into one of the conceptually abstract ways of reducing dissonance, we be­ lieve that this research
+suggests some previously  untested ways of reducing dissonance, at both concrete and abstract
+levels of analysis. Most of the concrete ways are relatively new to dissonance theory research,
+because no previous research has measured  them, with the exception of research showing that
+individuals respond to the misdeeds of a re­ spected ingroup member by pointing out how opponents
+also misbehave (Harmon-Jones et al., 2020).
+With regard to the more conceptually abstract ways of reducing dissonance, making cognitions
+irrelevant to the dissonant relationship  has not been empirically examined, to our knowledge.
+Dissonance theory posited that cognitions are  either relevant or irrelevant to each other; that
+is, relevant cognitions  are psychologically  connected or related to each other.  If they are
+relevant to each other,  then they are consonant  or dissonant with each other. And then those
+cognitions are weighted for their importance, to determine the magnitude of dissonance discomfort
+and reduction.  Past research has explored dissonance reduction  via adding consonant cognitions,
+subtracting  dissonant cognitions, or altering the importance of the relevant cognitions. It is
+possible  that statements that were coded as “policies matter, not his personal life” could be
+viewed  as reduction in the perceived importance of dissonant cognitions. However, we suspect that
+some participants may have instead been making those cognitions irrelevant, which is a dissonance
+reduction strategy that was not formally mentioned by Festinger  (1957), but that is theoretically
+possible. Good examples of statements seeming more like making cognitions irrelevant and not
+reducing their importance were shown in Tables 2 and 4: “…what he does in private is none of the
+public’s business, since I feel he is running the country well” and “As for immoral actions, I
+don't really like Trump as a person,  but I didn't vote for him to be my best friend. I voted for
+him to by my president, and as long as he does good at that, his person issues and morality are
+none of my business anymore than anyone else's.”
+
+Limitations
+
+Although the goal of the present research  was to explore the wide variety of ways individuals
+might reduce dissonance when exposed to belief disconfirming information, we should note that the
+samples were  not representative  of the US  population, and results might differ with a more
+representative sample. They might also differ during the midst of an election, where partisans’
+passions may further fuel dissonance discomfort and dissonance reduction  when their dear leader
+acts in ways that violate standards (e.g.,  morals, laws). Also,  their leader’s  opponent may
+provide additional consonant
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Journal of Social and Political Psychology
+2026, Vol. 14(1), 33–56 https://doi.org/10.5964/jspp.16085
+
+Harmon-Jones, Willardt, Denson, & Harmon-Jones                                                  53
+
+
+
+
+cognitions that bolster support for their preferred  candidate (e.g., the opponent  is old and
+incoherent).
+In addition, researchers have noted that some MTurk participants might provide low quality data
+(Hauser et al., 2019). Studies  1 and 2 used MTurk participants but Study
+3 used Prolific participants, who generally provide higher quality data (Douglas et al.,
+2023). The results from Study 3 were very similar to those obtained in Studies 1 and 2. Also, we
+carefully read the open-ended responses from participants and all participants (included in the
+analyses) provided sensible answers, suggesting  that their responses were not of low quality.
+When this research  was initiated, we  assumed that supporters  of Trump would perceive his sexual
+assaults, abuses of power, and incitement of insurrection  as immoral and/or illegal. However, this
+may not be the case, and these studies do not provide any direct evidence of this. Our assumption,
+however, is supported by other research that has found that over 74% of Americans regard the issue
+of sexual assault as very important (Pew  Research, 2017). In addition, many of Trump’s supporters
+are Christians  (73% of our sample), and 2 of their 10 commandments  (i.e., adultery,  coveting
+neighbor’s  wife) concern  sexual behaviors  that seem  much less  immoral/harmful than sexual
+assault. With regard to Trump’s illegal behaviors, we trust that most Americans find acting in
+illegal ways to be dissonant  with their beliefs. Indeed, for the question we asked about following
+rules, the mean was 5.92 (SD = 1.12) on a 7-point scale, suggesting  that most participants believe
+in following the rules and laws. Future research should more directly test this assumption.
+
+Other Examples of Support for Admired Figures Despite
+Allegations
+
+Continuing to follow and to idealize a person despite being confronted  with belief-dis­ confirming
+information about that person is not limited to Trump followers. Another recent  US President, Bill
+Clinton, was also accused of sexual misconduct  that led to his impeachment (Waxman & Fabry, 2018).
+We  suspect that his supporters may have also reduced dissonance about his misconduct. To our
+knowledge, no research examined these responses.
+
+Conclusion
+
+We hope these results shed light on the multiple ways that people respond  to belief
+disconfirmation. The results from the current studies suggest that individuals respond to
+disconfirming information in a variety of ways when they are not constrained to a single dissonance
+reduction  opportunity. Further research is needed to verify the robustness of these phenomena and
+whether different responses emerge in other circumstances.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Journal of Social and Political Psychology
+2026, Vol. 14(1), 33–56 https://doi.org/10.5964/jspp.16085
+
+Justifying Support for Trump
+            54
+
+
+
+
+
+
+Funding: The authors have no funding to report.
+
+
+
+
+
+
+
+
+Acknowledgments:  The authors have no additional (i.e., non-financial) support to report.
+
+
+
+
+
+
+
+
+
+
+Competing Interests: The authors have declared that no competing interests exist.
+
+
+
+
+
+
+
+
+
+
+
+
+Data Availability: Data and materials can be used by colleagues upon request to the corresponding
+author.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+S u p p l e m e n t a r y M a t e r i a l s
+
+The Supplementary Materials file contains the exact articles participants read about Trump’s
+misdeeds and about space exploration (for access, see Harmon-Jones et al., 2026S).
+
+Index of Supplementary Materials
+
+Harmon-Jones, C., Willardt, R. R., Denson,  T. F., & Harmon-Jones, E. (2026S). Supplementary
+materials to "Responses to belief-conflicting information: Justification of support for Donald
+Trump" [Stimuli]. PsychOpen GOLD. https://doi.org/10.23668/psycharchives.21751
+
+
+R e f e r e n c e s
+
+
+Aronson,  E. (1969). The theory  of cognitive  dissonance: A current perspective. In L. Berkowitz
+(Ed.), Advances in Experimental Social Psychology (Vol. 4, pp. 1–34). Academic Press.
+https://doi.org/10.1016/S0065-2601(08)60075-1
+Barrett, D., Zapotosky, M., Dawsey, J., & Harris, S. (2019, September  26). Whistleblower claimed
+that Trump  abused his office and that White House officials tried to cover it up. Washington Post.
+https://www.washingtonpost.com/national-security/house-intelligence-committee-releases-
+whistleblowers-complaint-citing-trumps-call-with-ukraines-president/2019/09/26/402052ee-
+e056-11e9-be96-6adb81821e90_story.html
+Batson, C. D. (1975). Rational processing or rationalization? The effect of disconfirming
+information on a stated religious belief. Journal of Personality and Social Psychology, 32(1), 176–
+184. https://doi.org/10.1037/h0076771
+Blake, A. (2021, January 11). What Trump said before his supporters stormed the Capitol, annotated.
+Washington Post.
+https://www.washingtonpost.com/politics/interactive/2021/annotated-trump-speech-jan-6- capitol/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Journal of Social and Political Psychology
+2026, Vol. 14(1), 33–56 https://doi.org/10.5964/jspp.16085
+
+Harmon-Jones, Willardt, Denson, & Harmon-Jones                                                  55
+
+
+
+
+Burris, C. T., Harmon-Jones, E., & Tarpley,  W. R. (1997). “By Faith Alone”: Religious agitation
+and cognitive dissonance. Basic and Applied Social Psychology, 19(1), 17–31.
+https://doi.org/10.1207/s15324834basp1901_2
+Cabral,  S. (2021, January 13). Capitol  riots:  Did Trump’s words at rally incite violence? BBC.
+https://www.bbc.com/news/world-us-canada-55640437
+Chmielewski, M., & Kucker, S. C. (2020). An MTurk crisis? Shifts in data quality and the impact on
+study results. Social Psychological & Personality Science, 11(4), 464–473.
+https://doi.org/10.1177/1948550619875149
+Douglas, B. D., Ewell, P. J., & Brauer, M. (2023). Data quality in online human-subjects research:
+Comparisons between MTurk, Prolific,  CloudResearch, Qualtrics, and SONA. PLoS One, 18(3), Article
+e0279720. https://doi.org/10.1371/journal.pone.0279720
+Edwards, K., & Smith, E. E. (1996). A disconfirmation bias in the evaluation of arguments. Journal
+of Personality and Social Psychology, 71(1), 5–24. https://doi.org/10.1037/0022-3514.71.1.5
+Elliot, A. J., & Devine,  P. G. (1994). On the motivational nature of cognitive  dissonance:
+Dissonance as psychological discomfort. Journal of Personality and Social Psychology, 67(3),
+382–394. https://doi.org/10.1037/0022-3514.67.3.382
+Fahrenthold, D. A. (2016, October  7). Trump recorded having extremely lewd conversation about
+women in 2005. Washington  Post.
+https://www.washingtonpost.com/politics/trump-recorded-having-extremely-lewd-
+conversation-about-women-in-2005/2016/10/07/3b9ce776-8cb4-11e6-
+bf8a-3d26847eeed4_story.html
+Fandos, N. (2021, January 14). Trump impeached for inciting insurrection. The New York Times.
+https://www.nytimes.com/2021/01/13/us/politics/trump-impeached.html
+Festinger, L. (1957). A theory of cognitive dissonance. Stanford University Press.
+Festinger, L., Riecken, H. W., & Schachter,  S. (1956). When prophecy  fails. University of
+Minnesota
+Press. https://doi.org/10.1037/10030-000
+Götz-Marchand,  B., Götz, J., & Irle, M. (1974). Preference of dissonance reduction  modes as a
+function of their order, familiarity and reversibility. European Journal of Social Psychology,
+4(2),
+201–228. https://doi.org/10.1002/ejsp.2420040206
+Harmon-Jones,  E. (2019). Cognitive dissonance: Reexamining a pivotal theory in psychology (2nd
+ed.).
+American Psychological Association. https://doi.org/10.1037/0000135-000
+Harmon-Jones, E., Harmon-Jones, C., Amodio,  D. M., Gable, P. A., & Schmeichel, B. J. (2025).
+Valid replications require valid methods: Recommendations for best methodological  practices with
+lab experiments. Motivation Science, 11(3), 235–245. https://doi.org/10.1037/mot0000398
+Harmon-Jones,  E., Harmon-Jones,  C., & Denson, T. F. (2020). A novel way of responding to
+dissonance evoked by belief disconfirmation: Making the wrongdoing of an opponent salient. Social
+Influence, 15(1), 34–45. https://doi.org/10.1080/15534510.2020.1781248
+Harmon-Jones,  E., Willardt, R., & Harmon-Jones,  C. (2025). Discrete emotions  of dissonance.
+Motivation Science, 11(4), 408–424. https://doi.org/10.1037/mot0000389
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Journal of Social and Political Psychology
+2026, Vol. 14(1), 33–56 https://doi.org/10.5964/jspp.16085
+Hauser, D., Paolacci, G., & Chandler, J. (2019). Common  concerns with MTurk as a participant pool:
+Evidence and solutions. In F. R. Kardes,  P. M. Herr, & N. Schwarz (Eds.), Handbook of research
+methods in consumer psychology (pp. 319-337). Routledge.
+Koo, T. K., & Li, M. Y. (2016). A guideline of selecting and reporting intraclass correlation
+coefficients for reliability research. Journal of Chiropractic Medicine, 15(2), 155–163.
+https://doi.org/10.1016/j.jcm.2016.02.012
+Lord, C. G., Ross, L., & Lepper, M. R. (1979). Biased assimilation and attitude polarization: The
+effects of prior theories on subsequently considered evidence. Journal of Personality and Social
+Psychology, 37(11), 2098–2109. https://doi.org/10.1037/0022-3514.37.11.2098
+Nelson, L., & Crockett, E. (2017, January 19). Sexual assault allegations against Donald Trump: 15
+women say he groped, kissed, or assaulted them. Vox.
+https://www.vox.com/2016/10/12/13265206/trump-accusations-sexual-assault
+Pew Research. (2017, December 7). Women and men in both parties say sexual harassment allegations
+reflect ‘widespread problems in society’.
+https://www.pewresearch.org/short-reads/2017/12/07/americans-views-of-sexual-harassment-
+allegations/
+Raju,  M., Herb,  J., & Cohen, M. (2019, November  9). We read all 2,677 pages of impeachment
+inquiry testimony released to date. Here’s what’s clear. CNN Politics.
+https://www.cnn.com/2019/11/09/politics/impeachment-transcript-takeaways/index.html
+Rothfield, M., & Palazzolo, J. (2018, January 12). Trump lawyer arranged $130,000 payment  for
+adult-film star’s silence. WSJ.
+https://www.wsj.com/articles/trump-lawyer-arranged-130-000-payment-for-adult-film-stars-
+silence-1515787678
+Simon, L., Greenberg, J., & Brehm, J. (1995).  Trivialization: The forgotten mode of dissonance
+reduction. Journal of Personality and Social Psychology, 68(2), 247–260.
+https://doi.org/10.1037/0022-3514.68.2.247
+Waxman, O. B., & Fabry, M. (2018, May 4). From an anonymous tip to an impeachment: A timeline of
+key moments in the Clinton-Lewinsky scandal. TIME.
+https://time.com/5120561/bill-clinton-monica-lewinsky-timeline/
+Justifying Support for Trump
+            56
+PsychOpen GOLD is a publishing service by
+Leibniz Institute for Psychology (ZPID), Germany.
+www.leibniz-psychology.org

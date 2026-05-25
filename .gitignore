@@ -1,0 +1,33 @@
+# tt-workspace: tracks workspace-level orchestration files only.
+# The four content repos are cloned separately and are NOT tracked here.
+
+# --- Content repos (each is its own git repository) ---
+controversial-trump/
+controversial-trump-research/
+the-civics-desk/
+stand-against-trump/
+the-civics-desk-temp/
+
+# --- Dependencies / build ---
+node_modules/
+dist/
+build/
+.docusaurus/
+
+# --- Active scratch (regenerated each research batch) ---
+research.txt
+
+# --- Potentially personal / unrelated; commit deliberately if wanted ---
+HOUSING AFFORDABILITY TRACKER.xlsx
+
+# --- IDE / editor ---
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+*.log
+
+# --- Claude Code: keep custom skills + MCP config; ignore local settings + vendored plugins ---
+.claude/settings.local.json
+.claude/plugins/
+# (.claude/skills/ and .mcp.json ARE tracked — they are project tooling)
