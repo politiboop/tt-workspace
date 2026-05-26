@@ -31,3 +31,10 @@ Thumbs.db
 .claude/settings.local.json
 .claude/plugins/
 # (.claude/skills/ and .mcp.json ARE tracked — they are project tooling)
+
+# --- run-all.sh runtime artifacts ---
+.run-all-logs/
+.run-all-pids/
+
+# --- Personal setup notes (not workspace content) ---
+claude-instructions.txt

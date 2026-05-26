@@ -4,7 +4,7 @@ description: Planned design overhaul for thetrumptracker.com (Docusaurus site) �
 type: project
 ---
 
-Planned overhaul for the tracker site at G:/git/politiboop/controversial-trump/website:
+Planned overhaul for the tracker site at `/Users/brock/dev/politiboop/controversial-trump/website`:
 
 1. **Brand alignment** — Match research site's dark palette (red accents, dark background). Kill the purple gradient.
 2. **Dark mode** — Commit to dark theme (partially implemented in CSS variables already)

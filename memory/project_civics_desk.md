@@ -10,7 +10,7 @@ New project started 2026-04-13: **The Civics Desk** (`the-civics-desk/`)
 
 **How to apply:** Tone is conversational, not condescending. Every claim sourced. No jargon without explanation. No assumptions about what the reader already knows. Tagline: "Sourced. Simple. Decide for yourself."
 
-**Repo:** `G:/git/politiboop/the-civics-desk/` — Git configured with politiboop/basketball469@msn.com, remote at `git@github-politiboop:politiboop/the-civics-desk.git`
+**Repo:** `/Users/brock/dev/politiboop/the-civics-desk/` — Git configured with politiboop / `250234216+politiboop@users.noreply.github.com`, remote at `git@github-politiboop:politiboop/the-civics-desk.git`
 
 **Structure:** Astro 6 static site. Articles live in `src/content/articles/` as markdown with frontmatter (title, order, summary). Old `articles/` dir at root is stale.
 

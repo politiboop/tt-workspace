@@ -5,3 +5,5 @@
 - [project_civics_desk.md](project_civics_desk.md) — The Civics Desk: third repo, accessible explainers, non-confrontational tone for reaching Trump supporters
 - [feedback_civics_desk_augmentation.md](feedback_civics_desk_augmentation.md) — When adding controversies, also check Civics Desk explainers for augmentation; ask if unsure
 - [feedback_no_em_dashes_titles.md](feedback_no_em_dashes_titles.md) — No em dashes in controversy titles; write organic newspaper-style headlines
+- [project_macos_migration.md](project_macos_migration.md) — macOS migration (2026-05-26): paths, SSH alias, per-dir git identity for politiboop workspace
+- [reference_shared_memory.md](reference_shared_memory.md) — Sync policy between local auto-memory and tt-workspace/memory/

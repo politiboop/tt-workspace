@@ -13,8 +13,8 @@ This workspace contains four repositories:
 
 ## Working Directory
 
-The primary working directory is `G:/git/politiboop/controversial-trump/website`. All three repos live under
-`G:/git/politiboop/`.
+The primary working directory is `/Users/brock/dev/politiboop/controversial-trump/website`. All four content repos live under
+`/Users/brock/dev/politiboop/`.
 
 ## Scope: This Is a Trump Tracker
 
@@ -764,13 +764,13 @@ git remote set-url origin git@github-politiboop:politiboop/REPO_NAME.git
 
 ## Workspace Layout and New-Machine Setup
 
-This file lives at the workspace root `G:/git/politiboop/CLAUDE.md` and is tracked in a **fifth** repo, `tt-workspace`, which holds only workspace-level orchestration files (this CLAUDE.md, `run-all.ps1`, TODO/notes docs). The four content repos are cloned as subdirectories and are NOT tracked by tt-workspace (see `.gitignore`).
+This file lives at the workspace root `/Users/brock/dev/politiboop/CLAUDE.md` and is tracked in a **fifth** repo, `tt-workspace`, which holds only workspace-level orchestration files (this CLAUDE.md, TODO/notes docs, and a legacy Windows-only `run-all.ps1`). The four content repos are cloned as subdirectories and are NOT tracked by tt-workspace (see `.gitignore`).
 
 The five repos (all on the `politiboop` account, all using the `github-politiboop` SSH host):
 
 | Repo | Path | Holds |
 |------|------|-------|
-| `tt-workspace` | `G:/git/politiboop/` (root) | This CLAUDE.md, run-all.ps1, workspace notes |
+| `tt-workspace` | `/Users/brock/dev/politiboop/` (root) | This CLAUDE.md, workspace notes (legacy `run-all.ps1` is Windows-only) |
 | `controversial-trump` | `controversial-trump/` | The tracker: controversy JSON, website (Docusaurus) |
 | `controversial-trump-research` | `controversial-trump-research/` | The research deep-dives (Astro) |
 | `the-civics-desk` | `the-civics-desk/` | The accessible explainers (Astro 6) |
@@ -779,7 +779,7 @@ The five repos (all on the `politiboop` account, all using the `github-politiboo
 ### Setting up a new machine
 
 1. Configure the `github-politiboop` SSH host in `~/.ssh/config` and add the SSH key to the politiboop GitHub account.
-2. Clone all five repos into `G:/git/politiboop/` (clone `tt-workspace` into the root itself, or clone it elsewhere and copy its files to the root):
+2. Clone all five repos into your chosen workspace directory (e.g. `/Users/brock/dev/politiboop/` on macOS, `G:/git/politiboop/` on Windows). Clone `tt-workspace` into the root itself, or clone it elsewhere and copy its files to the root:
    ```bash
    git clone git@github-politiboop:politiboop/tt-workspace.git
    git clone git@github-politiboop:politiboop/controversial-trump.git
@@ -790,11 +790,11 @@ The five repos (all on the `politiboop` account, all using the `github-politiboo
 3. `npm install` in each of the four content repos (`node_modules` is not committed).
 4. Install Node.js >= 22.12.0 (required by the research site; set in its `.nvmrc`).
 5. `fetch-article.js` (in `controversial-trump/website/`) uses a headless Chrome browser to bypass bot detection on blocked news sites. Install the browser binary on the new machine (e.g., `npx playwright install chromium`) or it will fail on NYT/WaPo/Politico/Independent/Esquire fetches.
-6. **Restore auto-memory.** Auto-memory lives per-machine at `C:/Users/<user>/.claude/projects/G--git-politiboop/memory/` and does not sync through Claude Code. A backup copy is kept in this repo at `memory/`. On the new machine, copy `tt-workspace/memory/*.md` into `C:/Users/<user>/.claude/projects/G--git-politiboop/memory/` (create the folder if needed) so preferences and project context are present from the first conversation. Keep the repo copy in sync if memory changes meaningfully.
+6. **Restore auto-memory.** Auto-memory lives per-machine under Claude's data directory at `~/.claude/projects/<encoded-workspace-path>/memory/` (the encoded path replaces `/`, `:`, and `\` with `-`; e.g. `/Users/brock/dev/politiboop` → `-Users-brock-dev-politiboop`, `G:/git/politiboop` → `G--git-politiboop`). It does not sync through Claude Code. A backup copy is kept in this repo at `memory/`. On the new machine, copy `memory/*.md` (from the freshly cloned tt-workspace working tree at the workspace root) into that directory (create the folder if needed) so preferences and project context are present from the first conversation. Keep the repo copy in sync if memory changes meaningfully.
 
 ### Recurring workflow: processing `research.txt`
 
-The user periodically drops a list of article URLs into `G:/git/politiboop/research.txt` (or pastes them) and says some variation of "new stuff in research.txt." The established workflow:
+The user periodically drops a list of article URLs into `research.txt` at the workspace root (e.g. `/Users/brock/dev/politiboop/research.txt`), or pastes them inline, and says some variation of "new stuff in research.txt." The established workflow:
 
 1. **Fetch each URL.** Try `WebFetch` first; on failure (NYT, WaPo, Politico, Independent, Esquire, BBC, The Hill, CNBC, MSNBC commonly block it) fall back to `node fetch-article.js "<url>"`. For AP live blogs and other un-fetchable pages, `WebSearch` the headline.
 2. **Dedupe-check** against existing entries (`ls data/controversies/ | grep <keyword>` and Grep inside JSON) before creating anything. Updates to an ongoing story go into the existing entry; genuinely distinct events get new entries.
@@ -809,7 +809,7 @@ The Civics Desk (`the-civics-desk/`) has its own strict CLAUDE.md (tone, sourcin
 
 - Long topics use a **hub-plus-subpieces** structure: a top-level explainer that frames the question and cross-links to focused deep-dives, rather than one megapost. Example: the corruption hub links to the IRS-settlement explainer.
 - Current major explainers include: `iran-war-explained`, `tariffs-who-pays`, `trump-corruption-explained` (hub), `irs-settlement-explained`, `checks-and-balances-explained`, `midterm-elections-2026`, `authoritarian-frameworks`, `january-6-explained`, `voting-rights-act`, `gerrymandering-explained`, plus others. New articles must be added to the card array in `src/pages/index.astro`.
-- **Em-dash standard.** A PostToolUse `style-check.sh` hook flags banned phrases and excessive em dashes (fail threshold ~1 per 80 words; human-writing target 1 per 150-200). The proven cleanup is a **two-pass method**: (1) convert date-bullet/header em dashes to colons or periods mechanically (PowerShell regex), then (2) spot-fix prose appositives/asides to commas/parentheses, keeping em dashes only inside direct quotes, source-list titles, and the occasional deliberate rhetorical pivot.
+- **Em-dash standard.** A PostToolUse `style-check.sh` hook flags banned phrases and excessive em dashes (fail threshold ~1 per 80 words; human-writing target 1 per 150-200). The proven cleanup is a **two-pass method**: (1) convert date-bullet/header em dashes to colons or periods mechanically (regex find-replace via sed/perl/editor), then (2) spot-fix prose appositives/asides to commas/parentheses, keeping em dashes only inside direct quotes, source-list titles, and the occasional deliberate rhetorical pivot.
 - `the-civics-desk/ideas.txt` holds the article backlog.
 
 ### Forward-looking ideas (not yet built)
