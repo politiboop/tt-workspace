@@ -1,5 +1,5 @@
 # tt-workspace: tracks workspace-level orchestration files only.
-# The four content repos are cloned separately and are NOT tracked here.
+# The five content repos are cloned separately and are NOT tracked here.
 
 # --- Content repos (each is its own git repository) ---
 controversial-trump/
@@ -7,6 +7,7 @@ controversial-trump-research/
 the-civics-desk/
 stand-against-trump/
 the-civics-desk-temp/
+election-rigging/
 
 # --- Dependencies / build ---
 node_modules/

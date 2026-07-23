@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This workspace contains four repositories:
+This workspace contains five repositories:
 
 | Repository                      | Type                | Framework  | Purpose                                                                                |
 |---------------------------------|---------------------|------------|----------------------------------------------------------------------------------------|
@@ -10,6 +10,7 @@ This workspace contains four repositories:
 | `controversial-trump-research/` | Research Site       | Astro      | Deep-dive research pages with original analysis, evidence synthesis, and expert voices |
 | `the-civics-desk/`              | Explainer Site      | Astro 6    | Accessible, non-confrontational explainers for general audiences — "Sourced. Simple. Decide for yourself." |
 | `stand-against-trump/`          | Personal Project    | Markdown   | Personal research essays — opinionated but factually sourced arguments against supporting Trump |
+| `election-rigging/`             | Single-Page Tracker | Astro 6    | "Rigged Before the Vote" — data-driven single page tracking 2026 midterm-rigging actions; facts sourced from tracker entries, opinions labeled. Has its own CLAUDE.md. |
 
 ## Working Directory
 
@@ -766,7 +767,7 @@ git remote set-url origin git@github-politiboop:politiboop/REPO_NAME.git
 
 This file lives at the workspace root `/Users/brock/dev/politiboop/CLAUDE.md` and is tracked in a **fifth** repo, `tt-workspace`, which holds only workspace-level orchestration files (this CLAUDE.md, TODO/notes docs, and a legacy Windows-only `run-all.ps1`). The four content repos are cloned as subdirectories and are NOT tracked by tt-workspace (see `.gitignore`).
 
-The five repos (all on the `politiboop` account, all using the `github-politiboop` SSH host):
+The six repos (all on the `politiboop` account, all using the `github-politiboop` SSH host):
 
 | Repo | Path | Holds |
 |------|------|-------|
@@ -775,17 +776,19 @@ The five repos (all on the `politiboop` account, all using the `github-politiboo
 | `controversial-trump-research` | `controversial-trump-research/` | The research deep-dives (Astro) |
 | `the-civics-desk` | `the-civics-desk/` | The accessible explainers (Astro 6) |
 | `stand-against-trump` | `stand-against-trump/` | Personal essays |
+| `election-rigging` | `election-rigging/` | "Rigged Before the Vote" single-page 2026 tracker (Astro 6, data-driven) |
 
 ### Setting up a new machine
 
 1. Configure the `github-politiboop` SSH host in `~/.ssh/config` and add the SSH key to the politiboop GitHub account.
-2. Clone all five repos into your chosen workspace directory (e.g. `/Users/brock/dev/politiboop/` on macOS, `G:/git/politiboop/` on Windows). Clone `tt-workspace` into the root itself, or clone it elsewhere and copy its files to the root:
+2. Clone all six repos into your chosen workspace directory (e.g. `/Users/brock/dev/politiboop/` on macOS, `G:/git/politiboop/` on Windows). Clone `tt-workspace` into the root itself, or clone it elsewhere and copy its files to the root:
    ```bash
    git clone git@github-politiboop:politiboop/tt-workspace.git
    git clone git@github-politiboop:politiboop/controversial-trump.git
    git clone git@github-politiboop:politiboop/controversial-trump-research.git
    git clone git@github-politiboop:politiboop/the-civics-desk.git
    git clone git@github-politiboop:politiboop/stand-against-trump.git
+   git clone git@github-politiboop:politiboop/election-rigging.git
    ```
 3. `npm install` in each of the four content repos (`node_modules` is not committed).
 4. Install Node.js >= 22.12.0 (required by the research site; set in its `.nvmrc`).
@@ -801,7 +804,7 @@ The user periodically drops a list of article URLs into `research.txt` at the wo
 3. **Validate before publishing** per the Validation/Bias-Prevention/Anti-Leakage protocols above (2+ independent sources, most-precise language, no fabricated URLs, flag `[NEEDS SOURCE]` gaps rather than filling from memory).
 4. **Scope discipline.** Skip items that aren't a Trump action/decision/direct consequence: pure Democratic controversies, society/personal news (e.g., family weddings), and opinion/commentary columns are out of scope. Note skips explicitly with the reason.
 5. **Run the pipeline** after writing/updating JSON: `cd controversial-trump/website && node sync-data.js && node generate-social.js && node audit-em-dashes.js`. The em-dash audit must come back clean (no em dashes in titles).
-6. **Cross-repo augmentation (mandatory check).** For each new/updated entry, determine whether it strengthens a Civics Desk explainer or research page; augment where it fits, note explicitly where it doesn't. Then ask the user before pushing a batch of Civics Desk edits — they direct which articles to update.
+6. **Cross-repo augmentation (mandatory check).** For each new/updated entry, determine whether it strengthens a Civics Desk explainer or research page; augment where it fits, note explicitly where it doesn't. Then ask the user before pushing a batch of Civics Desk edits — they direct which articles to update. For election-related entries, also check `election-rigging/src/data/actions.json` ("Rigged Before the Vote"): fold developments into existing cards (facts/status) or add a new card, bump its `LAST_UPDATED`, and run its URL integrity check (see `election-rigging/CLAUDE.md`).
 
 ### The Civics Desk article roster and architecture
 

@@ -1,0 +1,29 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "tracker-serve",
+      "runtimeExecutable": "bash",
+      "runtimeArgs": ["-lc", "cd /Users/brock/dev/politiboop/controversial-trump/website && npm run serve -- --port 3210 --no-open"],
+      "port": 3210
+    },
+    {
+      "name": "research-dev",
+      "runtimeExecutable": "bash",
+      "runtimeArgs": ["-lc", "cd /Users/brock/dev/politiboop/controversial-trump-research && npm run dev -- --port 4321"],
+      "port": 4321
+    },
+    {
+      "name": "civics-dev",
+      "runtimeExecutable": "bash",
+      "runtimeArgs": ["-lc", "cd /Users/brock/dev/politiboop/the-civics-desk && npm run dev -- --port 4322"],
+      "port": 4322
+    },
+    {
+      "name": "rigging-dev",
+      "runtimeExecutable": "bash",
+      "runtimeArgs": ["-lc", "cd /Users/brock/dev/politiboop/election-rigging && npm run dev -- --port 4323"],
+      "port": 4323
+    }
+  ]
+}
