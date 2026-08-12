@@ -755,13 +755,27 @@ It exits non-zero on failure, so it can gate the pipeline. Three classes of defe
   trailing slashes and query strings still collide. This matters because the source count is the number
   the 3-source minimum is measured against: a "3-source" entry carrying a dupe is really a 2-source entry.
   It is easy to introduce accidentally when augmenting an entry with a source it already had.
-- **Wrong-article** (`--live`) — **`nbcnews.com` and `abcnews.go.com` address articles by ID and ignore
-  the slug.** A citation with an invented slug but a real ID returns **HTTP 200** while serving a
-  completely unrelated story, so a status-code check cannot see it. Confirmed live in this corpus: an
-  `rcna178202` URL captioned "Trump/Cheney nine barrels" serves a Diddy court story; an `rcna249012`
-  URL captioned "grand jury refuses to indict Democrats" serves a Heisman Trophy story. The script
-  compares the page's own `rel="canonical"` slug against the cited one. **A 200 is not proof a citation
-  is real** — this was the blind spot that made the first full sweep undercount.
+- **Wrong-article** (`--live`) — **`nbcnews.com`, `abcnews.go.com` and `npr.org` address articles by ID
+  and ignore the slug.** A citation with an invented slug but a real ID returns **HTTP 200** while
+  serving a completely unrelated story, so a status-code check cannot see it. Confirmed live in this
+  corpus: an `rcna178202` URL captioned "Trump/Cheney nine barrels" serves a Diddy court story; an
+  `rcna249012` URL captioned "grand jury refuses to indict Democrats" serves a Heisman Trophy story.
+  On NPR a bad *ID* 404s but a bad *slug* silently serves the real article. The script compares the
+  page's own `rel="canonical"` slug against the cited one. **A 200 is not proof a citation is real** —
+  this was the blind spot that made the first full sweep undercount.
+- **Soft-404** (`--live`) — a dead article URL that 302s to the homepage or a section index and answers
+  **200** instead of 404. `time.com` does this. Detected by comparing curl's `%{url_effective}` against
+  the cited path: a URL that named a specific article but landed on a bare root is a dead citation.
+
+**Outlets probed for slug-ignoring behaviour** (mutate the slug, keep the ID, see whether it still
+serves): **safe** — cnn.com, cbsnews.com, foxnews.com, yahoo.com, nypost.com, newsweek.com (a bad slug
+fails). **Slug-ignored** — nbcnews.com, abcnews.go.com, npr.org. **Inconclusive** — thehill.com and
+time.com block both curl and a real browser, so their behaviour is unknown; they are treated as
+bot-blockers, which is the conservative call. Re-probe when adding a heavily-cited new outlet.
+
+**Send a complete browser User-Agent.** A truncated UA gets non-200s from real pages — `npr.org`
+answers `402` to a short UA — which silently demotes those URLs to "worth a manual look" instead of
+actually checking them. `verify-sources.js` now sends a full Chrome UA.
 - **Liveness** — `404` and a `401` from Reuters both **fail**. `403`/`406`/`000` from known bot-blockers
   (WaPo, NYT, The Hill, Politico, HuffPost, Newsweek, WSJ, Bloomberg, centcom.mil) are reported as INFO,
   not failures, since those pages are real.
