@@ -744,13 +744,24 @@ node verify-sources.js --live --id <entry-id>     # one entry
 node verify-sources.js --live --since 2026-08-01  # only recently-updated entries
 ```
 
-It exits non-zero on failure, so it can gate the pipeline. Two classes of defect:
+It exits non-zero on failure, so it can gate the pipeline. Three classes of defect:
 
 - **Structural** — a citation whose text names a specific article but whose URL is a bare domain or a
   generic index (`/news`, `/politics`). This is the defect that hides thin sourcing: a reader clicks
   "Fox News interview with X (May 28, 2026)" and lands on the front page. A homepage link is not a
   citation. (Live-data dashboards where the root genuinely IS the source — FRED, BLS, AAA gas prices —
   are whitelisted in the script.)
+- **Duplicate** — the same article cited twice inside one entry, compared on a normalised URL so
+  trailing slashes and query strings still collide. This matters because the source count is the number
+  the 3-source minimum is measured against: a "3-source" entry carrying a dupe is really a 2-source entry.
+  It is easy to introduce accidentally when augmenting an entry with a source it already had.
+- **Wrong-article** (`--live`) — **`nbcnews.com` and `abcnews.go.com` address articles by ID and ignore
+  the slug.** A citation with an invented slug but a real ID returns **HTTP 200** while serving a
+  completely unrelated story, so a status-code check cannot see it. Confirmed live in this corpus: an
+  `rcna178202` URL captioned "Trump/Cheney nine barrels" serves a Diddy court story; an `rcna249012`
+  URL captioned "grand jury refuses to indict Democrats" serves a Heisman Trophy story. The script
+  compares the page's own `rel="canonical"` slug against the cited one. **A 200 is not proof a citation
+  is real** — this was the blind spot that made the first full sweep undercount.
 - **Liveness** — `404` and a `401` from Reuters both **fail**. `403`/`406`/`000` from known bot-blockers
   (WaPo, NYT, The Hill, Politico, HuffPost, Newsweek, WSJ, Bloomberg, centcom.mil) are reported as INFO,
   not failures, since those pages are real.
@@ -829,7 +840,10 @@ The user periodically drops a list of article URLs into `research.txt` at the wo
 3. **Validate before publishing** per the Validation/Bias-Prevention/Anti-Leakage protocols above (2+ independent sources, most-precise language, no fabricated URLs, flag `[NEEDS SOURCE]` gaps rather than filling from memory).
 4. **Scope discipline.** Skip items that aren't a Trump action/decision/direct consequence: pure Democratic controversies, society/personal news (e.g., family weddings), and opinion/commentary columns are out of scope. Note skips explicitly with the reason.
 5. **Run the pipeline** after writing/updating JSON: `cd controversial-trump/website && node sync-data.js && node generate-social.js && node audit-em-dashes.js && node verify-sources.js`. Both audits must come back clean: no em dashes in titles, and no citation pointing at a homepage. Add `--live` to `verify-sources.js` to also catch dead and fabricated links in the batch you just wrote.
-6. **Cross-repo augmentation (mandatory check).** For each new/updated entry, determine whether it strengthens a Civics Desk explainer or research page; augment where it fits, note explicitly where it doesn't. Then ask the user before pushing a batch of Civics Desk edits — they direct which articles to update. For election-related entries, also check `election-rigging/src/data/actions.json` ("Rigged Before the Vote"): fold developments into existing cards (facts/status) or add a new card, bump its `LAST_UPDATED`, and run its URL integrity check (see `election-rigging/CLAUDE.md`).
+6. **Cross-repo augmentation (mandatory check).** For each new/updated entry, determine whether it strengthens a Civics Desk explainer or research page; augment where it fits, note explicitly where it doesn't. Then ask the user before pushing a batch of Civics Desk edits — they direct which articles to update. For election-related entries, also check `election-rigging/src/data/actions.json` ("Rigged Before the Vote"): fold developments into existing cards (facts/status) or add a new card, bump its `LAST_UPDATED`, and run `node verify-sources.js` in that repo (see `election-rigging/CLAUDE.md`)
+   — it checks that every card source URL still traces to one of its seed tracker entries. Run it after
+   any tracker-side source correction too: dropping a fabricated URL in `controversial-trump` can orphan
+   a card that quoted it.
 
 ### The Civics Desk article roster and architecture
 

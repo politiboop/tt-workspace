@@ -40,3 +40,11 @@ Thumbs.db
 # --- Personal setup notes (not workspace content) ---
 claude-instructions.txt
 README.local.md
+
+# Audit working artifacts (regenerate with verify-sources.js)
+slug-audit.txt
+slug-audit.progress
+slug-mismatch.json
+today-live.txt
+today-live.csv
+dead-links-audit.csv
