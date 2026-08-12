@@ -224,7 +224,10 @@ cd controversial-trump && git add data/controversies/<new-file>.json
 # Step 2: Sync data + generate social images
 cd website && node sync-data.js && node generate-social.js
 
-# Step 3: Check research pages for augmentation (MANDATORY — see Part 3)
+# Step 3: Audit titles and citations (both must exit clean)
+node audit-em-dashes.js && node verify-sources.js
+
+# Step 4: Check research pages for augmentation (MANDATORY — see Part 3)
 # For EVERY new entry, consult the augmentation table and determine if it strengthens any research page.
 # If yes, augment the page. If no, note it explicitly.
 ```
@@ -731,17 +734,39 @@ claim. A flagged gap is the system working correctly.
 
 ### Source URL Verification — Check Before Syncing
 
-After creating or updating controversy entries, verify source URLs before syncing:
+`node website/verify-sources.js` automates this. Run it on every batch:
 
 ```bash
-# For each URL in a JSON file's sources array:
+cd controversial-trump/website
+node verify-sources.js                 # structural audit (offline, instant)
+node verify-sources.js --live          # + liveness check on every URL (slow, ~20 min for the full corpus)
+node verify-sources.js --live --id <entry-id>     # one entry
+node verify-sources.js --live --since 2026-08-01  # only recently-updated entries
+```
+
+It exits non-zero on failure, so it can gate the pipeline. Two classes of defect:
+
+- **Structural** — a citation whose text names a specific article but whose URL is a bare domain or a
+  generic index (`/news`, `/politics`). This is the defect that hides thin sourcing: a reader clicks
+  "Fox News interview with X (May 28, 2026)" and lands on the front page. A homepage link is not a
+  citation. (Live-data dashboards where the root genuinely IS the source — FRED, BLS, AAA gas prices —
+  are whitelisted in the script.)
+- **Liveness** — `404` and a `401` from Reuters both **fail**. `403`/`406`/`000` from known bot-blockers
+  (WaPo, NYT, The Hill, Politico, HuffPost, Newsweek, WSJ, Bloomberg, centcom.mil) are reported as INFO,
+  not failures, since those pages are real.
+
+**If a URL cannot be verified, DROP the source.** Do not substitute a homepage, and never invent a
+plausible-looking URL. A missing citation is a gap; a citation that does not support its claim is a
+credibility problem. If dropping takes an entry below the 3-source minimum, that entry was never
+adequately sourced — research more sources or soften the claim.
+
+Manual equivalent, for a one-off check:
+
+```bash
 curl -s -o /dev/null -w "%{http_code}" -L --max-time 15 "URL"
 # 200 = working | 403 = likely bot-blocking (WaPo, NYT, The Hill) | 404 = broken/fabricated
 # 401 from Reuters = almost certainly fabricated (Reuters returns 401 for non-existent URLs)
 ```
-
-For batch-created entries, spot-check at least 5 random entries per batch. For single entries created from
-user-provided articles, all URLs should be verified since they came from a known source.
 
 ---
 
@@ -803,7 +828,7 @@ The user periodically drops a list of article URLs into `research.txt` at the wo
 2. **Dedupe-check** against existing entries (`ls data/controversies/ | grep <keyword>` and Grep inside JSON) before creating anything. Updates to an ongoing story go into the existing entry; genuinely distinct events get new entries.
 3. **Validate before publishing** per the Validation/Bias-Prevention/Anti-Leakage protocols above (2+ independent sources, most-precise language, no fabricated URLs, flag `[NEEDS SOURCE]` gaps rather than filling from memory).
 4. **Scope discipline.** Skip items that aren't a Trump action/decision/direct consequence: pure Democratic controversies, society/personal news (e.g., family weddings), and opinion/commentary columns are out of scope. Note skips explicitly with the reason.
-5. **Run the pipeline** after writing/updating JSON: `cd controversial-trump/website && node sync-data.js && node generate-social.js && node audit-em-dashes.js`. The em-dash audit must come back clean (no em dashes in titles).
+5. **Run the pipeline** after writing/updating JSON: `cd controversial-trump/website && node sync-data.js && node generate-social.js && node audit-em-dashes.js && node verify-sources.js`. Both audits must come back clean: no em dashes in titles, and no citation pointing at a homepage. Add `--live` to `verify-sources.js` to also catch dead and fabricated links in the batch you just wrote.
 6. **Cross-repo augmentation (mandatory check).** For each new/updated entry, determine whether it strengthens a Civics Desk explainer or research page; augment where it fits, note explicitly where it doesn't. Then ask the user before pushing a batch of Civics Desk edits — they direct which articles to update. For election-related entries, also check `election-rigging/src/data/actions.json` ("Rigged Before the Vote"): fold developments into existing cards (facts/status) or add a new card, bump its `LAST_UPDATED`, and run its URL integrity check (see `election-rigging/CLAUDE.md`).
 
 ### The Civics Desk article roster and architecture

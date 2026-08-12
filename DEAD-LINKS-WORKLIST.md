@@ -1,0 +1,359 @@
+# Dead-link remediation worklist
+
+Generated from `node website/verify-sources.js --live` on 2026-08-11.
+
+**235 dead or fabricated links across 103 entries.** 13 are Reuters 401s (fabrication signal);
+75 point at 2025-2026 articles too new to have rotted.
+
+Rule: if a URL cannot be verified, DROP the source. Never substitute a homepage or invent a URL.
+If dropping takes an entry below 3 sources, it was never adequately sourced.
+
+Re-run `node website/verify-sources.js --live` to regenerate. Tick entries as they are cleared.
+
+## Wave 1 — ZERO working sources (unpublishable as-is) (3 entries, 15 links)
+
+- [ ] **ice-custody-death-royer-perez-jimenez** — 6/6 dead (catastrophic, 2026-03-16)
+    - `404` https://www.miaminewtimes.com/news/19-year-old-mexican-man-dies-presumed-suicide-ice-custody-glades
+    - `404` https://abcnews.go.com/US/19-year-old-dies-ice-custody-florida-detention/story
+    - `404` https://hanfordsentinel.com/news/nation-world/teen-dead-ice-detention-florida/article
+    - `404` https://www.npr.org/2026/03/17/ice-custody-death-royer-perez-jimenez-glades
+    - `404` https://www.cbsnews.com/news/19-year-old-dies-ice-custody-glades-county-detention/
+    - `404` https://www.ice.gov/news/releases/criminal-illegal-alien-passes-away-ice-custody-2026-03
+- [ ] **trump-backs-candidate-child-sex-offender** — 5/5 dead (moderate, 2026-03-16)
+    - `404` https://www.thedailybeast.com/trump-endorses-whatley-child-sex-offender-scandal
+    - `404` https://avlwatchdog.org/nc-gop-chair-elevated-convicted-child-sex-offender-leadership/
+    - `404` https://wlos.com/news/local/convicted-sex-offender-nc-republican-party-leadership-positions
+    - `404` https://www.carolinajournal.com/mecklenburg-gop-bars-felony-sex-offenders-leadership/
+    - `404` https://www.ncdp.org/press-releases/trump-endorses-whatley-child-sex-offender/
+- [ ] **third-country-deportations-unlawful** — 4/4 dead (serious, 2026-02-25)
+    - `401 (Reuters — fabrication signal)` https://www.reuters.com/legal/government/judge-blocks-third-country-deportations-due-process-2026-02-25/
+    - `404` https://apnews.com/article/trump-deportation-third-countries-rwanda-costa-rica-panama
+    - `404` https://www.theguardian.com/us-news/2026/feb/25/trump-third-country-deportation-rwanda-comparison
+    - `404` https://www.aclu.org/cases/challenge-third-country-deportations
+
+## Wave 2 — majority dead (>=50%) (52 entries, 161 links)
+
+- [ ] **erika-kirk-air-force-academy-christian-nationalism** — 6/7 dead (concerning, 2026-03-10)
+    - `404` https://theintercept.com/2026/03/10/erika-kirk-air-force-academy-christian-nationalism/
+    - `404` https://www.foxnews.com/politics/trump-erika-kirk-air-force-academy-board
+    - `404` https://www.military.com/daily-news/2026/03/10/charlie-kirks-widow-appointed-air-force-academy-oversight-board.html
+    - `404` https://www.stripes.com/branches/air_force/2026-03-10/erika-kirk-air-force-academy-board-christian-nationalism/
+    - `404` https://www.breitbart.com/politics/2026/03/10/trump-names-erika-kirk-air-force-academy-board/
+    - `404` https://www.christianpost.com/news/erika-kirk-air-force-academy-board-charlie-kirk-legacy.html
+- [ ] **court-blocks-rfk-vaccine-changes** — 5/6 dead (serious, 2026-03-16)
+    - `404` https://www.nbcnews.com/health/health-news/federal-judge-blocks-rfk-jr-vaccine-schedule-overhaul-rcna263000
+    - `404` https://www.npr.org/2026/03/16/court-blocks-kennedy-vaccine-schedule-acip
+    - `404` https://www.cbsnews.com/news/judge-blocks-rfk-jr-vaccine-schedule-arbitrary-capricious/
+    - `404` https://reason.com/2026/03/16/federal-court-strikes-down-kennedy-vaccine-schedule/
+    - `404` https://www.cnbc.com/2026/03/16/court-blocks-kennedy-childhood-vaccine-overhaul.html
+- [ ] **iran-strikes-israeli-cities-180-injured** — 5/6 dead (severe, 2026-03-21)
+    - `404` https://www.nbcnews.com/news/world/iran-strikes-israel-arad-dimona-nuclear-180-wounded-rcna263750
+    - `404` https://www.aljazeera.com/news/2026/3/21/iran-missiles-arad-dimona-natanz-retaliation
+    - `404` https://www.timesofisrael.com/180-wounded-iranian-missiles-arad-dimona-nuclear-center/
+    - `404` https://www.cbsnews.com/news/iran-missiles-israel-dimona-arad-air-defense-failure/
+    - `404` https://www.military.com/daily-news/2026/03/21/iranian-missiles-penetrate-israeli-defenses-dimona.html
+- [ ] **trump-nato-cowards-strait-hormuz** — 5/6 dead (moderate, 2026-03-20)
+    - `404` https://www.aljazeera.com/news/2026/3/20/trump-calls-nato-allies-cowards-strait-hormuz
+    - `404` https://www.nbcnews.com/politics/trump-nato-cowards-iran-war-hormuz-rcna263500
+    - `404` https://www.cbsnews.com/news/european-allies-rebuff-trump-iran-strait-hormuz/
+    - `404` https://www.foxnews.com/politics/graham-trump-furious-nato-hormuz-iran
+    - `404` https://www.upi.com/Top_News/2026/03/20/trump-nato-iran-reversal/
+- [ ] **cabinet-dissenter-retaliation** — 4/5 dead (severe, 2017-01-20)
+    - `404` https://www.bbc.com/news/world-us-canada-46644736
+    - `404` https://apnews.com/article/donald-trump-fires-mark-esper-64c5b7b2c31e7e6c0e6b1a1c5c5f5f5f
+    - `404` https://apnews.com/article/election-2020-joe-biden-donald-trump-virus-outbreak-elections-0d2ffdbf0cc1fe7bcf8f6f8f88afbd26
+    - `404` https://www.propublica.org/article/trump-inspector-general-firings-oversight
+- [ ] **hegseth-censures-senator-kelly** — 4/5 dead (serious, 2026-01-05)
+    - `404` https://www.npr.org/2026/01/05/hegseth-kelly-censure-military-retirement-pay
+    - `404` https://www.pbs.org/newshour/politics/judge-blocks-hegseth-censure-kelly
+    - `404` https://www.cnn.com/2026/02/12/politics/judge-blocks-kelly-military-retirement-pay/index.html
+    - `404` https://www.aljazeera.com/news/2026/1/5/hegseth-censures-senator-kelly-military-retirement
+- [ ] **intelligence-chiefs-contradict-witkoff-putin** — 4/5 dead (concerning, 2026-03-18)
+    - `404` https://www.cbsnews.com/news/intelligence-chiefs-contradict-witkoff-putin-threat-assessment/
+    - `404` https://www.npr.org/2026/03/18/intelligence-chiefs-witkoff-putin-iran
+    - `404` https://www.kyivpost.com/post/51234-us-intelligence-chiefs-refuse-take-putin-word
+    - `404` https://www.cnbc.com/2026/03/18/ratcliffe-putin-iran-intelligence-sharing.html
+- [ ] **trump-accidental-bondi-message-guilty-as-hell** — 4/5 dead (severe, 2025-09-20)
+    - `404` https://www.foxnews.com/politics/trump-accidentally-posts-private-message-bondi-truth-social
+    - `404` https://www.rollingstone.com/politics/politics-news/trump-bondi-message-prosecute-enemies-accidental-1235098765/
+    - `404` https://www.msnbc.com/rachel-maddow-show/maddowblog/trump-bondi-accidental-post-prosecutions-rcna188890
+    - `404` https://www.thedailybeast.com/trump-bondi-message-leak-indictments-timeline
+- [ ] **trump-actblue-investigation** — 4/5 dead (serious, 2025-04-24)
+    - `404` https://www.wbur.org/news/2025/04/24/trump-actblue-investigation-doj
+    - `404` https://www.democracydocket.com/analysis/trump-actblue-investigation-weaponizing-doj/
+    - `404` https://www.cnn.com/2025/04/24/politics/trump-actblue-investigation-doj/index.html
+    - `404` https://www.cnn.com/2025/08/15/politics/actblue-fundraising-despite-investigation/index.html
+- [ ] **trump-omar-tlaib-institutionalized-send-back** — 4/5 dead (serious, 2026-02-26)
+    - `404` https://abcnews.go.com/Politics/trump-omar-tlaib-lunatics-institutionalized-send-back/story
+    - `404` https://www.aljazeera.com/news/2026/2/26/trump-omar-tlaib-send-them-back-institutionalized
+    - `404` https://www.foxnews.com/politics/trump-omar-tlaib-state-of-the-union-response
+    - `404` https://www.salon.com/2026/02/26/trump-omar-tlaib-send-them-back-institutionalized/
+- [ ] **trump-rot-in-hell-christmas-2023** — 4/5 dead (concerning, 2023-12-25)
+    - `404` https://www.foxnews.com/politics/trump-sends-christmas-day-message-telling-those-who-seek-destruction-america-rot-hell
+    - `404` https://www.cnn.com/2023/12/25/politics/trump-christmas-message-rot-in-hell/index.html
+    - `404` https://www.salon.com/2023/12/25/trumps-christmas-message-may-they-rot-in-hell/
+    - `404` https://www.snopes.com/fact-check/trump-rot-in-hell-christmas/
+- [ ] **iran-president-letter-american-people-america-first** — 3/4 dead (moderate, 2026-04-02)
+    - `401 (Reuters — fabrication signal)` https://www.reuters.com/world/iran-president-letter-american-people/
+    - `404` https://www.aljazeera.com/news/2026/4/2/iran-president-letter-american-people-war
+    - `404` https://www.bbc.com/news/world-iran-pezeshkian-letter-americans
+- [ ] **reuters-470-retribution-targets** — 3/4 dead (severe, 2025-11-26)
+    - `404` https://www.inquirer.com/politics/nation/trump-retribution-targets-reuters-investigation-20251126.html
+    - `404` https://www.staradvertiser.com/2025/11/26/breaking-news/trump-retribution-targets-reuters/
+    - `404` https://en.wikipedia.org/wiki/Trump_retribution_and_enemies_list
+- [ ] **trump-racist-deepfake-schumer-jeffries** — 3/4 dead (serious, 2025-09-29)
+    - `404` https://www.cnn.com/2025/09/29/politics/trump-ai-deepfake-schumer-jeffries/index.html
+    - `404` https://abcnews.go.com/Politics/trump-shares-ai-generated-video-depicting-jeffries-schumer/story
+    - `404` https://thefulcrum.us/trump-deepfake-schumer-jeffries
+- [ ] **trump-rot-in-hell-nye-2025** — 3/4 dead (concerning, 2025-12-31)
+    - `404` https://www.thedailybeast.com/trump-new-years-eve-rot-in-hell-tirade-mar-a-lago
+    - `404` https://www.rawstory.com/trump-nye-rot-in-hell-omar-clooneys/
+    - `404` https://www.foxnews.com/politics/trump-new-years-eve-message-democrats-celebrities
+- [ ] **mullin-dhs-stolen-valor** — 5/7 dead (concerning, 2026-03-18)
+    - `404` https://www.foxnews.com/politics/mullin-war-smells-bad-stolen-valor-accusations-dhs
+    - `404` https://www.npr.org/2026/03/18/mullin-dhs-nomination-stolen-valor-committee-vote
+    - `404` https://www.politifact.com/article/2026/mar/18/mullin-war-classified-work-record/
+    - `404` https://newrepublic.com/article/mullin-stolen-valor-dhs-confirmation
+    - `404` https://dailycaller.com/2026/03/18/rand-paul-votes-against-mullin-dhs-violence/
+- [ ] **antifa-domestic-terrorist-designation** — 4/6 dead (serious, 2025-09-25)
+    - `404` https://www.whitehouse.gov/presidential-actions/executive-order-designating-antifa-domestic-terrorist-organization/
+    - `404` https://www.brennancenter.org/our-work/analysis-opinion/trump-antifa-domestic-terrorism-designation
+    - `404` https://www.cnn.com/2025/09/25/politics/trump-antifa-domestic-terrorist-designation/index.html
+    - `404` https://www.factcheck.org/2025/09/trump-antifa-domestic-terrorist-designation/
+- [ ] **bondi-epstein-briefing-walkout-subpoena** — 4/6 dead (serious, 2026-03-18)
+    - `404` https://www.cbsnews.com/news/bondi-house-oversight-epstein-files-subpoena/
+    - `404` https://www.cbsnews.com/news/democrats-walkout-bondi-epstein-briefing-fake-hearing/
+    - `404` https://abcnews.go.com/Politics/bondi-epstein-subpoena-house-oversight/story
+    - `404` https://www.democracynow.org/2026/3/19/bondi_epstein_walkout_subpoena
+- [ ] **powell-confirms-trump-policies-causing-inflation** — 4/6 dead (serious, 2026-03-18)
+    - `404` https://newrepublic.com/post/204567/powell-confirms-trump-tariffs-driving-inflation
+    - `404` https://www.cnn.com/2026/03/18/economy/fed-interest-rate-decision-march
+    - `404` https://www.foxbusiness.com/economy/fed-holds-rates-steady-powell-tariff-inflation
+    - `404` https://finance.yahoo.com/news/fed-leaves-rates-unchanged-powell-tariffs-oil-inflation-2026-03-18.html
+- [ ] **canada-separatist-meetings** — 2/3 dead (serious, 2026-01-29)
+    - `404` https://nationalpost.com/news/politics/u-s-officials-met-with-group-that-hopes-to-separate-alberta-from-canada-report-says
+    - `404` https://www.foxnews.com/politics/report-u-s-officials-met-group-separate-alberta-from-canada-report-says
+- [ ] **judge-blocks-10b-child-care-freeze-blue-states** — 2/3 dead (serious, 2026-02-07)
+    - `404` https://www.cnbc.com/2026/02/07/judge-blocks-trump-child-care-funding-freeze.html
+    - `404` https://www.nbcnews.com/politics/trump-child-care-funding-freeze-blue-states
+- [ ] **trump-100-percent-pharma-tariffs** — 2/3 dead (serious, 2026-04-02)
+    - `404` https://www.cnbc.com/2026/04/02/trump-pharmaceutical-tariffs-executive-order.html
+    - `401 (Reuters — fabrication signal)` https://www.reuters.com/business/healthcare-pharmaceuticals/trump-pharma-tariffs/
+- [ ] **trump-lied-iran-no-air-defenses-jets-shot-down** — 2/3 dead (severe, 2026-04-04)
+    - `404` https://www.cnn.com/2026/04/04/politics/us-jets-shot-down-iran-air-defenses
+    - `404` https://www.npr.org/2026/04/04/us-jets-shot-down-iran
+- [ ] **uk-withholding-intelligence-trump** — 2/3 dead (serious, 2026-04-01)
+    - `404` https://www.theguardian.com/us-news/uk-intelligence-sharing-caribbean-trump
+    - `401 (Reuters — fabrication signal)` https://www.reuters.com/world/netherlands-intelligence-sharing-us-review/
+- [ ] **vance-blindsided-budapest-learns-strikes-from-reporters** — 2/3 dead (moderate, 2026-04-07)
+    - `404` https://www.cnn.com/2026/04/07/politics/vance-budapest-iran-strikes-blindsided
+    - `404` https://www.washingtonexaminer.com/news/vance-budapest-trump-iran-leverage/
+- [ ] **grand-jury-refuses-indict-six-democrats** — 3/5 dead (serious, 2026-02-10)
+    - `404` https://www.cbsnews.com/news/grand-jury-refuses-indict-democratic-lawmakers-military-orders-video/
+    - `404` https://www.cnn.com/2026/02/10/politics/grand-jury-refuses-indict-democrats/index.html
+    - `404` https://www.cnbc.com/2026/02/10/grand-jury-refuses-indict-democrats-military-orders.html
+- [ ] **retaliatory-indictments-comey-james-bolton** — 3/5 dead (severe, 2025-11-24)
+    - `404` https://www.npr.org/2025/11/24/judge-dismisses-comey-james-cases-prosecutor-unlawful
+    - `404` https://www.cnn.com/2025/11/24/politics/retaliatory-prosecutions-comey-james-bolton-timeline/index.html
+    - `404` https://www.cnbc.com/2025/10/16/bolton-indicted-trump-doj-targets-third-critic.html
+- [ ] **rfk-jr-never-anti-vaccine-claim-measles-crisis** — 3/5 dead (catastrophic, 2026-04-17)
+    - `404` https://www.factcheck.org/2023/08/scicheck-rfk-jr-incorrectly-denies-past-remarks-on-vaccine-safety-and-effectiveness/
+    - `404` https://www.cnn.com/2023/08/14/politics/rfk-jr-vaccine-claims-fact-check/index.html
+    - `404` https://abcnews.com/Health/rfk-jr-defends-vaccine-views-autism-comments-house-committee/story?id=132133560
+- [ ] **trump-cheney-nine-barrels** — 3/5 dead (severe, 2024-10-31)
+    - `404` https://www.pbs.org/newshour/politics/trump-suggests-liz-cheney-should-have-guns-trained-on-her-face
+    - `404` https://www.aljazeera.com/news/2024/11/1/trump-suggests-cheney-should-face-firing-squad
+    - `404` https://rollcall.com/2024/11/01/cheney-responds-trump-firing-squad-dictators/
+- [ ] **trump-enemy-from-within-military** — 3/5 dead (severe, 2024-10-13)
+    - `404` https://www.politifact.com/article/2024/oct/17/in-context-donald-trumps-enemy-from-within-comment/
+    - `404` https://www.snopes.com/fact-check/trump-enemy-from-within-military/
+    - `404` https://www.cnn.com/2024/10/14/politics/trump-enemy-from-within-military-election-day/index.html
+- [ ] **trump-military-tribunals-cheney** — 3/5 dead (severe, 2024-06-30)
+    - `404` https://www.cnn.com/2024/06/30/politics/trump-truth-social-military-tribunals-cheney/index.html
+    - `404` https://www.msnbc.com/rachel-maddow-show/maddowblog/trump-shares-post-calling-televised-military-tribunal-liz-cheney-rcna159940
+    - `404` https://www.justsecurity.org/97217/trump-military-tribunals-political-opponents/
+- [ ] **trump-sotu-attacks-democrats** — 3/5 dead (serious, 2026-02-25)
+    - `404` https://www.npr.org/2026/02/25/nx-s1-5720843/trump-state-of-the-union-address-annotated
+    - `404` https://www.cbsnews.com/live-updates/trump-state-of-the-union-2026/
+    - `404` https://www.foxnews.com/politics/trump-state-union-2026-longest-history
+- [ ] **trump-university-fraud** — 3/5 dead (severe, 2018-04-09)
+    - `404` https://www.npr.org/sections/thetwo-way/2016/11/18/502587293/trump-agrees-to-25-million-settlement-in-trump-university-fraud-cases
+    - `404` https://www.cnn.com/2018/04/10/politics/trump-university-settlement/index.html
+    - `404` https://ag.ny.gov/press-release/2013/ag-schneiderman-files-civil-fraud-lawsuit-against-donald-trump-trump-university
+- [ ] **trump-vermin-speech** — 3/5 dead (severe, 2023-11-11)
+    - `404` https://abcnews.go.com/Politics/trumps-use-vermin-describe-political-opponents-draws-comparisons/story?id=104868461
+    - `404` https://www.rollingstone.com/politics/politics-news/trump-vermin-veterans-day-rally-1234881872/
+    - `404` https://www.poynter.org/fact-checking/2023/trump-vermin-veterans-day-fascism/
+- [ ] **trump-glad-mueller-dead** — 4/7 dead (moderate, 2026-03-21)
+    - `404` https://www.foxnews.com/media/brit-hume-trump-mueller-death-reaction
+    - `404` https://www.npr.org/2026/03/20/robert-mueller-dies-81
+    - `404` https://www.stripes.com/veterans/2026-03-20/robert-mueller-vietnam-veteran-fbi-director-dies-81/
+    - `404` https://www.cbc.ca/news/world/trump-mueller-death-celebration/
+- [ ] **trump-pearl-harbor-joke-japanese-pm** — 4/7 dead (concerning, 2026-03-19)
+    - `404` https://www.nbcnews.com/politics/white-house/trump-pearl-harbor-joke-japanese-prime-minister
+    - `404` https://www.foxnews.com/politics/trump-pearl-harbor-quip-japanese-pm-iran
+    - `404` https://www.cnn.com/2026/03/19/politics/trump-pearl-harbor-japan-prime-minister
+    - `404` https://www.militarytimes.com/news/your-military/2026/03/19/trump-pearl-harbor-remark-japan/
+- [ ] **national-debt-39-trillion** — 4/8 dead (serious, 2026-03-18)
+    - `404` https://fortune.com/2026/03/18/national-debt-hits-39-trillion/
+    - `404` https://www.foxbusiness.com/economy/us-national-debt-surpasses-39-trillion
+    - `404` https://www.crfb.org/blogs/national-debt-hits-39-trillion
+    - `404` https://www.dailywire.com/news/us-national-debt-hits-record-39-trillion
+- [ ] **birthright-citizenship-executive-order** — 3/6 dead (severe, 2025-01-20)
+    - `404` https://apnews.com/article/trump-birthright-citizenship-executive-order-blocked-judge-14th-amendment
+    - `401 (Reuters — fabrication signal)` https://www.reuters.com/legal/government/judges-block-trump-birthright-citizenship-executive-order-2025-01-23/
+    - `404` https://www.npr.org/2025/01/20/nx-s1-5268028/trump-birthright-citizenship-executive-order
+- [ ] **trump-law-firm-executive-orders** — 3/6 dead (severe, 2025-03-06)
+    - `401 (Reuters — fabrication signal)` https://www.reuters.com/legal/government/trump-signs-executive-order-targeting-perkins-coie-law-firm-2025-03-06/
+    - `404` https://www.npr.org/2025/03/07/nx-s1-5319988/judge-blocks-trump-perkins-coie-executive-order
+    - `404` https://www.cnn.com/2025/03/06/politics/trump-law-firm-executive-orders/index.html
+- [ ] **confused-biden-with-obama** — 2/4 dead (absurd, 2024-01-20)
+    - `404` https://apnews.com/article/trump-obama-biden-2024-gaffes-2df1b598728b3d5c0cf55d2746a1e83a
+    - `401 (Reuters — fabrication signal)` https://www.reuters.com/world/us/trump-confuses-obama-biden-rally-2024-01-19/
+- [ ] **epa-hfc-refrigerant-phasedown-delay-zeldin** — 2/4 dead (moderate, 2026-05-21)
+    - `404` https://www.pbs.org/newshour/politics/watch-trump-zeldin-announce-looser-rule-on-refrigerant-greenhouse-gases
+    - `404` https://www.hklaw.com/en/insights/publications/2026/05/epa-finalizes-changes-to-technology-transitions
+- [ ] **gas-prices-cross-four-dollars-iran-war** — 2/4 dead (serious, 2026-03-31)
+    - `404` https://www.cnbc.com/2026/03/31/gas-prices-four-dollars-iran-war.html
+    - `404` https://www.npr.org/2026/03/31/gas-prices-four-dollars-iran-war
+- [ ] **iran-war-shifting-justifications** — 2/4 dead (moderate, 2026-03-03)
+    - `404` https://www.cnn.com/2026/03/03/politics/trump-iran-war-justifications-shifting/index.html
+    - `404` https://www.npr.org/2026/03/03/iran-war-justifications-iraq-comparison
+- [ ] **minnesota-medicaid-funding-withheld** — 2/4 dead (serious, 2026-02-25)
+    - `404` https://apnews.com/article/vance-minnesota-medicaid-funding-withheld-walz
+    - `404` https://www.mprnews.org/story/2026/03/03/minnesota-sues-federal-government-medicaid-funding
+- [ ] **nih-grants-cancelled-694** — 2/4 dead (severe, 2025-03-15)
+    - `404` https://science.house.gov/hearing/nih-research-terminations
+    - `404` https://www.statnews.com/2025/03/20/nih-clinical-trials-terminated-patients-abandoned/
+- [ ] **nobel-laureates-scientists-warnings** — 2/4 dead (severe, 2024-12-10)
+    - `404` https://www.npr.org/sections/health-shots/2024/12/11/nx-s1-5224918/doctors-health-professionals-oppose-rfk-jr
+    - `404` https://www.statnews.com/2024/11/15/rfk-jr-hhs-secretary-medical-groups-concerns/
+- [ ] **patel-fires-fbi-agents-class-action-lawsuit** — 2/4 dead (severe, 2026-03-31)
+    - `404` https://www.nbcnews.com/politics/fbi-agents-fired-patel-class-action-lawsuit
+    - `404` https://www.cnn.com/2026/03/31/politics/fbi-agents-lawsuit-patel-fired
+- [ ] **pentagon-media-rules-war-reporting-suppressed** — 2/4 dead (serious, 2026-03-23)
+    - `401 (Reuters — fabrication signal)` https://www.reuters.com/legal/government/judge-strikes-pentagon-media-rules-first-amendment/
+    - `404` https://www.cnn.com/2026/03/24/politics/pentagon-media-rules-defiance-court-order
+- [ ] **trump-crockett-low-iq** — 2/4 dead (concerning, 2025-09-25)
+    - `404` https://www.foxnews.com/politics/crockett-fires-back-trump-low-iq-attack
+    - `404` https://www.thedailybeast.com/trump-singles-out-crockett-low-iq-insult-veiled-threat
+- [ ] **trump-library-hotel-scheme-67-million-land** — 2/4 dead (serious, 2026-04-01)
+    - `404` https://www.npr.org/2026/03/31/trump-presidential-library-miami-hotel
+    - `404` https://www.foxnews.com/politics/trump-presidential-library-miami-renderings
+- [ ] **trump-primetime-iran-address-mtg-war-war-war** — 2/4 dead (moderate, 2026-04-01)
+    - `404` https://www.foxnews.com/politics/marjorie-taylor-greene-trump-iran-address-war
+    - `404` https://www.cbsnews.com/news/poll-iran-war-trump-approval/
+- [ ] **white-house-leaks-easter-lunch-king-quote** — 2/4 dead (moderate, 2026-04-01)
+    - `404` https://www.cnn.com/2026/04/02/politics/trump-easter-lunch-king-leaked-video
+    - `404` https://www.thedailybeast.com/trump-leaked-easter-lunch-take-oil-iran/
+
+## Wave 3 — remainder (48 entries, 59 links)
+
+- [ ] **trump-obliterate-iran-power-plants-ultimatum** — 3/7 dead (severe, 2026-03-21)
+    - `404` https://www.foxnews.com/politics/trump-threatens-obliterate-iran-power-plants-strait-hormuz-48-hours
+    - `404` https://www.npr.org/2026/03/21/trump-iran-48-hour-ultimatum-strait-hormuz-power-plants
+    - `404` https://www.aljazeera.com/news/2026/3/22/iran-warns-gulf-infrastructure-targets-trump-power-plant-threat
+- [ ] **hegseth-fires-army-chief-of-staff-mid-war** — 2/5 dead (severe, 2026-04-02)
+    - `404` https://www.cbsnews.com/news/army-chief-of-staff-randy-george-hegseth/
+    - `404` https://apnews.com/article/army-chief-staff-george-hegseth-resign
+- [ ] **trump-emergency-powers-midterm-elections** — 2/5 dead (severe, 2026-03-03)
+    - `404` https://www.theguardian.com/us-news/2026/mar/03/senate-democrats-block-trump-emergency-election-powers
+    - `404` https://www.cnn.com/2026/03/03/politics/trump-emergency-powers-elections-constitutional-crisis/index.html
+- [ ] **trump-iran-leak-prosecute-democrats** — 2/5 dead (serious, 2025-06-26)
+    - `404` https://www.commondreams.org/news/trump-iran-leak-prosecute-democrats
+    - `404` https://www.dailywire.com/news/trump-calls-for-prosecution-of-democrats-iran-leak
+- [ ] **trump-seditious-behavior-death-six-democrats** — 2/5 dead (severe, 2025-11-20)
+    - `404` https://www.pbs.org/newshour/politics/trump-threatens-democratic-lawmakers-death-seditious-behavior
+    - `404` https://www.cnn.com/2025/11/22/politics/slotkin-threats-trump-seditious-posts/index.html
+- [ ] **blanche-lies-all-epstein-files-released** — 2/6 dead (serious, 2026-04-03)
+    - `404` https://www.cnn.com/2026/04/03/politics/blanche-epstein-files-claim
+    - `404` https://www.nbcnews.com/politics/massie-blanche-epstein-files-transparency-act
+- [ ] **body-slamming-reporter** — 1/3 dead (serious, 2017-07-02)
+    - `404` https://www.cnn.com/2017/07/02/politics/trump-cnn-wwe-video/index.html
+- [ ] **bondi-doj-drops-23000-cases-immigration** — 1/3 dead (severe, 2026-03-31)
+    - `404` https://www.nbcnews.com/politics/doj-declined-criminal-cases-bondi-immigration
+- [ ] **corporate-tax-cuts-inauguration-ceos** — 1/3 dead (serious, 2026-03-31)
+    - `404` https://itep.org/corporate-tax-avoidance-trump-tax-cuts/
+- [ ] **fema-gregg-phillips-teleportation** — 1/3 dead (concerning, 2026-04-01)
+    - `404` https://www.thedailybeast.com/trump-fema-gregg-phillips-teleportation/
+- [ ] **hegseth-attempted-defense-stock-investment** — 1/3 dead (serious, 2026-03-31)
+    - `404` https://www.theguardian.com/us-news/hegseth-defense-stocks-iran
+- [ ] **iran-peace-talks-dead-end-trump-attacked-during-negotiations** — 1/3 dead (serious, 2026-04-03)
+    - `404` https://www.aljazeera.com/news/2026/4/3/iran-refuses-us-talks-islamabad-dead-end
+- [ ] **military-officers-dilemma-disobey-or-war-crimes** — 1/3 dead (severe, 2026-04-06)
+    - `404` https://www.theguardian.com/us-news/trump-seditious-behavior-death-illegal-orders
+- [ ] **satellite-imagery-blackout-iran-war** — 1/3 dead (serious, 2026-04-05)
+    - `404` https://www.aljazeera.com/news/2026/4/5/planet-labs-iran-satellite-imagery
+- [ ] **trump-cant-fund-daycare-fighting-wars** — 1/3 dead (serious, 2026-04-01)
+    - `404` https://www.cnn.com/2026/04/01/politics/trump-daycare-medicare-wars
+- [ ] **trump-skips-iran-war-wounded-walter-reed-visit** — 1/3 dead (concerning, 2026-05-27)
+    - `404` https://www.cbsnews.com/news/trump-walter-reed-may-27/
+- [ ] **trump-storms-out-scotus-birthright-citizenship** — 3/12 dead (severe, 2026-04-01)
+    - `404` https://www.cnn.com/2026/04/01/politics/trump-scotus-birthright-citizenship-arguments
+    - `404` https://www.nbcnews.com/politics/supreme-court-birthright-citizenship-trump-arguments
+    - `401 (Reuters — fabrication signal)` https://www.reuters.com/world/us/trump-scotus-birthright-citizenship-arguments/
+- [ ] **doj-mass-exodus-stacey-young-justice-connection** — 2/8 dead (severe, 2026-04-29)
+    - `404` https://www.thejusticeconnection.org/in-the-news/
+    - `404` https://www.thejusticeconnection.org/statement-on-release-of-face-act-report/
+- [ ] **denied-terminate-constitution** — 1/4 dead (moderate, 2023-12-05)
+    - `404` https://abcnews.go.com/Politics/trump-calls-termination-rules-regulations-articles-constitution/story?id=93751206
+- [ ] **impeachment-resolution-13-articles-52-percent-support** — 1/4 dead (severe, 2026-04-06)
+    - `404` https://cbs6albany.com/news/local/tonko-calls-for-congress-to-reconvene-consider-impeachment-after-president-trump-iran-threats
+- [ ] **measles-elimination-status-lost** — 1/4 dead (catastrophic, 2025-06-15)
+    - `404` https://www.who.int/news/item/15-06-2025-united-states-measles-elimination-status
+- [ ] **musk-joins-trump-modi-call-iran-war** — 1/4 dead (serious, 2026-03-27)
+    - `401 (Reuters — fabrication signal)` https://www.reuters.com/world/india-denies-musk-participated-trump-modi-call/
+- [ ] **muslim-ban** — 1/4 dead (serious, 2017-01-27)
+    - `404` https://www.aclunc.org/sites/muslim-ban/
+- [ ] **trade-deficit-record-despite-tariffs** — 1/4 dead (serious, 2026-02-19)
+    - `404` https://abcnews.com/Business/wireStory/us-trade-deficit-slipped-901-billion-year-amid-130297929
+- [ ] **trump-jack-smith-sick-son-of-bitch** — 1/4 dead (concerning, 2026-01-15)
+    - `404` https://www.cnn.com/2026/01/15/politics/trump-jack-smith-white-house-press-briefing/index.html
+- [ ] **trump-threatens-destroy-iran-desalination-plants** — 1/4 dead (severe, 2026-03-30)
+    - `404` https://www.aljazeera.com/news/2026/3/22/is-trumps-threat-to-bomb-irans-civilian-infrastructure-a-war-crime
+- [ ] **two-dozen-states-sue-fema-dhs-election-immigration-conditions** — 1/4 dead (serious, 2026-07-23)
+    - `404` https://abcnews.com/US/wireStory/24-states-sue-trump-administration-after-put-conditions-135027371
+- [ ] **abortion-flip-flop-denial** — 1/5 dead (concerning, 2024-09-09)
+    - `404` https://www.npr.org/2024/04/08/1243458271/trump-abortion-positions-timeline
+- [ ] **economic-record-revisionism** — 1/5 dead (concerning, 2025-01-20)
+    - `404` https://www.forbes.com/sites/chuckjones/2020/02/17/obamas-last-three-years-of-job-growth-all-beat-trumps-best-year/
+- [ ] **epstein-relationship-denial** — 1/5 dead (serious, 2024-07-15)
+    - `404` https://www.insider.com/donald-trump-jeffrey-epstein-flight-logs-unsealed-2021-9
+- [ ] **jan6-pipe-bomber-claims-trump-pardon** — 1/5 dead (serious, 2026-03-16)
+    - `404` https://abcnews.com/US/wireStory/man-charged-planting-pipe-bombs-jan-6-riot-131149419
+- [ ] **trump-epstein-wsj-defamation-lawsuit-dismissed** — 1/5 dead (concerning, 2026-04-13)
+    - `401 (Reuters — fabrication signal)` https://www.reuters.com/legal/government/trump-refiles-10-billion-defamation-suit-against-wsj-over-report-epstein-ties-2026-05-28/
+- [ ] **trump-harris-mentally-disabled** — 1/5 dead (moderate, 2024-09-28)
+    - `404` https://www.aljazeera.com/news/2024/9/29/trump-calls-harris-mentally-impaired-drawing-condemnation
+- [ ] **trump-ufc-cage-south-lawn-80th-birthday** — 1/5 dead (absurd, 2026-05-27)
+    - `404` https://apnews.com/article/trump-ufc-white-house-250th-birthday
+- [ ] **white-house-ice-polling-places-midterms** — 1/5 dead (severe, 2026-02-05)
+    - `404` https://www.union-bulletin.com/news/national/ice-should-surround-polling-places-in-midterm-elections-steve-bannon-says/article_b512bfd3-92ef-5282-b9c1-1e783e4ba2f0.html
+- [ ] **trump-fabricates-ex-president-iran-endorsement** — 1/6 dead (moderate, 2026-03-16)
+    - `404` https://abcnews.com/US/wireStory/trump-former-president-iran-confession-aides-predecessors-deny-131134562
+- [ ] **trump-treason-question-health** — 1/6 dead (serious, 2025-12-09)
+    - `404` https://abcnews.go.com/US/wireStory/new-york-times-after-trump-post-deterred-writing-128290095
+- [ ] **devin-nunes-quits-trump-media-stock-collapse** — 1/7 dead (concerning, 2026-04-22)
+    - `404` https://abcnews.com/Technology/wireStory/trump-media-company-replaces-ceo-congressman-nunes-after-132256965
+- [ ] **jacobin-thiel-epstein-vance-trump-network** — 1/7 dead (serious, 2026-04-30)
+    - `404` https://www.union-bulletin.com/news/national/epstein-orbited-peter-thiel-for-years-over-money-connections-and-advice/article_4a26fbdd-f713-5fdb-a05a-817fb0027985.html
+- [ ] **trump-accounts-visa-partnership** — 1/7 dead (concerning, 2026-01-28)
+    - `404` https://www.aol.com/articles/visa-planning-allow-cardholders-spend-172930197.html
+- [ ] **e-jean-carroll-verdict** — 2/15 dead (serious, 2023-05-09)
+    - `404` https://www.cnn.com/2023/05/09/politics/donald-trump-liable-e-jean-carroll-battery-trial/index.html
+    - `401 (Reuters — fabrication signal)` https://www.reuters.com/legal/jury-orders-trump-pay-additional-833-million-e-jean-carroll-2024-01-26/
+- [ ] **dhs-administrative-subpoenas-targeting-critics** — 1/8 dead (severe, 2026-02-03)
+    - `404` https://www.aclunc.org/news/dhs-withdraws-subpoena-seeking-unmask-instagram-users-who-posted-about-ice-raids
+- [ ] **trump-civilization-will-die-tonight-bridge-power-day** — 1/8 dead (catastrophic, 2026-04-07)
+    - `404` https://www.aljazeera.com/news/2026/4/7/iran-war-live-trump-warns-of-devastating-attacks-as-deal-deadline-nears
+- [ ] **trump-signature-currency-165-year-tradition** — 1/8 dead (moderate, 2026-03-26)
+    - `401 (Reuters — fabrication signal)` https://www.reuters.com/world/us/trumps-signature-appear-us-currency-treasury-says-ending-165-year-tradition-2026-03-26/
+- [ ] **classified-docs-business-interests-smith-memo** — 1/9 dead (severe, 2026-03-25)
+    - `404` https://lasvegassun.com/news/2026/mar/25/trump-showed-off-a-classified-map-during-a-2022-pl/
+- [ ] **don-lemon-arrest** — 1/11 dead (severe, 2026-01-30)
+    - `404` https://kstp.com/kstp-news/top-news/journalist-don-lemon-arrested-after-protest-that-disrupted-minnesota-church-service/
+- [ ] **trump-sues-bbc-10-billion** — 1/13 dead (serious, 2025-12-16)
+    - `404` https://abcnews.go.com/Entertainment/wireStory/bbc-seeks-dismiss-trumps-10b-defamation-lawsuit-florida-129157222
+- [ ] **trump-sues-irs-10-billion** — 1/15 dead (severe, 2026-01-29)
+    - `404` https://abcnews.go.com/Business/wireStory/trumps-10-billion-lawsuit-irs-raises-conflict-interest-129797652
+
