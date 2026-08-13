@@ -172,19 +172,19 @@ Re-run `node website/verify-sources.js --live` to regenerate. Tick entries as th
     - `404` https://www.cnn.com/2024/06/30/politics/trump-truth-social-military-tribunals-cheney/index.html
     - `404` https://www.msnbc.com/rachel-maddow-show/maddowblog/trump-shares-post-calling-televised-military-tribunal-liz-cheney-rcna159940
     - `404` https://www.justsecurity.org/97217/trump-military-tribunals-political-opponents/
-- [ ] **trump-sotu-attacks-democrats** — 3/5 dead (serious, 2026-02-25)
+- [x] **trump-sotu-attacks-democrats** — 3/5 dead (serious, 2026-02-25)
     - `404` https://www.npr.org/2026/02/25/nx-s1-5720843/trump-state-of-the-union-address-annotated
     - `404` https://www.cbsnews.com/live-updates/trump-state-of-the-union-2026/
     - `404` https://www.foxnews.com/politics/trump-state-union-2026-longest-history
-- [ ] **trump-university-fraud** — 3/5 dead (severe, 2018-04-09)
+- [x] **trump-university-fraud** — 3/5 dead (severe, 2018-04-09)
     - `404` https://www.npr.org/sections/thetwo-way/2016/11/18/502587293/trump-agrees-to-25-million-settlement-in-trump-university-fraud-cases
     - `404` https://www.cnn.com/2018/04/10/politics/trump-university-settlement/index.html
     - `404` https://ag.ny.gov/press-release/2013/ag-schneiderman-files-civil-fraud-lawsuit-against-donald-trump-trump-university
-- [ ] **trump-vermin-speech** — 3/5 dead (severe, 2023-11-11)
+- [x] **trump-vermin-speech** — 3/5 dead (severe, 2023-11-11)
     - `404` https://abcnews.go.com/Politics/trumps-use-vermin-describe-political-opponents-draws-comparisons/story?id=104868461
     - `404` https://www.rollingstone.com/politics/politics-news/trump-vermin-veterans-day-rally-1234881872/
     - `404` https://www.poynter.org/fact-checking/2023/trump-vermin-veterans-day-fascism/
-- [ ] **trump-glad-mueller-dead** — 4/7 dead (moderate, 2026-03-21)
+- [x] **trump-glad-mueller-dead** — 4/7 dead (moderate, 2026-03-21)
     - `404` https://www.foxnews.com/media/brit-hume-trump-mueller-death-reaction
     - `404` https://www.npr.org/2026/03/20/robert-mueller-dies-81
     - `404` https://www.stripes.com/veterans/2026-03-20/robert-mueller-vietnam-veteran-fbi-director-dies-81/
@@ -213,10 +213,10 @@ Re-run `node website/verify-sources.js --live` to regenerate. Tick entries as th
 - [ ] **epa-hfc-refrigerant-phasedown-delay-zeldin** — 2/4 dead (moderate, 2026-05-21)
     - `404` https://www.pbs.org/newshour/politics/watch-trump-zeldin-announce-looser-rule-on-refrigerant-greenhouse-gases
     - `404` https://www.hklaw.com/en/insights/publications/2026/05/epa-finalizes-changes-to-technology-transitions
-- [ ] **gas-prices-cross-four-dollars-iran-war** — 2/4 dead (serious, 2026-03-31)
+- [x] **gas-prices-cross-four-dollars-iran-war** — 2/4 dead (serious, 2026-03-31)
     - `404` https://www.cnbc.com/2026/03/31/gas-prices-four-dollars-iran-war.html
     - `404` https://www.npr.org/2026/03/31/gas-prices-four-dollars-iran-war
-- [ ] **iran-war-shifting-justifications** — 2/4 dead (moderate, 2026-03-03)
+- [x] **iran-war-shifting-justifications** — 2/4 dead (moderate, 2026-03-03)
     - `404` https://www.cnn.com/2026/03/03/politics/trump-iran-war-justifications-shifting/index.html
     - `404` https://www.npr.org/2026/03/03/iran-war-justifications-iraq-comparison
 - [ ] **minnesota-medicaid-funding-withheld** — 2/4 dead (serious, 2026-02-25)
@@ -237,7 +237,7 @@ Re-run `node website/verify-sources.js --live` to regenerate. Tick entries as th
 - [ ] **trump-crockett-low-iq** — 2/4 dead (concerning, 2025-09-25)
     - `404` https://www.foxnews.com/politics/crockett-fires-back-trump-low-iq-attack
     - `404` https://www.thedailybeast.com/trump-singles-out-crockett-low-iq-insult-veiled-threat
-- [ ] **trump-library-hotel-scheme-67-million-land** — 2/4 dead (serious, 2026-04-01)
+- [x] **trump-library-hotel-scheme-67-million-land** — 2/4 dead (serious, 2026-04-01)
     - `404` https://www.npr.org/2026/03/31/trump-presidential-library-miami-hotel
     - `404` https://www.foxnews.com/politics/trump-presidential-library-miami-renderings
 - [ ] **trump-primetime-iran-address-mtg-war-war-war** — 2/4 dead (moderate, 2026-04-01)

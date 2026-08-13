@@ -52,7 +52,7 @@ Controversies live in `data/controversies/*.json`. Each file follows this schema
   "title": "Full descriptive title",
   "primaryCategory": "one-of-the-valid-categories",
   "severity": "one-of-the-valid-severities",
-  "timeline": "first-term | second-term | pre-presidency",
+  "timeline": "second-term | first-term | campaign-2024 | pre-2016 | between-terms | pre-presidency",
   "date": "YYYY-MM-DD",
   "summary": "Multi-paragraph summary using \\n\\n for breaks",
   "keyFacts": [
@@ -81,6 +81,18 @@ Only these values are accepted in `primaryCategory`. Using anything else causes 
 `ice-enforcement` | `public-health` | `absurd`
 
 **DO NOT** use `personal-conduct`, `foreign-policy`, `economy`, or any other made-up category.
+
+### Valid Timelines (STRICT)
+
+`second-term` | `first-term` | `campaign-2024` | `pre-2016` | `between-terms` | `pre-presidency`
+
+These are the six values the data actually uses and that `website/src/pages/timeline/` renders. The docs
+previously listed only three, so entries dated to the 2024 campaign look like schema violations when
+they are not. Check the live distribution before assuming a value is wrong:
+
+```bash
+cd controversial-trump/data/controversies && node -e "const fs=require('fs');const c={};for(const f of fs.readdirSync('.').filter(x=>x.endsWith('.json'))){const j=JSON.parse(fs.readFileSync(f,'utf8'));c[j.timeline]=(c[j.timeline]||0)+1}console.log(c)"
+```
 
 ### Valid Severities (STRICT)
 
