@@ -48,3 +48,6 @@ slug-mismatch.json
 today-live.txt
 today-live.csv
 dead-links-audit.csv
+npr-audit.txt
+npr-audit.progress
+npr-mismatch.json
