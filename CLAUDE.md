@@ -108,7 +108,7 @@ The 7-tier system exists so that genuinely catastrophic events (mass deaths, rul
 
 | Severity | When to use | Target % | Examples |
 |---|---|---|---|
-| `catastrophic` | Irreversible mass harm — deaths at scale, war crimes, nuclear risk, rule-of-law collapse, destruction of a democratic institution that cannot be rebuilt quickly. | **<8%** | Family separation (5,500+ children); "whole civilization will die tonight"; 180+ killed in boat strikes; nuclear testing order; SPLC indictment freezing Hatewatch; US measles elimination lost. |
+| `catastrophic` | Irreversible mass harm — deaths at scale, war crimes, nuclear risk, rule-of-law collapse, destruction of a democratic institution that cannot be rebuilt quickly. | **<8%** | Family separation (5,500+ children); "whole civilization will die tonight"; 180+ killed in boat strikes; nuclear testing order; SPLC indictment freezing Hatewatch. (**Not** "US measles elimination lost" — that never happened; the Region of the Americas lost status in Nov 2025 on Canada's outbreak and the US review is pending for Nov 2026.) |
 | `severe` | Major institutional damage OR lasting harm — reversible but only with sustained effort. Usually national-scale. | **15-20%** | Replimune rejection; judge voiding RFK vaccine overhaul; Patel weaponizing FBI against a reporter; Fed Chair criminal probe used as leverage; Iran war weapons-stockpile depletion. |
 | `serious` | Real legal, ethical, or policy violation with contained scope. Individual agency or individual contract, not the whole institution. | **30-35%** | Most court losses against administration; individual appointee corruption (Kash Patel's jet trips); specific tariff policies; individual self-dealing contracts. |
 | `moderate` | Ethics lapse, policy failure, or norm violation with material but limited impact. The fact matters, but the harm is bounded. | **20-25%** | Individual appointee scandals without indictment; rescinded rules; single ethical violations; minor contract conflicts. |
@@ -778,6 +778,13 @@ It exits non-zero on failure, so it can gate the pipeline. Three classes of defe
 - **Soft-404** (`--live`) — a dead article URL that 302s to the homepage or a section index and answers
   **200** instead of 404. `time.com` does this. Detected by comparing curl's `%{url_effective}` against
   the cited path: a URL that named a specific article but landed on a bare root is a dead citation.
+- **Status-masking** — an outlet that returns the SAME non-error status for every path, real or not,
+  so no status check can distinguish a live article from a fabricated URL. **`pbs.org` answers `202`
+  to everything**, confirmed 2026-09-09 by requesting a deliberately nonsense path and getting `202`
+  as well; `fetch-article.js` also returns no body for any PBS page. A PBS citation is therefore
+  **unverifiable by any automated means in this repo**. Treat pbs.org as never-sole-source, and
+  confirm the exact headline via search before citing it. Re-probe any outlet whose `--live` results
+  look suspiciously uniform.
 
 **Outlets probed for slug-ignoring behaviour** (mutate the slug, keep the ID, see whether it still
 serves): **safe** — cnn.com, cbsnews.com, foxnews.com, yahoo.com, nypost.com, newsweek.com (a bad slug
