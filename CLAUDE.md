@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This workspace contains five repositories:
+This workspace contains six repositories:
 
 | Repository                      | Type                | Framework  | Purpose                                                                                |
 |---------------------------------|---------------------|------------|----------------------------------------------------------------------------------------|
@@ -11,6 +11,7 @@ This workspace contains five repositories:
 | `the-civics-desk/`              | Explainer Site      | Astro 6    | Accessible, non-confrontational explainers for general audiences — "Sourced. Simple. Decide for yourself." |
 | `stand-against-trump/`          | Personal Project    | Markdown   | Personal research essays — opinionated but factually sourced arguments against supporting Trump |
 | `election-rigging/`             | Single-Page Tracker | Astro 6    | "Rigged Before the Vote" — data-driven single page tracking 2026 midterm-rigging actions; facts sourced from tracker entries, opinions labeled. Has its own CLAUDE.md. |
+| `deep-dives/`                   | Multi-Page Dives    | Astro 6    | "Deep Dives" (working name) — one story per page in the election-rigging design language, built from tracker entries. `verify-sources.js` requires every link and every quotation to trace to a seed entry. First dive: the White House press ban. Has its own CLAUDE.md. |
 
 ## Working Directory
 
@@ -836,7 +837,7 @@ git remote set-url origin git@github-politiboop:politiboop/REPO_NAME.git
 
 This file lives at the workspace root `/Users/brock/dev/politiboop/CLAUDE.md` and is tracked in a **fifth** repo, `tt-workspace`, which holds only workspace-level orchestration files (this CLAUDE.md, TODO/notes docs, and a legacy Windows-only `run-all.ps1`). The four content repos are cloned as subdirectories and are NOT tracked by tt-workspace (see `.gitignore`).
 
-The six repos (all on the `politiboop` account, all using the `github-politiboop` SSH host):
+The seven repos (all on the `politiboop` account, all using the `github-politiboop` SSH host):
 
 | Repo | Path | Holds |
 |------|------|-------|
@@ -846,11 +847,12 @@ The six repos (all on the `politiboop` account, all using the `github-politiboop
 | `the-civics-desk` | `the-civics-desk/` | The accessible explainers (Astro 6) |
 | `stand-against-trump` | `stand-against-trump/` | Personal essays |
 | `election-rigging` | `election-rigging/` | "Rigged Before the Vote" single-page 2026 tracker (Astro 6, data-driven) |
+| `deep-dives` | `deep-dives/` | "Deep Dives" multi-page site, one story per page (Astro 6, data-driven) |
 
 ### Setting up a new machine
 
 1. Configure the `github-politiboop` SSH host in `~/.ssh/config` and add the SSH key to the politiboop GitHub account.
-2. Clone all six repos into your chosen workspace directory (e.g. `/Users/brock/dev/politiboop/` on macOS, `G:/git/politiboop/` on Windows). Clone `tt-workspace` into the root itself, or clone it elsewhere and copy its files to the root:
+2. Clone all seven repos into your chosen workspace directory (e.g. `/Users/brock/dev/politiboop/` on macOS, `G:/git/politiboop/` on Windows). Clone `tt-workspace` into the root itself, or clone it elsewhere and copy its files to the root:
    ```bash
    git clone git@github-politiboop:politiboop/tt-workspace.git
    git clone git@github-politiboop:politiboop/controversial-trump.git
@@ -858,6 +860,7 @@ The six repos (all on the `politiboop` account, all using the `github-politiboop
    git clone git@github-politiboop:politiboop/the-civics-desk.git
    git clone git@github-politiboop:politiboop/stand-against-trump.git
    git clone git@github-politiboop:politiboop/election-rigging.git
+   git clone git@github-politiboop:politiboop/deep-dives.git
    ```
 3. `npm install` in each of the four content repos (`node_modules` is not committed).
 4. Install Node.js >= 22.12.0 (required by the research site; set in its `.nvmrc`).

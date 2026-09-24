@@ -24,6 +24,18 @@
       "runtimeExecutable": "bash",
       "runtimeArgs": ["-lc", "cd /Users/brock/dev/politiboop/election-rigging && npm run dev -- --port 4323"],
       "port": 4323
+    },
+    {
+      "name": "deep-dives-dev",
+      "runtimeExecutable": "bash",
+      "runtimeArgs": ["-lc", "cd /Users/brock/dev/politiboop/deep-dives && npm run dev -- --port 4324"],
+      "port": 4324
+    },
+    {
+      "name": "deep-dives-static",
+      "runtimeExecutable": "bash",
+      "runtimeArgs": ["-lc", "cd /Users/brock/dev/politiboop/deep-dives/.vercel/output/static && python3 -m http.server 4325"],
+      "port": 4325
     }
   ]
 }
