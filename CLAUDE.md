@@ -11,7 +11,7 @@ This workspace contains six repositories:
 | `the-civics-desk/`              | Explainer Site      | Astro 6    | Accessible, non-confrontational explainers for general audiences — "Sourced. Simple. Decide for yourself." |
 | `stand-against-trump/`          | Personal Project    | Markdown   | Personal research essays — opinionated but factually sourced arguments against supporting Trump |
 | `election-rigging/`             | Single-Page Tracker | Astro 6    | "Rigged Before the Vote" — data-driven single page tracking 2026 midterm-rigging actions; facts sourced from tracker entries, opinions labeled. Has its own CLAUDE.md. |
-| `deep-dives/`                   | Multi-Page Dives    | Astro 6    | "Deep Dives" (working name) — one story per page in the election-rigging design language, built from tracker entries. `verify-sources.js` requires every link and every quotation to trace to a seed entry. First dive: the White House press ban. Has its own CLAUDE.md. |
+| `deep-dives/`                   | Multi-Page Dives    | Astro 6    | "Deep Dives" (working name) — one story per page in the election-rigging design language, built from tracker entries. `verify-sources.js` requires every link and every quotation to trace to a seed entry. Dives so far: the White House press ban (Shut Out) and public money for the president's image (Paid For). Has its own CLAUDE.md. |
 
 ## Working Directory
 
