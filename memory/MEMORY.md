@@ -9,3 +9,6 @@
 - [reference_shared_memory.md](reference_shared_memory.md) — Sync policy between local auto-memory and tt-workspace/memory/
 - [feedback_parallel_bash_shared_cwd.md](feedback_parallel_bash_shared_cwd.md) — Parallel Bash calls and other sessions share working trees; use absolute paths, git -C, pathspec commits
 - [project_civics_style_hook_needs_content.md](project_civics_style_hook_needs_content.md) — Civics Desk style hook passes vacuously without content; pipe article text via jq
+- [reference_news_check_reddit_rss.md](reference_news_check_reddit_rss.md) — "News check" = r/politics top-of-day sweep; fetch via the RSS feed (JSON and in-app browser are blocked)
+- [project_reuters_401_everything.md](project_reuters_401_everything.md) — Reuters now 401s every request, so the "Reuters 401 = fabricated" rule is void; verify via syndicated copies
+- [project_sweep_research_agents.md](project_sweep_research_agents.md) — Sweep subagents share a 200-WebSearch cap; nested helpers report to main, so tell the parent
