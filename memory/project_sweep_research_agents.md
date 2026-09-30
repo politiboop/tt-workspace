@@ -14,7 +14,7 @@ Learned in the September 28 (b28) and 29 (b29), 2026 sweeps, which used six para
 - **Nested helpers report to the main session, not to their parent.** When a research agent spawns its own helper agents, the helpers' completion notices arrive in the main conversation, and the parent keeps "waiting" forever. Fix: SendMessage the parent saying the helpers finished and ask for its final report on the stories it handled itself.
 - A shared `RULES.md` in the sweep scratch dir (save full text + map.tsv, exact headlines, verbatim quotes, flag single-source) worked well; the saved texts let `dive4/qcheck.js` verify every quote before commit.
 
-- **`dive4/qcheck.js` keys saved texts by folder basename**, so passing several sweeps' `ra/`…`rf/` folders makes same-named files (e.g. `ads-cnbc.txt`) overwrite each other and real quotes show as MISS. Use the b29 copy, which keys by full path: `b29/qc.sh <id>` (all sweeps) and `b29/qn.sh <id> <regex>` (just the new quotes). Pre-b21 quotes always MISS because their texts are gone; judge only the new ones. It also mis-pairs around quotes under 5 characters, so verify those by grep.
+- **The scratchpad does not survive an app restart.** On 2026-09-30 every sweep folder (b21-b29, dive4, their qcheck.js and wrappers) was gone. Rebuild helpers inline or keep durable ones in a repo. When rebuilding the quote checker: key saved texts by full path, not folder basename (same-named files across sweeps overwrote each other and real quotes showed as MISS), and verify quotes under 5 characters by grep, since the pairing regex skips them.
 
 **How to apply:** give each agent a search budget (about 25) in its prompt, tell it not to spawn helpers, and front-load the stories most likely to need search.
 
