@@ -4,38 +4,65 @@
     {
       "name": "tracker-serve",
       "runtimeExecutable": "bash",
-      "runtimeArgs": ["-lc", "cd /Users/brock/dev/politiboop/controversial-trump/website && npm run serve -- --port 3210 --no-open"],
+      "runtimeArgs": [
+        "-lc",
+        "cd /Users/brock/dev/politiboop/controversial-trump/website && npm run serve -- --port 3210 --no-open"
+      ],
       "port": 3210
     },
     {
       "name": "research-dev",
       "runtimeExecutable": "bash",
-      "runtimeArgs": ["-lc", "cd /Users/brock/dev/politiboop/controversial-trump-research && npm run dev -- --port 4321"],
+      "runtimeArgs": [
+        "-lc",
+        "cd /Users/brock/dev/politiboop/controversial-trump-research && npm run dev -- --port 4321"
+      ],
       "port": 4321
     },
     {
       "name": "civics-dev",
       "runtimeExecutable": "bash",
-      "runtimeArgs": ["-lc", "cd /Users/brock/dev/politiboop/the-civics-desk && npm run dev -- --port 4322"],
+      "runtimeArgs": [
+        "-lc",
+        "cd /Users/brock/dev/politiboop/the-civics-desk && npm run dev -- --port 4322"
+      ],
       "port": 4322
     },
     {
       "name": "rigging-dev",
       "runtimeExecutable": "bash",
-      "runtimeArgs": ["-lc", "cd /Users/brock/dev/politiboop/election-rigging && npm run dev -- --port 4323"],
+      "runtimeArgs": [
+        "-lc",
+        "cd /Users/brock/dev/politiboop/election-rigging && npm run dev -- --port 4323"
+      ],
       "port": 4323
     },
     {
       "name": "deep-dives-dev",
       "runtimeExecutable": "bash",
-      "runtimeArgs": ["-lc", "cd /Users/brock/dev/politiboop/deep-dives && npm run dev -- --port 4324"],
+      "runtimeArgs": [
+        "-lc",
+        "cd /Users/brock/dev/politiboop/deep-dives && npm run dev -- --port 4324"
+      ],
       "port": 4324
     },
     {
       "name": "deep-dives-static",
       "runtimeExecutable": "bash",
-      "runtimeArgs": ["-lc", "cd /Users/brock/dev/politiboop/deep-dives/.vercel/output/static && python3 -m http.server 4325"],
+      "runtimeArgs": [
+        "-lc",
+        "cd /Users/brock/dev/politiboop/deep-dives/.vercel/output/static && python3 -m http.server 4325"
+      ],
       "port": 4325
+    },
+    {
+      "name": "stand-against-trump",
+      "runtimeExecutable": "bash",
+      "runtimeArgs": [
+        "-lc",
+        "cd /Users/brock/dev/politiboop/stand-against-trump && npm run preview -- --port 4331"
+      ],
+      "port": 4331
     }
   ]
 }
