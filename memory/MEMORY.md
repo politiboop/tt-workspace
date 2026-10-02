@@ -12,3 +12,4 @@
 - [reference_news_check_reddit_rss.md](reference_news_check_reddit_rss.md) — "News check" = r/politics top-of-day sweep; fetch via the RSS feed (JSON and in-app browser are blocked)
 - [project_reuters_401_everything.md](project_reuters_401_everything.md) — Reuters now 401s every request, so the "Reuters 401 = fabricated" rule is void; verify via syndicated copies
 - [project_sweep_research_agents.md](project_sweep_research_agents.md) — Sweep subagents share a 200-WebSearch cap; nested helpers report to main, so tell the parent
+- [feedback_severity_accuracy_over_targets.md](feedback_severity_accuracy_over_targets.md) — Rate severity on the rubric's criteria; target % is a smell test, never a reason to re-rate

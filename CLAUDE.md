@@ -105,9 +105,11 @@ Only these values are accepted in `severity`. Using anything else causes undefin
 
 ### Severity Rubric (USE THIS BEFORE ASSIGNING)
 
-The 7-tier system exists so that genuinely catastrophic events (mass deaths, rule-of-law collapse, nuclear risk) are visually distinct from routine misconduct. If 40% of entries are "catastrophic," the label stops meaning anything. **Err downward, not upward.**
+The 7-tier system exists so that genuinely catastrophic events (mass deaths, rule-of-law collapse, nuclear risk) are visually distinct from routine misconduct. If 40% of entries are "catastrophic," the label stops meaning anything.
 
-| Severity | When to use | Target % | Examples |
+**Rate each entry against the criteria below, not against the distribution.** Never change a rating to move the distribution. A skewed distribution is a prompt to audit for inflation, and every rating change must name the criterion it rests on. A curated tracker selects for significant stories, so its distribution need not match the typical shares. **On a genuinely borderline call, err downward:** understating beats overstating.
+
+| Severity | When to use | Typical share (sanity check) | Examples |
 |---|---|---|---|
 | `catastrophic` | Irreversible mass harm — deaths at scale, war crimes, nuclear risk, rule-of-law collapse, destruction of a democratic institution that cannot be rebuilt quickly. | **<8%** | Family separation (4,656 children by the government's count); "whole civilization will die tonight"; 180+ killed in boat strikes; nuclear testing order; SPLC indictment freezing Hatewatch. (**Not** "US measles elimination lost" — that never happened; the Region of the Americas lost status in Nov 2025 on Canada's outbreak and the US review is pending for Nov 2026.) |
 | `severe` | Major institutional damage OR lasting harm — reversible but only with sustained effort. Usually national-scale. | **15-20%** | Replimune rejection; judge voiding RFK vaccine overhaul; Patel weaponizing FBI against a reporter; Fed Chair criminal probe used as leverage; Iran war weapons-stockpile depletion. |
