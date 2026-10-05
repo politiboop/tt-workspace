@@ -6,7 +6,7 @@ Decisions parked by the user, newest first. Clear an item when it is decided.
 
 **Update, Oct 5:** both commits below reached GitHub at 09:37 ET on Oct 5, pushed from this machine but not by the Claude session that wrote them. Nothing left to push. Review the live sections and say if anything should change.
 
-Committed locally, not pushed:
+What went out:
 
 - `election-rigging` 4b41dd8: three new sections, all verified (quotes against saved sources, 398/398 URLs traced, live links clean, builds, phone layout checked).
   - **After the Vote**: certification steps to Jan 3, 2027, and county/state deadlines in 10 states.
