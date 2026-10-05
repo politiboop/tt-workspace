@@ -2,7 +2,9 @@
 
 Decisions parked by the user, newest first. Clear an item when it is decided.
 
-## Election-rigging sections and Civics Desk corrections: approve the push (parked Oct 5, 2026)
+## Election-rigging sections and Civics Desk corrections (parked Oct 5, 2026; now live)
+
+**Update, Oct 5:** both commits below reached GitHub at 09:37 ET on Oct 5, pushed from this machine but not by the Claude session that wrote them. Nothing left to push. Review the live sections and say if anything should change.
 
 Committed locally, not pushed:
 
@@ -13,7 +15,6 @@ Committed locally, not pushed:
   - Also carries the joined-NBC-quote and Aug. 11 corrections.
 - `the-civics-desk` fd6b9f3: the same corrections in midterm-elections-2026 and election-interference-timeline (Civics Desk pushes need the user's word).
 
-To publish: `git -C election-rigging push` and `git -C the-civics-desk push`.
 
 ## The Case: expand it, and maybe rename Deep Dives to "The Case" (parked Oct 5, 2026)
 
