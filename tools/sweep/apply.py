@@ -20,6 +20,7 @@ def update(i, paras=(), facts=(), sources=(), replace=(), title=None, severity=N
     for text, url, typ in sources:
         assert url.rstrip('/') not in have, f'{i}: duplicate source {url}'
         assert typ in ('news','investigation','court-document','government-record'), typ
+        assert 'news.google.com' not in url, f'{i}: Google News redirect, cite the outlet URL: {text}'
         j['sources'].append({'text': text, 'url': url, 'type': typ}); have.add(url.rstrip('/'))
     if title: assert not any(x in title for x in BAD_TITLE), 'dash in title'; j['title'] = title
     if severity: j['severity'] = severity
@@ -29,4 +30,5 @@ def create(j):
     p = os.path.join(DIR, j['id'] + '.json'); assert not os.path.exists(p), 'exists: ' + j['id']
     assert not any(x in j['title'] for x in BAD_TITLE), 'dash in title'
     for s in j['sources']: assert s['type'] in ('news','investigation','court-document','government-record'), s
+    for s in j['sources']: assert 'news.google.com' not in s['url'], 'Google News redirect: ' + s['text']
     j.setdefault('updatedDate', TODAY); save(j); print('created', j['id'])

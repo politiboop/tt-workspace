@@ -11,6 +11,7 @@ You are READ-ONLY on /Users/brock/dev/politiboop. Write only inside your own fol
    - Corroboration: Google News RSS, e.g. curl -s "https://news.google.com/rss/search?q=<url-encoded terms>+when:3d&hl=en-US&gl=US&ceid=US:en", then load the outlet's own article (fetch-article.js resolves Google News links to the real URL; cite only the real outlet URL).
 2. Save the full text of every page you rely on as .txt in your folder and append `url<TAB>file` to your folder's map.tsv.
    NEVER report a URL you did not load yourself and confirm is the cited article. Report each source's EXACT headline as shown on the page.
+   In map.tsv record the outlet's own final URL (the page's URL after redirects), never a news.google.com link.
 3. Confirm the core claim with at least 2 independent outlets (wire reprints count once), or a primary document (court filing, order, agency release, official record, video/transcript, the president's own post). Prefer primary documents. Try to include a right-leaning or neutral outlet.
 4. Check for debunks, corrections and updates; report any. Flag headlines that overstate their own articles; write from the article body.
 5. Quotes must be verbatim from a saved text; give the file. Do not join two sentences that the source separates with an attribution ("he said") into one quotation. Check the order: a quote must answer the question it is presented as answering.
