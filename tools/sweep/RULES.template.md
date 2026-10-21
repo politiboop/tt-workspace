@@ -23,7 +23,7 @@ You are READ-ONLY on /Users/brock/dev/politiboop. Write only inside your own fol
 - nbcnews.com, abcnews.go.com and npr.org ignore the URL slug: cite the page's canonical URL.
 - pbs.org cannot be verified automatically: never the sole source.
 - thehill.com, time.com, washingtonpost.com, nytimes.com, wsj.com, bloomberg.com, McClatchy sites often block curl: use fetch-article.js. A 403 is not proof the page exists: confirm the served headline.
-- Trump's Truth Social posts: use https://www.trumpstruth.org/statuses/<id> archive pages. Transcripts: Roll Call Factbase.
+- Trump's Truth Social posts: trumpstruth.org has refused all automated access (403, even headless) since Oct 21, 2026. Try it once; if it is blocked, take the post's text from two outlets that quote it in full and say so. Transcripts: Roll Call Factbase.
 - Never put the user's name or email (or any personal data) in a request header, URL or query.
 
 ## Limits
