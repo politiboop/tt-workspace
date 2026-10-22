@@ -1,0 +1,577 @@
+{
+ "total": 1265,
+ "sources": 8296,
+ "sev": {
+  "serious": 558,
+  "concerning": 195,
+  "catastrophic": 32,
+  "moderate": 230,
+  "severe": 197,
+  "absurd": 40,
+  "disputed": 13
+ },
+ "days": {
+  "2026-10-16|serious": 1,
+  "2026-10-10|serious": 1,
+  "2026-10-15|concerning": 2,
+  "2026-10-17|concerning": 1,
+  "2026-10-20|moderate": 4,
+  "2026-10-19|severe": 1,
+  "2026-10-19|serious": 1,
+  "2026-10-13|serious": 3,
+  "2026-10-13|concerning": 2,
+  "2026-10-19|moderate": 1,
+  "2026-10-09|serious": 2,
+  "2026-10-20|serious": 2,
+  "2026-10-18|concerning": 1,
+  "2026-10-15|serious": 1,
+  "2026-10-12|serious": 1,
+  "2026-10-09|concerning": 1,
+  "2026-10-12|concerning": 3,
+  "2026-10-19|concerning": 3,
+  "2026-10-15|moderate": 1,
+  "2026-10-13|moderate": 1,
+  "2026-10-21|concerning": 2,
+  "2026-10-17|absurd": 1,
+  "2026-10-19|disputed": 1,
+  "2026-10-14|concerning": 1,
+  "2026-10-17|serious": 1,
+  "2026-10-21|serious": 1,
+  "2026-10-21|moderate": 1,
+  "2026-10-20|concerning": 1,
+  "2026-10-14|moderate": 1
+ },
+ "recent": [
+  {
+   "id": "amazon-refund-checks-credit-president-trumps-ftc",
+   "title": "Millions of Amazon Refund Checks Credit 'President Trump's Federal Trade Commission,' a First, Former FTC Officials Say",
+   "date": "2026-10-21",
+   "sev": "concerning",
+   "cat": "narcissism",
+   "n": 4,
+   "dek": "Refund checks going to millions of Amazon customers under the FTC's 2025 settlement over Prime subscription sign-ups carry a notice that reads, \"The enclosed check is the result of a settlement reached by President Trump's Federal Trade Commission (FTC) with Amazon.com,\" Politico reported on October 21, 2026. Two former FTC officials said it is the first time an FTC refund has attributed payments to a specific president."
+  },
+  {
+   "id": "fcc-carr-warns-broadcasters-fake-polls-regulatory-obligations",
+   "title": "FCC Chairman Warns Broadcasters That Airing 'Fake Polls' Could Violate Their Regulatory Obligations, Without Naming a Poll",
+   "date": "2026-10-21",
+   "sev": "serious",
+   "cat": "democracy",
+   "n": 7,
+   "dek": "On October 21, 2026, two weeks before the midterms and as Trump's approval reached new lows, FCC Chairman Brendan Carr posted on X that the election season had seen \"a significant surge in entirely Fake Polls and Suppression Polls,\" and wrote: \"Broadcasters are advised to avoid engaging in News Distortions or running Broadcast Hoaxes by airing Polls that would violate their regulatory obligations.\" He named no poll and announced no investigation, Reuters and Deadline reported, and Politico noted that Carr had floated guidance on poll coverage in early September \"but no formal documents have been published.\""
+  },
+  {
+   "id": "cdc-funded-hepatitis-b-newborn-trial-guinea-bissau-halted",
+   "title": "Kennedy's CDC Funded a Hepatitis B Trial on African Newborns That the WHO Called Unethical. It Has Now Been Halted",
+   "date": "2026-10-21",
+   "sev": "moderate",
+   "cat": "public-health",
+   "n": 4,
+   "dek": "Under Health Secretary Robert F. Kennedy Jr., the CDC announced in December 2025 an unsolicited $1.6 million grant to Danish researchers at the Bandim Health Project in Guinea-Bissau, led by Peter Aaby and Christine Stabell Benn, for a trial that would withhold the hepatitis B birth dose from some newborns, Ars Technica reported."
+  },
+  {
+   "id": "witkoff-tells-putin-you-are-a-humanitarian-also-sir",
+   "title": "Trump's Envoy Tells Putin 'You Are a Humanitarian Also, Sir, and I Salute That'",
+   "date": "2026-10-21",
+   "sev": "concerning",
+   "cat": "character",
+   "n": 3,
+   "dek": "Meeting Vladimir Putin in St. Petersburg on October 21, 2026, after Russia released Stephen Hubbard, a 74-year-old American the U.S. had determined was wrongfully detained, special envoy Steve Witkoff said: \"You talk so much about my president, President Trump, being a humanitarian."
+  },
+  {
+   "id": "fema-hamilton-memo-states-build-own-disaster-reserves",
+   "title": "FEMA's Chief Tells States to Build Their Own Disaster Reserves as the Agency Plans to Shift the Burden to Them",
+   "date": "2026-10-20",
+   "sev": "moderate",
+   "cat": "abuse-of-power",
+   "n": 3,
+   "dek": "In an October 15, 2026 internal memo, FEMA Administrator Cameron Hamilton set objectives to \"strengthen state and local emergency management capacity,\" echoing a Trump-appointed review panel's recommendations to build state capacity and make federal disaster aid harder to qualify for, Politico reported. Speaking to state emergency managers on October 20, Hamilton said, \"Every state must have the appropriate financial reserves,\" and that changes could begin \"in the next six months,\" according to a recording Politico obtained."
+  },
+  {
+   "id": "judge-cote-opm-broke-privacy-act-doge-access-afge-v-opm",
+   "title": "Judge Rules OPM Broke the Privacy Act by Giving DOGE Access to Millions of Federal Workers' Records",
+   "date": "2026-10-20",
+   "sev": "serious",
+   "cat": "abuse-of-power",
+   "n": 2,
+   "dek": "On October 20, 2026, U.S. District Judge Denise Cote of the Southern District of New York granted summary judgment to federal employee unions in AFGE v."
+  },
+  {
+   "id": "trump-pardons-herrera-velutini-family-hired-habba-50-million",
+   "title": "Trump Pardoned a Banker Charged With Bribing Puerto Rico's Governor Weeks After His Family Hired Alina Habba in a $50 Million Deal",
+   "date": "2026-10-20",
+   "sev": "serious",
+   "cat": "corruption",
+   "n": 3,
+   "dek": "On January 15, 2026, Trump pardoned Julio Herrera Velutini, a billionaire banker charged in 2022 with conspiring to bribe Puerto Rico Gov. Wanda V\u00e1zquez, along with V\u00e1zquez herself, according to the Justice Department's clemency list; an amended grant covered his misdemeanor plea for a contribution by a foreign national."
+  },
+  {
+   "id": "democrats-sue-trump-doj-dhs-threats-election-officials-purge-voters",
+   "title": "Democratic Leaders Sue Trump, the Justice Department and DHS Over Threats to Prosecute Election Officials and Pressure to Purge Voters",
+   "date": "2026-10-20",
+   "sev": "moderate",
+   "cat": "democracy",
+   "n": 5,
+   "dek": "On October 20, 2026, the Democratic Senatorial, Congressional and Governors' committees, Senate Minority Leader Chuck Schumer, House Minority Leader Hakeem Jeffries, the Nevada State Democratic Party and a Nevada voter sued Trump, the Justice Department, Attorney General Todd Blanche, the Department of Homeland Security and Secretary Markwayne Mullin in federal court in Washington (DSCC v. Trump, No. 1:26-cv-03674, assigned to Chief Judge James Boasberg)."
+  },
+  {
+   "id": "trump-calls-reporter-feinberg-sick-person-oval-office",
+   "title": "Trump Calls a Reporter Asking About His Golf Courses a 'Sick Person' in the Oval Office",
+   "date": "2026-10-20",
+   "sev": "moderate",
+   "cat": "character",
+   "n": 6,
+   "dek": "During an Oval Office event on October 20, 2026, as Andrew Feinberg of The Independent began a question, \"President Trump, you own a lot of golf courses,\" Trump cut him off: \"Wait, wait. Quiet."
+  },
+  {
+   "id": "trump-fraud-whistleblower-program-i-will-be-the-arbitrator-nick-shirley",
+   "title": "Trump Names Himself the 'Arbitrator' of a New Fraud Bounty Program, Promising Payouts Beyond What the Justice Department's Rules Allow",
+   "date": "2026-10-20",
+   "sev": "moderate",
+   "cat": "abuse-of-power",
+   "n": 6,
+   "dek": "On October 20, 2026, two weeks before the midterms, the Justice Department launched a pilot program paying people who report fraud against the federal government, with the Treasury committing $25 million. Under the department's written terms, rewards run from $10,000 to $30,000, are paid after charges are unsealed, and are awarded at the department's \"sole discretion.\" At the Oval Office launch, Trump described a different arrangement: \"I will be the arbitrator of all of these decisions."
+  },
+  {
+   "id": "trump-camp-lejeune-no-money-if-republicans-lose-greenville-rally",
+   "title": "Trump Tells a North Carolina Rally That Camp Lejeune Water Victims Get 'No Money' if Republicans Lose",
+   "date": "2026-10-20",
+   "sev": "concerning",
+   "cat": "abuse-of-power",
+   "n": 3,
+   "dek": "At a rally in Greenville, North Carolina, on October 20, 2026, Trump said of the veterans and families suing over contaminated water at Camp Lejeune: \"if we win the House and the Senate, I am directing the Department of Justice to settle all remaining legitimate claims as soon as possible,\" and, \"So, if we don't win, there's no money. If we do win, you're getting it,\" according to the Roll Call Factbase transcript."
+  },
+  {
+   "id": "trump-dismantles-foreign-election-interference-units-cisa-hack-request",
+   "title": "Trump's Administration Dismantled the Federal Units That Tracked Foreign Election Interference Before the Midterms",
+   "date": "2026-10-19",
+   "sev": "severe",
+   "cat": "democracy",
+   "n": 8,
+   "dek": "Before the 2026 midterms, the federal offices that tracked foreign attempts to influence American elections were closed or cut. On February 5, 2025, Attorney General Pam Bondi ordered that \"the Foreign Influence Task Force shall be disbanded,\" ending the FBI unit created after Russia's 2016 interference, NBC News reported; Sen."
+  },
+  {
+   "id": "patriot-interceptors-allies-bought-ukraine-await-hegseth-approval",
+   "title": "Patriot Interceptors Allies Bought for Ukraine Await Pentagon Approval, and Rubio Says the Delay Is Not Deliberate",
+   "date": "2026-10-19",
+   "sev": "serious",
+   "cat": "abuse-of-power",
+   "n": 10,
+   "dek": "The Trump administration has not approved the transfer of Patriot air-defense interceptors to Ukraine, the Washington Post reported on October 19, 2026, citing officials. Rep."
+  },
+  {
+   "id": "white-house-counsel-politico-48-hours-retract-wiles-stories-apologize",
+   "title": "White House Counsel Gives Politico 48 Hours to Retract or Correct Three Susie Wiles Stories and Apologize to Trump",
+   "date": "2026-10-19",
+   "sev": "moderate",
+   "cat": "democracy",
+   "n": 4,
+   "dek": "In an October 19, 2026 letter made public by Axios two days later, White House Counsel William Scharf demanded that Politico \"immediately correct or retract these publications, issue a prominent and public apology to the President of the United States and to Ms. Wiles, and remove the false reporting from your digital archives.\" The letter concerned three items: two Playbook pieces on October 15 and 16 reporting that Trump was weighing replacing chief of staff Susie Wiles, and an October 16 story reporting that Wiles helped set up the Fox interview that preceded press secretary Katie Zacharia's exit."
+  },
+  {
+   "id": "doj-charges-28-california-green-card-holders-operation-protect-the-vote",
+   "title": "The Justice Department Charges 28 Green Card Holders in California, Saying All Are on Its 20,000-Name Ballot List",
+   "date": "2026-10-19",
+   "sev": "concerning",
+   "cat": "democracy",
+   "n": 6,
+   "dek": "On October 19, 2026, fifteen days before the midterms, the Justice Department announced that federal agents had arrested 11 people and that 28 had been charged by criminal complaint in California under what it called \"Operation Protect the Vote,\" run by all four of the state's U.S. attorney's offices with Homeland Security Investigations. All 28 are lawful permanent residents."
+  },
+  {
+   "id": "trump-shylock-slur-kansas-rally-roger-marshall",
+   "title": "Trump Says Critics Made Sen. Roger Marshall Look Like 'Some Kind of a Shylock-Type Guy,' a Year After Saying He Didn't Know the Word Was a Slur",
+   "date": "2026-10-19",
+   "sev": "concerning",
+   "cat": "racism",
+   "n": 4,
+   "dek": "At a rally in Park City, Kansas, on October 19, 2026, Trump defended Sen. Roger Marshall over reporting that Marshall, a physician, had sued patients over unpaid medical bills: \"And they made it like, oh, he was some kind of a Shylock-type guy."
+  },
+  {
+   "id": "grenell-text-kennedy-center-donation-access-potus-mildon-habba",
+   "title": "A Text Attributed to Ric Grenell Offered a Donor Access to 'POTUS' for a Kennedy Center Gift. Grenell Says He Never Sent It",
+   "date": "2026-10-19",
+   "sev": "disputed",
+   "cat": "corruption",
+   "n": 3,
+   "dek": "UNCONFIRMED (Axios is the only outlet to have seen the text; its authenticity has not been established). Axios reported on October 19, 2026 that it reviewed a text dated May 3, 2025, allegedly sent by Ric Grenell, then the Trump-appointed head of the Kennedy Center and special envoy to Venezuela, to Turkish businessman Turhan Mildon: \"Once the money comes to the company here, I will arrange the donation to Kennedy Centre [sic], and you'll be joining the VIP events and get close with the administration, even with POTUS.\" The same text allegedly said, \"We need to make you the 'American face' down in V.\" Grenell denies sending it: \"I've never asked for one cent to be sent somewhere else pretending it was for the Kennedy Center, and I've never received any payment from him at all.\""
+  },
+  {
+   "id": "trump-8-billion-harvest-fuel-relief-farmers-kansas-rally-when-republicans-win",
+   "title": "Two Weeks Before the Midterms, Trump Unveils $8 Billion for Farmers at a Kansas Rally and Promises More 'When Republicans Win'",
+   "date": "2026-10-19",
+   "sev": "concerning",
+   "cat": "democracy",
+   "n": 6,
+   "dek": "At a campaign rally for Sen. Roger Marshall in Park City, Kansas, on October 19, 2026, Trump announced an $8 billion \"Harvest Fuel Relief\" program for farmers facing high diesel and fertilizer costs."
+  },
+  {
+   "id": "trump-endorses-netanyahu-israel-election-america-will-have-to-do-this-work",
+   "title": "Trump Endorses Netanyahu Nine Days Before Israel Votes, Warning That With Anyone Else 'America Will Have to Do This Work Ourselves'",
+   "date": "2026-10-18",
+   "sev": "concerning",
+   "cat": "democracy",
+   "n": 5,
+   "dek": "On October 18, 2026, nine days before Israel's October 27 national election, Trump posted on Truth Social: \"Please let this Letter serve to represent my Complete and Total Endorsement of Bibi Netanyahu.\" He added, \"If Israel has the wrong Leader, which would be anyone other than Bibi, America will have to do this work ourselves, and I am not inclined to do so.\" The AP, via NPR, called it a coveted boost that Trump had withheld for months as the two leaders' Middle East strategies diverged. The Telegraph reported that U.S. officials were blindsided."
+  },
+  {
+   "id": "trump-kentucky-pentagon-100-million-antheia-if-republicans-win",
+   "title": "Trump Tells a Kentucky Rally the Pentagon Will Invest $100 Million in a Drug Plant 'If the Republicans Win'",
+   "date": "2026-10-17",
+   "sev": "concerning",
+   "cat": "abuse-of-power",
+   "n": 5,
+   "dek": "At a campaign rally in Highland Heights, Kentucky, on October 17, 2026, Trump tied a federal outlay in a competitive House district to the midterm result. \"If the Republicans win, the Department of War will be investing $100 million in the pharmaceutical company Antheia to revitalize a gigantic drug manufacturing facility in Winchester, Kentucky,\" he said, according to the New York Post and Newsweek, and he said Democrats \"wouldn't be able to do it.\" The AP, in coverage carried by CBS News, called it \"a new conditional promise.\" Winchester is in Kentucky's 6th Congressional District, the state's most competitive race this cycle, the Kentucky Lantern reported."
+  },
+  {
+   "id": "trump-rallies-examined-husted-ass-praises-mens-bodies",
+   "title": "Trump Keeps Telling Rally Crowds He Examined Sen. Jon Husted's 'Ass'",
+   "date": "2026-10-17",
+   "sev": "absurd",
+   "cat": "absurd",
+   "n": 5,
+   "dek": "In the final weeks of the midterm campaign, Trump has repeatedly praised male Republican candidates' bodies from the rally stage, the New York Times reported. At an October 12 rally in Youngstown, Ohio, he said of Sen."
+  },
+  {
+   "id": "long-beach-ice-arrest-man-screams-arm-broken-mayor-ig-complaint",
+   "title": "Video Shows ICE Agents Pinning a Long Beach Man Who Screamed His Arm Was Broken. ICE Says He Smashed a Mirror",
+   "date": "2026-10-17",
+   "sev": "serious",
+   "cat": "ice-enforcement",
+   "n": 3,
+   "dek": "On October 17, 2026, ICE agents in Long Beach, California, pinned Ricardo Gonzalez, a former city employee riding an e-bike, to the ground as he yelled, \"Help me, my arm is broken,\" CNN reported. Long Beach police took him to a fire station and he was then taken to a hospital."
+  },
+  {
+   "id": "trump-waives-graham-act-russia-sanctions-before-effect",
+   "title": "Trump Waives the Russia Sanctions Law He Signed a Month Earlier, Two Days Before It Took Effect",
+   "date": "2026-10-16",
+   "sev": "serious",
+   "cat": "abuse-of-power",
+   "n": 17,
+   "dek": "On the evening of October 16, 2026, the White House posted an executive order implementing the Lindsey O. Graham Sanctioning Russia and Iran Act of 2026, which Trump had signed on September 18 after it passed both chambers by wide margins."
+  },
+  {
+   "id": "army-final-plans-return-confederate-memorial-arlington",
+   "title": "The Army Files Final Plans to Return a Confederate Memorial With a 'Mammy' Figure to Arlington National Cemetery",
+   "date": "2026-10-15",
+   "sev": "concerning",
+   "cat": "rewriting-history",
+   "n": 5,
+   "dek": "On October 15, 2026, the Office of Army Cemeteries presented final design plans to the U.S. Commission of Fine Arts, whose members were appointed by Trump, to reinstall the Confederate Memorial by sculptor Moses Ezekiel at Arlington National Cemetery, WTOP and NBC4 reported."
+  },
+  {
+   "id": "trump-pharma-stock-holdings-orphan-cures-medicare-carveout",
+   "title": "Trump's Drug Stocks Grew From $1.7 Million to as Much as $56 Million the Year His Budget Law Shielded Drugmakers From Medicare Negotiation",
+   "date": "2026-10-15",
+   "sev": "concerning",
+   "cat": "corruption",
+   "n": 5,
+   "dek": "On October 15, 2026, the Democratic minority of Congress's Joint Economic Committee, led by Sen. Maggie Hassan, released a report built from Trump's annual financial disclosures."
+  },
+  {
+   "id": "ukraine-starshield-speed-cap-white-house-order-musk-trump",
+   "title": "A Speed Cap on Ukraine's Military Satellite Link Hobbled Its Drones. Reports Conflict on Whether Musk or the White House Ordered It",
+   "date": "2026-10-15",
+   "sev": "serious",
+   "cat": "abuse-of-power",
+   "n": 26,
+   "dek": "Early on October 15, 2026, without warning, Ukraine's military version of SpaceX's Starlink service, called Starshield, began cutting the data connection on any terminal moving faster than 100 mph, which is common for Ukrainian drones, the AP reported. The restriction disrupted front-line operations and left Ukraine more exposed to Russia's jet-powered Shahed drones."
+  },
+  {
+   "id": "judge-dismisses-doj-suit-new-york-city-sanctuary-laws",
+   "title": "A Judge Throws Out Trump's Suit Against New York City's Sanctuary Laws, Ruling the Government Had No Standing to Bring It",
+   "date": "2026-10-15",
+   "sev": "moderate",
+   "cat": "abuse-of-power",
+   "n": 4,
+   "dek": "On October 15, 2026, U.S. District Judge Ram\u00f3n E."
+  },
+  {
+   "id": "trump-minnesota-take-child-out-of-school-three-days-janet",
+   "title": "Trump Tells an Arizona Rally That Minnesota Can Take Children Out of School and Send Them Home Transitioned in Three Days",
+   "date": "2026-10-14",
+   "sev": "concerning",
+   "cat": "character",
+   "n": 5,
+   "dek": "At a rally in Bullhead City, Arizona, on October 14, 2026, Trump said of transgender care, \"Your son leaves as Jimmy and comes back home in three days as Janet, and they don't even ask you,\" and, \"They can take your child out of school and do whatever the hell they want. These people are sick."
+  },
+  {
+   "id": "irs-withholds-filing-season-data-gop-tax-law-treasury-approval",
+   "title": "The IRS Holds Back Its Detailed Data on Trump's Tax Law Ahead of the Midterms, Saying It Awaits Treasury Approval",
+   "date": "2026-10-14",
+   "sev": "moderate",
+   "cat": "corruption",
+   "n": 5,
+   "dek": "The IRS normally publishes detailed filing-season statistics after each tax season, and this year's were expected to give the first detailed look at how taxpayers used the One Big Beautiful Bill Act's new deductions for overtime and tips. They were supposed to come out in July, Politico reported on October 14, 2026."
+  },
+  {
+   "id": "judge-clears-fema-cfo-comans-musk-noem-false-claims",
+   "title": "Judge Clears Fired FEMA Finance Chief After the Government Concedes Musk and DHS Spread Claims Officials Knew Were False",
+   "date": "2026-10-13",
+   "sev": "serious",
+   "cat": "abuse-of-power",
+   "n": 5,
+   "dek": "On February 11, 2025, FEMA's chief financial officer, Mary Comans, was fired, and DHS and DOGE officials publicly blamed her for payments to New York hotels housing migrants. Elon Musk, then head of DOGE, reposted her photo with the statement \"FEMA CFO Mary Comans was just fired for funneling $58M to illegal migrant hotels in Manhattan\" and called it a \"criminal action,\" according to the court's findings."
+  },
+  {
+   "id": "trump-posts-fatal-tiger-attack-video-then-ai-video-wrestling-tiger",
+   "title": "Trump Posts Footage of a Fatal Tiger Attack in England, Then an AI Video of Himself Wrestling the Tiger",
+   "date": "2026-10-13",
+   "sev": "concerning",
+   "cat": "character",
+   "n": 5,
+   "dek": "On October 13, 2026, Trump posted footage of the tiger attack on William Chapman, who later died of his injuries after the attack at a wildlife park in England, with the caption \"Don't ever mess with nature! President DJT,\" followed a minute later by a compilation of big-cat attacks."
+  },
+  {
+   "id": "fifa-4-million-trump-tower-lease-office-rarely-used",
+   "title": "FIFA Signed a $4 Million, Seven-Year Lease for a Trump Tower Office It Rarely Uses",
+   "date": "2026-10-13",
+   "sev": "moderate",
+   "cat": "corruption",
+   "n": 10,
+   "dek": "FIFA, international soccer's governing body, agreed to pay $4 million for a seven-year lease on a nearly 5,000-square-foot, 17th-floor office in Trump Tower, according to documents obtained by Le Monde and the New York Times, USA Today reported on October 13, 2026. FIFA added the office in June 2025, about a year before the World Cup the United States co-hosted, while keeping its main U.S. office in Coral Gables, Florida."
+  },
+  {
+   "id": "doj-48-hours-california-segregate-mail-ballots-noncitizen-list",
+   "title": "Justice Department Gives California 48 Hours to Set Aside Mail Ballots of Voters on an Unexplained Federal Noncitizen List",
+   "date": "2026-10-13",
+   "sev": "serious",
+   "cat": "democracy",
+   "n": 20,
+   "dek": "On October 13, 2026, Acting Deputy Attorney General R. Trent McCotter wrote to California Secretary of State Shirley Weber and Los Angeles County Registrar Dean Logan about a password-protected thumb drive the department had given the county, containing names of people the administration \"believes are likely noncitizens\" who were sent mail ballots, CNN reported."
+  },
+  {
+   "id": "press-secretary-katie-zacharia-attorney-claim-no-us-bar-record",
+   "title": "Trump Called His New Press Secretary 'an Attorney.' She Had Failed the Bar, and Five Days Later She Was Out",
+   "date": "2026-10-13",
+   "sev": "concerning",
+   "cat": "character",
+   "n": 20,
+   "dek": "Announcing Katie Zacharia as White House press secretary on October 9, 2026, Trump described her as \"a distinguished Graduate of Pepperdine University, and the Pepperdine Caruso School of Law, an attorney.\" Zacharia has also described herself that way on air, saying \"I'm a lawyer\" on the Greg Kelly Show on October 5, Popular Information reported."
+  },
+  {
+   "id": "judge-halts-usda-reorganization-relocations-congress-funds",
+   "title": "Judge Halts USDA's Reorganization, Finding It Likely Spends Money in Ways Congress Did Not Expect",
+   "date": "2026-10-13",
+   "sev": "serious",
+   "cat": "abuse-of-power",
+   "n": 4,
+   "dek": "On October 13, 2026, U.S. District Judge Vince Chhabria in San Francisco stayed the Agriculture Department's reorganization in AFGE v."
+  },
+  {
+   "id": "hsi-searches-ilhan-omar-home-weeks-before-election",
+   "title": "Federal Agents Search Ilhan Omar's Home 22 Days Before the Election, Two Days After Trump Told a Rally 'Our People Are Looking at It Very Strongly'",
+   "date": "2026-10-12",
+   "sev": "serious",
+   "cat": "abuse-of-power",
+   "n": 32,
+   "dek": "On the morning of October 12, 2026, Homeland Security Investigations agents searched the Washington, D.C.-area home of Rep. Ilhan Omar (D-Minn.), a longtime target of Trump's attacks who is running for reelection."
+  },
+  {
+   "id": "trump-mocks-heckler-fat-guy-scum-after-rallygoer-punches-her-youngstown",
+   "title": "Trump Called a Heckler 'Scum' and a 'Fat Guy' as She Was Led Out After a Rallygoer Punched Her in Youngstown",
+   "date": "2026-10-12",
+   "sev": "concerning",
+   "cat": "character",
+   "n": 9,
+   "dek": "At Trump's October 12, 2026 rally at the Covelli Centre in Youngstown, Ohio, a rallygoer punched a woman protester in the face and pulled her hair after she stood up in a \"Release the Epstein Files\" shirt, Fox News and WFMJ reported. Police broke it up and escorted her out; video showed the man who struck her staying in the arena and exchanging high-fives with other attendees, Fox News reported."
+  },
+  {
+   "id": "trump-says-china-russia-not-helping-iran-at-all-despite-own-sanctions",
+   "title": "Trump Says China and Russia Aren't Helping Iran 'at All,' Months After His Defense Secretary Told Senators They Are",
+   "date": "2026-10-12",
+   "sev": "concerning",
+   "cat": "character",
+   "n": 8,
+   "dek": "Late on October 12, 2026, Trump posted: \"I see so many comments from the Radical Left Morons and Lunatics that China and Russia are helping the 'wonderful' Islamic Republic of Iran. If they are, it's at a very low level, but I don't believe they are at all."
+  },
+  {
+   "id": "trump-says-us-might-have-gone-too-far-killing-iran-leaders",
+   "title": "Trump Says the U.S. 'Might Have Gone Too Far' Killing Iran's Leaders Because 'We Don't Know Who the Hell We're Dealing With'",
+   "date": "2026-10-12",
+   "sev": "concerning",
+   "cat": "character",
+   "n": 2,
+   "dek": "At a rally in Youngstown, Ohio, on October 12, 2026, Trump said of Iran, \"They got no leaders even. That's the problem."
+  },
+  {
+   "id": "houston-da-ice-officer-appears-intentionally-ran-down-man-drove-vehicle-away",
+   "title": "Houston's DA Says an ICE Officer Appears to Have Run a Man Down on Purpose, Then Drove the Vehicle Away Before a Warrant",
+   "date": "2026-10-10",
+   "sev": "serious",
+   "cat": "ice-enforcement",
+   "n": 6,
+   "dek": "On the morning of October 10, 2026, during an immigration traffic stop in northwest Houston, an ICE vehicle struck Miguel Parra Hernandez, 48, who had fled on foot, breaking his leg, the AP reported. ICE has conceded he was not the target of the stop, the Guardian reported."
+  }
+ ],
+ "worst": [
+  {
+   "id": "trump-cuba-fuel-blockade-coast-guard-boards-tankers",
+   "title": "Trump's Fuel Blockade of Cuba, in Place Since January, Now Has the Coast Guard Boarding Tankers Bound for the Island",
+   "date": "2026-10-02",
+   "sev": "severe",
+   "cat": "abuse-of-power",
+   "n": 8,
+   "dek": "The Coast Guard announced on October 2, 2026 that it had intercepted a fuel shipment bound for Cuba."
+  },
+  {
+   "id": "trump-dismantles-foreign-election-interference-units-cisa-hack-request",
+   "title": "Trump's Administration Dismantled the Federal Units That Tracked Foreign Election Interference Before the Midterms",
+   "date": "2026-10-19",
+   "sev": "severe",
+   "cat": "democracy",
+   "n": 8,
+   "dek": "Before the 2026 midterms, the federal offices that tracked foreign attempts to influence American elections were closed or cut."
+  }
+ ],
+ "bycat": {
+  "ice-enforcement": {
+   "count": 77,
+   "sev": {
+    "serious": 47,
+    "moderate": 6,
+    "concerning": 3,
+    "severe": 16,
+    "catastrophic": 5
+   },
+   "title": "ice-enforcement",
+   "desc": ""
+  },
+  "democracy": {
+   "count": 142,
+   "sev": {
+    "serious": 60,
+    "moderate": 24,
+    "severe": 27,
+    "concerning": 24,
+    "catastrophic": 6,
+    "disputed": 1
+   },
+   "title": "democracy",
+   "desc": ""
+  },
+  "corruption": {
+   "count": 225,
+   "sev": {
+    "serious": 128,
+    "disputed": 5,
+    "concerning": 18,
+    "moderate": 44,
+    "severe": 30
+   },
+   "title": "corruption",
+   "desc": ""
+  },
+  "public-health": {
+   "count": 87,
+   "sev": {
+    "moderate": 11,
+    "concerning": 7,
+    "serious": 36,
+    "severe": 27,
+    "absurd": 1,
+    "catastrophic": 5
+   },
+   "title": "public-health",
+   "desc": ""
+  },
+  "abuse-of-power": {
+   "count": 407,
+   "sev": {
+    "moderate": 62,
+    "serious": 224,
+    "concerning": 23,
+    "severe": 80,
+    "disputed": 3,
+    "catastrophic": 15
+   },
+   "title": "abuse-of-power",
+   "desc": ""
+  },
+  "narcissism": {
+   "count": 57,
+   "sev": {
+    "concerning": 24,
+    "serious": 4,
+    "moderate": 15,
+    "absurd": 12,
+    "severe": 2
+   },
+   "title": "narcissism",
+   "desc": ""
+  },
+  "rewriting-history": {
+   "count": 45,
+   "sev": {
+    "concerning": 13,
+    "serious": 8,
+    "moderate": 16,
+    "severe": 6,
+    "absurd": 1,
+    "catastrophic": 1
+   },
+   "title": "rewriting-history",
+   "desc": ""
+  },
+  "character": {
+   "count": 142,
+   "sev": {
+    "concerning": 68,
+    "moderate": 46,
+    "serious": 19,
+    "disputed": 4,
+    "absurd": 3,
+    "severe": 2
+   },
+   "title": "character",
+   "desc": ""
+  },
+  "absurd": {
+   "count": 29,
+   "sev": {
+    "absurd": 23,
+    "concerning": 5,
+    "serious": 1
+   },
+   "title": "absurd",
+   "desc": ""
+  },
+  "racism": {
+   "count": 41,
+   "sev": {
+    "concerning": 6,
+    "serious": 24,
+    "moderate": 4,
+    "severe": 7
+   },
+   "title": "racism",
+   "desc": ""
+  },
+  "women": {
+   "count": 12,
+   "sev": {
+    "moderate": 2,
+    "concerning": 3,
+    "serious": 7
+   },
+   "title": "women",
+   "desc": ""
+  },
+  "fascism": {
+   "count": 1,
+   "sev": {
+    "concerning": 1
+   },
+   "title": "fascism",
+   "desc": ""
+  }
+ },
+ "rigging": 71,
+ "civics": 24,
+ "dives": [
+  "press-ban",
+  "corruption",
+  "paid-for",
+  "the-ballroom",
+  "his-own-account"
+ ]
+}
