@@ -787,7 +787,10 @@ It exits non-zero on failure, so it can gate the pipeline. Three classes of defe
   as well; `fetch-article.js` also returns no body for any PBS page. A PBS citation is therefore
   **unverifiable by any automated means in this repo**. Treat pbs.org as never-sole-source, and
   confirm the exact headline via search before citing it. Re-probe any outlet whose `--live` results
-  look suspiciously uniform.
+  look suspiciously uniform. **`ftc.gov` answers `404` to everything**, including its own homepage
+  (probed 2026-10-22, hours after `fetch-article.js` had loaded the cited pages with canonical tags).
+  `verify-sources.js` lists both hosts in `STATUS_MASKERS`, so their 404s are reported as
+  unverifiable rather than dead; cite them only with a saved fetch in hand, never as a sole source.
 
 **Outlets probed for slug-ignoring behaviour** (mutate the slug, keep the ID, see whether it still
 serves): **safe** — cnn.com, cbsnews.com, foxnews.com, yahoo.com, nypost.com, newsweek.com (a bad slug
