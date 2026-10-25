@@ -359,8 +359,8 @@ All research pages use a shared design system. Key components (all in `src/compo
 
 | Component                       | Purpose                                                                                         |
 |---------------------------------|-------------------------------------------------------------------------------------------------|
-| `Masthead`                      | Page hero with eyebrow, title (supports `<span class='word-red'>` highlighting), subtitle, date |
-| `Ticker`                        | Scrolling news ticker bar                                                                       |
+| `Masthead`                      | Page hero with eyebrow, title (supports `<span class='word-red'>` highlighting), subtitle, date; `lead` prop: `"title"` (default), `"stat"` (opens on the page's PullStat) or `"quote"` (opens on its IntroQuote); vary it so adjacent pages in a series do not open the same way |
+| `Ticker`                        | Static "Key findings" strip showing the first three `tickerItems` (the marquee is gone since WP8, October 25, 2026); the arrays stay the data source, so put the shortest, strongest findings first |
 | `IntroQuote`                    | Featured quote with citation                                                                    |
 | `StatGrid` + `StatCard`         | Animated stat counters (target, prefix, suffix, label, accentColor)                             |
 | `SectionDivider`                | Labeled horizontal rule between sections                                                        |
@@ -443,7 +443,7 @@ The research site is entirely static — **nothing is dynamic**. All numbers, fa
 
 #### Controversy Count
 
-Update in `src/pages/index.astro` — ticker item, StatCard target, and CTA description.
+Since WP4 (October 2026) `src/pages/index.astro` reads the tracker count at build time from `https://thetrumptracker.com/api/stats.json`, falling back to the committed number in `src/data/tracker-stats.fallback.json`; bump that fallback file after a sweep instead of editing the three spots by hand. (Until the WP4 research branch merges, the three hand-edited spots still exist.)
 
 #### Homepage Stats (check when relevant totals change)
 
@@ -454,7 +454,7 @@ All in `src/pages/index.astro`:
 
 #### Tickers on Every Research Page
 
-There are **56+ pages** with `const tickerItems = [...]` arrays. These are hardcoded headline facts that scroll across each page. When adding controversies or augmenting research pages:
+There are **56+ pages** with `const tickerItems = [...]` arrays. Since October 25, 2026 the `Ticker` component renders only the first three items as a static "Key findings" strip (no marquee), so the first three items of each array are the ones readers see; keep them short (under 160 characters) and put the newest, strongest finding first. When adding controversies or augmenting research pages:
 
 - **Add ticker items** to relevant pages when new stories are headline-worthy
 - **Update existing ticker items** if facts/numbers have changed (e.g., a count increased)
