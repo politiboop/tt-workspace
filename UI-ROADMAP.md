@@ -154,6 +154,8 @@ Pitfall: Pagefind indexes built HTML, so it runs after the Docusaurus build, and
 
 ### WP4. The network strip and `stats.json`
 
+Status: tracker side done with WP2 (strip component, `/api/stats.json`, `/api/entries-slim.json`); Rigged and Deep Dives done and merged October 25, 2026 (branches `claude/wp4-strip-stats`: Astro `NetworkStrip` and `AlsoFromTeam` components, `/stats.json` as a prerendered endpoint, `src/lib/network.js` site list); the research side (strip plus counts from `stats.json` with a committed fallback) is on branch `claude/wp4-strip-stats` in controversial-trump-research. Still open: the tracker's "Elsewhere" panels still use constants for the Rigged and Dives counts; switch them to the two sites' `/stats.json` with fallbacks. Day-count rule: Rigged and Dives count New York calendar days, the tracker's chip counts the reader's local days; make the tracker match New York days. At 375px the Rigged strip's own link starts off-screen; hide the "The network" label below 480px in all four copies together.
+
 Goal: one shared navigation line across the four dark sites, and one source of truth for counts.
 
 Model: Sonnet. Depends on: nothing (can run alongside WP2).
