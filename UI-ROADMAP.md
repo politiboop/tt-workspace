@@ -109,6 +109,8 @@ Model: Sonnet. Depends on: nothing. Steps: in `controversial-trump`, `git fetch`
 
 ### WP2. Tracker front page (the mockup, made real)
 
+Status: done. Built with WP3 and the tracker half of WP4 on branch `claude/wp2-wp3-front-page-search` (e8e8c62) and merged to `main` on October 25, 2026. Open item: `main.js` is 250 KB gzipped, over the 150 KB budget, because Docusaurus 2 embeds the route list for all 1,276 entry pages in every page's main chunk; the branch added only 6.6 KB. The budget is unreachable without leaving Docusaurus (see section 4, item 1). The homepage no longer loads the 1.36 MB corpus; `/timeline`, `/categories` and `/tags` still do until WP7.
+
 Goal: replace `website/src/pages/index.jsx` (694 lines: hero, research callout, red stats box, search panel, sort chips, collapsible filters, Fuse search over the full index, grid/list of cards) with the front page in `design/tracker-front-page.mockup.html`.
 
 Model: Opus. Depends on: WP1 (entry URLs) and WP3 (search), which can be built in parallel on the same branch.
@@ -137,6 +139,8 @@ Done when: `npm run build` passes; the homepage loads no chunk over 150 KB compr
 Pitfalls: Docusaurus 2.4 (not 3); `@theme/Layout` wraps the page in the navbar, so hide or restyle the Infima navbar via `custom.css` rather than fight it; the existing `categories.json` holds emoji icons in `icon` fields, do not render them; `readableOnDark()` in `utils/colors.js` must still be applied anywhere a category color is used as text.
 
 ### WP3. Search with Pagefind; retire the corpus download
+
+Status: done with WP2 (same branch and merge). "Omar" returns in 190 ms on a 20 Mbps / 40 ms connection; Vercel must keep `npm run build` as its build command so Pagefind runs after Docusaurus.
 
 Goal: instant search over all entries without shipping the corpus.
 
