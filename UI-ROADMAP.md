@@ -211,6 +211,8 @@ Done when: a page screenshot taken immediately after a scroll shows no element u
 
 ### WP9. Rigged Before the Vote: after November 3
 
+Status: done. Built on branch `claude/wp9-after-the-vote` (6ea9542) and merged to `main` on October 25, 2026, with the clock logic in `src/lib/election-clock.js` (`npm run check:clock`), the "Jump to" select at 900px and below, build-time hero numbers, the `AFTER_STATUS` placeholder block (user fills it; nothing renders while empty) and 70 pre-existing contrast failures fixed with text-only status tokens. Remaining for the user: `www.riggingelections.com` in the Vercel dashboard. Pre-existing dead card sources noted by the session (AP via WSOC-TV on `dhs-unlawful-voter-initiative`, AP via OPB on `alabama-districts`) belong to the next sweep's live check.
+
 Model: Sonnet. Depends on: nothing. Do this before November 3.
 
 - Countdown chip: when the date passes, it becomes "Election Day was November 3" for a week, then disappears.
