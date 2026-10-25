@@ -103,6 +103,8 @@ Each package lists: goal, files, steps, done-when, pitfalls, model, dependencies
 
 ### WP1. Merge the two pending branches
 
+Status: done. Merged into `main` as 94343e5 and a101c7a on October 25, 2026; deployed (Vercel build 3m); checks passed from a browser session: canonical tag present on `/controversy/muslim-ban/`, `?id=` route answers 308 to the new path, sitemap lists 1,304 URLs, `/og/<id>.png` serves. Note: thetrumptracker.com was found to be behind the Vercel Security Checkpoint (`x-vercel-mitigated: challenge`), which returns 403 to every non-browser request, including link-preview bots, RSS readers and sibling-site build-time fetches; trumpingtrump.com (same project) is not challenged. The user controls that setting in the Vercel dashboard; WP4's build-time fetch of `/api/stats.json` must keep its committed fallback.
+
 Model: Sonnet. Depends on: nothing. Steps: in `controversial-trump`, `git fetch`, `git merge origin/claude/prerendered-entry-pages` (clean), `git merge origin/claude/fix-day-early-card-dates` (clean), `cd website && npm run build` (expect about 30s cold), push `main`, wait for Vercel (first deploy about 4 to 5 minutes), then run the three `curl` checks: the 308 redirect above; `curl -s https://thetrumptracker.com/controversy/muslim-ban/ | grep -o '<link rel="canonical"[^>]*>'`; `curl -s https://thetrumptracker.com/sitemap.xml | grep -c '<loc>'` (expect about 1,294). Done when all three pass. Pitfall: Vercel preview URLs are behind login; test production only.
 
 ### WP2. Tracker front page (the mockup, made real)
