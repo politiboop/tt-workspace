@@ -202,6 +202,8 @@ Done when: dragging across October 2026 filters the list to those weeks, the can
 
 ### WP8. Research site: de-template
 
+Status: done except the `stats.json` counts (WP4 Part C). Branch `claude/wp8-detemplate` (3f9acda) merged to `master` on October 25, 2026: hero-only reveal, static "Key findings" strip from the first three `tickerItems`, `Masthead` `lead` prop set per page (28 stat, 21 quote, 25 title), eyebrow fix, posts linking `/controversy/<id>/`, plus 1,293 pre-existing contrast failures fixed with bright text variants and a `--faint-fill` token. Follow-ups: the workspace CLAUDE.md Part 2 still describes the marquee Ticker and lacks the `lead` prop; about a dozen pages lead their `tickerItems` with 200-330 character items, so the strip runs tall on phones until those arrays are reordered.
+
 Model: Sonnet. Depends on: WP4 (stats).
 
 - Reveal-on-scroll: keep it on the hero only. Everything else renders visible. Add `@media (prefers-reduced-motion: reduce)` that disables the remaining transition. (The pages currently animate about 60 elements each; fast scrollers see dim sections.)
