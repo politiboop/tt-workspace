@@ -196,6 +196,8 @@ Done when: the Omar entry shows a change log with every update dated correctly, 
 
 ### WP7. Timeline scrubber
 
+Status: done. Branch `claude/wp7-timeline-scrubber` (b3fb9cf) merged to `main` on October 25, 2026: canvas density strips (weekly since January 2025, yearly before), brush-select and keyboard selection written to the URL, severity chips, build-time `weeks.json` and `timeline-rows.json` from the plugin; the page no longer downloads the corpus (1,657 KB to 399 KB gzipped, of which `main.js` is 256 KB). Behaviour changes: the title filter no longer matches tags (links to full search instead); filters live in the URL.
+
 Model: Opus. Depends on: WP1 (entry URLs), WP3 (to drop the corpus import from the timeline page).
 
 Goal: `/timeline` gets a density strip above the list: one column per week since January 2025 (about 95 columns) plus a coarser pre-2025 strip, stacked by severity, drawn on a `<canvas>` (not vis-timeline; it is installed but unused and heavier than needed), with brush-select to filter the list below and hover tooltips with the week's count. Data from the build-time plugin (`weeks.json`: week start, per-severity counts). The year chips stay; the month groups stay.
