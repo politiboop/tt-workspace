@@ -184,6 +184,8 @@ Done when: `trump-dismantles-foreign-election-interference-units-cisa-hack-reque
 
 ### WP6. Entry page polish
 
+Status: done. Branch `claude/wp6-entry-page-polish` (80d9bb8) merged to `main` on October 25, 2026: progress bar on the navbar edge, desktop contents rail and "What changed" log for entries over 1,200 words with dated updates (`LONG_ENTRY_WORDS` in `website/src/utils/entryChanges.js`), paragraph permalinks (`#p-N`), share row with the card image and Copy link, Key Facts badge hidden at 1, related entries ordered by shared tags. Open: the site stylesheet embeds 57 font files (688 KB raw, about 420 KB gzipped on every page); serve the fonts as files instead (final tracker pass).
+
 Model: Opus for the diff feature, Sonnet for the rest. Depends on: WP1.
 
 - Reading progress bar (2px, `--brand-bright`) under the network strip on entry pages.
