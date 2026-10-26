@@ -1,7 +1,7 @@
 # Memory Index
 
 - [feedback_design_preferences.md](feedback_design_preferences.md) — User's design and content quality preferences for both sites (editorial feel, no emojis, prose+cards, no fabricated data)
-- [project_tracker_overhaul.md](project_tracker_overhaul.md) — Planned overhaul for the tracker site (controversial-trump/website)
+- [project_tracker_overhaul.md](project_tracker_overhaul.md) — UI work for all five sites is specified in the workspace repo's UI-ROADMAP.md (2026-10-22); read it before any UI session
 - [project_civics_desk.md](project_civics_desk.md) — The Civics Desk: third repo, accessible explainers, non-confrontational tone for reaching Trump supporters
 - [feedback_civics_desk_augmentation.md](feedback_civics_desk_augmentation.md) — When adding controversies, also check Civics Desk explainers for augmentation; ask if unsure
 - [feedback_no_em_dashes_titles.md](feedback_no_em_dashes_titles.md) — No em dashes in controversy titles; write organic newspaper-style headlines
@@ -13,3 +13,9 @@
 - [project_reuters_401_everything.md](project_reuters_401_everything.md) — Reuters now 401s every request, so the "Reuters 401 = fabricated" rule is void; verify via syndicated copies
 - [project_sweep_research_agents.md](project_sweep_research_agents.md) — Sweep subagents share a 200-WebSearch cap; nested helpers report to main, so tell the parent
 - [feedback_severity_accuracy_over_targets.md](feedback_severity_accuracy_over_targets.md) — Rate severity on the rubric's criteria; target % is a smell test, never a reason to re-rate
+- [feedback_no_visible_browser_windows.md](feedback_no_visible_browser_windows.md) — Puppeteer headless only, 1-2 browsers; never headful windows; list bot-walled URLs as unverified
+- [project_live_domains.md](project_live_domains.md) — Real production domains per site; the Vercel Security Checkpoint hit thetrumptracker.com on 2026-10-25 (403 to curl for hours); if it returns, verify with the browser
+- [feedback_side_session_models.md](feedback_side_session_models.md) — Every sub-session/agent gets the cheapest capable model, set explicitly (Haiku lookups, Sonnet mechanical, Opus judgment); never inherit
+- [feedback_urls_only_from_map_tsv.md](feedback_urls_only_from_map_tsv.md) — Citation URLs only via U()/map.tsv; a URL typed from a headline is a fabrication (Alaska Beacon slip, 2026-10-22)
+- [project_vercel_cli_pitfalls.md](project_vercel_cli_pitfalls.md) — Vercel CLI traps: unlinked-folder commands create projects; previews need auth; CLI redeploy skips the build cache
+- [project_corruption_chronology.md](project_corruption_chronology.md) — Sourced 317-item corruption ledger (2017-2026) at the workspace root, built 2026-10-25 behind a URL gate; how to extend it
