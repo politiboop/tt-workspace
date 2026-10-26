@@ -884,7 +884,10 @@ The user periodically drops a list of article URLs into `research.txt` at the wo
 6. **Cross-repo augmentation (mandatory check).** For each new/updated entry, determine whether it strengthens a Civics Desk explainer or research page; augment where it fits, note explicitly where it doesn't. Then ask the user before pushing a batch of Civics Desk edits — they direct which articles to update. For election-related entries, also check `election-rigging/src/data/actions.json` ("Rigged Before the Vote"): fold developments into existing cards (facts/status) or add a new card, bump its `LAST_UPDATED`, and run `node verify-sources.js` in that repo (see `election-rigging/CLAUDE.md`)
    — it checks that every card source URL still traces to one of its seed tracker entries. Run it after
    any tracker-side source correction too: dropping a fabricated URL in `controversial-trump` can orphan
-   a card that quoted it.
+   a card that quoted it. Since WP5 (October 25, 2026) both `election-rigging` and `deep-dives` also keep a
+   snapshot of the tracker titles their "Tracker entry" links show (`src/generated/tracker-titles.json`);
+   after any `trackerIds` change, or after a title is corrected in the tracker, run
+   `node sync-tracker-titles.js` in each repo and commit the result, or their `verify-sources.js` fails.
 
 ### The Civics Desk article roster and architecture
 

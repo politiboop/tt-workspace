@@ -172,6 +172,8 @@ Pitfall: build-time fetch of a sibling site means a Rigged deploy can see a stal
 
 ### WP5. "Also covered in" cross-links from `trackerIds`
 
+Status: Rigged and Deep Dives done and merged October 25, 2026 (branches `claude/wp5-crosslinks`): `/crosslinks.json` on each site (107 entries / 125 rows on Rigged, 32 / 61 on Dives), "Tracker entry" links on cards, heard items and dive events, titles from a committed snapshot refreshed by `node sync-tracker-titles.js` and checked by `verify-sources.js`. Open: the tracker half, the "Also covered in" block on entry pages reading both files at build time with an empty fallback.
+
 Goal: every tracker entry that appears in a Rigged card or a Deep Dive links to it, and vice versa, generated from data.
 
 Model: Sonnet. Depends on: WP1, WP4 part A.
