@@ -259,6 +259,8 @@ Model: Sonnet.
 - Categories page: replace the stacked colored counts with the index-row mini severity bar.
 - Timeline page year chips: keep; add the severity bar for the selected year.
 
+**Status (2026-10-25): done, on `main` at `9cae325`, Sonnet.** The two dead links (one each in 50 Reasons and The Case, entries deleted in `0764a8c`) had no replacement entry and were dropped with their sentences kept; `npm run build` now runs `npm run check:pages` first, so a link to a missing or merged-away id fails the build before Docusaurus starts. The site share card is drawn at build from the same stats as `/api/stats.json` (`lib/site-card.js` → `build/img/og-image.png`); the committed `static/img/og-image.png` is the figure-free fallback. `/categories` renders the front page's `CategoryIndex` rows (shared component, ordered by count, no corpus load: 1,617 → 294 KB gzip). Timeline year chips set the brush to that year and show its severity bar (`YearBar.jsx`). The `trumpingtrump.com` 301 is the user's, in the Vercel dashboard. Loose ends: `static/img/og-image.svg` ("290+") and the workspace `og-image-instructions.md` can be retired; the 50 Reasons intro still says "nearly a thousand documented entries".
+
 ## 4. Fresh eyes: what would make these sites stand out
 
 Written without the old design preferences as a constraint. Each item is a spec a Sonnet or Opus session can build; none needs new content.
