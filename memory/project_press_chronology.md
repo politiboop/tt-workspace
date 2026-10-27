@@ -5,7 +5,7 @@ metadata:
   type: project
 ---
 
-`/Users/brock/dev/politiboop/trump-press-chronology.md` (uncommitted as of 2026-10-27) is a 197-item ledger of acts by Trump and his administration against the press and public access to information, 2015 to October 2026, in the corruption ledger's shape, built as the source for a press version of The Count prototype.
+`/Users/brock/dev/politiboop/trump-press-chronology.md` (committed in tt-workspace 4daf00a on 2026-10-27; the saved research texts under press-chronology/research stay local and gitignored because the repo is public) is a 197-item ledger of acts by Trump and his administration against the press and public access to information, 2015 to October 2026, in the corruption ledger's shape, built as the source for a press version of The Count prototype.
 
 **Why:** the user wants The Count to become a template for other topics, and the press topic needed a ledger of the same shape first. The tracker covers only 2026 densely, so earlier years came from five Sonnet research agents whose saved pages and map.tsv files are in `press-chronology/research/<period>/`.
 
