@@ -1,0 +1,2215 @@
+{
+ "title": "How the Stage Was Set",
+ "framing": "This prologue lists, in sourced steps, how oversight offices, ethics rules, the Justice Department and the clemency process changed around Trump before and during the acts this count records, and it closes with where the law stops at a sitting president, including what he backed and fought in Congress. It places those steps beside the acts without claiming that any step caused any act.",
+ "generated": "2026-10-26",
+ "run": "wfhxphxmy",
+ "method": "Seven themed finders read the Trump Tracker corpus (as of commit 32fa05b, with the seven setup entries and the stock-ban entry added on October 26, 2026) and the corruption ledger; a verifier per theme checked every beat against its entry (facts, verbatim sources, dates, quotes and who the entry attributes them to); a synthesis wrote the outline against the prior reviewed outline; a critic checked it against the reader’s four examples and for overreach; one gap-fill round followed. Every URL below appears in a tracker entry or the ledger; the gate ran after the sweep with zero misses.",
+ "gates": {
+  "beats": 44,
+  "sourceLinks": 124,
+  "outsideCorpus": 0,
+  "unknownIds": 0
+ },
+ "sections": [
+  {
+   "key": "watchdogs",
+   "title": "Removing the watchdogs",
+   "thesis": "After inspectors general examining two Cabinet members were removed in 2020, the second term removed 17 inspectors general, by a federal court's count, and the heads of the ethics and whistleblower-protection offices within weeks, removed an FEC commissioner before the commission lost its quorum, and won a ruling that the president may fire an FTC member without cause.",
+   "thesisBasis": [
+    "ledger:2020-05-15 Trump removes the inspectors",
+    "inspectors-general-purge",
+    "trump-fires-office-of-special-counsel-dellinger",
+    "ledger:2025-02-10 Trump removes the director",
+    "trump-removes-fec-commissioner-weintraub-fec-loses-quorum",
+    "scotus-trump-slaughter-overrules-humphreys-executor-fire-ftc"
+   ],
+   "thesisInferred": false,
+   "beats": [
+    {
+     "id": "ledger:2020-05-15 Trump removes the inspectors",
+     "date": "2020-05-15",
+     "line": "In May 2020, Trump told Congress that State Department inspector general Steve Linick was out while Linick examined Pompeo's use of staff; the next day the acting Transportation inspector general, whose office was investigating Chao, was replaced.",
+     "why": "The ledger labels it obstruction of oversight and notes that successors later completed both investigations.",
+     "whyBasis": "stated",
+     "term": "first",
+     "inCount": true,
+     "sources": [
+      {
+       "text": "NPR: President Trump Fires State Department Inspector General Steve Linick",
+       "url": "https://www.npr.org/2020/05/16/857334790/president-trump-removes-state-department-inspector-general-steve-linick"
+      },
+      {
+       "text": "Politico: Trump ousts State Department watchdog",
+       "url": "https://www.politico.com/news/2020/05/15/state-department-inspector-general-fired-261536"
+      },
+      {
+       "text": "Politico: Democrats blast removal of acting DOT inspector general",
+       "url": "https://www.politico.com/news/2020/05/19/democrats-blast-removal-of-acting-dot-inspector-general-268611"
+      }
+     ]
+    },
+    {
+     "id": "schedule-f-civil-service-purge",
+     "date": "2020-10-21",
+     "dateNote": "Entry date · the entry says only that the order was signed in October 2020",
+     "line": "In October 2020, Trump signed Executive Order 13957 creating Schedule F, which would have stripped job protections from tens of thousands of federal employees; Biden revoked it in January 2021.",
+     "why": "Trump vowed to reinstate it immediately if re-elected.",
+     "whyBasis": "stated",
+     "term": "first",
+     "severity": "serious",
+     "inCount": false,
+     "sources": [
+      {
+       "text": "Trump White House Archives: Executive Order on Creating Schedule F In The Excepted Service",
+       "url": "https://trumpwhitehouse.archives.gov/presidential-actions/executive-order-creating-schedule-f-excepted-service/"
+      },
+      {
+       "text": "GAO: Civil Service: Agency Responses and Perspectives on Former Executive Order",
+       "url": "https://www.gao.gov/products/gao-22-105504"
+      },
+      {
+       "text": "White House (2025): Restoring Accountability To Policy-Influencing Positions",
+       "url": "https://www.whitehouse.gov/presidential-actions/2025/01/restoring-accountability-to-policy-influencing-positions-within-the-federal-workforce/"
+      }
+     ]
+    },
+    {
+     "id": "inspectors-general-purge",
+     "date": "2025-01-24",
+     "line": "On Friday evening, January 24, 2025, Trump fired 17 inspectors general by email, effective immediately, by a federal court's count, without the 30 days' notice to Congress the law requires.",
+     "why": "Removed agencies' independent fraud-and-waste investigators at once; a court found the notice law violated but declined to reinstate them, so the removals stood.",
+     "whyBasis": "stated",
+     "term": "second",
+     "severity": "severe",
+     "quote": "President Trump violated the IGA. That much is obvious.",
+     "quoteBy": "U.S. District Judge Ana Reyes, ruling on the eight fired inspectors general who sued",
+     "inCount": true,
+     "sources": [
+      {
+       "text": "U.S. District Court for D.C.: Memorandum Opinion and Order, Storch v. Hegseth, No. 25-cv-415 (September 24, 2025)",
+       "url": "https://storage.courtlistener.com/recap/gov.uscourts.dcd.277385/gov.uscourts.dcd.277385.54.0_4.pdf"
+      },
+      {
+       "text": "NPR (Associated Press): Trump uses mass firing to remove inspectors general at a series of agencies (January 25, 2025)",
+       "url": "https://www.npr.org/2025/01/25/g-s1-44771/trump-fires-inspectors-general"
+      },
+      {
+       "text": "Fox News: Trump fires 17 government watchdogs at various federal agencies (January 25, 2025)",
+       "url": "https://www.foxnews.com/politics/trump-fires-17-government-watchdogs-various-federal-agencies"
+      }
+     ],
+     "ledgerId": "ledger:2025-01-24 Trump fires about 17"
+    },
+    {
+     "id": "trump-fires-office-of-special-counsel-dellinger",
+     "date": "2025-02-07",
+     "line": "On February 7, 2025, a one-sentence White House email giving no reason fired Hampton Dellinger, head of the Office of Special Counsel, which protects federal whistleblowers; he sued, then dropped his case on March 6.",
+     "why": "The office that protects whistleblowers passed to acting heads, Doug Collins and then Jamieson Greer.",
+     "whyBasis": "stated",
+     "term": "second",
+     "severity": "serious",
+     "quote": "an independent watchdog and a safe, trustworthy place for whistleblowers to report wrongdoing and be protected from retaliation",
+     "quoteBy": "Hampton Dellinger, the fired Special Counsel, on leaving",
+     "inCount": false,
+     "sources": [
+      {
+       "text": "U.S. Court of Appeals for the D.C. Circuit: Opinion, Dellinger v. Bessent, No. 25-5052 (March 10, 2025)",
+       "url": "https://clearinghouse-umich-production.s3.amazonaws.com/media/doc/156750.pdf"
+      },
+      {
+       "text": "Government Executive: Ethics and whistleblower officials fired by Trump (February 10, 2025)",
+       "url": "https://www.govexec.com/management/2025/02/ethics-and-whistleblower-officials-fired-trump/402887/"
+      },
+      {
+       "text": "U.S. Office of Special Counsel: Annual Report for Fiscal Year 2025 (May 2026)",
+       "url": "https://www.osc.gov/~assets/docs/fy-2025-annual-report-to-congress.pdf"
+      }
+     ]
+    },
+    {
+     "id": "ledger:2025-02-10 Trump removes the director",
+     "date": "2025-02-10",
+     "line": "On February 10, 2025, three weeks into the term, Trump ousted David Huitema, the Senate-confirmed head of the Office of Government Ethics.",
+     "why": "The office certifies executive-branch financial disclosures and refused to certify Wilbur Ross's in the first term; the ledger files the removal under dismantling enforcement.",
+     "whyBasis": "stated",
+     "term": "second",
+     "inCount": true,
+     "sources": [
+      {
+       "text": "CBS News: Trump ousts director of Office of Government Ethics",
+       "url": "https://www.cbsnews.com/news/trump-office-of-government-ethics-director/"
+      }
+     ]
+    },
+    {
+     "id": "trump-removes-fec-commissioner-weintraub-fec-loses-quorum",
+     "date": "2025-05-01",
+     "dateNote": "Quorum lost May 1, 2025 · Weintraub was removed by a letter dated January 31, 2025",
+     "line": "Trump removed Democratic FEC chair Ellen Weintraub by a letter citing no cause; as Republican commissioners left, the FEC lost its quorum on May 1, 2025, and as of October 2026 still could not enforce the law.",
+     "why": "Without a quorum the FEC cannot open investigations, fine violators or write rules; a complaint alleging Trump illegally controls MAGA Inc. cannot be decided.",
+     "whyBasis": "stated",
+     "term": "second",
+     "severity": "serious",
+     "quote": "the longest period without a quorum in the Commission's 50+ year history",
+     "quoteBy": "Shana M. Broussard, FEC chair, on the one-year anniversary of the lost quorum",
+     "inCount": false,
+     "sources": [
+      {
+       "text": "CBS News: Democratic FEC Chair Ellen Weintraub says Trump fired her. She says it's not legal. (February 7, 2025)",
+       "url": "https://www.cbsnews.com/news/democratic-fec-chair-ellen-weintraub-trump-fired-her"
+      },
+      {
+       "text": "CBS News: Weeks before Election Day, the nation's campaign finance regulator can't enforce the law (October 7, 2026)",
+       "url": "https://cbsnews.com/news/fec-midterm-elections-quorum-campaign-finance-rules"
+      },
+      {
+       "text": "Federal Election Commission: Statement of Chair Shana M. Broussard on the one-year anniversary of the loss of a quorum (April 30, 2026)",
+       "url": "https://www.fec.gov/resources/cms-content/documents/Statement_on_One_Year_Without_Quorum.pdf"
+      }
+     ]
+    },
+    {
+     "id": "schedule-f-federal-workers-at-will",
+     "date": "2026-03-09",
+     "line": "An OPM rule effective March 9, 2026 created Schedule Policy/Career, whose positions are at-will and excepted from adverse action appeals; it moved no one itself, and a June 3, 2026 executive order placed about 8,000 jobs in it, by the administration's count.",
+     "why": "Placed employees lose Merit Systems Protection Board appeals of adverse actions; whistleblower complaints go to their own agency, not the Office of Special Counsel. OPM says protections remain.",
+     "whyBasis": "stated",
+     "term": "second",
+     "quote": "will be at-will positions excepted from adverse action procedures or appeals",
+     "quoteBy": "OPM final rule (91 FR 5580)",
+     "inCount": false,
+     "sources": [
+      {
+       "text": "Federal Register: Improving Performance, Accountability and Responsiveness in the Civil Service, final rule, 91 FR 5580 (published February 6, 2026; effective March 9, 2026)",
+       "url": "https://www.federalregister.gov/documents/2026/02/06/2026-02375/improving-performance-accountability-and-responsiveness-in-the-civil-service"
+      },
+      {
+       "text": "Federal Register: Executive Order 14410, Implementing Schedule Policy/Career in the Excepted Service, 91 FR 34893 (signed June 3, 2026)",
+       "url": "https://www.federalregister.gov/documents/2026/06/10/2026-11594/implementing-schedule-policycareer-in-the-excepted-service"
+      },
+      {
+       "text": "Federal Register: Merit Systems Protection Board, Appellate Jurisdiction Update, 91 FR 8359 (published February 23, 2026; effective March 9, 2026)",
+       "url": "https://www.federalregister.gov/documents/2026/02/23/2026-03594/appellate-jurisdiction-update"
+      }
+     ]
+    },
+    {
+     "id": "scotus-trump-slaughter-overrules-humphreys-executor-fire-ftc",
+     "date": "2026-06-29",
+     "line": "On June 29, 2026, the Supreme Court ruled 6-3 in Trump v. Slaughter that the president may fire an FTC member without cause, overruling the 1935 Humphrey's Executor precedent.",
+     "why": "The entry reads the logic as reaching the NLRB, Merit Systems Protection Board and Consumer Product Safety Commission; the Federal Reserve was excepted.",
+     "whyBasis": "stated",
+     "term": "second",
+     "severity": "severe",
+     "quote": "Subordinates who exercise the President's power are subject to removal by him.",
+     "quoteBy": "Chief Justice John Roberts, writing for the majority",
+     "inCount": false,
+     "sources": [
+      {
+       "text": "NBC Washington: Supreme Court rules Trump can fire independent agency board members (June 29, 2026)",
+       "url": "https://www.nbcwashington.com/news/national-international/supreme-court-slaughter-trump-independent-agency-board-members-decision/4104286/"
+      },
+      {
+       "text": "SCOTUSblog: Court allows Trump to fire FTC commissioner and overturns a major restraint on presidential power (June 29, 2026)",
+       "url": "https://www.scotusblog.com/2026/06/court-allows-trump-to-fire-ftc-commissioner-and-overturns-major-restraint-on-presidential-power/"
+      },
+      {
+       "text": "NPR: Supreme Court guts independent-agency protections, overruling Humphrey's Executor (June 29, 2026)",
+       "url": "https://www.npr.org/2026/06/29/nx-s1-5816232/supreme-court-ftc-independent-agencies-humphreys-executor"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "rules",
+   "title": "Loosening the ethics rules",
+   "thesis": "Trump kept his businesses in a revocable trust under a company ethics plan with no ban on new foreign private deals, a first-day order revoked the appointee ethics pledge order, and later steps paused new foreign-bribery enforcement, ended ownership reporting for U.S. companies and withdrew the United States from Europe's anti-corruption monitor.",
+   "thesisBasis": [
+    "ledger:2025-01-10 The Trump Organization's second-term",
+    "ledger:2025-01-20 Trump takes office without",
+    "ledger:2025-01-20 On his first day",
+    "ledger:2025-02-10 Trump pauses enforcement of",
+    "fincen-ends-beneficial-ownership-database-deletion",
+    "us-withdraws-greco-council-of-europe-anti-corruption"
+   ],
+   "thesisInferred": false,
+   "beats": [
+    {
+     "id": "ledger:2025-01-10 The Trump Organization's second-term",
+     "date": "2025-01-10",
+     "line": "The Trump Organization's second-term ethics plan put the businesses in a trust run by Trump's children and barred new deals with foreign governments but, unlike the 2017 plan, placed no ban on new foreign private deals.",
+     "why": "CNN noted the pledge was silent on how the company would handle overseas business deals.",
+     "whyBasis": "stated",
+     "term": "between",
+     "quote": "The ethics pledge, however, is silent on how the company will handle overseas business deals",
+     "quoteBy": "CNN, on the plan",
+     "inCount": true,
+     "sources": [
+      {
+       "text": "CNN: Trump Organization's new ethics plan pledges Donald Trump will separate himself from his private business interests",
+       "url": "https://lite.cnn.com/2025/01/10/politics/trump-organization-new-ethics-plan/index.html"
+      },
+      {
+       "text": "CREW: Twenty-three Trump-branded real estate projects will be developed in foreign countries during Trump's presidency",
+       "url": "https://www.citizensforethics.org/reports-investigations/crew-reports/trump-foreign-development-tracker/"
+      }
+     ]
+    },
+    {
+     "id": "ledger:2025-01-20 Trump takes office without",
+     "date": "2025-01-20",
+     "line": "Trump took office in January 2025 without selling his assets or placing them in a qualified blind trust; they sit in a revocable trust overseen by Donald Trump Jr. that Trump can amend or revoke.",
+     "why": "Unlike a blind trust, it leaves him owning the businesses; the ledger records deals, token sales and licensing fees flowing to it.",
+     "whyBasis": "stated",
+     "term": "second",
+     "inCount": true,
+     "sources": [
+      {
+       "text": "Time: Trump Reports Over $1 Billion in Income From Crypto Ventures",
+       "url": "https://time.com/article/2026/07/01/trump-2025-financial-disclosure-crypto-world-liberty-financial/"
+      },
+      {
+       "text": "The Independent: Trump claims he had nothing to do with billion-dollar windfall on his financial disclosures",
+       "url": "https://www.independent.co.uk/news/world/americas/us-politics/trump-president-investments-financial-disclosures-crypto-b3006826.html"
+      }
+     ]
+    },
+    {
+     "id": "ledger:2025-01-20 On his first day",
+     "date": "2025-01-20",
+     "line": "On January 20, 2025, Executive Order 14148 revoked Executive Order 13989, under which appointees had pledged to take no gifts from registered lobbyists and to observe two-year revolving-door limits.",
+     "why": "The ledger classes the revocation under dismantling enforcement.",
+     "whyBasis": "inferred",
+     "term": "second",
+     "inCount": true,
+     "sources": [
+      {
+       "text": "Federal Register: Initial Rescissions of Harmful Executive Orders and Actions (EO 14148)",
+       "url": "https://www.federalregister.gov/documents/2025/01/28/2025-01901/initial-rescissions-of-harmful-executive-orders-and-actions"
+      },
+      {
+       "text": "Federal Register: Ethics Commitments by Executive Branch Personnel (EO 13989)",
+       "url": "https://www.federalregister.gov/documents/2021/01/25/2021-01762/ethics-commitments-by-executive-branch-personnel"
+      }
+     ]
+    },
+    {
+     "id": "ledger:2025-02-10 Trump pauses enforcement of",
+     "date": "2025-02-10",
+     "line": "On February 10, 2025, Executive Order 14209 told the attorney general to cease new Foreign Corrupt Practices Act investigations or enforcement actions during a 180-day review.",
+     "why": "The ledger files the pause under dismantling enforcement; the order's title frames it as serving American economic and national security.",
+     "whyBasis": "inferred",
+     "term": "second",
+     "quote": "cease initiation of any new FCPA investigations or enforcement actions",
+     "quoteBy": "Executive Order 14209",
+     "inCount": true,
+     "sources": [
+      {
+       "text": "Federal Register: Pausing Foreign Corrupt Practices Act Enforcement To Further American Economic and National Security (EO 14209)",
+       "url": "https://www.federalregister.gov/documents/2025/02/14/2025-02736/pausing-foreign-corrupt-practices-act-enforcement-to-further-american-economic-and-national-security"
+      },
+      {
+       "text": "AP via ClickOnDetroit: Justice Department is expected to slash public corruption unit, AP sources say",
+       "url": "https://www.clickondetroit.com/news/politics/2025/03/12/justice-department-is-expected-to-slash-public-corruption-unit-ap-sources-say/"
+      }
+     ]
+    },
+    {
+     "id": "fincen-ends-beneficial-ownership-database-deletion",
+     "date": "2026-08-11",
+     "line": "On August 11, 2026, FinCEN issued a final rule permanently ending the requirement that U.S. companies report their beneficial owners, and said it will delete ownership information already filed by U.S. persons now exempt.",
+     "why": "The requirement was meant to make anonymous shell companies harder to use; deleting filed records means a later administration cannot simply restore them.",
+     "whyBasis": "stated",
+     "term": "second",
+     "severity": "severe",
+     "quote": "eliminating a burdensome reporting requirement for millions of law-abiding business owners without compromising our national security",
+     "quoteBy": "Treasury Secretary Scott Bessent",
+     "inCount": true,
+     "sources": [
+      {
+       "text": "U.S. Department of the Treasury: FinCEN Permanently Ends Beneficial Ownership Reporting Requirements for Millions of Small Business Owners",
+       "url": "https://home.treasury.gov/news/press-releases/sb0603"
+      },
+      {
+       "text": "Accounting Today: FinCEN ends beneficial ownership reporting",
+       "url": "https://www.accountingtoday.com/news/fincen-ends-beneficial-ownership-reporting"
+      },
+      {
+       "text": "The Hill: Treasury Department repeals Biden-era FinCEN beneficial ownership reporting requirement",
+       "url": "https://thehill.com/business/6025347-treasury-repeals-beneficial-ownership-reporting/"
+      }
+     ]
+    },
+    {
+     "id": "us-withdraws-greco-council-of-europe-anti-corruption",
+     "date": "2026-09-28",
+     "line": "On September 28, 2026, the United States notified the Council of Europe that it is leaving GRECO, its anti-corruption monitoring group, which it joined in 2000; only Russia and Belarus have left before.",
+     "why": "The State Department framed the exit as ending payments to international bureaucracies; the Council of Europe says GRECO remains open to resuming cooperation.",
+     "whyBasis": "stated",
+     "term": "second",
+     "severity": "moderate",
+     "quote": "The era of writing blank checks to international bureaucracies is over.",
+     "quoteBy": "The State Department",
+     "inCount": true,
+     "sources": [
+      {
+       "text": "AP: US withdraws from European anti-corruption panel in latest shift away from global groups",
+       "url": "https://apnews.com/article/trump-corruption-council-of-europe-31f7f0e4bba7bf26dfc99cd2c3a20d16"
+      },
+      {
+       "text": "The Guardian: Trump administration withdraws US from Greco anti-corruption monitoring body (September 30, 2026)",
+       "url": "https://www.theguardian.com/us-news/2026/sep/30/trump-greco-anticorruption"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "doj",
+   "title": "His own lawyers at the top of the Justice Department",
+   "thesis": "Trump put Kash Patel at the FBI, a lawyer for January 6 defendants over the D.C. prosecutor's office and Pam Bondi at the Justice Department, then replaced Bondi with Todd Blanche, his former personal criminal defense lawyer, who was confirmed 50-49 and leads a department that rescinded its ban on appointees' partisan activity.",
+   "thesisBasis": [
+    "kash-patel-fbi-enemies-list",
+    "ed-martin-dc-us-attorney-weaponization-working-group",
+    "bondi-25000-donation-trump-university-dropped",
+    "trump-fires-bondi-attorney-general-epstein",
+    "blanche-ag-nomination-survivors-psa-nyc-bar-unfit",
+    "doj-olc-executive-privilege-private-advisers-trump",
+    "blanche-attorney-general-campaign-rallies-post-watergate-norm"
+   ],
+   "thesisInferred": false,
+   "beats": [
+    {
+     "id": "kash-patel-fbi-enemies-list",
+     "date": "2025-01-20",
+     "dateNote": "Undated · placed at the start of the second term",
+     "line": "Trump appointed Kash Patel FBI director although Bill Barr had blocked him in the first term; Patel's book lists 60 public servants, which CNN called his so-called 'enemies list,' and he intensified polygraphs asking employees about criticism of him.",
+     "why": "Put at the FBI's head a pick the first-term attorney general had blocked as lacking experience.",
+     "whyBasis": "inferred",
+     "term": "second",
+     "severity": "severe",
+     "quote": "Over my dead body",
+     "quoteBy": "Bill Barr, in his memoir, on Patel becoming FBI deputy director in the first term",
+     "inCount": false,
+     "sources": [
+      {
+       "text": "CNN: Who is Kash Patel, Trump's pick for FBI director?",
+       "url": "https://www.cnn.com/2024/12/02/politics/who-is-kash-patel-trump-fbi-director/index.html"
+      },
+      {
+       "text": "CNN: People on Kash Patel's so-called 'enemies list' taking precautions",
+       "url": "https://www.cnn.com/2025/01/30/politics/kash-patel-critics-fbi-takeover/index.html"
+      },
+      {
+       "text": "Newsweek: Kash Patel's 'government gangsters' who could be targeted",
+       "url": "https://www.newsweek.com/kash-patel-list-officials-targeted-fbi-doj-trump-1994417"
+      }
+     ]
+    },
+    {
+     "id": "ed-martin-dc-us-attorney-weaponization-working-group",
+     "date": "2025-01-20",
+     "dateNote": "Inauguration Day appointment; the pardon attorney and working group posts followed on May 8, 2025",
+     "line": "On Inauguration Day Trump made Ed Martin, a lawyer for January 6 defendants, interim D.C. U.S. attorney; Martin oversaw hundreds of dismissals of those cases, and on May 8, 2025, became pardon attorney and Weaponization Working Group director.",
+     "why": "Put a defendants' lawyer over the office that prosecuted the riot, then moved him to posts needing no Senate vote after Sen. Tillis withheld support.",
+     "whyBasis": "stated",
+     "term": "second",
+     "severity": "serious",
+     "quote": "And if they can be charged, we'll charge them. But if they can't be charged, we will name them.",
+     "quoteBy": "Ed Martin, at a May 13, 2025 news conference",
+     "inCount": false,
+     "sources": [
+      {
+       "text": "Associated Press via WJLA: Ed Martin, Trump loyalist who spread 2020 election lies, now leads the office that prosecuted Jan. 6 (January 28, 2025)",
+       "url": "https://wjla.com/news/local/jan-6-dc-prosecutor-ed-martin-donald-trump-capitol-riots-stolen-election-false-conservative-activist-investigation-loyalist-conservative-oval-office-lawyers-washington"
+      },
+      {
+       "text": "NPR: Trump withdraws Ed Martin's nomination as D.C.'s top prosecutor (May 8, 2025)",
+       "url": "https://www.npr.org/2025/05/08/nx-s1-5391840/trump-ed-martin-withdraws-nomination-prosecutor"
+      },
+      {
+       "text": "U.S. Department of Justice: Attorney General memorandum, Restoring the Integrity and Credibility of the Department of Justice (February 5, 2025)",
+       "url": "https://www.justice.gov/ag/media/1388506/dl?inline="
+      }
+     ]
+    },
+    {
+     "id": "bondi-25000-donation-trump-university-dropped",
+     "date": "2025-02-04",
+     "dateNote": "Confirmation date; the donation and the dropped review date to 2013",
+     "line": "In 2013 the Trump Foundation gave $25,000 to Florida Attorney General Pam Bondi's PAC, and weeks later her office dropped its Trump University review; she later served as his impeachment lawyer and was confirmed attorney general February 4, 2025.",
+     "why": "Put a Trump ally atop the Justice Department; CREW alleged the donation was a bribe, and no finding of bribery is reported.",
+     "whyBasis": "inferred",
+     "term": "second",
+     "severity": "serious",
+     "inCount": true,
+     "sources": [
+      {
+       "text": "CNN: Florida AG Sought Donation Before Nixing Trump University Fraud Case (June 2016)",
+       "url": "https://www.cnn.com/2016/06/10/politics/pam-bondi-donald-trump-donation"
+      },
+      {
+       "text": "Washington Post: Trump Pays IRS Penalty for Foundation Violating Rules with Gift to Florida AG (September 2016)",
+       "url": "https://www.washingtonpost.com/news/post-politics/wp/2016/09/01/trump-pays-irs-a-penalty-for-his-foundation-violating-rules-with-gift-to-florida-attorney-general/"
+      },
+      {
+       "text": "NPR: Senate Votes to Confirm Pam Bondi as Attorney General (February 2025)",
+       "url": "https://www.npr.org/2025/02/04/nx-s1-5287011/pam-bondi-attorney-general-confirmation"
+      }
+     ]
+    },
+    {
+     "id": "trump-fires-bondi-attorney-general-epstein",
+     "date": "2026-04-02",
+     "line": "On April 2, 2026, Trump fired Attorney General Pam Bondi and made Todd Blanche, his former personal criminal defense lawyer, acting attorney general; reporting cited the Epstein files and her failure to prosecute his political enemies.",
+     "why": "The reasons come from reporting; her replacement had represented Trump personally as his criminal defense lawyer.",
+     "whyBasis": "inferred",
+     "term": "second",
+     "severity": "severe",
+     "inCount": false,
+     "sources": [
+      {
+       "text": "NBC News: Trump fires Pam Bondi as attorney general (April 2, 2026)",
+       "url": "https://www.nbcnews.com/politics/justice-department/bondi-fired-attorney-general-trump-rcna266378"
+      },
+      {
+       "text": "CNN: Trump has discussed ousting Attorney General Pam Bondi (April 2, 2026)",
+       "url": "https://www.cnn.com/2026/04/01/politics/pam-bondi-trump-discussed-ousting"
+      },
+      {
+       "text": "Fox News: Pam Bondi already fired as attorney general, Cabinet official teed up as replacement (April 2, 2026)",
+       "url": "https://www.foxnews.com/politics/pam-bondi-already-fired-attorney-general-cabinet-official-teed-up-replacement-sources"
+      }
+     ]
+    },
+    {
+     "id": "blanche-ag-nomination-survivors-psa-nyc-bar-unfit",
+     "date": "2026-07-14",
+     "dateNote": "Entry date · the entry does not date the nomination itself, and the New York City Bar statement was reported July 15",
+     "line": "Todd Blanche, Trump's former personal defense lawyer, who had run the Justice Department as acting attorney general, went before the Senate for confirmation; the New York City Bar Association called him 'unfit' and Epstein survivors urged senators to vote no.",
+     "why": "Confirmation would formalize an acting arrangement that already had the president's own criminal-defense lawyer running the department that handled the Epstein files.",
+     "whyBasis": "stated",
+     "term": "second",
+     "severity": "serious",
+     "quote": "Your responsibility as Acting Attorney General is to pursue justice, not to shield the President",
+     "quoteBy": "Sens. Chris Van Hollen and Patty Murray, in a letter to Blanche",
+     "inCount": false,
+     "sources": [
+      {
+       "text": "The Hill: NYC Bar Association opposes Blanche nomination: 'Unfit' (July 15, 2026)",
+       "url": "https://thehill.com/homenews/senate/5969687-nyc-bar-todd-blanche-attorney-general-opposition/"
+      },
+      {
+       "text": "HuffPost: Senators To Todd Blanche: You Care More About Trump Than Epstein Survivors (July 14, 2026)",
+       "url": "https://www.huffpost.com/entry/senators-letter-todd-blanche-epstein_n_6a565d6ae4b0d0cec7cd8f5a"
+      },
+      {
+       "text": "HuffPost: Epstein Survivors Release Video Against Trump's AG Pick (July 14, 2026)",
+       "url": "https://www.huffpost.com/entry/jeffrey-epstein-survivors-todd-blanche-attorney-general_n_6a566ceee4b0540b8c7b23b6"
+      }
+     ]
+    },
+    {
+     "id": "doj-olc-executive-privilege-private-advisers-trump",
+     "date": "2026-08-10",
+     "line": "On August 10-11, 2026, days after Blanche was confirmed 50-49, the Office of Legal Counsel published an opinion extending executive privilege to the president's communications with private advisers, the first time the department has explicitly done so.",
+     "why": "Makes it harder for Congress to compel testimony or documents about the president's dealings.",
+     "whyBasis": "stated",
+     "term": "second",
+     "severity": "serious",
+     "inCount": false,
+     "sources": [
+      {
+       "text": "NOTUS: DOJ Wants Executive Privilege to Cover Trump's Private Advisers (August 2026)",
+       "url": "https://www.notus.org/agencies/trump-doj-private-adviser-executive-privilege"
+      },
+      {
+       "text": "The Hill: DOJ opinion extends executive privilege to president's communications with private advisers (August 11, 2026)",
+       "url": "https://thehill.com/homenews/administration/6022381-doj-executive-privilege-outside-advisers/"
+      },
+      {
+       "text": "PBS NewsHour: Todd Blanche sworn in as attorney general after bruising confirmation battle",
+       "url": "https://www.pbs.org/newshour/politics/todd-blanche-sworn-in-as-attorney-general-after-bruising-confirmation-battle"
+      }
+     ]
+    },
+    {
+     "id": "blanche-attorney-general-campaign-rallies-post-watergate-norm",
+     "date": "2026-09-17",
+     "dateNote": "Entry date, for Blanche's 2026 campaign appearances · the ethics official was fired in July 2025 and the partisan-activity ban rescinded in March 2026",
+     "line": "Attorney General Blanche, formerly Trump's personal defense lawyer, campaigns for Republicans; Bondi rescinded the 2022 ban on appointees' partisan activity in March 2026, and the department fired its senior career ethics official in July 2025.",
+     "why": "Only the looser Hatch Act standard now applies; the department says the conduct is lawful and ethics approved his convention appearance.",
+     "whyBasis": "stated",
+     "term": "second",
+     "severity": "serious",
+     "quote": "That rally sounds like a Hatch Act violation to me, and I'd advise you not to do it.",
+     "quoteBy": "Joseph Tirrell, the department's fired senior career ethics official, on what he would have advised",
+     "inCount": false,
+     "sources": [
+      {
+       "text": "The New York Times (via The Philadelphia Inquirer): Blanche's partisan activity before midterms dismantles another principle (September 18, 2026)",
+       "url": "https://www.inquirer.com/politics/nation/todd-blanche-justice-department-partisan-20260918.html"
+      },
+      {
+       "text": "Associated Press: Attorney General Blanche's appearances at political events blur Justice Department boundaries (September 18, 2026)",
+       "url": "https://apnews.com/article/todd-blanche-politics-trump-justice-department-b9e41a9222825a697b7a532a9686e3e7"
+      },
+      {
+       "text": "CBS News: AG Blanche, other high-level DOJ appointees can take part in political campaigns, memo says",
+       "url": "https://www.cbsnews.com/news/ag-blanche-other-high-level-doj-appointees-can-take-part-in-political-campaigns-memo/"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "loyalists",
+   "title": "Loyalists in key posts",
+   "thesis": "Second-term moves installed a prosecutor with no prosecutorial experience after another would not bring cases, left a U.S. attorney's office under leaders judges twice ruled unlawful, named an acting intelligence chief with no intelligence experience, fired a court-appointed U.S. attorney 54 minutes after his swearing-in and asked civil service applicants how they would advance the president's policies.",
+   "thesisBasis": [
+    "retaliatory-indictments-comey-james-bolton",
+    "nj-us-attorney-triumvirate-disqualified",
+    "trump-names-pulte-acting-dni-no-intel-background",
+    "trump-fires-rogoff-seattle-us-attorney-54-minutes",
+    "judge-blocks-civil-service-loyalty-question-advance-executive-orders"
+   ],
+   "thesisInferred": false,
+   "beats": [
+    {
+     "id": "retaliatory-indictments-comey-james-bolton",
+     "date": "2025-11-24",
+     "line": "On November 24, 2025, a judge ruled Lindsey Halligan, a former White House aide with no prosecutorial experience installed after U.S. Attorney Erik Siebert would not bring the cases, was unlawfully appointed and dismissed the Comey and Letitia James indictments.",
+     "why": "A prosecutor who would not bring the cases was replaced by a Trump pick; the dismissals were without prejudice.",
+     "whyBasis": "stated",
+     "term": "second",
+     "severity": "severe",
+     "inCount": false,
+     "sources": [
+      {
+       "text": "CNN: Judge dismisses Comey and Letitia James indictments (November 24, 2025)",
+       "url": "https://www.cnn.com/2025/11/24/politics/james-comey-letitia-james-indictments-dismissed"
+      },
+      {
+       "text": "NBC News: Judge dismisses cases against James Comey and Letitia James, finding prosecutor was unlawfully appointed",
+       "url": "https://www.nbcnews.com/politics/justice-department/judge-dismisses-cases-james-comey-letitia-james-finding-prosecutor-was-rcna244775"
+      },
+      {
+       "text": "Lawfare: Federal Judge Dismisses Comey and James Indictments",
+       "url": "https://www.lawfaremedia.org/article/federal-judge-dismisses-comey-and-james-indictments"
+      }
+     ]
+    },
+    {
+     "id": "nj-us-attorney-triumvirate-disqualified",
+     "date": "2026-03-09",
+     "line": "On March 9, 2026, a federal judge ruled that Attorney General Bondi broke federal law by replacing the disqualified Alina Habba with a three-person team atop New Jersey's U.S. Attorney's Office, the second such ruling there.",
+     "why": "Trump had tried to install his former personal lawyer without Senate confirmation; courts twice ruled the arrangement unlawful.",
+     "whyBasis": "stated",
+     "term": "second",
+     "severity": "serious",
+     "quote": "the Government tells us: the President doesn't like that he cannot simply appoint whomever he wants.",
+     "quoteBy": "Judge Brann, in the March 9, 2026 opinion",
+     "inCount": false,
+     "sources": [
+      {
+       "text": "CBS News: For 2nd time, judge rules top DOJ officials in New Jersey are serving unlawfully (March 9, 2026)",
+       "url": "https://www.cbsnews.com/news/judge-rules-top-doj-officials-in-new-jersey-are-serving-unlawfully-alina-habba/"
+      },
+      {
+       "text": "Democracy Docket: Judge disqualifies New Jersey US Attorney's Office trio",
+       "url": "https://www.democracydocket.com/news-alerts/judge-disqualifies-new-jersey-us-attorneys-office-trio/"
+      },
+      {
+       "text": "New Jersey Monitor: Judge disqualifies leadership at US Attorney's office in NJ",
+       "url": "https://newjerseymonitor.com/2026/03/09/judge-disqualifies-leadership-at-us-attorneys-office-in-nj/"
+      }
+     ]
+    },
+    {
+     "id": "weaponization-group-zero-reports-maga-competence-gap",
+     "date": "2026-04-21",
+     "dateNote": "Date of the CNN report the entry describes; the entry itself is dated April 22",
+     "line": "CNN reported that the Justice Department's Weaponization Working Group, created by Attorney General Bondi to investigate prosecutors from prior administrations, produced zero reports during her tenure.",
+     "why": "Bondi's former chief of staff said the work needs people who are both MAGA and competent, describing a very small pool.",
+     "whyBasis": "stated",
+     "term": "second",
+     "severity": "serious",
+     "quote": "Part of the reason the weaponization work has been difficult is that you need people who are MAGA and who are really competent.",
+     "quoteBy": "Chad Mizelle, Bondi's former chief of staff",
+     "inCount": false,
+     "sources": [
+      {
+       "text": "CNN: Inside Todd Blanche's audition for attorney general (April 21, 2026)",
+       "url": "https://www.cnn.com/2026/04/21/politics/blanche-tries-deliver-weaponization-attorney-general"
+      },
+      {
+       "text": "New Republic: Ex-Bondi Aide Says MAGA Too Incompetent to Carry Out Trump's Revenge (April 2026)",
+       "url": "https://newrepublic.com/post/209345/pam-bondi-aide-maga-incompetent-donald-trump-revenge"
+      },
+      {
+       "text": "Mediaite: Bondi's Former Chief of Staff Reveals Why Trump Enemy Prosecutions Failed",
+       "url": "https://www.mediaite.com/media/news/pam-bondis-former-chief-of-staff-reveals-why-trump-enemy-prosecutions-failed/"
+      }
+     ]
+    },
+    {
+     "id": "trump-names-pulte-acting-dni-no-intel-background",
+     "date": "2026-06-02",
+     "line": "On June 2, 2026, Trump named Bill Pulte, who has no intelligence experience, acting Director of National Intelligence while he kept his housing finance posts; firings at the office began June 22.",
+     "why": "Put over the intelligence agencies an official who had used his housing post to demand mortgage-fraud probes of Trump critics.",
+     "whyBasis": "stated",
+     "term": "second",
+     "severity": "severe",
+     "quote": "We don't need a weaponized DNI, we need professionals there.",
+     "quoteBy": "Senate Majority Leader John Thune",
+     "inCount": false,
+     "sources": [
+      {
+       "text": "CBS News: Trump names controversial housing official Bill Pulte as acting director of national intelligence (June 2, 2026)",
+       "url": "https://www.cbsnews.com/news/bill-pulte-acting-director-national-intelligence-trump/"
+      },
+      {
+       "text": "NPR: Trump appoints housing official Bill Pulte as acting director of national intelligence (June 2, 2026)",
+       "url": "https://www.npr.org/2026/06/02/nx-s1-5844221/trump-appoints-housing-official-as-acting-director-of-national-intelligence"
+      },
+      {
+       "text": "CNN: ODNI firings underway under acting DNI Bill Pulte (June 22, 2026)",
+       "url": "https://www.cnn.com/2026/06/22/politics/odni-firings-underway-bill-pulte"
+      }
+     ]
+    },
+    {
+     "id": "trump-fires-rogoff-seattle-us-attorney-54-minutes",
+     "date": "2026-07-15",
+     "line": "On July 15, 2026, Trump fired Roger Rogoff, the U.S. attorney appointed by Seattle's federal judges, 54 minutes after his swearing-in; on October 1 a judge granted a preliminary injunction restoring him.",
+     "why": "The statute lets judges fill vacant U.S. attorney posts; firing each appointee nullifies that fallback; the ruling restoring him is preliminary.",
+     "whyBasis": "stated",
+     "term": "second",
+     "severity": "serious",
+     "quote": "The president cannot unilaterally fire a United States attorney appointed by the district court.",
+     "quoteBy": "Judge Stanley Bastian, granting the injunction",
+     "inCount": false,
+     "sources": [
+      {
+       "text": "NBC News: Trump immediately fires the new court-appointed top prosecutor in Seattle (July 16, 2026)",
+       "url": "https://www.nbcnews.com/politics/trump-administration/trump-immediately-fires-new-court-appointed-top-prosecutor-seattle-rcna587773"
+      },
+      {
+       "text": "CBS News: Judge blocks Trump's firing of top federal prosecutor in Seattle and restores him as U.S. attorney",
+       "url": "https://www.cbsnews.com/news/judge-blocks-trump-firing-top-federal-prosecutor-seattle-roger-rogoff/"
+      },
+      {
+       "text": "Washington Examiner: Judge restores Seattle US attorney who Trump fired after court appointment",
+       "url": "https://www.washingtonexaminer.com/news/justice/4750946/judge-restores-seattle-us-attorney-trump-fired/"
+      }
+     ]
+    },
+    {
+     "id": "judge-blocks-civil-service-loyalty-question-advance-executive-orders",
+     "date": "2026-09-11",
+     "line": "On September 11, 2026, a federal judge blocked an OPM application question asking civil service applicants how they would advance the president's policies, finding the plaintiffs likely to succeed in showing no legitimate governmental interest.",
+     "why": "The unions argued the question politicized hiring, which the Civil Service Reform Act bars; OPM says answering was optional.",
+     "whyBasis": "stated",
+     "term": "second",
+     "severity": "serious",
+     "inCount": false,
+     "sources": [
+      {
+       "text": "U.S. News (Reuters): US judge blocks Trump administration's 'loyalty' question for job applicants (September 11, 2026)",
+       "url": "https://www.usnews.com/news/politics/articles/2026-09-11/us-judge-blocks-trump-administrations-loyalty-question-for-job-applicants"
+      },
+      {
+       "text": "The Washington Times: Judge boots Trump 'loyalty' question from civil service job applications (September 12, 2026)",
+       "url": "https://www.washingtontimes.com/news/2026/sep/12/judge-boots-trump-loyalty-question-civil-service-job-applications/"
+      },
+      {
+       "text": "U.S. District Court for the District of Massachusetts: Compliance Status Report, AFGE v. Kupor, No. 1:25-cv-13305, ECF 88 (September 25, 2026)",
+       "url": "https://storage.courtlistener.com/recap/gov.uscourts.mad.291405/gov.uscourts.mad.291405.88.0.pdf"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "enforcement",
+   "title": "Enforcement cut back",
+   "thesis": "The Justice Department disbanded the FBI's foreign-influence task force and its own crypto enforcement team, saw its Public Integrity Section fall, per NOTUS, from 36 lawyers working full-time on corruption to two, and proposed letting the attorney general freeze state bar probes of its lawyers.",
+   "thesisBasis": [
+    "trump-dismantles-foreign-election-interference-units-cisa-hack-request",
+    "blanche-disbands-doj-crypto-enforcement-team-while-holding-crypto",
+    "fbi-cr15-purge-ends-navatek-congress-bribery-probe-collins",
+    "bondi-doj-block-ethics-investigations"
+   ],
+   "thesisInferred": false,
+   "beats": [
+    {
+     "id": "trump-dismantles-foreign-election-interference-units-cisa-hack-request",
+     "date": "2025-02-05",
+     "line": "On February 5, 2025, Attorney General Bondi ordered the FBI's Foreign Influence Task Force disbanded, and that year other agencies closed or cut their own foreign-influence and election-security offices.",
+     "why": "Closed the FBI unit, created after Russia's 2016 interference, that tracked foreign influence efforts in U.S. politics.",
+     "whyBasis": "stated",
+     "term": "second",
+     "severity": "severe",
+     "quote": "the Foreign Influence Task Force shall be disbanded",
+     "quoteBy": "Attorney General Pam Bondi, in a February 5, 2025 memo",
+     "inCount": false,
+     "sources": [
+      {
+       "text": "NBC News: Pam Bondi ends FBI effort to combat foreign influence in U.S. politics",
+       "url": "https://www.nbcnews.com/politics/national-security/bondi-ends-fbi-effort-combat-foreign-influence-us-politics-rcna191012"
+      },
+      {
+       "text": "CyberScoop: DOJ disbands foreign influence task force, limits scope of FARA prosecutions",
+       "url": "https://cyberscoop.com/doj-disbands-foreign-influence-task-force/"
+      },
+      {
+       "text": "Sen. Chuck Grassley: Grassley Compliments Trump Administration's Closure of FBI Foreign Influence Task Force",
+       "url": "https://www.grassley.senate.gov/news/remarks/grassley-compliments-trump-administrations-closure-of-fbi-foreign-influence-task-force"
+      }
+     ]
+    },
+    {
+     "id": "blanche-disbands-doj-crypto-enforcement-team-while-holding-crypto",
+     "date": "2025-04-07",
+     "line": "On April 7, 2025, Deputy Attorney General Todd Blanche signed a memo disbanding the Justice Department's crypto enforcement team while holding $159,000 to $485,000 in crypto; his ethics agreement had promised he would sell it within 90 days of confirmation.",
+     "why": "The agreement also had him stay out of matters affecting the holdings; the department says the memo was cleared in advance.",
+     "whyBasis": "stated",
+     "term": "second",
+     "severity": "serious",
+     "quote": "Ongoing investigations that are inconsistent with the foregoing should be closed.",
+     "quoteBy": "Blanche memo, 'Ending Regulation By Prosecution' (April 7, 2025)",
+     "inCount": true,
+     "sources": [
+      {
+       "text": "U.S. Department of Justice, Office of the Deputy Attorney General: Memorandum, Ending Regulation By Prosecution (April 7, 2025)",
+       "url": "https://www.justice.gov/dag/media/1395781/dl?inline="
+      },
+      {
+       "text": "Reuters (via Yahoo News): US Justice Dept disbands crypto enforcement team, citing Trump order (April 8, 2025)",
+       "url": "https://www.yahoo.com/news/u-justice-dept-disbands-cryptocurrency-121234145.html"
+      },
+      {
+       "text": "ProPublica: Top DOJ Official Shut Down Enforcement Against Crypto Companies While Holding More Than $150,000 in Crypto Investments (December 2025)",
+       "url": "https://www.propublica.org/article/todd-blanche-crypto-doj-trump"
+      }
+     ]
+    },
+    {
+     "id": "fbi-cr15-purge-ends-navatek-congress-bribery-probe-collins",
+     "date": "2025-10-07",
+     "dateNote": "Date of the Fox News report carrying Patel's statement; the squad was folded earlier (reported May 2025), the probe's end is undated, and ProPublica reported in September 2026",
+     "line": "ProPublica reported that an FBI bribery investigation of members of Congress died after Patel abolished the CR-15 anti-corruption squad, and NOTUS reported the Public Integrity Section fell from 36 full-time corruption lawyers to two by September 2025.",
+     "why": "Removed agents and prosecutors who pursue public corruption; no source shows that shielding any politician was the purpose.",
+     "whyBasis": "stated",
+     "term": "second",
+     "severity": "serious",
+     "quote": "We terminated employees, we abolished the weaponized CR-15 squad, and we initiated an ongoing investigation with more accountability measures ahead.",
+     "quoteBy": "Kash Patel, October 2025",
+     "inCount": true,
+     "sources": [
+      {
+       "text": "ProPublica: The FBI Anti-Corruption Squad Was Circling Susan Collins, Until Trump Got in the Way (September 22, 2026)",
+       "url": "https://www.propublica.org/article/fbi-susan-collins-navatek-campaign-donations-investigation"
+      },
+      {
+       "text": "NOTUS (since renamed The Washington Sun; notus.org now redirects there): The Justice Department Had 36 Lawyers Fighting Corruption Full-Time. Under Trump, It's Down to Two. (September 22, 2025)",
+       "url": "https://www.washingtonsun.com/courts/doj-public-integrity"
+      },
+      {
+       "text": "Fox News: FBI takes swift action after revelation of Republican phone tracking (October 7, 2025), with Patel's statement on abolishing CR-15",
+       "url": "https://www.foxnews.com/politics/fbi-fires-agents-dismantles-corruption-squad-after-probe-unveils-monitoring-gop-senators-patel-says"
+      }
+     ]
+    },
+    {
+     "id": "bondi-doj-block-ethics-investigations",
+     "date": "2026-03-04",
+     "line": "On March 4, 2026, the Justice Department proposed a rule letting the attorney general suspend state bar investigations of its lawyers while the department runs its own review, which has no deadline.",
+     "why": "Ethics complaints had been filed against Bondi, Blanche and other senior officials; critics say the rule conflicts with the McDade Amendment.",
+     "whyBasis": "stated",
+     "term": "second",
+     "severity": "serious",
+     "inCount": true,
+     "sources": [
+      {
+       "text": "Slate: Pam Bondi's ludicrous new scheme to shield DOJ lawyers from ethics probes",
+       "url": "https://slate.com/news-and-politics/2026/03/pam-bondi-lying-doj-supreme-court-florida.html"
+      },
+      {
+       "text": "Bloomberg Law: Trump DOJ pushes to sideline state bar ethics investigations",
+       "url": "https://news.bloomberglaw.com/us-law-week/trump-doj-pushes-to-sideline-state-bar-ethics-investigations"
+      },
+      {
+       "text": "Above the Law: Pam Bondi Declares Herself God-Empress Of Ethics",
+       "url": "https://abovethelaw.com/2026/03/doj-proposes-rule-blocking-state-bars-from-investigating-ethical-violations-by-government-lawyers/"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "clemency",
+   "title": "Clemency routed around the pardon office",
+   "thesis": "Reports from both terms describe clemency bypassing the Justice Department's pardon office, whose head said she was fired after refusing a favor; a 2025 proclamation pardoned 77 named people and \"all United States citizens\" for conduct tied to the 2020 elector slates, and Trump said he would pardon members of his administration.",
+   "thesisBasis": [
+    "ledger:2021-01-17 A paid market for",
+    "ledger:2025-05-31 The pardon market: lawyers",
+    "trump-pardons-giuliani-meadows-2020-election-allies-proclamation",
+    "pardon-brokers-60-minutes-hidden-camera-300000",
+    "trump-would-pardon-administration-members-time-interview"
+   ],
+   "thesisInferred": false,
+   "beats": [
+    {
+     "id": "ledger:2021-01-17 A paid market for",
+     "date": "2021-01-17",
+     "dateNote": "Date of the New York Times report as carried by the Boston Globe · the Washington Post finding followed in February 2021",
+     "line": "The New York Times reported that Trump allies collected tens of thousands of dollars from felons seeking clemency; the Washington Post later found about 100 of Trump's 237 clemency grants went to people who never petitioned the pardon office.",
+     "why": "A first-term precedent: per these reports, connections rather than the Justice Department process were one route to clemency.",
+     "whyBasis": "inferred",
+     "term": "first",
+     "inCount": true,
+     "sources": [
+      {
+       "text": "Boston Globe: Prospect of pardons in final days fuels market to buy access to Trump",
+       "url": "https://www.bostonglobe.com/2021/01/17/nation/prospect-pardons-final-days-fuels-market-buy-access-trump/"
+      },
+      {
+       "text": "Washington Post via Anchorage Daily News: The cottage industry behind Trump's pardons",
+       "url": "https://www.adn.com:443/nation-world/2021/02/05/the-cottage-industry-behind-trumps-pardons-how-the-rich-and-well-connected-got-ahead-at-the-expense-of-others/"
+      }
+     ]
+    },
+    {
+     "id": "ledger:2025-05-31 The pardon market: lawyers",
+     "date": "2025-05-31",
+     "dateNote": "Ledger date; pardon attorney Liz Oyer said she was fired in March 2025",
+     "line": "Pardon attorney Liz Oyer said she was fired in March after refusing to recommend restoring Mel Gibson's gun rights; Ed Martin became pardon attorney and, after a bribery-conviction pardon, posted \"No MAGA left behind.\"",
+     "why": "The firing and its reason are Oyer's account, as reported by AP.",
+     "whyBasis": "inferred",
+     "term": "second",
+     "quote": "No MAGA left behind",
+     "quoteBy": "Ed Martin, pardon attorney, in a post",
+     "inCount": true,
+     "sources": [
+      {
+       "text": "AP: Fired Justice Department pardon attorney accuses the agency of 'ongoing corruption,' abuse of power",
+       "url": "https://apnews.com/article/justice-department-mel-gibson-congress-667a79b368b215bb0cd7b0333f372fc7"
+      },
+      {
+       "text": "NBC News: Trump pardons drive a big, burgeoning business for lobbyists",
+       "url": "https://www.nbcnews.com/politics/donald-trump/trump-pardons-drive-big-burgeoning-business-lobbyists-rcna209801"
+      },
+      {
+       "text": "CNN: 'No MAGA left behind': Trump's pardons get even more political",
+       "url": "https://www.cnn.com/2025/05/28/politics/analysis-trump-pardons-politics"
+      }
+     ]
+    },
+    {
+     "id": "trump-pardons-giuliani-meadows-2020-election-allies-proclamation",
+     "date": "2025-11-07",
+     "line": "Trump signed a proclamation pardoning 77 named people, among them Giuliani, Meadows, Eastman, Chesebro and Powell, and \"all United States citizens\" for conduct tied to 2020 elector slates, though none of those named had been charged federally.",
+     "why": "It can shield those it covers from federal charges by a future administration, though its legal effect is mostly symbolic and state cases are untouched.",
+     "whyBasis": "stated",
+     "term": "second",
+     "severity": "serious",
+     "quote": "Ultimately, the message it sends is 'We'll take care of you when the time comes.'",
+     "quoteBy": "Rick Hasen, UCLA law professor",
+     "inCount": true,
+     "sources": [
+      {
+       "text": "U.S. Department of Justice, Office of the Pardon Attorney: Proclamation Granting Pardons for Certain Offenses Related to the 2020 Presidential Election (signed November 7, 2025)",
+       "url": "https://www.justice.gov/pardon/media/1420861/dl?inline="
+      },
+      {
+       "text": "Federal Register: Proclamation 10989, Granting Pardons for Certain Offenses Related to the 2020 Presidential Election (November 14, 2025)",
+       "url": "https://www.federalregister.gov/documents/2025/11/14/2025-19928/granting-pardons-for-certain-offenses-related-to-the-2020-presidential-election"
+      },
+      {
+       "text": "Associated Press via WABE: Trump pardons Rudy Giuliani and others who backed efforts to overturn his 2020 election loss (November 10, 2025)",
+       "url": "https://www.wabe.org/trump-pardons-rudy-giuliani-and-others-who-backed-efforts-to-overturn-his-2020-election-loss-in-georgia-and-other-us-states/"
+      }
+     ],
+     "ledgerId": "ledger:2025-11-07 A blanket pardon for"
+    },
+    {
+     "id": "pardon-brokers-60-minutes-hidden-camera-300000",
+     "date": "2026-09-13",
+     "line": "A 60 Minutes recording shows lobbyists Jack Burkman and Jacob Wohl predicting they could secure a pardon for a $300,000 fee; CBS found about 70 percent of second-term clemency actions bypassed the Justice Department.",
+     "why": "The reporting shows a paid market for access beside a sidelined pardon office; it does not establish that any pardon was bought.",
+     "whyBasis": "stated",
+     "term": "second",
+     "severity": "serious",
+     "quote": "I just send my petitions directly to the White House.",
+     "quoteBy": "Broker Brett Tolman",
+     "inCount": true,
+     "sources": [
+      {
+       "text": "CBS News: Pardon brokers offer to \"put pressure on the president,\" at sky-high costs",
+       "url": "https://www.cbsnews.com/news/trump-pardon-lobbyists-60-minutes/"
+      },
+      {
+       "text": "CBS News (60 Minutes transcript): Paid brokers tout ties to Trump's orbit to lobby for presidential pardons",
+       "url": "https://www.cbsnews.com/news/trump-pardon-economy-60-minutes-transcript/"
+      },
+      {
+       "text": "CBS News: Top Democrats pledge investigation into Trump pardon brokers if party regains control of Congress",
+       "url": "https://www.cbsnews.com/news/democrats-pledge-investigation-trump-pardon-brokers/"
+      }
+     ]
+    },
+    {
+     "id": "trump-would-pardon-administration-members-time-interview",
+     "date": "2026-09-28",
+     "line": "Asked by TIME whether he was considering pardoning members of his administration before his term ends, Trump said, \"Yeah, sure I'd do that,\" and on October 15 said, \"I'm allowed to do a self-pardon.\"",
+     "why": "A promise of clemency before any charge would extend preemptive pardons to the people carrying out his own policies.",
+     "whyBasis": "stated",
+     "term": "second",
+     "severity": "moderate",
+     "quote": "Yeah, sure I'd do that.",
+     "quoteBy": "Trump, in a TIME interview",
+     "inCount": true,
+     "sources": [
+      {
+       "text": "TIME: Read TIME's 'What Trump Has Built' Interview Transcript (interview September 28, published October 1, 2026)",
+       "url": "https://time.com/article/2026/10/01/donald-trump-2026-interview-transcript/"
+      },
+      {
+       "text": "ABC News: Trump says he would consider pardoning administration members: 'I'd do that'",
+       "url": "https://abcnews.com/Politics/trump-pardoning-administration-members/story?id=136915372"
+      },
+      {
+       "text": "NBC News: Trump says he'd consider issuing pardons to administration officials before he leaves office",
+       "url": "https://www.nbcnews.com/politics/trump-administration/trump-considering-preemptive-pardons-administration-officials-rcna600905"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "limits",
+   "title": "The law's limits around a sitting president",
+   "thesis": "The Supreme Court held that a former president is absolutely immune from criminal prosecution for his core constitutional acts, at least presumptively immune for other official acts and not immune for unofficial ones; a judge dismissed one federal case against Trump and the special counsel then dropped both, citing the Justice Department's bar on prosecuting a sitting president; Trump backed a stock-trading ban limited to Congress and attacked the one bill that also covered the president; presidents are exempt from the conflict-of-interest law binding other executive employees; and the stablecoin law's bar on profiting did not extend to him.",
+   "thesisBasis": [
+    "cannon-dismisses-trump-classified-documents-case",
+    "smith-drops-both-trump-prosecutions-after-election-win",
+    "trump-backs-congress-only-stock-ban-attacked-hawley-bill-covering-president",
+    "eric-trump-blind-trust-denial-beyer-receipts-2345-purchases",
+    "world-liberty-financial-occ-bank-charter-bid-usd1-ufc",
+    "supreme-court-trump-v-united-states-presidential-immunity"
+   ],
+   "thesisInferred": false,
+   "beats": [
+    {
+     "id": "supreme-court-trump-v-united-states-presidential-immunity",
+     "date": "2024-07-01",
+     "line": "On July 1, 2024, the Supreme Court ruled 6-3 in Trump v. United States that a former president has absolute immunity from criminal prosecution for acts within his conclusive and preclusive constitutional authority, at least presumptive immunity for other official acts, and none for unofficial acts.",
+     "why": "The ruling does not put a president beyond prosecution: unofficial acts get no immunity. It limits prosecution for official acts, and it did not decide whether a sitting president can be indicted; that bar is Justice Department policy, which the opinion notes in a footnote.",
+     "whyBasis": "stated",
+     "term": "between",
+     "severity": "serious",
+     "quote": "The President enjoys no immunity for his unofficial acts, and not everything the President does is official.",
+     "quoteBy": "Chief Justice John Roberts, for the majority",
+     "inCount": false,
+     "sources": [
+      {
+       "text": "U.S. Supreme Court: Trump v. United States, No. 23-939 (July 1, 2024)",
+       "url": "https://www.supremecourt.gov/opinions/23pdf/23-939_e2pg.pdf"
+      },
+      {
+       "text": "SCOTUSblog: Justices rule Trump has some immunity from prosecution (July 1, 2024)",
+       "url": "https://www.scotusblog.com/2024/07/justices-rule-trump-has-some-immunity-from-prosecution/"
+      },
+      {
+       "text": "U.S. Department of Justice, Office of Legal Counsel: A Sitting President's Amenability to Indictment and Criminal Prosecution, 24 Op. OLC 222 (October 16, 2000)",
+       "url": "https://www.justice.gov/sites/default/files/olc/opinions/2000/10/31/op-olc-v024-p0222_0.pdf"
+      }
+     ]
+    },
+    {
+     "id": "cannon-dismisses-trump-classified-documents-case",
+     "date": "2024-07-15",
+     "line": "On July 15, 2024, Judge Aileen Cannon, a Trump appointee, dismissed the classified documents case against Trump and two co-defendants, ruling that the special counsel's appointment violated the Appointments Clause.",
+     "why": "Ended the case on the special counsel's appointment, not the evidence; no source shows Trump influenced it, and no higher court reviewed it.",
+     "whyBasis": "stated",
+     "term": "between",
+     "severity": "serious",
+     "quote": "The Superseding Indictment is DISMISSED because Special Counsel Smith's appointment violates the Appointments Clause of the United States Constitution.",
+     "quoteBy": "Judge Aileen Cannon, in her July 15, 2024 order",
+     "inCount": false,
+     "sources": [
+      {
+       "text": "U.S. District Court for the Southern District of Florida: Order granting motion to dismiss superseding indictment, United States v. Trump, No. 23-80101, ECF 672 (July 15, 2024)",
+       "url": "https://storage.courtlistener.com/recap/gov.uscourts.flsd.648652/gov.uscourts.flsd.648652.672.0.pdf"
+      },
+      {
+       "text": "CNN via KVIA: Takeaways from the dismissal of the mishandling classified documents case against Donald Trump (July 15, 2024)",
+       "url": "https://kvia.com/politics/cnn-us-politics/2024/07/15/takeaways-from-the-dismissal-of-the-mishandling-classified-documents-case-against-donald-trump/"
+      },
+      {
+       "text": "The Washington Post via Anchorage Daily News: Dismissal of Trump documents prosecution draws new scrutiny to Judge Cannon (July 16, 2024)",
+       "url": "https://www.adn.com/nation-world/2024/07/16/dismissal-of-trump-documents-prosecution-draws-new-scrutiny-to-judge-cannon/"
+      }
+     ]
+    },
+    {
+     "id": "smith-drops-both-trump-prosecutions-after-election-win",
+     "date": "2024-11-25",
+     "line": "On November 25, 2024, after the election, Jack Smith moved to dismiss the federal election case and dropped the documents appeal as to Trump, citing the Justice Department's bar on prosecuting a sitting president; Judge Chutkan dismissed without prejudice.",
+     "why": "Neither prosecution reached trial or a merits ruling; the filing called the bar on prosecuting a sitting president categorical, not a judgment on the proof.",
+     "whyBasis": "stated",
+     "term": "between",
+     "severity": "serious",
+     "quote": "This outcome is not based on the merits or strength of the case against the defendant.",
+     "quoteBy": "The government's motion to dismiss",
+     "inCount": false,
+     "sources": [
+      {
+       "text": "U.S. District Court for D.C.: Government's Motion to Dismiss, United States v. Trump, No. 23-cr-257, ECF 281 (November 25, 2024)",
+       "url": "https://storage.courtlistener.com/recap/gov.uscourts.dcd.258149/gov.uscourts.dcd.258149.281.0.pdf"
+      },
+      {
+       "text": "U.S. District Court for D.C.: Order dismissing the superseding indictment without prejudice, ECF 283 (November 25, 2024)",
+       "url": "https://storage.courtlistener.com/recap/gov.uscourts.dcd.258149/gov.uscourts.dcd.258149.283.0.pdf"
+      },
+      {
+       "text": "CNN: Special counsel Jack Smith moves to drop federal cases against Trump (November 25, 2024)",
+       "url": "https://www.cnn.com/2024/11/25/politics/trump-special-counsel-jack-smith"
+      }
+     ]
+    },
+    {
+     "id": "trump-backs-congress-only-stock-ban-attacked-hawley-bill-covering-president",
+     "date": "2025-07-30",
+     "dateNote": "The entry's account runs from April 2025 to September 2026; this is the Hawley committee vote and Trump's attack",
+     "line": "Trump has supported a stock-trading ban limited to Congress, but on July 30, 2025, he attacked Sen. Josh Hawley after a committee advanced the HONEST Act, the one bill in play that also covered the president.",
+     "why": "The bill he urged, H.R. 7008, excludes the president; no source shows him pressing Republicans to weaken a Congress-only ban.",
+     "whyBasis": "stated",
+     "term": "second",
+     "severity": "concerning",
+     "quote": "TARGETED, because of the 'whims' of a second-tier Senator named Josh Hawley!",
+     "quoteBy": "Trump, on Truth Social",
+     "inCount": false,
+     "sources": [
+      {
+       "text": "Associated Press via KCTV5: Trump calls Hawley 'second tier' senator after bill to ban stock trades in government advances (July 31, 2025)",
+       "url": "https://www.kctv5.com/2025/07/31/trump-calls-gops-hawley-second-tier-senator-after-bill-ban-stock-trades-government-advances/"
+      },
+      {
+       "text": "Time: Read the full transcript of Donald Trump's '100 Days' interview with Time (April 25, 2025)",
+       "url": "https://time.com/7280114/donald-trump-2025-interview-transcript/"
+      },
+      {
+       "text": "Congress.gov: Text of H.R. 7008, the Stop Insider Trading Act",
+       "url": "https://www.congress.gov/bill/119th-congress/house-bill/7008/text"
+      }
+     ]
+    },
+    {
+     "id": "eric-trump-blind-trust-denial-beyer-receipts-2345-purchases",
+     "date": "2026-05-15",
+     "line": "Eric Trump said his father's assets are in a blind trust of broad indexes, but the first-quarter filing lists more than 3,600 trades, mostly individual stocks; in the first term OGE's director called the arrangement \"not even halfway blind.\"",
+     "why": "Presidents are exempt from the conflict-of-interest law binding other executive employees; the White House says his children manage the trust.",
+     "whyBasis": "stated",
+     "term": "second",
+     "severity": "serious",
+     "quote": "All of our assets are invested in a blind trust by the largest financial institutions in broad market indexes",
+     "quoteBy": "Eric Trump, in a post on X",
+     "inCount": true,
+     "sources": [
+      {
+       "text": "U.S. Office of Government Ethics: Donald J. Trump, OGE Form 278-T Periodic Transaction Report (signed May 8, 2026)",
+       "url": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/405E4EC4E27BE8D185258DF7002DD1C0/%24FILE/Trump%2C%20Donald%20J.-05.08.2026-278T(2).pdf"
+      },
+      {
+       "text": "CBS News: 3,600 stock trades in 3 months: Breaking down Trump's flurry of investment moves (June 15, 2026)",
+       "url": "https://www.cbsnews.com/news/trump-stock-trades-2026/"
+      },
+      {
+       "text": "HuffPost: 'Outright Lies': House Dem Posts Receipts After Eric Trump Denies Family Investments (May 16, 2026)",
+       "url": "https://www.huffpost.com/entry/outright-lies-house-dem-posts-receipts-after-eric-trump-denies-family-investments_n_6a08747fe4b0a33000e21416"
+      }
+     ]
+    },
+    {
+     "id": "world-liberty-financial-occ-bank-charter-bid-usd1-ufc",
+     "date": "2026-09-15",
+     "line": "On September 15, 2026, the Senate failed 49-50 to advance a crypto bill as Democrats sought to make Trump divest crypto holdings above a certain value; AP noted last year's stablecoin law barred members of Congress from profiting, not Trump.",
+     "why": "The president and his family stayed outside the bar on profiting; four Republicans joined Democrats as the new bill fell short.",
+     "whyBasis": "stated",
+     "term": "second",
+     "severity": "serious",
+     "quote": "we cannot pass landmark legislation governing this industry while allowing the president of the United States to personally profit from it",
+     "quoteBy": "Sen. Mark Warner",
+     "inCount": true,
+     "sources": [
+      {
+       "text": "AP: Senate blocks cryptocurrency regulation as Democrats push back on Trump investments (September 15, 2026)",
+       "url": "https://apnews.com/article/senate-crypto-bill-midterms-trump-ethics-e3caf262dc138147941787299e5f0a66"
+      },
+      {
+       "text": "U.S. Senate: Roll Call Vote 234, Cloture on the Motion to Proceed to H.R. 3633 (September 15, 2026)",
+       "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00234.xml"
+      },
+      {
+       "text": "Senate Banking Committee Minority: Ahead of Senate Crypto Vote, Warren and Colleagues Seek Vote on Senate Floor to Stop Trump's Self-Dealing (September 14, 2026)",
+       "url": "https://www.banking.senate.gov/newsroom/minority/ahead-of-senate-crypto-vote-warren-and-colleagues-seek-vote-on-senate-floor-to-stop-trumps-self-dealing-end-presidential-corruption-in-banking"
+      }
+     ]
+    },
+    {
+     "id": "trump-june-2026-stock-trades-disclosure",
+     "date": "2026-09-15",
+     "dateNote": "Bloomberg piece dated September 15 in the entry's sources; the entry's update is dated September 16",
+     "line": "A Bloomberg analysis found nearly 28,700 trades by Trump or his managers in 17 months, against roughly 22,300 by all of Congress, about 8,000 of them Rep. Ro Khanna's; it counts transactions, not dollars.",
+     "why": "Monthly, range-based disclosures keep the public from matching trades to policy decisions; the White House says outside managers run the portfolio.",
+     "whyBasis": "stated",
+     "term": "second",
+     "severity": "serious",
+     "inCount": true,
+     "sources": [
+      {
+       "text": "Bloomberg: Trump Has Made More Trades Than All of Congress Combined (September 15, 2026)",
+       "url": "https://www.bloomberg.com/graphics/2026-trump-stock-trades-congress/"
+      },
+      {
+       "text": "Mediaite: Joe Scarborough stunned as he finds out Trump placed more stock trades than all of Congress combined (September 2026)",
+       "url": "https://www.mediaite.com/media/tv/oh-come-on-joe-scarborough-stunned-as-he-finds-out-trump-placed-more-stock-trades-than-all-of-congress-combined/"
+      },
+      {
+       "text": "Yahoo News: Trump made more stock trades than all of Congress (September 2026)",
+       "url": "https://www.yahoo.com/news/politics/articles/trump-made-more-stock-trades-012706814.html"
+      }
+     ]
+    },
+    {
+     "id": "trump-save-act-dhs-shutdown-hostage",
+     "date": "2026-09-30",
+     "line": "On September 30, 2026, a Senate motion to advance H.R. 7008, the stock-trading ban for members of Congress, carrying a SAVE America photo-ID provision, failed 53-47 on a party-line vote, short of the 60 needed.",
+     "why": "The Congress-only ban Trump urged fell short with a voter-ID provision attached; Schumer called the provision a 'poison pill.'",
+     "whyBasis": "stated",
+     "term": "second",
+     "severity": "severe",
+     "inCount": false,
+     "sources": [
+      {
+       "text": "U.S. Senate: Roll Call Vote 253, 119th Congress, 2nd Session (September 30, 2026)",
+       "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00253.htm"
+      },
+      {
+       "text": "The Hill: John Thune sets data center, stock trading votes to shore up incumbents",
+       "url": "https://thehill.com/homenews/senate/6119236-senate-republicans-thune-stock-data-center-votes/"
+      },
+      {
+       "text": "Washington Examiner: Senate Democrats block congressional stock trading ban over voter ID 'poison pill' (September 30, 2026)",
+       "url": "https://www.washingtonexaminer.com/news/senate/4748492/senate-democrats-block-stock-trading-ban-voter-id/"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "gaps": [
+  "Stock trading (the reader's second example) is supported differently than the reader framed it. The corpus shows Trump backing a stock-trading ban limited to Congress and, on July 30, 2025, attacking Sen. Hawley after a committee advanced the HONEST Act, the one bill in play that also covered the president. The bill he urged, H.R. 7008, excludes the president, and no source shows him pressing Republicans to weaken a Congress-only ban. The page must not say he kept Congress from banning stock trading. The H.R. 7008 Senate vote (53-47, September 30, 2026) stays in the limits section as a limit in the law.",
+  "Inspectors general (first example): supported by the corrected inspectors-general-purge entry, now dated January 24, 2025, with 17 removals by a federal court's count. It replaces the ledger item the prior outline used. Print '17, by a federal court's count'; the Social Security IG entry's 19 is not used.",
+  "Loyalists (third example) and the personal attorney at the head of the Justice Department (fourth example) are both supported. Blanche now has two beats of his own (acting attorney general after Bondi's firing, and the confirmation fight), plus the OLC and campaign beats in the same section; his crypto memo sits under enforcement.",
+  "No section rests on fewer than two entries. Clemency rests on three tracker entries and two ledger items; rules on two tracker entries and four ledger items; enforcement on four tracker entries; watchdogs on six tracker entries and two ledger items.",
+  "Dropped from the prior outline: the first-quarter 2026 disclosure beat (trump-q1-2026-disclosure-3700-trades-nvidia-palantir-axon), because it describes the same filing as the Eric Trump beat and its 'more than 3,700 trades' was withdrawn by the Eric Trump entry's October 2, 2026 correction (about 3,640). Its unsourced 'no enforcement mechanism without DOJ action' claim goes with it, and the limits thesis no longer states it. Also dropped: the CFTC staff and 2025 financial disclosure beats (not in this round's verified set), the ledger inspectors-general item (replaced), and the Esper version of cabinet-dissenter-retaliation (that entry now verifies as five 2020 inspector general removals, which overlap the Linick beat).",
+  "In the stock-ban entry but not in any verified beat, so not printed: House GOP leaders inserted the voter-ID requirement into H.R. 7008 before the July 22, 2026 House vote, and OMB said it 'strongly supports the passage of H.R. 7008', voter-ID provision included. The H.R. 7008 why now says the ban Trump urged fell short with the provision attached; add the House insertion and the OMB statement to a line only after a verifier checks them.",
+  "New setup entries added as beats: trump-backs-congress-only-stock-ban-attacked-hawley-bill-covering-president, trump-fires-office-of-special-counsel-dellinger, trump-removes-fec-commissioner-weintraub-fec-loses-quorum, trump-pardons-giuliani-meadows-2020-election-allies-proclamation, ed-martin-dc-us-attorney-weaponization-working-group, cannon-dismisses-trump-classified-documents-case and smith-drops-both-trump-prosecutions-after-election-win. The critic's additions blanche-ag-nomination-survivors-psa-nyc-bar-unfit and trump-would-pardon-administration-members-time-interview are also in. The prior gap saying the OSC removal and the FEC quorum loss had no entry no longer applies.",
+  "Optional critic suggestions not used: jan6-mass-pardons (not a corruption setup), doj-mass-exodus-stacey-young-justice-connection and fbi-payback-squad-directors-advisory-team-brennan (their significance rests on the entries' own characterizations of who replaced the departing staff and what the team is for).",
+  "Left out as outside the corruption-setup theme, or as acts the count itself records: the NLRB and EAC quorum losses, the ICE detention ombudsman closure, the Gabbard referral, the altered Social Security IG report, GAO's pocket-rescission ruling, the GAO DOGE footnote, the Hegseth and Pentagon-lawyer firings, ProPublica's election-officials report, Reuters' 470 targets, the ballroom beats, the Musk deposition, the Boasberg contempt inquiry, the SpaceX refuge, tariffs, third-country deportations, mail voting, the Cook ruling, the Mehta immunity ruling, the hush-money discharge, the Carroll Westfall petition, and individual acts (Adams, Adani, the IRS fund, the $230 million claims, Homan, Kushner, the Qatar jet, the 327 pre-pause trades, Kennedy's Gardasil stake, Patel's late stock disclosure, the pharma holdings report and the individual pardons).",
+  "First-term ethics precedents (GSA hotel lease, Trump Organization foreign-profit payments, Ross divestiture, 2020 Hatch Act violations, Kushner clearance) were not added; the Ross and Kushner whys failed verification.",
+  "The July 1, 2024 immunity ruling, which the sweep listed as having no entry of its own, now has one (supreme-court-trump-v-united-states-presidential-immunity, written October 26, 2026) and a step in the limits section, added the same evening by one finder reading only that entry and one verifier; the section thesis was not rewritten to mention it."
+ ],
+ "cautions": [
+  "Inferred whys: Patel (a reading of Barr's block), Bondi confirmation (sets the sequence beside CREW's allegation), Bondi firing (reasons come from reporting), ethics-pledge and FCPA beats (the ledger's 'dismantling enforcement' label), first-term clemency precedent (a reading of the NYT and Post reports), Oyer (her account).",
+  "Whys marked stated that carry an entry's or the ledger's own analysis rather than a finding: Linick (ledger label), Slaughter (the entry's reading of the logic beyond the FTC), OLC opinion (the entry's analysis), Rogoff (the entry's account of the statute's fallback), revocable trust (the ledger records deals, token sales and licensing fees flowing to the trust; the why no longer calls the arrangement a precondition), FinCEN (the entry's statement of purpose), pardon brokers (the reporting places the market beside the sidelined office), TIME pardons (the entry's reading of a promise of clemency), Bloomberg trades (the entry's account of range-based disclosures), Schedule Policy/Career (the entry's account of what the rule removes). [Update, evening of October 26, 2026: the tracker entry was rewritten on primary sources (the rule took effect March 9, 2026 and moved no positions; Executive Order 14410 of June 3, 2026 placed about 8,000 by the administration’s count) and this step was regenerated from it by the same finder-and-verifier method.]",
+  "No thesis is marked inferred. The watchdogs thesis says an FEC commissioner was removed 'before' the quorum was lost; the entry says the quorum went as Republican commissioners left, so the thesis states sequence only. The limits thesis is composed from five entries and places Trump's own position on the stock ban beside limits in the law. [Update, evening of October 26, 2026: six, after the immunity step was added and the thesis gained an opening clause for it.]",
+  "Placeholder or differing dates: Patel (start-of-term placeholder; no appointment date in the entry); schedule-f-civil-service-purge (entry date; the entry says only October 2020); Schedule Policy/Career (approximate, 'around March 8'); FEC (quorum date; removal letter January 31, 2025); Ed Martin (inauguration appointment; later posts May 8, 2025); Bondi (confirmation date February 4; the entry is dated February 5); Blanche nomination (entry date; nomination undated, NYC Bar statement July 15); Blanche campaign beat (entry date September 17, 2026; it also states the July 2025 firing and March 2026 rescission); CR-15 (dated to the October 7, 2025 Fox report, where the prior outline used ProPublica's September 22, 2026 date); Mizelle (CNN report April 21; entry April 22); Oyer (ledger date; fired March 2025); first-term clemency market (NYT date; Post finding February 2021); stock ban (Hawley vote; the entry spans April 2025 to September 2026); Bloomberg (September 15 source; update dated September 16). [Update, evening of October 26, 2026: the tracker entry was rewritten on primary sources (the rule took effect March 9, 2026 and moved no positions; Executive Order 14410 of June 3, 2026 placed about 8,000 by the administration’s count) and this step was regenerated from it by the same finder-and-verifier method.]",
+  "Cut quotations: Dellinger (starts mid-sentence), Trump's Hawley post (tail of a sentence), Bessent (fragment), the FITF memo (fragment), Warner (starts mid-sentence), the FEC chair (fragment), EO 14209 (fragment), CNN on the Trump Organization plan (fragment), Van Hollen and Murray (period omitted), Eric Trump (period omitted), Judge Brann (starts mid-sentence and keeps the 'the Government tells us' lead-in, so it is his characterization of the government's position, not a finding). Verifiers dropped the quote from the OPM-question beat, and the prior Schumer quote is gone from H.R. 7008 because the verified beat carries none; the prior Burkman and six-senators quotes were replaced by the verified Tolman and Blanche-memo quotes.",
+  "Alleged, disputed or preliminary: the MAGA Inc. complaint before the FEC is an allegation; CREW alleged the Bondi donation was a bribe and no finding is reported; Oyer's firing and its reason are her account; the 60 Minutes brokers' claims are their own and no pardon-for-payment is established; the CR-15 probe's death is ProPublica's reporting and no source shows a motive to shield anyone; the state bar rule is a proposal and the McDade conflict is the critics' view; the Rogoff and OPM rulings are preliminary; the Halligan dismissals were without prejudice; 'enemies list' is CNN's label, and the reuters-470 entry's October 14, 2026 correction records that Patel denies it is one; no source shows Trump influenced the Cannon ruling; the elector proclamation's legal effect is mostly symbolic.",
+  "Schedule Policy/Career (schedule-f-federal-workers-at-will) rests on a thin entry: no updatedDate, no primary OPM rule cited, an approximate effective date, and a source headlined 'looming finalization'. The beat lists the lost appeal rights and lost whistleblower access as two separate effects, and the thesis no longer cites the rule. Re-verify before story mode prints it, or cut it. [Update, evening of October 26, 2026: the tracker entry was rewritten on primary sources (the rule took effect March 9, 2026 and moved no positions; Executive Order 14410 of June 3, 2026 placed about 8,000 by the administration’s count) and this step was regenerated from it by the same finder-and-verifier method.]",
+  "Prior-outline wording kept that is not in this round's verified 'what': the Bondi-firing line's 'her failure to prosecute his political enemies', the OLC line's 'the first time the department has explicitly done so', the campaign beat's 'ethics approved his convention appearance', the FITF line's 'other agencies closed or cut' their offices, and the Bloomberg why on range-based disclosures. All came from the prior outline's verified beats.",
+  "Wording changed from the prior outline, each for a verified correction or a critic finding: inspectors general (new entry and count); Patel line ('enemies' now attributed to CNN); Bondi line ('illegal' removed); Pulte, Halligan, OLC, FinCEN, campaign and Schedule F (2020) lines or whys (entry-attribution text removed); Rogoff why; Blanche crypto (date added, why now gives the department's 'cleared in advance'); FITF why (FARA headline claim cut); CR-15 date and line; first-term clemency line ('later' added for the Post finding); brokers why; crypto bill (divestment threshold added; the 'later won conditional approval' clause cut); Bloomberg (Khanna's about 8,000 added); H.R. 7008 (no longer says Senate Republicans 'tried to attach' the provision); GRECO why (2023 exemption note cut); revocable trust why ('precondition' cut).",
+  "The Eric Trump beat prints 'more than 3,600 trades' for the first-quarter filing; the entry's correction gives about 3,640 (2,345 purchases and 1,296 sales). The OLC beat's PBS source cannot be verified automatically and is not its sole source. The H.R. 7008 beat's 'severe' is the severity of the SAVE America Act entry as a whole, not of the vote."
+ ],
+ "critic": {
+  "missing": [
+   {
+    "what": "(a1) Inspectors general fired. Covered and stated as the entry states: Friday, January 24, 2025, 17 by a federal court's count, without the 30 days' notice the law requires, and Judge Reyes found the law violated but did not reinstate them. The 2020 Linick and Transportation removals come from the ledger. Not used: the later USAID (Feb 11, 2025) and Export-Import Bank (Oct 15, 2025) firings that the same entry records.",
+    "found": true,
+    "id": "inspectors-general-purge"
+   },
+   {
+    "what": "(a2) Stock-trading ban and Trump's position. Covered, and the position matches the entry's title: he backed a ban for Congress only and attacked Hawley's HONEST Act, the one bill that also covered the president. The outline never uses the reader's framing. The beat leaves out evidence the entry gives about what Trump objected to: (1) Hawley's account that the two spoke and it was a 'misunderstanding' about Trump having to sell Mar-a-Lago; (2) the Axios White House official who said the concern was covering the executive branch; (3) Trump saying 'I like it conceptually' earlier that day; (4) the OMB Statement of Administration Policy strongly supporting H.R. 7008, voter-ID provision included; (5) the White House statement that Trump was 'UNITED' behind the bill.",
+    "found": true,
+    "id": "trump-backs-congress-only-stock-ban-attacked-hawley-bill-covering-president"
+   },
+   {
+    "what": "(a3) Loyalists installed. Covered by the beats on Ed Martin, Halligan (retaliatory-indictments-comey-james-bolton), the Habba/NJ trio (nj-us-attorney-triumvirate-disqualified), Pulte (trump-names-pulte-acting-dni-no-intel-background), the Rogoff firing, the OPM application question and Patel (kash-patel-fbi-enemies-list).",
+    "found": true,
+    "id": "ed-martin-dc-us-attorney-weaponization-working-group"
+   },
+   {
+    "what": "(a4) Personal attorney as head of the Justice Department. Covered: Blanche, Trump's former personal criminal defense lawyer, became acting AG on April 2, 2026 (trump-fires-bondi-attorney-general-epstein) and was confirmed 50-49 on August 8, 2026 (blanche-attorney-general-campaign-rallies-post-watergate-norm, doj-olc-executive-privilege-private-advisers-trump). Bondi's role as his 2019 impeachment lawyer is in the Bondi beat. No beat covers the nomination or confirmation itself; the 50-49 vote appears only in the thesis and inside the OLC line. blanche-ag-nomination-survivors-psa-nyc-bar-unfit (NYC Bar called him 'unfit') goes unused.",
+    "found": true,
+    "id": "trump-fires-bondi-attorney-general-epstein"
+   },
+   {
+    "what": "(b) Schedule F, first term (EO 13957, October 2020). Covered.",
+    "found": true,
+    "id": "schedule-f-civil-service-purge"
+   },
+   {
+    "what": "(b) Schedule Policy/Career, about 50,000 workers made at-will, around March 8, 2026. Covered, but the entry is thin: no updatedDate and no primary rule document among its sources.",
+    "found": true,
+    "id": "schedule-f-federal-workers-at-will"
+   },
+   {
+    "what": "(b) Removal of the Office of Special Counsel head (Dellinger, Feb 7, 2025). Covered.",
+    "found": true,
+    "id": "trump-fires-office-of-special-counsel-dellinger"
+   },
+   {
+    "what": "(b) Removal of the Office of Government Ethics director (Huitema, Feb 10, 2025). Covered by a ledger item only. There is no standalone tracker entry; propublica-financial-conflicts-appointees also states the removal.",
+    "found": true,
+    "id": "ledger:2025-02-10 Trump removes the director"
+   },
+   {
+    "what": "(b) FEC loses its quorum (Weintraub removed by a letter dated Jan 31, 2025; quorum lost May 1, 2025). Covered. The beat leaves out the act the entry's title leads with: Trump nominated no one until Feb 11, 2026, and as of Oct 7, 2026 the Senate had held no hearing. Also unused: EO 14215 (Feb 18, 2025), which put the FEC among agencies that must send regulations to the White House for review.",
+    "found": true,
+    "id": "trump-removes-fec-commissioner-weintraub-fec-loses-quorum"
+   },
+   {
+    "what": "(b) Inspector general purge dated January 24, 2025. Covered with the corrected date and the court's count.",
+    "found": true,
+    "id": "inspectors-general-purge"
+   },
+   {
+    "what": "(b) Public Integrity Section cut. Covered through NOTUS's 36-to-2 figure in the CR-15 entry. The ledger's FCPA item gives the AP figure (from about 30 to 'as few as five'), which goes unused. No standalone tracker entry.",
+    "found": true,
+    "id": "fbi-cr15-purge-ends-navatek-congress-bribery-probe-collins"
+   },
+   {
+    "what": "(b) FCPA enforcement pause (EO 14209, Feb 10, 2025). Covered by a ledger item only. The tracker has no entry: the Adani entry carries only an 'fcpa' tag.",
+    "found": true,
+    "id": "ledger:2025-02-10 Trump pauses enforcement of"
+   },
+   {
+    "what": "(b) DOJ crypto enforcement team disbanded (Apr 7, 2025). Covered.",
+    "found": true,
+    "id": "blanche-disbands-doj-crypto-enforcement-team-while-holding-crypto"
+   },
+   {
+    "what": "(b) Ethics pledge revoked (EO 14148 revoking EO 13989, Jan 20, 2025). Covered by a ledger item. propublica-financial-conflicts-appointees also states it.",
+    "found": true,
+    "id": "ledger:2025-01-20 On his first day"
+   },
+   {
+    "what": "(b) Refusal to divest; revocable trust. Covered by a ledger item, and the Eric Trump and Q1 disclosure beats support it.",
+    "found": true,
+    "id": "ledger:2025-01-20 Trump takes office without"
+   },
+   {
+    "what": "(b) Bondi's appointment and her 2013 donation history. Covered.",
+    "found": true,
+    "id": "bondi-25000-donation-trump-university-dropped"
+   },
+   {
+    "what": "(b) Blanche replacing Bondi. Covered.",
+    "found": true,
+    "id": "trump-fires-bondi-attorney-general-epstein"
+   },
+   {
+    "what": "(b) Ed Martin as D.C. U.S. attorney, then pardon attorney and Weaponization Working Group director. Covered.",
+    "found": true,
+    "id": "ed-martin-dc-us-attorney-weaponization-working-group"
+   },
+   {
+    "what": "(b) State-bar rule (proposed Mar 4, 2026). Covered.",
+    "found": true,
+    "id": "bondi-doj-block-ethics-investigations"
+   },
+   {
+    "what": "(b) Withdrawal from GRECO (Sept 28, 2026). Covered.",
+    "found": true,
+    "id": "us-withdraws-greco-council-of-europe-anti-corruption"
+   },
+   {
+    "what": "(b) End of the shell-company ownership registry, with deletion of filed records (Aug 11, 2026). Covered.",
+    "found": true,
+    "id": "fincen-ends-beneficial-ownership-database-deletion"
+   },
+   {
+    "what": "(b) Cannon's dismissal of the documents case (July 15, 2024). Covered.",
+    "found": true,
+    "id": "cannon-dismisses-trump-classified-documents-case"
+   },
+   {
+    "what": "(b) Smith drops both prosecutions (Nov 25, 2024). Covered.",
+    "found": true,
+    "id": "smith-drops-both-trump-prosecutions-after-election-win"
+   },
+   {
+    "what": "(b) Proclamation pardoning 2020 election allies (Nov 7, 2025). Covered.",
+    "found": true,
+    "id": "trump-pardons-giuliani-meadows-2020-election-allies-proclamation"
+   },
+   {
+    "what": "(b) Slaughter ruling overruling Humphrey's Executor (June 29, 2026). Covered.",
+    "found": true,
+    "id": "scotus-trump-slaughter-overrules-humphreys-executor-fire-ftc"
+   },
+   {
+    "what": "(b) Absent from the outline: Blanche's AG nomination drew opposition from Epstein survivors, and the NYC Bar formally called him 'unfit'. It speaks directly to the reader's fourth example.",
+    "found": true,
+    "id": "blanche-ag-nomination-survivors-psa-nyc-bar-unfit"
+   },
+   {
+    "what": "(b) Absent: Trump told TIME on Sept 28, 2026 he would pardon members of his administration ('Yeah, sure I'd do that') and said on Oct 15 he is 'allowed to do a self-pardon'. The gaps exclude it as 'outside the corruption setup', but a promise of clemency to his own officials is arguably part of the setup itself.",
+    "found": true,
+    "id": "trump-would-pardon-administration-members-time-interview"
+   },
+   {
+    "what": "(b) Absent: the January 6 mass pardons on Day 1. The elector-pardon entry and the Ed Martin entry both refer to them. The ledger excludes them because there is no money nexus, but they set up the clemency pattern the enforcement section describes.",
+    "found": true,
+    "id": "jan6-mass-pardons"
+   },
+   {
+    "what": "(b) Absent: about 5,500 Justice Department employees left in the first nine months, including at least 200 who were fired.",
+    "found": true,
+    "id": "doj-mass-exodus-stacey-young-justice-connection"
+   },
+   {
+    "what": "(b) Absent: the FBI 'Director's Advisory Team' ('payback squad'), and Raskin's allegation of more than $1 million in bonuses to loyalist agents (an allegation, not a finding).",
+    "found": true,
+    "id": "fbi-payback-squad-directors-advisory-team-brennan"
+   },
+   {
+    "what": "(b) Absent: the October 2026 Laurie memo letting the AG, the FBI director and U.S. attorneys speak at rallies and canvass. It is recorded in the same entry the Tirrell beat uses (CBS source already cited there), but the beat mentions only the March 2026 rescission.",
+    "found": true,
+    "id": "blanche-attorney-general-campaign-rallies-post-watergate-norm"
+   },
+   {
+    "what": "(b) Absent by the gaps' choice: the first-term record of five inspector general removals in spring 2020 and 92% turnover on Brookings' list of senior 'A Team' posts. The watchdogs thesis names only two 2020 removals.",
+    "found": true,
+    "id": "cabinet-dissenter-retaliation"
+   },
+   {
+    "what": "(b) Absent by the gaps' choice: Trump removed the last Election Assistance Commission members (July 9, 2026), a quorum loss parallel to the FEC's.",
+    "found": true,
+    "id": "trump-fires-election-assistance-commission-quorum"
+   },
+   {
+    "what": "(b) Absent: CFPB enforcement gutted. The ledger set it aside for lacking a beneficiary nexus, so leaving it out is defensible.",
+    "found": true,
+    "id": "cfpb-gutted-credit-errors-soar"
+   },
+   {
+    "what": "(b) Emil Bove (Trump's former attorney) elevated to a federal appeals judgeship. No standalone entry; doj-olc-executive-privilege-private-advisers-trump only mentions it in passing. The Adams dismissal order he signed is ledger:2025-02-10 The Justice Department orders, which the gaps exclude.",
+    "found": false,
+    "id": ""
+   }
+  ],
+  "overreach": [
+   "Limits thesis states as fact that 'trading, anti-bribery and emoluments rules apply to him but lack enforcement absent Justice Department action'. The only basis is an unsourced key fact in trump-q1-2026-disclosure-3700-trades-nvidia-palantir-axon, as the outline's own cautions admit. The claim also clashes with the Smith beat, which cites the department's bar on prosecuting a sitting president. Cut it from the thesis or attribute it.",
+   "H.R. 7008 beat (trump-save-act-dhs-shutdown-hostage) says Senate Republicans 'tried to attach' the photo-ID requirement. The newer stock-ban entry (updated Oct 26, 2026) says House GOP leadership inserted it before the July 22, 2026 House vote, and that OMB 'strongly supports the passage of H.R. 7008', voter-ID provision included. The beat's why ('no entry shows him directing its attachment') is literally true but leaves out that the administration endorsed the combined bill.",
+   "Q1 disclosure beat prints 'more than 3,700 trades'. The Eric Trump entry's Oct 2, 2026 correction says the same filing shows about 3,640 and withdraws 'more than 3,700', and the Eric Trump beat says 'more than 3,600'. The outline gives two counts for one filing.",
+   "Watchdogs thesis says the second term 'stripped whistleblower appeal rights from about 50,000 workers'. That merges two separate claims in the entry (lost MSPB appeal rights; lost access to the whistleblower process). It also rests on schedule-f-federal-workers-at-will, which has no updatedDate, cites no primary OPM rule, gives an approximate effective date and cites a source headlined 'looming finalization'. The Schedule Policy/Career why ('no legal recourse') carries the same weakness.",
+   "Revocable-trust why repeats the ledger's claim that the arrangement is 'the precondition for the deals, token sales and licensing fees'. That is a claim that one step enabled the acts, which the framing expressly disclaims ('without claiming that any step caused any act').",
+   "Foreign Influence Task Force why adds that the order 'narrowed foreign-agent prosecutions', sourced only to a CyberScoop headline. The entry says nothing about FARA.",
+   "Pharma beat why says the holdings are something 'a Congress-only ban would not reach'. That is the outline's inference; the entry never connects the JEC report to the stock-ban bills.",
+   "GRECO why sets the 2023 note on the president's conflict-of-interest exemption beside the withdrawal, which implies a motive. The entry gives only the State Department's cost rationale.",
+   "Rules thesis 'ended shell-company ownership reporting' goes further than the entry, which ends reporting for U.S. companies and U.S. persons and notes that banks' due-diligence duties remain.",
+   "Enforcement thesis 'a proclamation pardoned 77 people' understates a grant to 'all United States citizens' for that conduct. The proclamation names 77 people but 'includes, but is not limited to' them. The same thesis's 'from 36 lawyers to two' drops NOTUS's qualifier '36 attorneys assigned full-time to corruption cases'.",
+   "Dellinger why ('under whom the office found the mass probationary firings were not prohibited personnel practices') leaves out the entry's explicit caveat that 'No source shows the firing was retaliation for that work, which came after it'. Side by side, the two facts invite a motive reading.",
+   "World Liberty why says 'whose firm later won conditional approval'. The OCC approval (Aug 14, 2026) came before the Sept 15 vote the beat is dated to; 'later' is true only relative to the 2025 stablecoin law.",
+   "Loyalists thesis credits Trump with installing 'prosecutors whose appointments judges ruled unlawful'. For New Jersey, the entry says Bondi installed the three-person team the judge ruled on.",
+   "Courts section includes two ballroom beats, while the gaps exclude 'the ballroom funding fights' as acts the count records (The Ballroom is itself a Corruption dive). The Musk deposition and hush-money discharge entries do not tie themselves to a corruption setup. Both are scope inconsistencies, not misstatements.",
+   "Meta text instead of significance, which should not reach the page: Patel why ('It gives no appointment date'), Cannon line ('the entry says'), Pulte line ('the entry reports'), FITF why ('the entry does not detail this'). The Tirrell beat is dated July 2025 but carries a quote about Blanche's 2026 rallies.",
+   "No quote lacks a quoteBy, and every quoteBy matches its entry's or ledger item's attribution."
+  ],
+  "verdict": "The outline is close to complete and mostly faithful. All four of the reader's examples are covered: (1) inspectors-general-purge, printed as 17 by a federal court's count on January 24, 2025; (2) the stock-trading ban, where Trump's position is stated as the entry states it (he backed a Congress-only ban and attacked the one bill that covered the president), never as the reader framed it; (3) loyalists, across seven entries; (4) Blanche, his former personal criminal defense lawyer, as acting and then confirmed attorney general. Every setup act on the checklist is present, through a tracker entry or a ledger item. The OGE director's removal, the ethics-pledge revocation, the FCPA pause and the refusal to divest have only ledger items, and the first two are also stated in propublica-financial-conflicts-appointees. The most useful additions would be: blanche-ag-nomination-survivors-psa-nyc-bar-unfit, to give the fourth example its own beat; trump-would-pardon-administration-members-time-interview, which the gaps wave off but which is a setup act on its face; and, optionally, jan6-mass-pardons and the DOJ exodus entry. Three fixes should come before story mode is rebuilt: drop or attribute the limits thesis's unsourced 'lack enforcement absent Justice Department action' clause; rewrite the H.R. 7008 line to match the stock-ban entry (House GOP leaders inserted the voter-ID provision, and OMB endorsed the combined bill); and replace the Q1 beat's '3,700 trades' with the corrected count of about 3,640. The Schedule Policy/Career claims rest on a thin, un-updated entry. The revocable-trust 'precondition' why contradicts the framing's promise not to claim causation. The remaining items are wording-level tightenings."
+ },
+ "pageFields": {
+  "note": "Fields the story page reads besides the outline’s own: quoteBy (the speaker the entry attributes a quote to, produced by the finders and checked by the verifiers; a quote with no quoteBy is not rendered), dateNote (a placeholder or entry date that is not the event’s date), thesisInferred (a thesis that goes beyond what its entries state), inCount (computed against ledger.json when the file is assembled), sourceGap (none at this writing). A flag field carries a caution attached to one beat, shown as a red line on the step and its section (none at this writing; the one flag, on the Schedule Policy/Career rule, was removed on October 26, 2026 when its entry was rebuilt). Every quoteBy was then checked by a refuter per quote (wf_14894b7f-143): none refuted; three made more precise (the FEC chair named, Barr’s memoir, Eric Trump’s post). ledgerId names the ledger act a step describes when its tracker entry carries no ledger link (the IG purge and the elector-slate proclamation), so the step counts as one of the 317 and lights that mark. The Schedule Policy/Career step was regenerated on the evening of October 26 from its rewritten entry (wf_daef791a-9da) and its flag removed. The supreme-court-trump-v-united-states-presidential-immunity step was added on the evening of October 26 after its tracker entry was written (one finder reading only the entry, one verifier), into the limits section in date order; the section thesis gained an opening clause for it after a review. readerNotes (evening of October 26) is the reader-facing form of the gaps and cautions, with per-step lines; the working notes themselves are unchanged and the page folds them behind a disclosure."
+ },
+ "readerNotes": {
+  "generated": "2026-10-26",
+  "run": "wf_5e8ced40-4fe",
+  "method": "Written from the gaps and cautions above by one agent under a no-new-claims rule, then checked line by line against them by another; each item names the notes it draws on.",
+  "intro": "This screen sets out the prologue's limits as its checks found them: reasons resting on a reading rather than a finding, stand-in dates, shortened quotations and matters still alleged or unsettled. The full working notes follow below.",
+  "items": [
+   {
+    "text": "Trump backed a stock-trading ban limited to Congress and, on July 30, 2025, attacked Sen. Hawley after a committee advanced the one bill also covering the president. This page does not say he kept Congress from banning stock trading.",
+    "from": [
+     "gap:0"
+    ],
+    "steps": [
+     "trump-backs-congress-only-stock-ban-attacked-hawley-bill-covering-president"
+    ]
+   },
+   {
+    "text": "The bill he urged, H.R. 7008, excludes the president, and no source shows him pressing Republicans to weaken a Congress-only ban. Its failed Senate vote, 53-47 on September 30, 2026, is listed as a limit in the law.",
+    "from": [
+     "gap:0"
+    ],
+    "steps": [
+     "trump-backs-congress-only-stock-ban-attacked-hawley-bill-covering-president",
+     "trump-save-act-dhs-shutdown-hostage"
+    ]
+   },
+   {
+    "text": "Seven steps give reasons drawn by inference, not stated in their records: Kash Patel's appointment, Pam Bondi's confirmation, her firing, the ethics-pledge revocation, the foreign-bribery enforcement pause, the first-term clemency market and Liz Oyer's firing.",
+    "from": [
+     "caution:0"
+    ],
+    "steps": [
+     "kash-patel-fbi-enemies-list",
+     "bondi-25000-donation-trump-university-dropped",
+     "trump-fires-bondi-attorney-general-epstein",
+     "ledger:2025-01-20 On his first day",
+     "ledger:2025-02-10 Trump pauses enforcement of",
+     "ledger:2021-01-17 A paid market for",
+     "ledger:2025-05-31 The pardon market: lawyers"
+    ]
+   },
+   {
+    "text": "Ten other reasons carry a record's own analysis or label, not a finding: on Linick, the FTC ruling, the privilege opinion, Rogoff, the revocable trust, ownership reporting, pardon brokers, Trump's pardon remarks, Bloomberg's trade count and Schedule Policy/Career.",
+    "from": [
+     "caution:1"
+    ],
+    "steps": [
+     "ledger:2020-05-15 Trump removes the inspectors",
+     "scotus-trump-slaughter-overrules-humphreys-executor-fire-ftc",
+     "doj-olc-executive-privilege-private-advisers-trump",
+     "trump-fires-rogoff-seattle-us-attorney-54-minutes",
+     "ledger:2025-01-20 Trump takes office without",
+     "fincen-ends-beneficial-ownership-database-deletion",
+     "pardon-brokers-60-minutes-hidden-camera-300000",
+     "trump-would-pardon-administration-members-time-interview",
+     "trump-june-2026-stock-trades-disclosure",
+     "schedule-f-federal-workers-at-will"
+    ]
+   },
+   {
+    "text": "No section summary is marked as going beyond what its records state.",
+    "from": [
+     "caution:2"
+    ],
+    "steps": []
+   },
+   {
+    "text": "The summary for the section on removing watchdogs says an FEC commissioner was removed before the commission lost its quorum; the record says the quorum went as Republican commissioners left, so the summary gives order only.",
+    "from": [
+     "caution:2"
+    ],
+    "steps": [
+     "trump-removes-fec-commissioner-weintraub-fec-loses-quorum"
+    ]
+   },
+   {
+    "text": "The summary for the section on the law's limits sets Trump's own position on the stock-trading ban beside limits in the law.",
+    "from": [
+     "caution:2"
+    ],
+    "steps": []
+   },
+   {
+    "text": "Four dates stand in for others: Kash Patel's appointment, which has no date in its record; the 2020 Schedule F order, known only as October 2020; Todd Blanche's undated nomination; and his campaign step, dated by its record.",
+    "from": [
+     "caution:3"
+    ],
+    "steps": [
+     "kash-patel-fbi-enemies-list",
+     "schedule-f-civil-service-purge",
+     "blanche-ag-nomination-survivors-psa-nyc-bar-unfit",
+     "blanche-attorney-general-campaign-rallies-post-watergate-norm"
+    ]
+   },
+   {
+    "text": "Other dates fall on a related event: the FEC quorum loss, Ed Martin's first post, Bondi's confirmation, news reports on the anti-corruption squad, the working group and first-term pardons, a record date for Oyer's firing, the Hawley vote, Bloomberg's analysis.",
+    "from": [
+     "caution:3"
+    ],
+    "steps": [
+     "trump-removes-fec-commissioner-weintraub-fec-loses-quorum",
+     "ed-martin-dc-us-attorney-weaponization-working-group",
+     "bondi-25000-donation-trump-university-dropped",
+     "fbi-cr15-purge-ends-navatek-congress-bribery-probe-collins",
+     "weaponization-group-zero-reports-maga-competence-gap",
+     "ledger:2021-01-17 A paid market for",
+     "ledger:2025-05-31 The pardon market: lawyers",
+     "trump-backs-congress-only-stock-ban-attacked-hawley-bill-covering-president",
+     "trump-june-2026-stock-trades-disclosure"
+    ]
+   },
+   {
+    "text": "Several quotations are fragments, begin mid-sentence or omit the closing period: those from Dellinger, Trump on Hawley, Bessent, Bondi's memo, Sen. Warner, the FEC chair, Executive Order 14209, CNN, Van Hollen and Murray, and Eric Trump.",
+    "from": [
+     "caution:4"
+    ],
+    "steps": [
+     "trump-fires-office-of-special-counsel-dellinger",
+     "trump-backs-congress-only-stock-ban-attacked-hawley-bill-covering-president",
+     "fincen-ends-beneficial-ownership-database-deletion",
+     "trump-dismantles-foreign-election-interference-units-cisa-hack-request",
+     "world-liberty-financial-occ-bank-charter-bid-usd1-ufc",
+     "trump-removes-fec-commissioner-weintraub-fec-loses-quorum",
+     "ledger:2025-02-10 Trump pauses enforcement of",
+     "ledger:2025-01-10 The Trump Organization's second-term",
+     "blanche-ag-nomination-survivors-psa-nyc-bar-unfit",
+     "eric-trump-blind-trust-denial-beyer-receipts-2345-purchases"
+    ]
+   },
+   {
+    "text": "Judge Brann's quotation starts mid-sentence and keeps his lead-in, 'the Government tells us', so it is his account of the government's position, not a finding.",
+    "from": [
+     "caution:4"
+    ],
+    "steps": [
+     "nj-us-attorney-triumvirate-disqualified"
+    ]
+   },
+   {
+    "text": "Some matters are allegations or one side's account: the MAGA Inc. complaint before the FEC, CREW's claim that the Bondi donation was a bribe, with no finding reported, Oyer's account of her firing, and the pardon brokers' own claims.",
+    "from": [
+     "caution:5"
+    ],
+    "steps": [
+     "trump-removes-fec-commissioner-weintraub-fec-loses-quorum",
+     "bondi-25000-donation-trump-university-dropped",
+     "ledger:2025-05-31 The pardon market: lawyers",
+     "pardon-brokers-60-minutes-hidden-camera-300000"
+    ]
+   },
+   {
+    "text": "No pardon in exchange for payment is established. The end of the FBI bribery investigation is ProPublica's reporting, and no source shows a motive to shield anyone. 'Enemies list' is CNN's label; Patel denies it is one.",
+    "from": [
+     "caution:5"
+    ],
+    "steps": [
+     "pardon-brokers-60-minutes-hidden-camera-300000",
+     "fbi-cr15-purge-ends-navatek-congress-bribery-probe-collins",
+     "kash-patel-fbi-enemies-list"
+    ]
+   },
+   {
+    "text": "Some steps are not final: the state bar rule is a proposal, and its conflict with the McDade Amendment is its opponents' view; the Rogoff and OPM-question rulings are preliminary; the Halligan dismissals were without prejudice.",
+    "from": [
+     "caution:5"
+    ],
+    "steps": [
+     "bondi-doj-block-ethics-investigations",
+     "trump-fires-rogoff-seattle-us-attorney-54-minutes",
+     "judge-blocks-civil-service-loyalty-question-advance-executive-orders",
+     "retaliatory-indictments-comey-james-bolton"
+    ]
+   },
+   {
+    "text": "No source shows Trump influenced the Cannon ruling, and the elector-slate pardon proclamation's legal effect is mostly symbolic.",
+    "from": [
+     "caution:5"
+    ],
+    "steps": [
+     "cannon-dismisses-trump-classified-documents-case",
+     "trump-pardons-giuliani-meadows-2020-election-allies-proclamation"
+    ]
+   },
+   {
+    "text": "Five phrases were checked in an earlier version, not the latest: Bondi's 'failure to prosecute his political enemies', the privilege opinion's 'first time', the department's word that ethics approved Blanche's convention appearance, other agencies' cuts, and the range-based disclosures reason.",
+    "from": [
+     "caution:7"
+    ],
+    "steps": [
+     "trump-fires-bondi-attorney-general-epstein",
+     "doj-olc-executive-privilege-private-advisers-trump",
+     "blanche-attorney-general-campaign-rallies-post-watergate-norm",
+     "trump-dismantles-foreign-election-interference-units-cisa-hack-request",
+     "trump-june-2026-stock-trades-disclosure"
+    ]
+   },
+   {
+    "text": "The count of 17 inspectors general removed in January 2025 is a federal court's; another record, on the Social Security inspector general, gives 19, which is not used.",
+    "from": [
+     "gap:1"
+    ],
+    "steps": [
+     "inspectors-general-purge"
+    ]
+   },
+   {
+    "text": "The step on Eric Trump's blind-trust claim prints 'more than 3,600 trades'; the record's correction gives about 3,640, made up of 2,345 purchases and 1,296 sales.",
+    "from": [
+     "caution:9"
+    ],
+    "steps": [
+     "eric-trump-blind-trust-denial-beyer-receipts-2345-purchases"
+    ]
+   },
+   {
+    "text": "One source for the step on the privilege opinion, from PBS, cannot be checked automatically; it is not that step's only source.",
+    "from": [
+     "caution:9"
+    ],
+    "steps": [
+     "doj-olc-executive-privilege-private-advisers-trump"
+    ]
+   },
+   {
+    "text": "The 'severe' rating on the step on the September 30 Senate vote is the rating of the SAVE America Act as a whole, not of the vote.",
+    "from": [
+     "caution:9"
+    ],
+    "steps": [
+     "trump-save-act-dhs-shutdown-hostage"
+    ]
+   },
+   {
+    "text": "The step on the Supreme Court's July 1, 2024 immunity ruling was added last, drafted from its record alone and checked once.",
+    "from": [
+     "gap:10"
+    ],
+    "steps": [
+     "supreme-court-trump-v-united-states-presidential-immunity"
+    ]
+   },
+   {
+    "text": "The prologue leaves out matters outside its subject, which is the changes around the acts this count records, and acts the count records itself, such as the NLRB and EAC quorum losses, tariffs, the Qatar jet and individual pardons.",
+    "from": [
+     "gap:8"
+    ],
+    "steps": []
+   },
+   {
+    "text": "First-term ethics matters, among them the GSA hotel lease, foreign-profit payments, Wilbur Ross's divestiture, 2020 Hatch Act violations and Jared Kushner's clearance, are not included; the reasons offered for the Ross and Kushner matters did not pass checking.",
+    "from": [
+     "gap:9"
+    ],
+    "steps": []
+   }
+  ],
+  "stepNotes": [
+   {
+    "id": "ledger:2020-05-15 Trump removes the inspectors",
+    "text": "The reason given is a label from this count's records, obstruction of oversight, not a finding.",
+    "from": [
+     "caution:1"
+    ]
+   },
+   {
+    "id": "schedule-f-civil-service-purge",
+    "text": "The date shown is the record's; the record says only that the order was signed in October 2020.",
+    "from": [
+     "caution:3"
+    ]
+   },
+   {
+    "id": "inspectors-general-purge",
+    "text": "The count of 17 is a federal court's; another record, on the Social Security inspector general, gives 19, not used here.",
+    "from": [
+     "gap:1"
+    ]
+   },
+   {
+    "id": "trump-fires-office-of-special-counsel-dellinger",
+    "text": "Dellinger's quotation begins mid-sentence.",
+    "from": [
+     "caution:4"
+    ]
+   },
+   {
+    "id": "trump-removes-fec-commissioner-weintraub-fec-loses-quorum",
+    "text": "Dated to the lost quorum, May 1, 2025; Weintraub's removal letter is dated January 31, 2025.",
+    "from": [
+     "caution:3"
+    ]
+   },
+   {
+    "id": "trump-removes-fec-commissioner-weintraub-fec-loses-quorum",
+    "text": "The FEC chair's quotation is a fragment.",
+    "from": [
+     "caution:4"
+    ]
+   },
+   {
+    "id": "trump-removes-fec-commissioner-weintraub-fec-loses-quorum",
+    "text": "The complaint that Trump illegally controls MAGA Inc. is an allegation.",
+    "from": [
+     "caution:5"
+    ]
+   },
+   {
+    "id": "schedule-f-federal-workers-at-will",
+    "text": "The reason given is the record's own account of what the rule removes, not a finding.",
+    "from": [
+     "caution:1"
+    ]
+   },
+   {
+    "id": "scotus-trump-slaughter-overrules-humphreys-executor-fire-ftc",
+    "text": "The reach to other agencies is the record's own reading of the ruling's logic, not a finding.",
+    "from": [
+     "caution:1"
+    ]
+   },
+   {
+    "id": "ledger:2025-01-10 The Trump Organization's second-term",
+    "text": "CNN's quotation is a fragment.",
+    "from": [
+     "caution:4"
+    ]
+   },
+   {
+    "id": "ledger:2025-01-20 Trump takes office without",
+    "text": "The reason rests on this count's records of deals, token sales and licensing fees flowing to the trust, not on a finding.",
+    "from": [
+     "caution:1"
+    ]
+   },
+   {
+    "id": "ledger:2025-01-20 On his first day",
+    "text": "The reason given is inferred from a label in this count's records, 'dismantling enforcement'.",
+    "from": [
+     "caution:0"
+    ]
+   },
+   {
+    "id": "ledger:2025-02-10 Trump pauses enforcement of",
+    "text": "The reason given is inferred from a label in this count's records, 'dismantling enforcement'.",
+    "from": [
+     "caution:0"
+    ]
+   },
+   {
+    "id": "ledger:2025-02-10 Trump pauses enforcement of",
+    "text": "The quotation from Executive Order 14209 is a fragment.",
+    "from": [
+     "caution:4"
+    ]
+   },
+   {
+    "id": "fincen-ends-beneficial-ownership-database-deletion",
+    "text": "The purpose given is the record's own statement, not a finding.",
+    "from": [
+     "caution:1"
+    ]
+   },
+   {
+    "id": "fincen-ends-beneficial-ownership-database-deletion",
+    "text": "Bessent's quotation is a fragment.",
+    "from": [
+     "caution:4"
+    ]
+   },
+   {
+    "id": "kash-patel-fbi-enemies-list",
+    "text": "No appointment date is given in the record; the step is placed at the start of the second term.",
+    "from": [
+     "caution:3"
+    ]
+   },
+   {
+    "id": "kash-patel-fbi-enemies-list",
+    "text": "The reason given is a reading of Barr's first-term block, not the record's own statement.",
+    "from": [
+     "caution:0"
+    ]
+   },
+   {
+    "id": "kash-patel-fbi-enemies-list",
+    "text": "'Enemies list' is CNN's label; Patel denies it is one.",
+    "from": [
+     "caution:5"
+    ]
+   },
+   {
+    "id": "ed-martin-dc-us-attorney-weaponization-working-group",
+    "text": "Dated to his Inauguration Day appointment; his pardon attorney and working group posts followed on May 8, 2025.",
+    "from": [
+     "caution:3"
+    ]
+   },
+   {
+    "id": "bondi-25000-donation-trump-university-dropped",
+    "text": "Dated to her confirmation, February 4, 2025; the record it draws on is dated February 5.",
+    "from": [
+     "caution:3"
+    ]
+   },
+   {
+    "id": "bondi-25000-donation-trump-university-dropped",
+    "text": "The reason is inferred: it sets the sequence beside CREW's allegation.",
+    "from": [
+     "caution:0"
+    ]
+   },
+   {
+    "id": "bondi-25000-donation-trump-university-dropped",
+    "text": "CREW alleged the donation was a bribe; no finding of bribery is reported.",
+    "from": [
+     "caution:5"
+    ]
+   },
+   {
+    "id": "trump-fires-bondi-attorney-general-epstein",
+    "text": "The reasons for the firing come from news reporting.",
+    "from": [
+     "caution:0"
+    ]
+   },
+   {
+    "id": "trump-fires-bondi-attorney-general-epstein",
+    "text": "'Her failure to prosecute his political enemies' was checked in an earlier version, not in the latest check.",
+    "from": [
+     "caution:7"
+    ]
+   },
+   {
+    "id": "blanche-ag-nomination-survivors-psa-nyc-bar-unfit",
+    "text": "Dated by its record; the nomination itself is undated, and the New York City Bar statement was reported July 15.",
+    "from": [
+     "caution:3"
+    ]
+   },
+   {
+    "id": "blanche-ag-nomination-survivors-psa-nyc-bar-unfit",
+    "text": "The Van Hollen and Murray quotation omits its closing period.",
+    "from": [
+     "caution:4"
+    ]
+   },
+   {
+    "id": "doj-olc-executive-privilege-private-advisers-trump",
+    "text": "The reason given is the record's own analysis, not a finding.",
+    "from": [
+     "caution:1"
+    ]
+   },
+   {
+    "id": "doj-olc-executive-privilege-private-advisers-trump",
+    "text": "'The first time the department has explicitly done so' was checked in an earlier version, not in the latest check.",
+    "from": [
+     "caution:7"
+    ]
+   },
+   {
+    "id": "doj-olc-executive-privilege-private-advisers-trump",
+    "text": "One source, from PBS, cannot be checked automatically; it is not the only source.",
+    "from": [
+     "caution:9"
+    ]
+   },
+   {
+    "id": "blanche-attorney-general-campaign-rallies-post-watergate-norm",
+    "text": "Dated by its record, September 17, 2026; it also covers the July 2025 firing and the March 2026 rescission.",
+    "from": [
+     "caution:3"
+    ]
+   },
+   {
+    "id": "blanche-attorney-general-campaign-rallies-post-watergate-norm",
+    "text": "The department's statement that ethics approved his convention appearance was checked in an earlier version, not in the latest check.",
+    "from": [
+     "caution:7"
+    ]
+   },
+   {
+    "id": "retaliatory-indictments-comey-james-bolton",
+    "text": "The dismissals were without prejudice.",
+    "from": [
+     "caution:5"
+    ]
+   },
+   {
+    "id": "nj-us-attorney-triumvirate-disqualified",
+    "text": "Judge Brann's quotation begins mid-sentence and gives his account of the government's position, not a finding.",
+    "from": [
+     "caution:4"
+    ]
+   },
+   {
+    "id": "weaponization-group-zero-reports-maga-competence-gap",
+    "text": "Dated to CNN's April 21, 2026 report; the record it draws on is dated April 22.",
+    "from": [
+     "caution:3"
+    ]
+   },
+   {
+    "id": "trump-fires-rogoff-seattle-us-attorney-54-minutes",
+    "text": "The reason given is the record's own account of the statute's fallback, not a finding.",
+    "from": [
+     "caution:1"
+    ]
+   },
+   {
+    "id": "trump-fires-rogoff-seattle-us-attorney-54-minutes",
+    "text": "The ruling restoring him is preliminary.",
+    "from": [
+     "caution:5"
+    ]
+   },
+   {
+    "id": "judge-blocks-civil-service-loyalty-question-advance-executive-orders",
+    "text": "The ruling is preliminary.",
+    "from": [
+     "caution:5"
+    ]
+   },
+   {
+    "id": "trump-dismantles-foreign-election-interference-units-cisa-hack-request",
+    "text": "Bondi's memo is quoted in a fragment.",
+    "from": [
+     "caution:4"
+    ]
+   },
+   {
+    "id": "trump-dismantles-foreign-election-interference-units-cisa-hack-request",
+    "text": "That other agencies closed or cut their offices was checked in an earlier version, not in the latest check.",
+    "from": [
+     "caution:7"
+    ]
+   },
+   {
+    "id": "fbi-cr15-purge-ends-navatek-congress-bribery-probe-collins",
+    "text": "Dated to an October 7, 2025 Fox News report; ProPublica's report is dated September 22, 2026.",
+    "from": [
+     "caution:3"
+    ]
+   },
+   {
+    "id": "fbi-cr15-purge-ends-navatek-congress-bribery-probe-collins",
+    "text": "The investigation's end is ProPublica's reporting; no source shows a motive to shield anyone.",
+    "from": [
+     "caution:5"
+    ]
+   },
+   {
+    "id": "bondi-doj-block-ethics-investigations",
+    "text": "The rule is a proposal; its conflict with the McDade Amendment is its opponents' view.",
+    "from": [
+     "caution:5"
+    ]
+   },
+   {
+    "id": "ledger:2021-01-17 A paid market for",
+    "text": "The reason given is a reading of the New York Times and Washington Post reports.",
+    "from": [
+     "caution:0"
+    ]
+   },
+   {
+    "id": "ledger:2021-01-17 A paid market for",
+    "text": "Dated to the New York Times report; the Washington Post finding came in February 2021.",
+    "from": [
+     "caution:3"
+    ]
+   },
+   {
+    "id": "ledger:2025-05-31 The pardon market: lawyers",
+    "text": "The firing and its reason are Oyer's own account.",
+    "from": [
+     "caution:0",
+     "caution:5"
+    ]
+   },
+   {
+    "id": "ledger:2025-05-31 The pardon market: lawyers",
+    "text": "Dated by its record; Oyer was fired in March 2025.",
+    "from": [
+     "caution:3"
+    ]
+   },
+   {
+    "id": "trump-pardons-giuliani-meadows-2020-election-allies-proclamation",
+    "text": "The proclamation's legal effect is mostly symbolic.",
+    "from": [
+     "caution:5"
+    ]
+   },
+   {
+    "id": "pardon-brokers-60-minutes-hidden-camera-300000",
+    "text": "The reason is how the reporting places the market beside the sidelined pardon office, not a finding.",
+    "from": [
+     "caution:1"
+    ]
+   },
+   {
+    "id": "pardon-brokers-60-minutes-hidden-camera-300000",
+    "text": "The brokers' claims are their own; no pardon in exchange for payment is established.",
+    "from": [
+     "caution:5"
+    ]
+   },
+   {
+    "id": "trump-would-pardon-administration-members-time-interview",
+    "text": "The reason given is the record's own reading of a promise of clemency.",
+    "from": [
+     "caution:1"
+    ]
+   },
+   {
+    "id": "supreme-court-trump-v-united-states-presidential-immunity",
+    "text": "Added last, drafted from its record alone and checked once.",
+    "from": [
+     "gap:10"
+    ]
+   },
+   {
+    "id": "cannon-dismisses-trump-classified-documents-case",
+    "text": "No source shows Trump influenced the ruling.",
+    "from": [
+     "caution:5"
+    ]
+   },
+   {
+    "id": "trump-backs-congress-only-stock-ban-attacked-hawley-bill-covering-president",
+    "text": "The bill he urged excludes the president; no source shows him pressing Republicans to weaken a Congress-only ban.",
+    "from": [
+     "gap:0"
+    ]
+   },
+   {
+    "id": "trump-backs-congress-only-stock-ban-attacked-hawley-bill-covering-president",
+    "text": "Dated to the Hawley committee vote; the record runs from April 2025 to September 2026.",
+    "from": [
+     "caution:3"
+    ]
+   },
+   {
+    "id": "trump-backs-congress-only-stock-ban-attacked-hawley-bill-covering-president",
+    "text": "Trump's post is quoted from the tail of a sentence.",
+    "from": [
+     "caution:4"
+    ]
+   },
+   {
+    "id": "eric-trump-blind-trust-denial-beyer-receipts-2345-purchases",
+    "text": "The record's correction gives about 3,640 trades: 2,345 purchases and 1,296 sales.",
+    "from": [
+     "caution:9"
+    ]
+   },
+   {
+    "id": "eric-trump-blind-trust-denial-beyer-receipts-2345-purchases",
+    "text": "Eric Trump's quotation omits its closing period.",
+    "from": [
+     "caution:4"
+    ]
+   },
+   {
+    "id": "world-liberty-financial-occ-bank-charter-bid-usd1-ufc",
+    "text": "Sen. Warner's quotation begins mid-sentence.",
+    "from": [
+     "caution:4"
+    ]
+   },
+   {
+    "id": "trump-june-2026-stock-trades-disclosure",
+    "text": "Dated to Bloomberg's September 15 analysis; the record's update is dated September 16.",
+    "from": [
+     "caution:3"
+    ]
+   },
+   {
+    "id": "trump-june-2026-stock-trades-disclosure",
+    "text": "The point on range-based disclosures is the record's own account, checked in an earlier version, not in the latest check.",
+    "from": [
+     "caution:1",
+     "caution:7"
+    ]
+   },
+   {
+    "id": "trump-save-act-dhs-shutdown-hostage",
+    "text": "The 'severe' rating is the SAVE America Act's as a whole, not the vote's.",
+    "from": [
+     "caution:9"
+    ]
+   },
+   {
+    "id": "trump-save-act-dhs-shutdown-hostage",
+    "text": "This vote is listed as a limit in the law.",
+    "from": [
+     "gap:0"
+    ]
+   }
+  ],
+  "omitted": [
+   {
+    "ref": "gap:0 (opening clause)",
+    "why": "Calling stock trading 'the reader's second example' describes the outline's framing, not the record."
+   },
+   {
+    "ref": "gap:1 (replacement of the earlier inspectors-general item)",
+    "why": "Records a change between versions; the court count and the unused 19 are kept."
+   },
+   {
+    "ref": "gap:2",
+    "why": "Records which outline examples were checked and where the Blanche steps sit; nothing a reader needs to weigh."
+   },
+   {
+    "ref": "gap:3",
+    "why": "Counts of records per section."
+   },
+   {
+    "ref": "gap:4",
+    "why": "Records steps dropped between versions and the reasons they were dropped."
+   },
+   {
+    "ref": "gap:5",
+    "why": "Lists claims not yet checked and deliberately not printed; repeating them on the screen would print them before they are checked."
+   },
+   {
+    "ref": "gap:6",
+    "why": "Records which records were added as steps and that an earlier gap no longer applies."
+   },
+   {
+    "ref": "gap:7",
+    "why": "Records outside suggestions that were not taken up."
+   },
+   {
+    "ref": "gap:8 (full list)",
+    "why": "The long list of left-out matters is cut to a few examples; the reason for leaving them out is kept."
+   },
+   {
+    "ref": "gap:10 (summary not rewritten)",
+    "why": "Superseded by the dated update to caution:2, which says the section summary gained an opening clause for the ruling."
+   },
+   {
+    "ref": "caution:1 (revocable trust wording, and the dated update on Schedule Policy/Career)",
+    "why": "Record a wording change and how the step was rebuilt."
+   },
+   {
+    "ref": "caution:2 (five and then six records in the limits summary)",
+    "why": "Counts of records."
+   },
+   {
+    "ref": "caution:3 (Schedule Policy/Career 'around March 8', and the dated update)",
+    "why": "Superseded by the note's own update: the rule took effect March 9, 2026, the date the step now shows."
+   },
+   {
+    "ref": "caution:3 (the earlier outline's ProPublica date)",
+    "why": "Records a change between versions; ProPublica's report date is kept on the step."
+   },
+   {
+    "ref": "caution:4 (final sentence)",
+    "why": "Records quotations dropped or replaced between versions."
+   },
+   {
+    "ref": "caution:6",
+    "why": "Its warning about a thin record is superseded by its own dated update: the record was rebuilt on primary sources and the step regenerated."
+   },
+   {
+    "ref": "caution:7 (closing sentence)",
+    "why": "Restated as 'checked in an earlier version'; the rest describes how the file was built."
+   },
+   {
+    "ref": "caution:8",
+    "why": "Records wording changes from the earlier outline."
+   }
+  ]
+ }
+}

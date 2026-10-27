@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Count (prototype)</title>
+<meta name="description" content="Every act in the ledger, counted. Choose what you want to see and how you want to read it.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,700;1,9..144,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --paper: #f3eee4; --paper-2: #e9e2d3; --rule: #d9d0bd;
+  --ink: #1a1813; --ink-2: #4a463d; --ink-3: #6b6458; --ink-3l: #857d70;
+  --red: #b3261e; --red-soft: rgba(179, 38, 30, .12);
+  --serif-d: "Fraunces", Georgia, serif; --serif: "Source Serif 4", Georgia, serif; --mono: "IBM Plex Mono", "SF Mono", monospace;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { background: var(--paper); }
+body { font-family: var(--serif); color: var(--ink); background: var(--paper); -webkit-font-smoothing: antialiased; font-size: 17px; line-height: 1.55; }
+::selection { background: var(--red-soft); }
+button { font: inherit; cursor: pointer; color: inherit; background: none; border: 0; }
+a { color: inherit; }
+
+.top { position: sticky; top: 0; z-index: 30; height: 52px; display: flex; align-items: center; justify-content: space-between; padding: 0 28px; font: 500 11px/1 var(--mono); letter-spacing: .14em; text-transform: uppercase; color: var(--ink-3); background: rgba(243,238,228,.96); border-bottom: 1px solid var(--rule); }
+.top .brand b { color: var(--ink); font-weight: 500; }
+.top a { color: inherit; text-decoration: none; }
+.top a:hover { color: var(--red); }
+.top .skip { color: var(--ink-2); border: 1px solid var(--ink); border-radius: 3px; padding: 8px 12px; }
+.top .skip:hover { background: var(--ink); color: var(--paper); }
+
+.door { max-width: 1180px; margin: 0 auto; padding: 56px 28px 140px; display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: 56px; align-items: start; }
+.lede .eyebrow { font: 400 11.5px/1.5 var(--mono); letter-spacing: .14em; text-transform: uppercase; color: var(--red); }
+.lede h1 { font: 700 clamp(44px, 6vw, 84px)/0.98 var(--serif-d); letter-spacing: -0.02em; margin-top: 14px; }
+.lede h1 em { font-style: italic; color: var(--red); font-weight: 400; }
+.lede .dek { margin-top: 20px; font-size: 19px; line-height: 1.55; color: var(--ink-2); max-width: 56ch; }
+.lede .dek strong { color: var(--ink); font-weight: 600; }
+
+.q { margin-top: 44px; }
+.q .qn { font: 500 11px/1 var(--mono); letter-spacing: .16em; text-transform: uppercase; color: var(--red); }
+.q h2 { font: 700 clamp(24px, 2.6vw, 34px)/1.1 var(--serif-d); letter-spacing: -0.015em; margin-top: 10px; }
+.q .hint { margin-top: 6px; font-size: 15px; color: var(--ink-3); }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+.ch { font: 400 13.5px/1.2 var(--serif); color: var(--ink); border: 1px solid var(--rule); border-radius: 4px; padding: 10px 14px; display: inline-flex; align-items: center; gap: 10px; background: var(--paper); text-align: left; }
+.ch b { font: 400 11px var(--mono); letter-spacing: .06em; color: var(--ink-3); }
+.ch:hover { border-color: var(--ink); }
+.ch.is-on { border-color: var(--red); box-shadow: inset 0 0 0 1px var(--red); color: var(--ink); }
+.ch.is-on b { color: var(--red); }
+.ch .sw { width: 3px; height: 16px; background: var(--c); border-radius: 1px; }
+.chips .or { font: 400 11px/1 var(--mono); letter-spacing: .1em; text-transform: uppercase; color: var(--ink-3); align-self: center; margin: 0 6px 0 10px; }
+
+.go { margin-top: 40px; border-top: 1px solid var(--ink); padding-top: 18px; display: grid; gap: 12px; }
+.go .sum { font: 400 15px/1.5 var(--serif); color: var(--ink-2); }
+.go .sum b { color: var(--ink); font-weight: 600; }
+.go .row { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+.btn { font: 500 12px/1 var(--mono); letter-spacing: .12em; text-transform: uppercase; text-decoration: none; color: var(--ink); border: 1px solid var(--ink); border-radius: 3px; padding: 13px 18px; display: inline-block; }
+.btn.red { background: var(--red); border-color: var(--red); color: #fff; }
+.btn:hover { filter: brightness(.92); }
+.go .small { font: 400 11px/1.6 var(--mono); letter-spacing: .04em; color: var(--ink-3); }
+.go .small button { color: var(--red); text-decoration: underline; }
+
+.preview { position: sticky; top: 76px; display: grid; gap: 14px; }
+.pv-n { display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; }
+.pv-n b { font: 700 clamp(64px, 7vw, 108px)/0.9 var(--serif-d); letter-spacing: -0.03em; font-variant-numeric: tabular-nums; }
+.pv-n span { font: 400 11.5px/1.5 var(--mono); letter-spacing: .1em; text-transform: uppercase; color: var(--ink-3); max-width: 22ch; }
+.pv-n span em { font-style: normal; color: var(--red); }
+.pv-line { font: 400 12px/1.5 var(--mono); letter-spacing: .06em; color: var(--ink-2); border-top: 1px solid var(--rule); padding-top: 10px; }
+#wall svg { width: 100%; height: auto; display: block; }
+.mk { stroke: var(--ink); stroke-opacity: .72; stroke-width: 2; stroke-linecap: round; transition: stroke-opacity .35s; }
+.mk.is-out { stroke-opacity: .12; }
+.yl { font: 400 10.5px var(--mono); fill: var(--ink-3); letter-spacing: .06em; }
+.ch-l { font: 400 9.5px var(--mono); fill: var(--ink-3); letter-spacing: .14em; }
+.chl { stroke: var(--rule); stroke-width: 1; }
+
+@media (max-width: 900px) {
+  .door { grid-template-columns: 1fr; padding: 32px 20px 150px; gap: 28px; }
+  .preview { position: static; order: -1; }
+  .pv-n b { font-size: 56px; }
+  .top { padding: 0 16px; }
+  .go { position: fixed; left: 0; right: 0; bottom: 0; margin: 0; padding: 12px 16px 14px; background: var(--paper); border-top: 1px solid var(--ink); z-index: 20; gap: 8px; }
+  .go .sum { font-size: 13px; line-height: 1.35; }
+  .go .small { display: none; }
+  .go #reset { display: none; }
+  .go .sum { padding-right: 0; }
+}
+</style>
+</head>
+<body>
+<header class="top">
+  <span class="brand"><b id="brand">The Count</b> · prototype</span>
+  <a class="skip" href="story.html">Skip the questions · tell me everything →</a>
+</header>
+
+<main class="door">
+  <section class="lede">
+    <p class="eyebrow" id="eyebrow">A ledger · <span id="last">—</span></p>
+    <h1>What do you want <em>counted?</em></h1>
+    <p class="dek" id="dek"></p>
+
+    <div class="q" id="q1">
+      <p class="qn">1 · What do you want to see?</p>
+      <h2>Pick what matters to you. Everything is always one tap away.</h2>
+      <div class="chips" id="c-what"></div>
+    </div>
+    <div class="q" id="q2">
+      <p class="qn">2 · Which years?</p>
+      <h2>Both terms, or one stretch of them.</h2>
+      <div class="chips" id="c-when"></div>
+    </div>
+    <div class="q" id="q3">
+      <p class="qn">3 · How do you want to read?</p>
+      <h2>The story comes first. Skipping it is your call.</h2>
+      <div class="chips" id="c-how"></div>
+    </div>
+
+    <div class="go">
+      <p class="sum" id="sum"></p>
+      <div class="row"><a class="btn red" id="go" href="story.html">Begin →</a><button class="btn" type="button" id="reset">Everything, from the start</button></div>
+      <p class="small">Your choices travel in the link, so a view can be sent, and every page has a Filter button to change them. <span id="remembered" hidden>Last time you chose these. <button type="button" id="forget">Forget them.</button></span></p>
+    </div>
+  </section>
+
+  <aside class="preview" aria-label="The count, as you have set it">
+    <div class="pv-n"><b id="pv-n">—</b><span id="pv-lbl">acts in the ledger</span></div>
+    <div id="wall" aria-hidden="true"></div>
+    <p class="pv-line" id="pv-line"></p>
+  </aside>
+</main>
+
+<script type="module">
+const MONTHS_LONG = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+const monthYear = (d) => { const [y, m] = d.split('-').map(Number); return `${MONTHS_LONG[m - 1]} ${y}`; };
+const esc = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+const nf = (n) => n.toLocaleString('en-US');
+const $ = (id) => document.getElementById(id);
+const D = await fetch('ledger.json').then((r) => r.json());
+const T = D.topic, items = D.items, N = items.length;
+// the topic: title, description, eyebrow and dek words all come from ledger.json's topic block
+document.title = `${T.name} (prototype)`;
+document.querySelector('meta[name="description"]').setAttribute('content', T.description);
+$('brand').textContent = T.name;
+$('eyebrow').firstChild.nodeValue = `${T.kicker.charAt(0).toUpperCase() + T.kicker.slice(1)} · ${T.start.slice(0, 4)} to `;
+$('last').textContent = monthYear(D.stats.last);
+$('dek').innerHTML = `<strong>${nf(N)} ${esc(T.unit)}</strong> in the ledger of ${esc(T.of)}, each with its sources, one mark each. Three quick choices set up your reading. Nothing here hides the whole: a narrowed view always says how many of the ${nf(N)} it shows, and the rest stay on the wall as ghosts.`;
+
+// ── the choices, in the reader's words, mapped onto the ledger's families and periods ────
+const fam = (k) => (D.families[k] && D.families[k].count) || 0;
+const WHAT = [
+  { key: 'all', label: 'Everything', fams: [], n: N },
+  ...T.door.map((g) => ({ key: g.key, label: g.label, fams: g.fams, n: g.fams.reduce((a, k) => a + fam(k), 0) })),
+];
+const by = D.stats.byChapter;
+const chTerm = Object.fromEntries(T.chapters.map((c) => [c.key, c.term]));
+const WHEN = T.terms.map((w) => ({ key: w.key, label: w.label, t: w.t, n: w.t ? T.chapters.filter((c) => c.term === w.t).reduce((a, c) => a + (by[c.key] || 0), 0) : N }));
+const HOW = [
+  { key: 'story', label: 'Tell me the story', page: 'story.html', hash: '', desc: 'as a story: the prologue, then the count, era by era' },
+  { key: 'one', label: 'One act at a time', page: 'focus.html', hash: '', desc: 'one act at a time' },
+  { key: 'all', label: 'The whole count, scrolling', page: 'count.html', hash: '', desc: 'the whole count, scrolling' },
+  { key: 'shape', label: 'Just the shape of it', page: 'count.html', hash: '#explore', desc: 'as a timeline you can filter' },
+];
+const famColor = Object.fromEntries(T.familyOrder.map((k) => [k, T.families[k].color]));
+const state = { what: new Set(['all']), when: 'all', how: 'story' };
+const termOf = (it) => chTerm[it.chapter] || it.chapter;
+// both editions share one origin, so each topic remembers its own choices (corruption keeps the original key)
+const SETUP_KEY = T.key === 'corruption' ? 'thecount.setup' : `thecount.${T.key}.setup`;
+
+// remembered choices, then the link's own, which win; keys this edition does not know are dropped
+try { const r = JSON.parse(localStorage.getItem(SETUP_KEY) || 'null'); if (r && r.what) { state.what = new Set(r.what.filter((k) => WHAT.some((w) => w.key === k))); if (!state.what.size) state.what.add('all'); state.when = WHEN.some((w) => w.key === r.when) ? r.when : 'all'; state.how = HOW.some((h) => h.key === r.how) ? r.how : 'story'; $('remembered').hidden = false; $('go').textContent = 'Continue →'; } } catch (_) {}
+{ const p = new URLSearchParams(location.search);
+  if (p.has('f') || p.has('t')) {
+    const f = new Set((p.get('f') || '').split(',').filter(Boolean)); state.what = new Set();
+    for (const w of WHAT) if (w.fams.length && w.fams.every((k) => f.has(k))) state.what.add(w.key);
+    if (!state.what.size) state.what.add('all');
+    const t = p.get('t'); state.when = WHEN.find((w) => w.t === t) ? WHEN.find((w) => w.t === t).key : 'all';
+  }
+  if (p.get('how') && HOW.find((h) => h.key === p.get('how'))) state.how = p.get('how'); }
+
+const chip = (c, on, extra = '') => `<button class="ch${on ? ' is-on' : ''}" type="button" data-key="${c.key}" aria-pressed="${on}">${extra}${esc(c.label)}${c.n != null ? ` <b>${nf(c.n)}</b>` : ''}</button>`;
+function render() {
+  $('c-what').innerHTML = WHAT.map((c) => chip(c, state.what.has(c.key), c.fams.length === 1 ? `<i class="sw" style="--c:${famColor[c.fams[0]]}"></i>` : c.fams.length > 1 ? `<i class="sw" style="--c:${famColor[c.fams[0]]}"></i>` : '')).join('');
+  $('c-when').innerHTML = WHEN.map((c) => chip(c, state.when === c.key)).join('');
+  $('c-how').innerHTML = HOW.map((c, i) => (i === 1 ? '<span class="or">or skip the story:</span>' : '') + chip({ ...c, n: null }, state.how === c.key)).join('');
+  const fams = new Set(); for (const w of WHAT) if (state.what.has(w.key)) w.fams.forEach((k) => fams.add(k));
+  const when = WHEN.find((w) => w.key === state.when), how = HOW.find((h) => h.key === state.how);
+  const keep = items.filter((it) => (!fams.size || fams.has(it.family)) && (!when.t || termOf(it) === when.t));
+  const M = keep.length;
+  $('pv-n').textContent = nf(M);
+  $('pv-lbl').innerHTML = M === N ? 'acts in the ledger' : `of <em>${nf(N)}</em> acts in the ledger`;
+  const whatText = state.what.has('all') ? 'everything' : WHAT.filter((w) => state.what.has(w.key)).map((w) => w.label.toLowerCase()).join(', ');
+  $('pv-line').textContent = `${whatText} · ${when.label.toLowerCase()} · ${how.desc}`;
+  $('sum').innerHTML = `You will read <b>${nf(M)} ${M === 1 ? 'act' : 'acts'}</b>${M === N ? '' : ` of ${nf(N)}`}: ${esc(whatText)}, ${esc(when.label.toLowerCase())}, ${esc(how.desc)}.`;
+  const p = new URLSearchParams(); if (fams.size) p.set('f', [...fams].join(',')); if (when.t) p.set('t', when.t);
+  if (how.key !== 'story') p.set('story', 'skipped');
+  const qs = p.toString(); $('go').href = how.page + (qs ? '?' + qs : '') + how.hash;
+  paintWall(new Set(keep.map((it) => it.i)));
+  const own = new URLSearchParams(p); own.delete('story'); const oq = own.toString(); history.replaceState(null, '', (oq ? '?' + oq + '&' : '?') + 'how=' + how.key);
+}
+document.querySelector('.door').addEventListener('click', (e) => {
+  const b = e.target.closest('.ch'); if (!b) return; const grp = b.closest('.chips').id, k = b.dataset.key;
+  if (grp === 'c-what') { if (k === 'all') state.what = new Set(['all']); else { state.what.delete('all'); state.what.has(k) ? state.what.delete(k) : state.what.add(k); if (!state.what.size) state.what.add('all'); } }
+  else if (grp === 'c-when') state.when = k; else if (grp === 'c-how') state.how = k;
+  render();
+});
+$('reset').addEventListener('click', () => { state.what = new Set(['all']); state.when = 'all'; state.how = 'story'; render(); });
+// forgetting resets everything the pages remember: the choices, and whether the story was opened or skipped
+$('forget').addEventListener('click', () => { try { [SETUP_KEY, 'thecount.' + T.key + '.story.seen', 'thecount.' + T.key + '.story.skipped'].forEach((k) => localStorage.removeItem(k)); } catch (_) {} $('remembered').hidden = true; $('go').textContent = 'Begin →'; });
+$('go').addEventListener('click', () => { try { localStorage.setItem(SETUP_KEY, JSON.stringify({ what: [...state.what], when: state.when, how: state.how })); } catch (_) {} });
+
+// ── the wall, in ink: the acts you will read dark, the rest faint ─────────
+const CH = Object.fromEntries(T.chapters.map((c) => [c.key, c.short]));
+const ROW = Object.fromEntries(T.chapters.map((c) => [c.key, c.rowLabel]));
+const groups = [];
+for (const it of items) { const rl = ROW[it.chapter], key = rl ? it.chapter : `${it.chapter}:${it.year}`; let g = groups[groups.length - 1]; if (!g || g.key !== key) groups.push((g = { key, chapter: it.chapter, label: rl || it.year, items: [] })); g.items.push(it); }
+let markEls = [];
+function buildWall() {
+  const W = Math.max(280, Math.round($('wall').clientWidth || 420));
+  // the row label column is 44 for years and "Before"; a longer rowLabel such as "Campaign" widens it to clear the marks
+  const longest = Math.max(...groups.map((g) => String(g.label).length));
+  const labelW = longest > 6 ? longest * 7 + 10 : 44, pitch = 6, H = 16, linePitch = 24, headH = 18, gateW = 3 * pitch, gatePitch = gateW + 14;
+  const perLine = Math.max(1, Math.floor((W - labelW) / gatePitch));
+  let y = 8, lastChapter = null, svg = '';
+  for (const g of groups) {
+    if (g.chapter !== lastChapter) { svg += `<text class="ch-l" x="0" y="${y + 9}">${esc(String(CH[g.chapter] || g.chapter).toUpperCase())} · ${D.stats.byChapter[g.chapter]}</text><line class="chl" x1="0" x2="${W}" y1="${y + headH - 3}" y2="${y + headH - 3}"/>`; y += headH + 3; lastChapter = g.chapter; }
+    svg += `<text class="yl" x="0" y="${y + H - 3}">${esc(String(g.label))}</text>`;
+    g.items.forEach((it, j) => { const gate = Math.floor(j / 5), k = j % 5, line = Math.floor(gate / perLine), gi = gate % perLine; const gx = labelW + gi * gatePitch, yy = y + line * linePitch; let x1, y1, x2, y2; if (k < 4) { x1 = x2 = gx + k * pitch; y1 = yy; y2 = yy + H; } else { x1 = gx - 2; y1 = yy + H; x2 = gx + gateW + 2; y2 = yy; } svg += `<line class="mk" data-i="${it.i}" x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}"/>`; });
+    y += Math.ceil(Math.ceil(g.items.length / 5) / perLine) * linePitch + 2;
+  }
+  $('wall').innerHTML = `<svg viewBox="0 0 ${W} ${y + 4}" preserveAspectRatio="xMinYMin meet" aria-hidden="true">${svg}</svg>`;
+  markEls = []; document.querySelectorAll('.mk').forEach((el) => { markEls[+el.dataset.i] = el; });
+}
+let keepSet = null;
+function paintWall(keep) { keepSet = keep; markEls.forEach((el, i) => el.classList.toggle('is-out', !keep.has(i))); }
+buildWall(); render();
+let rt; addEventListener('resize', () => { clearTimeout(rt); rt = setTimeout(() => { buildWall(); if (keepSet) paintWall(keepSet); }, 150); });
+</script>
+</body>
+</html>

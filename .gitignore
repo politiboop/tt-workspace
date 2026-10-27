@@ -52,3 +52,8 @@ dead-links-audit.csv
 npr-audit.txt
 npr-audit.progress
 npr-mismatch.json
+
+# Saved page texts from the press ledger research agents stay local: this repo is public and they are full copies of articles and filings. The map.tsv provenance files are committed; the gate reads only those.
+press-chronology/research/**/*.txt
+press-chronology/research/**/*.pdf
+press-chronology/research/**/*.html

@@ -1,0 +1,471 @@
+<!doctype html>
+<html lang="en" data-topic="corruption" data-prologue="1">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>One at a Time | The Count (prototype)</title>
+<meta name="description" content="The ledger read one act at a time: each act alone on the page, with the wall of marks beside it and the one in front of you lit.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,700;1,9..144,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --paper: #f3eee4; --paper-2: #e9e2d3; --rule: #d9d0bd;
+  --ink: #1a1813; --ink-2: #4a463d; --ink-3: #6b6458; --ink-3l: #857d70;
+  --red: #b3261e; --red-soft: rgba(179, 38, 30, .12);
+  --serif-d: "Fraunces", Georgia, serif; --serif: "Source Serif 4", Georgia, serif; --mono: "IBM Plex Mono", "SF Mono", monospace;
+  --panel: 42vw; --strip: 30vh;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { background: var(--paper); scroll-snap-type: y mandatory; }
+body { font-family: var(--serif); color: var(--ink); background: var(--paper); -webkit-font-smoothing: antialiased; }
+::selection { background: var(--red-soft); }
+button { font: inherit; cursor: pointer; }
+
+/* ── fixed chrome ─────────────────────────────────────────────────────── */
+.bar { position: fixed; top: 0; left: 0; right: 0; height: 3px; background: var(--rule); z-index: 40; }
+.bar i { display: block; height: 100%; width: 0; background: var(--red); transition: width .4s ease; }
+.top { position: fixed; top: 3px; left: 0; right: 0; height: 48px; display: flex; align-items: center; justify-content: space-between; padding: 0 28px; font: 500 11px/1 var(--mono); letter-spacing: .14em; text-transform: uppercase; color: var(--ink-3); z-index: 30; pointer-events: none; }
+.top a, .top span, .top button { pointer-events: auto; }
+.top a { color: inherit; text-decoration: none; }
+.top a:hover { color: var(--red); }
+.top .brand b { color: var(--ink); font-weight: 500; }
+.top .links { display: flex; gap: 22px; }
+.panel { position: fixed; top: 51px; right: 0; bottom: 0; width: var(--panel); padding: 22px 32px 96px 26px; border-left: 1px solid var(--rule); display: flex; flex-direction: column; gap: 14px; background: var(--paper); z-index: 20; }
+.panel svg { width: 100%; height: auto; max-height: calc(100% - 96px); display: block; }
+.p-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; font: 400 11px/1.4 var(--mono); letter-spacing: .1em; text-transform: uppercase; color: var(--ink-3); }
+.p-head b { font: 700 44px/1 var(--serif-d); color: var(--ink); letter-spacing: 0; text-transform: none; font-variant-numeric: tabular-nums; }
+.p-head b small { font: 400 11px var(--mono); color: var(--ink-3); margin-left: 8px; letter-spacing: .1em; text-transform: uppercase; }
+/* ── the running breakdown and the time strip ─────────────────────────── */
+.mix { display: grid; gap: 6px; }
+.mix-top { font: 400 10.5px/1.4 var(--mono); letter-spacing: .06em; color: var(--ink-2); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.mix-top b { font-weight: 500; color: var(--ink); }
+.mix-rows { display: grid; grid-template-columns: 170px 1fr 26px; gap: 3px 8px; align-items: center; font: 400 10px/1.3 var(--mono); letter-spacing: .04em; color: var(--ink-2); }
+.mix-rows .mr-b { height: 6px; background: var(--paper-2); border-radius: 1px; overflow: hidden; }
+.mix-rows .mr-b i { display: block; height: 100%; background: var(--ink); width: 0; transition: width .6s cubic-bezier(.2,.7,.2,1); }
+.mix-rows .mr-n { text-align: right; color: var(--ink); font-weight: 500; }
+.mix-rows .is-zero { opacity: .4; }
+.strip { margin-top: auto; cursor: ew-resize; user-select: none; touch-action: none; }
+.strip svg { display: block; width: 100%; height: auto; max-height: none; }
+.strip .era { fill: rgba(26,24,19,.025); } .strip .era.alt { fill: rgba(26,24,19,.06); }
+.strip .era-lbl { font: 400 10px var(--mono); letter-spacing: .12em; fill: var(--ink-3); }
+.strip .dens { fill: var(--ink); opacity: .12; } .strip .dens.kept { fill: var(--ink); opacity: .55; }
+.strip .tick { stroke: var(--rule); } .strip .yr { font: 400 10px var(--mono); fill: var(--ink-3); }
+.strip .sp { fill: var(--red); cursor: pointer; } .strip .sp:hover { opacity: .8; }
+.strip .ph line { stroke: var(--red); stroke-width: 1.5; } .strip .ph path { fill: var(--red); }
+.strip .ph { transition: transform .45s cubic-bezier(.2,.7,.2,1); } .strip .ph.is-off { opacity: 0; }
+/* the panel is a column: head, filter line, breakdown and strip keep their size; the wall takes what is left and scales to fit */
+.p-head, .p-filter, .mix, .strip { flex: 0 0 auto; }
+#wall { flex: 1 1 auto; min-height: 60px; overflow: hidden; }
+#wall svg { width: 100%; height: 100%; max-height: 100%; }
+@media (max-width: 860px) { :root { --strip: 36vh; } .panel { overflow: hidden; } .mix-rows { display: none; } .strip { margin-top: 4px; } }
+
+.rail { display: flex; flex-wrap: wrap; gap: 4px; margin-top: auto; }
+.rail button { font: 400 11px/1 var(--mono); letter-spacing: .06em; color: var(--ink-3); background: none; border: 1px solid transparent; border-radius: 3px; padding: 6px 7px; }
+.rail button:hover { border-color: var(--rule); color: var(--ink); }
+.rail button.is-now { color: var(--red); border-color: var(--red); }
+.ctl { position: fixed; left: 28px; bottom: 24px; display: flex; gap: 8px; align-items: center; z-index: 30; }
+.ctl button { font: 500 11px/1 var(--mono); letter-spacing: .12em; text-transform: uppercase; color: var(--ink); background: var(--paper); border: 1px solid var(--ink); border-radius: 3px; padding: 10px 14px; }
+.ctl button:hover { background: var(--ink); color: var(--paper); }
+.ctl button.is-on { background: var(--red); border-color: var(--red); color: #fff; }
+.ctl span { font: 400 11px var(--mono); color: var(--ink-3); letter-spacing: .06em; margin-left: 8px; }
+
+/* ── one screen per thing ─────────────────────────────────────────────── */
+section { min-height: 100vh; scroll-snap-align: start; padding: 14vh calc(var(--panel) + 56px) 16vh 6vw; display: grid; align-content: center; }
+.eyebrow { font: 400 11.5px/1.5 var(--mono); letter-spacing: .14em; text-transform: uppercase; color: var(--ink-3); display: flex; gap: 14px; flex-wrap: wrap; align-items: center; }
+.eyebrow b { color: var(--red); font-weight: 500; }
+.stamps { display: flex; gap: 14px; margin-top: 18px; min-height: 30px; align-items: center; }
+.stamp { display: inline-block; font: 500 11px/1 var(--mono); letter-spacing: .22em; text-transform: uppercase; color: var(--red); border: 2px solid var(--red); border-radius: 3px; padding: 7px 9px 6px 11px; transform: rotate(-4deg); box-shadow: inset 0 0 0 1px var(--paper), inset 0 0 0 2px var(--red); opacity: .9; }
+.stamp.gray { color: var(--ink-3); border-color: var(--ink-3); border-style: dashed; box-shadow: none; transform: rotate(3deg); }
+.act h2 { font: 700 clamp(30px, 3.5vw, 54px)/1.04 var(--serif-d); letter-spacing: -0.012em; margin-top: 12px; max-width: 24ch; text-wrap: balance; }
+.act h2.l { font-size: clamp(26px, 2.7vw, 42px); max-width: 30ch; }
+.act h2.xl { font-size: clamp(22px, 2.2vw, 34px); max-width: 38ch; }
+.act .body { margin-top: 22px; font-size: 18.5px; line-height: 1.6; color: var(--ink-2); max-width: 62ch; }
+.act .body a { color: var(--ink); }
+.act .lbl { margin-top: 20px; font: 400 11px/1.6 var(--mono); letter-spacing: .06em; color: var(--ink-3); }
+.act .lbl b { font-weight: 500; letter-spacing: .12em; text-transform: uppercase; color: var(--ink-2); }
+.srcs { margin-top: 8px; display: flex; flex-wrap: wrap; gap: 6px 14px; font: 400 11.5px/1.5 var(--mono); letter-spacing: .04em; }
+.srcs a { color: var(--ink-2); text-decoration: none; border-bottom: 1px solid var(--rule); }
+.srcs a:hover { color: var(--red); border-color: var(--red); }
+.srcs a.tr { color: var(--red); border-color: transparent; }
+.chapter .eyebrow { color: var(--red); }
+.chapter h2 { font: 700 clamp(40px, 5.2vw, 76px)/1 var(--serif-d); margin-top: 14px; letter-spacing: -0.015em; }
+.chapter h2 small { display: block; font: 400 clamp(16px, 1.5vw, 22px)/1.3 var(--serif); color: var(--ink-2); margin-top: 10px; letter-spacing: 0; }
+.chapter .n { font: 700 clamp(72px, 10vw, 140px)/0.9 var(--serif-d); color: var(--red); margin-top: 26px; }
+.chapter .n small { font: 400 12px var(--mono); letter-spacing: .14em; text-transform: uppercase; color: var(--ink-3); margin-left: 12px; }
+.chapter .prose { margin-top: 26px; font-size: 19px; line-height: 1.6; color: var(--ink-2); max-width: 60ch; }
+.chapter .prose p + p { margin-top: 12px; }
+.hero h1 { font: 700 clamp(56px, 8vw, 120px)/0.95 var(--serif-d); letter-spacing: -0.02em; }
+.hero h1 em { font-style: italic; color: var(--red); font-weight: 400; }
+.hero .dek { margin-top: 26px; font-size: 20px; line-height: 1.55; color: var(--ink-2); max-width: 56ch; }
+.hero .dek strong { color: var(--ink); font-weight: 600; }
+.hero .cta { margin-top: 32px; display: flex; gap: 10px; flex-wrap: wrap; }
+.hero .how { margin-top: 26px; font: 400 11.5px/1.7 var(--mono); letter-spacing: .06em; color: var(--ink-3); max-width: 60ch; }
+.btn { font: 500 11.5px/1 var(--mono); letter-spacing: .12em; text-transform: uppercase; text-decoration: none; color: var(--ink); border: 1px solid var(--ink); border-radius: 3px; padding: 12px 16px; background: none; display: inline-block; }
+.btn.red { background: var(--red); border-color: var(--red); color: #fff; }
+.btn:hover { filter: brightness(.9); }
+.end h2 { font: 700 clamp(48px, 7vw, 110px)/0.95 var(--serif-d); letter-spacing: -0.02em; }
+.end h2 em { font-style: italic; color: var(--red); font-weight: 400; }
+.end p { margin-top: 22px; font-size: 19px; color: var(--ink-2); max-width: 56ch; line-height: 1.55; }
+.end .cta { margin-top: 30px; display: flex; gap: 10px; flex-wrap: wrap; }
+
+/* ── the wall, in ink ─────────────────────────────────────────────────── */
+.mk { stroke: var(--ink); stroke-opacity: .15; stroke-width: 2; stroke-linecap: round; transition: stroke-opacity .3s, stroke .3s, stroke-width .3s; }
+.mk.is-past { stroke-opacity: .72; }
+.mk.is-now { stroke: var(--red); stroke-opacity: 1; stroke-width: 3.2; }
+.halo { fill: var(--red); fill-opacity: .13; stroke: var(--red); stroke-opacity: .55; stroke-width: 1; transition: transform .35s cubic-bezier(.2,.7,.2,1), opacity .2s; }
+.halo.is-off { opacity: 0; }
+.yl { font: 400 10.5px var(--mono); fill: var(--ink-3); letter-spacing: .06em; }
+.yl.is-now { fill: var(--red); font-weight: 500; }
+.ch { font: 400 9.5px var(--mono); fill: var(--ink-3); letter-spacing: .14em; text-transform: uppercase; }
+.chl { stroke: var(--rule); stroke-width: 1; }
+
+/* ── filters ──────────────────────────────────────────────────────────── */
+.fbtn { display: inline-flex; align-items: center; gap: 7px; font: 500 11px/1 var(--mono); letter-spacing: .14em; text-transform: uppercase; color: var(--ink); background: var(--paper); border: 1px solid var(--ink); border-radius: 3px; padding: 8px 12px; margin-right: 12px; cursor: pointer; }
+.fbtn svg { width: 12px; height: 12px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linejoin: round; }
+.fbtn:hover { background: var(--ink); color: var(--paper); }
+.fbtn.is-on { background: var(--red); border-color: var(--red); color: #fff; }
+.p-filter { display: flex; justify-content: space-between; align-items: center; gap: 10px; font: 500 10.5px/1.4 var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--red); border-top: 1px solid var(--red); padding-top: 8px; }
+.p-filter[hidden] { display: none; }
+.p-filter span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.p-filter button { font: 500 10px/1 var(--mono); letter-spacing: .12em; text-transform: uppercase; color: #fff; background: var(--red); border: 0; border-radius: 3px; padding: 5px 8px; cursor: pointer; }
+.fpanel { position: fixed; top: 56px; right: 28px; width: min(640px, calc(100vw - 56px)); z-index: 35; background: var(--paper); border: 1px solid var(--ink); border-radius: 4px; padding: 16px 18px 12px; box-shadow: 0 18px 40px rgba(26,24,19,.18); display: grid; gap: 12px; }
+.fpanel[hidden] { display: none; }
+.f-lbl { font: 500 10px/1 var(--mono); letter-spacing: .16em; text-transform: uppercase; color: var(--ink-3); margin-bottom: 6px; }
+.chiprow { display: flex; flex-wrap: wrap; gap: 6px; }
+.fc { font: 400 11px/1 var(--mono); letter-spacing: .04em; color: var(--ink-2); background: none; border: 1px solid var(--rule); border-radius: 3px; padding: 6px 9px; }
+.fc b { font-weight: 400; color: var(--ink-3); margin-left: 5px; }
+.fc:hover { border-color: var(--ink); color: var(--ink); }
+.fc.is-on { color: var(--red); border-color: var(--red); }
+.f-note { font: 400 10.5px/1.5 var(--mono); color: var(--ink-3); margin-top: 6px; letter-spacing: .02em; }
+.f-sum { display: flex; justify-content: space-between; align-items: center; gap: 10px; font: 400 11px/1.4 var(--mono); letter-spacing: .06em; color: var(--ink-2); border-top: 1px solid var(--rule); padding-top: 10px; }
+.f-sum button { font: 500 11px/1 var(--mono); letter-spacing: .12em; text-transform: uppercase; color: var(--red); background: none; border: 0; }
+.mk.is-ghost { stroke-opacity: .05 !important; }
+@media (max-width: 860px) { .fpanel { left: 12px; right: 12px; width: auto; top: 44px; max-height: calc(100vh - 60px); overflow: auto; } .fbtn { margin-right: 6px; } }
+
+@media (max-width: 860px) {
+  :root { --panel: 0px; }
+  .top { padding: 0 16px; height: 40px; }
+  .top .links a + a { display: none; }
+  .panel { top: 0; left: 0; right: 0; bottom: auto; width: auto; height: var(--strip); padding: 46px 16px 10px; border-left: 0; border-bottom: 1px solid var(--rule); gap: 8px; }
+  .panel svg { max-height: calc(var(--strip) - 92px); }
+  .p-head b { font-size: 26px; }
+  .rail { display: none; }
+  section { padding: calc(var(--strip) + 26px) 20px 110px; }
+  .act h2 { font-size: clamp(26px, 7vw, 36px); }
+  .act .body { font-size: 16.5px; }
+  .chapter .n { font-size: 64px; }
+  .ctl { left: 0; right: 0; bottom: 0; padding: 10px 16px 14px; justify-content: space-between; background: var(--paper); border-top: 1px solid var(--rule); }
+  .top { white-space: nowrap; } .top .pc { display: none; }
+  .ctl span { display: none; }
+}
+@media (prefers-reduced-motion: reduce) { .mk, .halo, .bar i { transition: none; } }
+
+/* the story, offered once to a reader who has neither opened it nor skipped it */
+.storybar { font: 400 13px/1.4 var(--serif, Georgia, serif); color: var(--ink, #1a1813); background: var(--paper, #f3eee4); border-bottom: 1px solid var(--red, #b3261e); padding: 10px 16px; display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+.storybar[hidden] { display: none; }
+.storybar b { font-weight: 600; }
+.storybar a, .storybar button { font: 500 11px/1 var(--mono, monospace); letter-spacing: .1em; text-transform: uppercase; text-decoration: none; border: 1px solid var(--red, #b3261e); border-radius: 3px; padding: 8px 12px; background: none; cursor: pointer; color: var(--red, #b3261e); }
+.storybar a { background: var(--red, #b3261e); color: #fff; }
+.storybar button { color: var(--ink-2, #4a463d); border-color: var(--ink-3l, #857d70); }
+
+.storybar { position: fixed; top: 51px; left: 0; right: var(--panel); z-index: 25; border-top: 1px solid var(--rule); }
+html.has-storybar section { padding-top: calc(14vh + 100px); }
+@media (max-width: 860px) { .storybar { top: auto; bottom: 62px; right: 0; border-top: 1px solid var(--red); border-bottom: 0; } html.has-storybar section { padding-top: calc(var(--strip) + 26px); padding-bottom: 220px; } }
+</style>
+</head>
+<body>
+<div class="bar" aria-hidden="true"><i id="bar"></i></div>
+<header class="top">
+  <span class="brand"><b id="brand-name">The Count</b> · one at a time<span class="pc"> · prototype</span></span>
+  <nav class="links"><button class="fbtn" id="fbtn" type="button" aria-controls="fpanel" aria-expanded="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18l-7 8v6l-4 2v-8z"/></svg><span id="fbtn-text">Filter</span></button><a href="count.html" data-carry="count.html">All at once →</a><a href="count.html#explore" data-carry="count.html" data-hash="#explore">Zoom out →</a><a href="story.html" data-carry="story.html">The story →</a><a href="index.html" data-carry="index.html">Choose what to see</a></nav>
+</header>
+<div class="storybar" id="storybar" hidden><span><b>This count opens with a story.</b> <span id="storybar-what">What changed, then the count, era by era.</span></span><a id="storybar-go" href="story.html">Read the story <span aria-hidden="true">→</span></a><button type="button" id="storybar-skip">Skip the story</button></div>
+<script>
+(() => {
+  // a reader who has opened the story, or chose to skip it (on the door or here), is not asked again
+  const TK = document.documentElement.dataset.topic || 'corruption'; const SK = (k) => 'thecount.' + TK + '.' + k;
+  const q = new URLSearchParams(location.search);
+  let seen = false, skipped = q.get('story') === 'skipped';
+  try { seen = !!localStorage.getItem(SK('story.seen')); skipped = skipped || !!localStorage.getItem(SK('story.skipped')); if (q.get('story') === 'skipped') localStorage.setItem(SK('story.skipped'), new Date().toISOString().slice(0, 10)); } catch (e) {}
+  const bar = document.getElementById('storybar'); if (!bar || seen || skipped) return;
+  q.delete('story'); q.delete('v'); const qs = q.toString();
+  document.getElementById('storybar-go').href = 'story.html' + (qs ? '?' + qs : '');
+  document.getElementById('storybar-skip').addEventListener('click', () => { try { localStorage.setItem(SK('story.skipped'), new Date().toISOString().slice(0, 10)); } catch (e) {} bar.hidden = true; document.documentElement.classList.remove('has-storybar'); });
+  bar.hidden = false; document.documentElement.classList.add('has-storybar');
+})();
+</script>
+<div class="fpanel" id="fpanel" hidden></div>
+
+<aside class="panel" aria-label="Where this act sits in the count">
+  <div class="p-head"><span id="p-where">The ledger</span><b><span id="p-n">0</span><small>of <span id="p-total">—</span></small></b></div>
+  <p class="p-filter" id="p-filter" hidden><span id="p-filter-text"></span><button type="button" data-clear>Clear</button></p>
+  <div class="mix" id="mix" aria-label="What kind, so far"><p class="mix-top" id="mix-top"></p><div class="mix-rows" id="mix-rows"></div></div>
+  <div id="wall"></div>
+  <div class="strip" id="strip" aria-label="Where you are in time; click to move"></div>
+</aside>
+
+<main id="main"></main>
+
+<div class="ctl">
+  <button type="button" id="prev" aria-label="Previous">←</button>
+  <button type="button" id="next" aria-label="Next">→</button>
+  <button type="button" id="play" aria-pressed="false">Play</button>
+  <span>or press → · one act every 5 seconds on play</span>
+</div>
+
+<script type="module">
+const MONTHS_LONG = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+const parts = (d) => d.split('-').map(Number);
+const longDate = (d) => { const [y, m, day] = parts(d); return `${MONTHS_LONG[m - 1]} ${day}, ${y}`; };
+const monthYear = (d) => { const [y, m] = parts(d); return `${MONTHS_LONG[m - 1]} ${y}`; };
+const when = (it) => it.grain === 'day' ? longDate(it.date) : it.grain === 'month' ? monthYear(it.date) : it.date;
+const outlet = (t) => { const h = t.split(/:| - /)[0].trim(); return h.length > 40 ? h.slice(0, 38) + '…' : h; };
+const smart = (s) => s.replace(/(^|[\s([{—–-])"/g, '$1“').replace(/"/g, '”').replace(/(\w)'(?=\w)/g, '$1’').replace(/(^|[\s([{“—–-])'/g, '$1‘').replace(/'/g, '’');
+const esc = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+const inline = (s) => esc(smart(s)).replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+const md = (s) => { let out = '', last = 0; const re = /\[([^\]]+)\]\(([^)\s]+)\)/g; let m; while ((m = re.exec(s))) { out += inline(s.slice(last, m.index)); out += `<a href="${esc(m[2])}" target="_blank" rel="noopener">${inline(m[1])}</a>`; last = m.index + m[0].length; } return out + inline(s.slice(last)); };
+const nf = (n) => n.toLocaleString('en-US');
+const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+const $ = (id) => document.getElementById(id);
+
+const D = await fetch('ledger.json').then((r) => r.json());
+const items = D.items;                       // the ledger's own order
+const N = items.length;
+// everything topic-specific comes from the ledger's topic block: chapter names, eras, families and the words for what is counted
+const T = D.topic;
+const sbw = document.getElementById('storybar-what'); if (sbw && T.story && T.story.storybar) sbw.textContent = `What changed in ${T.story.storybar}, then the count, era by era.`;
+const CHAP = Object.fromEntries(T.chapters.map((c) => [c.key, c]));
+const CH = Object.fromEntries(T.chapters.map((c) => [c.key, c.short]));
+const rowLabel = (it) => CHAP[it.chapter].rowLabel;   // a chapter drawn as one labeled row, not by year
+const START_YEAR = T.start.slice(0, 4);
+const cap = (s) => s.charAt(0).toUpperCase() + s.slice(1);
+document.title = `One at a Time | ${T.name}, ${T.edition.toLowerCase()} (prototype)`;
+document.querySelector('meta[name="description"]').setAttribute('content', `${cap(T.kicker)} read one act at a time: each act alone on the page, with the wall of marks beside it and the one in front of you lit.`);
+$('brand-name').textContent = T.name;
+$('p-where').textContent = `The ledger · ${START_YEAR} to ${monthYear(D.stats.last)}`;
+const splitTitle = (t) => { const m = t.match(/^(.+?)(?::|,)\s*(.+)$/); return m ? [m[1], m[2]] : [t, '']; };
+$('p-total').textContent = nf(N);
+
+// ── the screens ───────────────────────────────────────────────────────────
+const byChapter = (k) => items.filter((it) => it.chapter === k);
+let html = `<section class="hero" id="s-hero" data-kind="hero"><p class="eyebrow"><b>${esc(T.name)}</b><span>${esc(T.kicker)}, ${START_YEAR} to ${esc(monthYear(D.stats.last))}</span></p><h1>One at <em>a time.</em></h1><p class="dek"><strong>${nf(N)} ${esc(T.unit)}</strong> in the ledger of ${esc(T.of)}, read one by one. Each act gets the page to itself. The marks beside it are every other act in the count; the red one is the act in front of you.</p><div class="cta"><a class="btn red" href="#a-1">Begin ↓</a><button class="btn" type="button" data-play>Play it</button></div><p class="how">Scroll, swipe, or press the arrow keys. Each screen is one act, with its sources. Chapters open each era with the ledger's own words.</p></section>`;
+let before = 0;
+for (const ch of D.chapters) {
+  const its = byChapter(ch.key); const [t1, t2] = splitTitle(ch.title.replace(/^Second term: /, 'Second term, '));
+  html += `<section class="chapter" id="c-${ch.key}" data-kind="chapter" data-before="${before}" data-year="${its.length ? its[0].year : ''}"><p class="eyebrow"><b>Chapter</b><span>${esc(CH[ch.key])}</span></p><h2>${esc(t1)}${t2 ? `<small>${esc(t2)}</small>` : ''}</h2><p class="n" data-total="${its.length}">${its.length}<small>${its.length === 1 ? 'act' : 'acts'} documented</small></p><div class="prose">${ch.prose.map((p) => `<p>${md(p)}</p>`).join('')}</div></section>`;
+  for (const it of its) {
+    html += `<section class="act" id="a-${it.i + 1}" data-kind="act" data-i="${it.i}" data-year="${it.year}"><p class="eyebrow"><b>No. ${nf(it.i + 1)}</b><span>${esc(when(it))}</span><span>${esc(CH[it.chapter])}</span><span>${esc(D.families[it.family].label)}</span></p><div class="stamps">${it.rating ? `<span class="stamp">${esc(it.rating)}</span>` : ''}${it.borderline ? '<span class="stamp gray">Borderline</span>' : ''}${it.alleged ? '<span class="stamp gray">Alleged</span>' : ''}</div><h2 class="${it.title.length > 160 ? 'xl' : it.title.length > 110 ? 'l' : ''}">${inline(it.title)}</h2><p class="body">${md(it.body)}</p><p class="lbl"><b>Ledger label</b> · ${inline(it.label)}</p><p class="srcs">${it.sources.map((s) => `<a href="${esc(s.url)}" target="_blank" rel="noopener" title="${esc(s.text)}">${esc(outlet(s.text))}</a>`).join('')}${it.tracker ? `<a class="tr" href="${esc(it.tracker)}" target="_blank" rel="noopener">Tracker entry →</a>` : ''}</p></section>`;
+  }
+  before += its.length;
+}
+const secondKeys = T.chapters.filter((c) => c.term === 'second').map((c) => c.key);
+const secondFrom = secondKeys.length ? CHAP[secondKeys[0]].from : null;
+const secondMonths = secondFrom ? (+D.stats.last.slice(0, 4) - +secondFrom.slice(0, 4)) * 12 + (+D.stats.last.slice(5, 7) - +secondFrom.slice(5, 7)) + 1 : 0;
+html += `<section class="end" id="s-end" data-kind="end"><p class="eyebrow"><b>${esc(T.name)}</b><span>${esc(monthYear(D.stats.first))} to ${esc(monthYear(D.stats.last))}</span></p><h2 id="end-h2">That is <em>${nf(N)}.</em></h2><p>Every mark on the wall, one at a time. ${nf(D.stats.sources)} sources, ${nf(D.stats.rated)} acts rated by the Trump Tracker, and ${nf(secondKeys.reduce((a, k) => a + (D.stats.byChapter[k] || 0), 0))} of the ${nf(N)} in the first ${secondMonths} months of the second term. A count of what is documented, not of everything that happened.</p><div class="cta"><a class="btn red" href="count.html#explore">Zoom out →</a><a class="btn" href="count.html">The count, all at once</a><a class="btn" href="#a-1">Start over</a></div></section>`;
+$('main').innerHTML = html;
+let sections = [...document.querySelectorAll('section')];
+
+// ── the wall ──────────────────────────────────────────────────────────────
+// Rows by chapter and year (by chapter alone on a phone), gates of five, the fifth stroke across.
+const groups = [];
+for (const it of items) { const rl = rowLabel(it), key = rl ? it.chapter : `${it.chapter}:${it.year}`; let g = groups[groups.length - 1]; if (!g || g.key !== key) groups.push((g = { key, chapter: it.chapter, label: rl || it.year, items: [] })); g.items.push(it); }
+const chapterGroups = [];
+for (const it of items) { let g = chapterGroups[chapterGroups.length - 1]; if (!g || g.chapter !== it.chapter) chapterGroups.push((g = { key: it.chapter, chapter: it.chapter, label: CH[it.chapter], items: [] })); g.items.push(it); }
+let markEls = [], yearEls = {}, halo = null, centers = [];
+function buildWall() {
+  const compact = innerWidth <= 860;
+  const W = Math.max(280, Math.round(compact ? $('wall').clientWidth || innerWidth - 32 : $('wall').clientWidth || innerWidth * 0.42 - 60));
+  const gs = compact ? chapterGroups : groups;
+  const lw = Math.max(...gs.map((g) => String(g.label).length)) * 7;   // room for the longest row label, such as a chapter's own name
+  const labelW = compact ? 0 : lw + 2 <= 44 ? 44 : lw + 10,
+     pitch = compact ? 4 : 6, H = compact ? 10 : 16, linePitch = compact ? 15 : 24, headH = compact ? 14 : 18;
+  const gateW = 3 * pitch, gatePitch = gateW + (compact ? 10 : 14);
+  const perLine = Math.max(1, Math.floor((W - labelW) / gatePitch));
+  let y = 8, lastChapter = null, svg = '', r = compact ? 6 : 9;
+  centers = new Array(N);
+  for (const g of gs) {
+    if (g.chapter !== lastChapter || compact) {
+      svg += `<text class="ch" x="0" y="${y + 9}">${esc(CH[g.chapter].toUpperCase())} · ${D.stats.byChapter[g.chapter]}</text><line class="chl" x1="0" x2="${W}" y1="${y + headH - 3}" y2="${y + headH - 3}"/>`;
+      y += headH + 3; lastChapter = g.chapter;
+    }
+    if (!compact) svg += `<text class="yl" data-year="${g.label}" x="0" y="${y + H - 3}">${g.label}</text>`;
+    g.items.forEach((it, j) => {
+      const gate = Math.floor(j / 5), k = j % 5, line = Math.floor(gate / perLine), gi = gate % perLine;
+      const gx = labelW + gi * gatePitch, yy = y + line * linePitch;
+      let x1, y1, x2, y2;
+      if (k < 4) { x1 = x2 = gx + k * pitch; y1 = yy; y2 = yy + H; } else { x1 = gx - 2; y1 = yy + H; x2 = gx + gateW + 2; y2 = yy; }
+      centers[it.i] = { x: (x1 + x2) / 2, y: (y1 + y2) / 2 };
+      svg += `<line class="mk" data-i="${it.i}" x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}"/>`;
+    });
+    y += Math.ceil(Math.ceil(g.items.length / 5) / perLine) * linePitch + 2;
+  }
+  svg += `<circle class="halo is-off" id="halo" r="${r}" cx="0" cy="0"/>`;
+  $('wall').innerHTML = `<svg viewBox="0 0 ${W} ${y + 4}" preserveAspectRatio="xMinYMin meet" aria-hidden="true">${svg}</svg>`;
+  markEls = []; document.querySelectorAll('.mk').forEach((el) => { markEls[+el.dataset.i] = el; });
+  yearEls = {}; document.querySelectorAll('.yl').forEach((el) => { yearEls[el.dataset.year] = yearEls[el.dataset.year] || []; yearEls[el.dataset.year].push(el); });
+  halo = $('halo');
+  paint();
+}
+
+// ── filters ───────────────────────────────────────────────────────────────
+// Family, the tracker's rating (with "not rated" explicit, since most acts carry none) and
+// period. A filter hides the screens it drops and leaves their marks on the wall as ghosts.
+const FAMILY_ORDER = T.familyOrder.filter((k) => D.families[k] && D.families[k].count);   // a family with no acts gets no chip and no row
+const RATINGS = ['catastrophic', 'severe', 'serious', 'moderate', 'concerning', 'disputed'];
+// the period chips: each term in chapter order, named by the era bands that open its chapters (a term with two, such as a campaign and a first term, joins them)
+const TERMS = {};
+for (const c of T.chapters) if (!(c.term in TERMS)) TERMS[c.term] = T.eras.filter((e) => T.chapters.some((x) => x.term === c.term && x.from === e.from)).map((e, j) => j ? e.label.charAt(0).toLowerCase() + e.label.slice(1) : e.label).join(' and ') || cap(c.term);
+const termOf = (it) => CHAP[it.chapter].term;
+const F = { fam: new Set(), rating: new Set(), term: new Set() };
+{ const p = new URLSearchParams(location.search); (p.get('f') || '').split(',').filter((k) => D.families[k]).forEach((k) => F.fam.add(k)); (p.get('r') || '').split(',').filter(Boolean).forEach((k) => F.rating.add(k)); (p.get('t') || '').split(',').filter((k) => TERMS[k]).forEach((k) => F.term.add(k)); }
+const matches = (it) => (!F.fam.size || F.fam.has(it.family)) && (!F.rating.size || F.rating.has(it.rating || 'none')) && (!F.term.size || F.term.has(termOf(it)));
+const allSections = sections.slice();
+let rank = [], M = N, filtered = false;
+$('fpanel').innerHTML = `<div><p class="f-lbl">Family</p><div class="chiprow">${FAMILY_ORDER.map((k) => `<button class="fc" type="button" data-fam="${k}">${esc(D.families[k].label)}<b>${D.families[k].count}</b></button>`).join('')}</div></div>
+<div><p class="f-lbl">Tracker rating</p><div class="chiprow">${RATINGS.filter((r) => D.stats.byRating[r]).map((r) => `<button class="fc" type="button" data-rating="${r}">${r}<b>${D.stats.byRating[r]}</b></button>`).join('')}<button class="fc" type="button" data-rating="none">not rated<b>${D.stats.byRating.null || 0}</b></button></div><p class="f-note">Ratings are the Trump Tracker's; the ${D.stats.byRating.null || 0} acts researched for the ledger carry none.</p></div>
+<div><p class="f-lbl">Period</p><div class="chiprow">${Object.entries(TERMS).map(([k, l]) => `<button class="fc" type="button" data-term="${k}">${l}<b>${items.filter((it) => termOf(it) === k).length}</b></button>`).join('')}</div></div>
+<p class="f-sum"><span id="f-sum"></span><button type="button" data-clear hidden>Clear</button></p>`;
+const filterDesc = () => [...F.fam].map((k) => D.families[k].label).concat([...F.rating].map((r) => r === 'none' ? 'not rated' : r), [...F.term].map((t) => TERMS[t])).join(' · ');
+
+// ── state ─────────────────────────────────────────────────────────────────
+let current = -1;          // the act in focus, or -1
+let shown = 0;             // the count the panel shows, within the filter
+let activeEl = null;
+const activeIdx = () => Math.max(0, sections.indexOf(activeEl));
+function paint() {
+  const cr = current >= 0 ? rank[current] : -1;
+  markEls.forEach((el, i) => { const r = rank[i]; el.classList.toggle('is-ghost', r < 0); el.classList.toggle('is-now', i === current); el.classList.toggle('is-past', r >= 0 && (current >= 0 ? r < cr : r < shown)); });
+  if (halo) { if (current >= 0 && centers[current]) { halo.classList.remove('is-off'); halo.style.transform = `translate(${centers[current].x}px, ${centers[current].y}px)`; } else halo.classList.add('is-off'); }
+  const yr = current >= 0 ? (rowLabel(items[current]) || String(items[current].year)) : null;
+  Object.entries(yearEls).forEach(([y, els]) => els.forEach((el) => el.classList.toggle('is-now', y === yr)));
+}
+function setSection(idx) {
+  const s = sections[idx]; if (!s) return; activeEl = s; const kind = s.dataset.kind;
+  if (kind === 'act') { current = +s.dataset.i; shown = rank[current] + 1; $('p-where').textContent = `${when(items[current])} · ${CH[items[current].chapter]}`; history.replaceState(null, '', location.search + `#a-${current + 1}`); }
+  else { current = -1; shown = kind === 'end' ? M : kind === 'chapter' ? +s.dataset.before : 0; $('p-where').textContent = kind === 'chapter' ? `${CH[s.id.slice(2)]} · begins` : kind === 'end' ? 'The whole count' : `The ledger · ${START_YEAR} to ${monthYear(D.stats.last)}`; if (kind !== 'hero') history.replaceState(null, '', location.search + '#' + s.id); }
+  $('p-n').textContent = nf(shown);
+  $('bar').style.width = (100 * shown / Math.max(1, M)) + '%';
+  paint();
+  renderMix();
+  setPlayhead(kind === 'act' ? items[current].date : kind === 'chapter' ? ((items.find((it) => it.chapter === s.id.slice(2) && rank[it.i] >= 0) || {}).date || null) : kind === 'end' ? D.stats.last : null);
+}
+function applyFilter(initial = false) {
+  filtered = !!(F.fam.size || F.rating.size || F.term.size);
+  order = items.filter(matches).map((it) => it.i); rank = new Array(N).fill(-1); order.forEach((i, k) => { rank[i] = k; }); M = order.length;
+  let run = 0;
+  for (const ch of D.chapters) {
+    const m = items.filter((it) => it.chapter === ch.key && rank[it.i] >= 0).length; const s = $('c-' + ch.key); const n = s.querySelector('.n'); const total = +n.dataset.total;
+    s.dataset.before = run; n.innerHTML = filtered ? `${m}<small>of ${total} acts match</small>` : `${total}<small>${total === 1 ? 'act' : 'acts'} documented</small>`; run += m;
+  }
+  allSections.forEach((s) => { if (s.dataset.kind === 'act') s.hidden = rank[+s.dataset.i] < 0; });
+  sections = allSections.filter((s) => !s.hidden);
+  buildStrip();
+  $('end-h2').innerHTML = filtered ? `That is <em>${nf(M)}</em> of ${nf(N)}.` : `That is <em>${nf(N)}.</em>`;
+  $('p-total').textContent = filtered ? `${nf(M)} · ${nf(N)} in all` : nf(N);
+  document.querySelectorAll('.fc[data-fam]').forEach((b) => b.classList.toggle('is-on', F.fam.has(b.dataset.fam)));
+  document.querySelectorAll('.fc[data-rating]').forEach((b) => b.classList.toggle('is-on', F.rating.has(b.dataset.rating)));
+  document.querySelectorAll('.fc[data-term]').forEach((b) => b.classList.toggle('is-on', F.term.has(b.dataset.term)));
+  $('f-sum').textContent = filtered ? `${nf(M)} of ${nf(N)} acts · ${filterDesc()}` : `All ${nf(N)} acts`;
+  document.querySelector('#fpanel [data-clear]').hidden = !filtered;
+  $('fbtn-text').textContent = filtered ? `Filtered · ${nf(M)} of ${nf(N)}` : 'Filter'; $('fbtn').classList.toggle('is-on', filtered);
+  $('p-filter').hidden = !filtered; $('p-filter-text').textContent = filtered ? `Filtered · ${filterDesc()}` : '';
+  const p = new URLSearchParams(); if (F.fam.size) p.set('f', [...F.fam].join(',')); if (F.rating.size) p.set('r', [...F.rating].join(',')); if (F.term.size) p.set('t', [...F.term].join(','));
+  const qs = p.toString(); history.replaceState(null, '', (qs ? '?' + qs : location.pathname) + location.hash);
+  document.querySelectorAll('a[data-carry]').forEach((a) => { a.href = a.dataset.carry + (qs ? '?' + qs : '') + (a.dataset.hash || ''); });
+  if (initial) { paint(); return; }
+  // keep the reader on a screen that is still there
+  if (activeEl && activeEl.hidden) { const k = allSections.indexOf(activeEl); activeEl = allSections.slice(k).find((s) => !s.hidden) || sections[sections.length - 1]; activeEl.scrollIntoView({ behavior: 'auto', block: 'start' }); }
+  setSection(sections.indexOf(activeEl));
+}
+const io = new IntersectionObserver((entries) => { for (const e of entries) if (e.isIntersecting) { const idx = sections.indexOf(e.target); if (idx >= 0) setSection(idx); } }, { threshold: 0.55 });
+allSections.forEach((s) => io.observe(s));
+$('fbtn').addEventListener('click', () => { const p = $('fpanel'); p.hidden = !p.hidden; $('fbtn').setAttribute('aria-expanded', String(!p.hidden)); });
+$('fpanel').addEventListener('click', (e) => {
+  const flip = (set, v) => { set.has(v) ? set.delete(v) : set.add(v); applyFilter(); };
+  const fam = e.target.closest('.fc[data-fam]'); if (fam) return flip(F.fam, fam.dataset.fam);
+  const r = e.target.closest('.fc[data-rating]'); if (r) return flip(F.rating, r.dataset.rating);
+  const t = e.target.closest('.fc[data-term]'); if (t) return flip(F.term, t.dataset.term);
+});
+
+// ── the running breakdown and the time strip ──────────────────────────────
+// short family names for the panel come from the topic: the lead of each ledger label, with no family reduced to its most loaded word
+const FAM_SHORT = Object.fromEntries(Object.entries(T.families).map(([k, f]) => [k, f.short]));
+let order = [];
+function mixFor(upto) { const c = {}; for (let k = 0; k < upto && k < order.length; k++) { const f = items[order[k]].family; c[f] = (c[f] || 0) + 1; } return c; }
+function renderMix() {
+  const counts = mixFor(shown); const max = Math.max(1, ...Object.values(counts));
+  $('mix-rows').innerHTML = FAMILY_ORDER.map((k) => `<span class="mr-l${counts[k] ? '' : ' is-zero'}">${esc(FAM_SHORT[k])}</span><span class="mr-b"><i style="width:${(100 * (counts[k] || 0) / max).toFixed(1)}%"></i></span><span class="mr-n${counts[k] ? '' : ' is-zero'}">${counts[k] || 0}</span>`).join('');
+  const top = FAMILY_ORDER.filter((k) => counts[k]).sort((a, b) => counts[b] - counts[a]).slice(0, 3);
+  $('mix-top').innerHTML = top.length ? `So far · ${top.map((k) => `${esc(FAM_SHORT[k])} <b>${counts[k]}</b>`).join(' · ')}` : 'So far · nothing yet';
+}
+const ERAS = T.eras;
+const T0 = Date.UTC(+T.start.slice(0, 4), +T.start.slice(5, 7) - 1, +T.start.slice(8, 10)), T1 = (() => { const [y, m] = parts(D.stats.last); return Date.UTC(y, m, 1); })();
+const tOf = (d) => Date.UTC(+d.slice(0, 4), +d.slice(5, 7) - 1, +(d.slice(8, 10) || 1));
+const monthKeys = Object.keys(D.stats.byMonth).sort();
+let stripW = 0, playheadEl = null, playheadDate = null;
+function buildStrip() {
+  const el = $('strip'); const W = el.clientWidth; if (!W) return; stripW = W;
+  const narrow = W < 520, H = narrow ? 40 : 48, barTop = narrow ? 9 : 11, barBase = H - 17, spanY = H - 15, tickY = H - 9;
+  const x = (t) => Math.round((t - T0) / (T1 - T0) * W);
+  let s = '';
+  // an era label is dropped when it would run into the next band, and on a narrow strip the years between go unlabeled
+  ERAS.forEach((e, i) => { const x0 = x(tOf(e.from)), x1 = e.to ? x(tOf(e.to)) : W; s += `<rect class="era${i % 2 ? ' alt' : ''}" x="${x0}" y="0" width="${x1 - x0}" height="${H}"/>`; const nx = ERAS[i + 1], fits = !nx || x0 + 4 + e.label.length * 7.2 <= x(tOf(nx.from)); if (fits && !(narrow && CHAP.between && e.from === CHAP.between.from)) s += `<text class="era-lbl" x="${x0 + 4}" y="9">${esc(e.label.toUpperCase())}</text>`; });
+  const all = D.stats.byMonth, kept = {}; for (const i of order) { const m = items[i].month; kept[m] = (kept[m] || 0) + 1; }
+  const max = Math.max(...Object.values(all)), span = barBase - barTop;
+  for (const m of monthKeys) { const [y, mm] = parts(m); const x0 = x(Date.UTC(y, mm - 1, 1)), x1 = x(Date.UTC(y, mm, 1)), w = Math.max(1, x1 - x0 - 1); const h = Math.round((all[m] || 0) / max * span), hk = Math.round((kept[m] || 0) / max * span); if (h) s += `<rect class="dens" x="${x0}" y="${barBase - h}" width="${w}" height="${h}"/>`; if (hk) s += `<rect class="dens kept" x="${x0}" y="${barBase - hk}" width="${w}" height="${hk}"/>`; }
+  for (let y = +START_YEAR + (T.start.slice(5) === '01-01' ? 0 : 1); y <= +D.stats.last.slice(0, 4); y++) { const px = x(Date.UTC(y, 0, 1)); s += `<line class="tick" x1="${px}" x2="${px}" y1="${tickY - 4}" y2="${tickY - 1}"/>`; if (!narrow || y % 2) s += `<text class="yr" x="${px + 2}" y="${H - 1}">${y}</text>`; }
+  for (const t of (D.threads || [])) { const x0 = x(tOf(t.first)), x1 = Math.max(x0 + 6, x(tOf(t.last))); s += `<rect class="sp" data-thread="${t.slug}" x="${x0}" y="${spanY}" width="${x1 - x0}" height="4" rx="1"><title>${esc(t.title)} · ${t.events.length} moments · opens the thread on the count</title></rect>`; }
+  s += `<g class="ph is-off" id="playhead"><line x1="0" x2="0" y1="0" y2="${H}"/><path d="M-4 0 L4 0 L0 5 Z"/></g>`;
+  el.innerHTML = `<svg viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" aria-hidden="true">${s}</svg>`;
+  playheadEl = $('playhead'); if (playheadDate) setPlayhead(playheadDate);
+}
+function setPlayhead(d) { playheadDate = d; if (!playheadEl) return; if (!d) { playheadEl.classList.add('is-off'); return; } playheadEl.classList.remove('is-off'); playheadEl.style.transform = `translateX(${Math.round((tOf(d) - T0) / (T1 - T0) * stripW)}px)`; }
+// an act filed under a chapter its date falls outside (the ledger files some by subject) has no place on the strip
+const onTime = (it) => { const c = CHAP[it.chapter], m = it.date.slice(0, 7); return m >= c.from.slice(0, 7) && (!c.to || m <= c.to.slice(0, 7)); };
+function jumpToTime(clientX) {
+  const r = $('strip').getBoundingClientRect(); const t = T0 + Math.min(1, Math.max(0, (clientX - r.left) / r.width)) * (T1 - T0);
+  const acts = sections.filter((s) => s.dataset.kind === 'act' && onTime(items[+s.dataset.i]));
+  const el = acts.find((s) => tOf(items[+s.dataset.i].date) >= t) || acts[acts.length - 1];
+  if (el) { setPlay(false); el.scrollIntoView({ behavior: 'auto', block: 'start' }); }
+}
+{ const el = $('strip'); let down = false;
+  el.addEventListener('pointerdown', (e) => { const sp = e.target.closest('.sp'); if (sp) { const p = new URLSearchParams(location.search); p.set('thread', sp.dataset.thread); location.href = 'count.html?' + p.toString(); return; } down = true; try { el.setPointerCapture(e.pointerId); } catch (_) {} jumpToTime(e.clientX); });
+  el.addEventListener('pointermove', (e) => { if (down) jumpToTime(e.clientX); });
+  ['pointerup', 'pointercancel'].forEach((ev) => el.addEventListener(ev, () => { down = false; })); }
+
+// ── moving ────────────────────────────────────────────────────────────────
+const go = (idx, smooth = true) => { idx = Math.max(0, Math.min(sections.length - 1, idx)); sections[idx].scrollIntoView({ behavior: smooth && !reduced ? 'smooth' : 'auto', block: 'start' }); };
+const next = () => go(activeIdx() + 1), prev = () => go(activeIdx() - 1);
+$('next').addEventListener('click', next); $('prev').addEventListener('click', prev);
+let timer = 0;
+function setPlay(on) {
+  clearInterval(timer); timer = 0;
+  $('play').classList.toggle('is-on', on); $('play').setAttribute('aria-pressed', on); $('play').textContent = on ? 'Pause' : 'Play';
+  if (on) { if (activeIdx() >= sections.length - 1) go(0); timer = setInterval(() => { if (activeIdx() >= sections.length - 1) setPlay(false); else next(); }, 5000); }
+}
+$('play').addEventListener('click', () => setPlay(!timer));
+document.addEventListener('click', (e) => {
+  if (e.target.closest('[data-clear]')) { F.fam.clear(); F.rating.clear(); F.term.clear(); applyFilter(); return; }
+  const b = e.target.closest('[data-play]'); if (b) { go(1); setPlay(true); }
+  if (!e.target.closest('#fpanel, #fbtn')) $('fpanel').hidden = true;
+});
+document.addEventListener('keydown', (e) => {
+  if (e.target instanceof Element && e.target.matches('input, textarea, select')) return;
+  if (['ArrowRight', 'ArrowDown', 'PageDown'].includes(e.key) || (e.key === ' ' && !e.shiftKey)) { e.preventDefault(); setPlay(false); next(); }
+  else if (['ArrowLeft', 'ArrowUp', 'PageUp'].includes(e.key) || (e.key === ' ' && e.shiftKey)) { e.preventDefault(); setPlay(false); prev(); }
+  else if (e.key === 'p' || e.key === 'P') setPlay(!timer);
+  else if (e.key === 'Escape') { setPlay(false); $('fpanel').hidden = true; }
+});
+['wheel', 'touchstart'].forEach((ev) => addEventListener(ev, () => { if (timer) setPlay(false); }, { passive: true }));
+
+// ── go ────────────────────────────────────────────────────────────────────
+buildWall();
+let rt; addEventListener('resize', () => { clearTimeout(rt); rt = setTimeout(() => { buildWall(); buildStrip(); }, 150); });
+applyFilter(true);
+let start = location.hash && document.querySelector(location.hash.replace(/[^#\w-]/g, ''));
+if (start && start.hidden) { const k = allSections.indexOf(start); start = allSections.slice(k).find((s) => !s.hidden) || null; }
+if (start) { requestAnimationFrame(() => start.scrollIntoView({ behavior: 'auto', block: 'start' })); } else setSection(0);
+</script>
+</body>
+</html>

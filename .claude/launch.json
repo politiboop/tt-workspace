@@ -56,6 +56,15 @@
       "port": 4325
     },
     {
+      "name": "ui-mockup",
+      "runtimeExecutable": "bash",
+      "runtimeArgs": [
+        "-lc",
+        "cd /private/tmp/claude-501/-Users-brock-dev-politiboop/5ec53e84-8707-4f83-8c1f-4bfc02bdae17/scratchpad/ui/preview && python3 -m http.server 4340"
+      ],
+      "port": 4340
+    },
+    {
       "name": "stand-against-trump",
       "runtimeExecutable": "bash",
       "runtimeArgs": [
@@ -63,6 +72,15 @@
         "cd /Users/brock/dev/politiboop/stand-against-trump && npm run preview -- --port 4331"
       ],
       "port": 4331
+    },
+    {
+      "name": "the-count",
+      "runtimeExecutable": "bash",
+      "runtimeArgs": [
+        "-lc",
+        "cd /Users/brock/dev/politiboop/prototypes/the-count && python3 -m http.server 4341"
+      ],
+      "port": 4341
     }
   ]
 }

@@ -1,0 +1,2552 @@
+{
+ "title": "What Changed Around the Press",
+ "framing": "This prologue sets 55 of the count's own acts in seven sections: access to the president, the FCC's power over broadcast licenses, public media funding, lawsuits against outlets, the Justice Department's rules on reporters' records, and the government's public data and briefings. It closes with what the courts blocked and what they let stand. Every step comes from an act the count records; the prologue orders them by subject and claims no cause between any two of them.",
+ "generated": "2026-10-26",
+ "run": "wfpyaaq6q.fixed",
+ "method": "Seven themed finders read the Trump Tracker corpus and the press ledger; a verifier per theme checked every beat against its entry (facts, verbatim sources, dates, quotes and who the entry attributes them to); a synthesis wrote the outline; a critic checked it for completeness and overreach; one gap-fill round followed. Every URL below appears in a tracker entry or the ledger; the gate ran after the sweep with zero misses.",
+ "gates": {
+  "beats": 55,
+  "sourceLinks": 158,
+  "outsideCorpus": 0,
+  "unknownIds": 0
+ },
+ "sections": [
+  {
+   "key": "access",
+   "title": "Who gets near the president",
+   "thesis": "Trump's campaigns denied credentials to named outlets in 2016 and 2024, and his first-term press office kept outlets out of a briefing. In the second term the White House took over the press pool and required appointments to enter the press secretary's office, while the Pentagon evicted outlets from their workspaces, required escorts and imposed credential rules that a judge struck in March 2026.",
+   "thesisBasis": [
+    "ledger:2016-06-13 The Trump campaign revokes",
+    "ledger:2017-02-24 The White House press",
+    "ledger:2024-11-05 The Trump campaign denies",
+    "ledger:2025-01-31 The Pentagon evicts NBC",
+    "ledger:2025-02-25 The White House takes",
+    "ledger:2025-05-23 Hegseth bars reporters",
+    "ledger:2025-09-18 The Pentagon requires credentialed",
+    "ledger:2025-10-31 The White House bars"
+   ],
+   "thesisInferred": false,
+   "beats": [
+    {
+     "id": "ledger:2016-06-13 The Trump campaign revokes",
+     "date": "2016-06-13",
+     "line": "In June 2016, the Trump campaign revoked the Washington Post's press credentials, adding it to a list of outlets it had barred, over what Trump called its \"incredibly inaccurate coverage and reporting\" of his campaign, after objecting to a Post headline on his Orlando shooting remarks.",
+     "why": "A campaign's credential list excluded outlets by name; NPR listed earlier exclusions including HuffPost, Politico, BuzzFeed, the Daily Beast, the Des Moines Register and Univision.",
+     "whyBasis": "stated",
+     "term": "campaign",
+     "quote": "phony and dishonest",
+     "quoteBy": "Trump, describing the Washington Post",
+     "inCount": true,
+     "sources": [
+      {
+       "text": "NPR: Donald Trump Bans 'Washington Post' From Campaign Events",
+       "url": "https://www.npr.org/2016/06/13/481923166/donald-trump-bans-washington-post-from-campaign-events"
+      },
+      {
+       "text": "Christian Science Monitor: Donald Trump revokes Washington Post press access",
+       "url": "https://www.csmonitor.com/layout/set/amphtml/USA/Politics/2016/0614/Donald-Trump-revokes-Washington-Post-press-access"
+      },
+      {
+       "text": "CNN Wire (via WTVR): ‘The Blacklist’: Here are the media outlets banned by Donald Trump",
+       "url": "https://www.wtvr.com/2016/06/14/the-blacklist-here-are-the-media-outlets-banned-by-donald-trump"
+      }
+     ]
+    },
+    {
+     "id": "ledger:2017-02-24 The White House press",
+     "date": "2017-02-24",
+     "line": "In February 2017, the press office kept CNN, the New York Times, Politico, the Los Angeles Times and the BBC out of an off-camera Spicer briefing that admitted a group including One America News and Breitbart.",
+     "why": "Access to a White House briefing was decided outlet by outlet; the AP and Time stayed away in protest.",
+     "whyBasis": "inferred",
+     "term": "first",
+     "inCount": true,
+     "sources": [
+      {
+       "text": "Politico: White House selectively blocks media outlets from briefing with Spicer",
+       "url": "https://www.politico.com/story/2017/02/reporters-blocked-white-house-gaggle-235360"
+      },
+      {
+       "text": "NPR: Spicer Bars CNN, New York Times, Others From White House Press Briefing",
+       "url": "https://www.npr.org/2017/02/24/517112555/lashing-out-against-critical-reports-white-house-bars-outlets-from-briefing"
+      },
+      {
+       "text": "Fox News: Media outlets accuse White House of blocking certain press from covering event",
+       "url": "https://www.foxnews.com/politics/media-outlets-accuse-white-house-of-blocking-certain-press-from-covering-event"
+      }
+     ]
+    },
+    {
+     "id": "ledger:2024-11-05 The Trump campaign denies",
+     "date": "2024-11-05",
+     "line": "On election night 2024, the Trump campaign denied or revoked credentials for reporters from Politico, Axios and Puck after their coverage; Puck's Tara Palmeri wrote that her reporting had angered the campaign manager.",
+     "why": "Credentials to a campaign event were denied or revoked after critical coverage, in CNN's account; it was a campaign's act, not a government's.",
+     "whyBasis": "stated",
+     "term": "between",
+     "quote": "pissed off Trump's campaign manager with my reporting and they decided to deny my credentials",
+     "quoteBy": "Tara Palmeri of Puck",
+     "inCount": true,
+     "sources": [
+      {
+       "text": "CNN: Trump campaign denies and revokes journalists' election night credentials after critical coverage",
+       "url": "https://www.cnn.com/2024/11/05/media/trump-revokes-journalists-election-night-credentials/index.html"
+      },
+      {
+       "text": "Mediaite: Trump Campaign Denies Major Outlets Access to Election Watch Party After They 'P*ssed' Them Off With Coverage",
+       "url": "https://www.mediaite.com/politics/election-2024/trump-campaign-denies-major-outlets-access-to-election-watch-party-after-they-pssed-off-them-off-with-coverage/"
+      },
+      {
+       "text": "Fortune: Trump revokes credentials of critical news outlets",
+       "url": "https://fortune.com/2024/11/06/trump-revokes-denies-media-credentials-critics/"
+      }
+     ]
+    },
+    {
+     "id": "ledger:2025-01-31 The Pentagon evicts NBC",
+     "date": "2025-01-31",
+     "line": "In a \"rotation program,\" the Pentagon evicted NBC News, the New York Times, NPR and Politico from their press workspaces, and four more outlets a week later, giving the space to outlets such as One America News and Breitbart.",
+     "why": "The department reassigned reporters' working space inside the building to other outlets; the Pentagon Press Association called the rotation \"unreasonable.\"",
+     "whyBasis": "stated",
+     "term": "second",
+     "inCount": true,
+     "sources": [
+      {
+       "text": "NBC News: Pentagon removes major media outlets, including NBC News, from dedicated workstations in new 'rotation program'",
+       "url": "https://www.nbcnews.com/news/rcna190276"
+      },
+      {
+       "text": "AP: The Trump administration is throwing more Pentagon reporters out of their workspaces",
+       "url": "https://www.clickondetroit.com/business/2025/02/08/the-trump-administration-is-throwing-more-pentagon-reporters-out-of-their-workspaces/"
+      }
+     ]
+    },
+    {
+     "id": "ledger:2025-02-25 The White House takes",
+     "date": "2025-02-25",
+     "line": "On February 25, 2025, the White House took over choosing the press pool from the correspondents' association, ended the wire services' permanent seat on April 15, and left the AP, Reuters and Bloomberg off Air Force One in May.",
+     "why": "The White House, not the correspondents' association, now picks the pool; the association said the move \"tears at the independence of a free press.\"",
+     "whyBasis": "stated",
+     "term": "second",
+     "quote": "The White House press team in this administration will determine who gets to enjoy the very privileged and limited access",
+     "quoteBy": "Karoline Leavitt, White House press secretary",
+     "inCount": true,
+     "sources": [
+      {
+       "text": "BBC: White House takes control of press pool that covers Trump",
+       "url": "https://www.bbc.com/news/articles/ce30n52e6p1o"
+      },
+      {
+       "text": "U.S. Press Freedom Tracker: White House wrests control of presidential press pool from correspondents",
+       "url": "https://pressfreedomtracker.us/all-incidents/white-house-wrests-control-of-presidential-press-pool-from-correspondents/"
+      },
+      {
+       "text": "New York Post: Trump bars AP, Reuters and Bloomberg from Air Force One during Mideast trip",
+       "url": "https://nypost.com/2025/05/13/media/trump-bars-ap-reuters-and-bloomberg-from-air-force-one-during-mideast-trip/"
+      }
+     ]
+    },
+    {
+     "id": "ledger:2025-05-23 Hegseth bars reporters",
+     "date": "2025-05-23",
+     "line": "On May 23, 2025, a memo from Defense Secretary Hegseth, citing a March leak investigation, limited unescorted press movement in the Pentagon to a few corridors and required escorts to the secretary's and Joint Staff offices.",
+     "why": "Press movement inside most of the Pentagon now required an escort, with a leak investigation as the stated reason; the Pentagon Press Association objected.",
+     "whyBasis": "stated",
+     "term": "second",
+     "quote": "appears to be a direct attack on the freedom of the press and America's right to know what its military is doing",
+     "quoteBy": "The Pentagon Press Association's board, in a statement to NPR",
+     "inCount": true,
+     "sources": [
+      {
+       "text": "Defense Department: Memorandum, Updated Physical Control Measures for Press/Media Access Within the Pentagon, May 23, 2025 (Wayback copy)",
+       "url": "https://web.archive.org/web/20260126020406/https://media.defense.gov/2025/May/23/2003721693/-1/-1/1/UPDATED-PHYSICAL-CONTROL-MEASURES-FOR-PRESS-MEDIA-ACCESS-WITHIN-THE-PENTAGON.PDF"
+      },
+      {
+       "text": "NPR: Defense Secretary Hegseth puts new limits on press access at the Pentagon",
+       "url": "https://www.npr.org/2025/05/24/nx-s1-5410513/defense-sec-hegseth-press-access-pentagon"
+      },
+      {
+       "text": "Military.com: Hegseth Restricts Press Access at Pentagon, Says Journalists Will Be Required to Sign Pledge",
+       "url": "https://www.military.com/daily-news/2025/05/23/hegseth-restricts-press-access-pentagon-says-journalists-will-be-required-sign-pledge.html"
+      }
+     ]
+    },
+    {
+     "id": "ledger:2025-09-18 The Pentagon requires credentialed",
+     "date": "2025-09-18",
+     "line": "The Pentagon required credentialed reporters to accept rules under which a credential \"may be denied, revoked, or not renewed\"; nearly every outlet turned in its badges rather than sign, and on March 20, 2026 a judge struck the policy.",
+     "why": "Credentials became revocable under the new rules; the judge's ruling came six months later, after nearly every outlet had turned in its badge.",
+     "whyBasis": "stated",
+     "term": "second",
+     "quote": "That is viewpoint discrimination, full stop.",
+     "quoteBy": "Judge Paul Friedman, in New York Times Co. v. Department of Defense",
+     "inCount": true,
+     "sources": [
+      {
+       "text": "NPR: Defense Secretary Hegseth requires new 'pledge' for Pentagon reporters",
+       "url": "https://www.npr.org/2025/09/20/g-s1-89713/pentagon-new-strict-guidelines-for-media"
+      },
+      {
+       "text": "BBC: Top US news outlets push back against Pentagon's reporting restrictions",
+       "url": "https://www.bbc.com/news/articles/cy0ygg06pgko"
+      },
+      {
+       "text": "Opinion, New York Times Co. v. Department of Defense, ECF 35 (Mar. 20, 2026)",
+       "url": "https://storage.courtlistener.com/recap/gov.uscourts.dcd.287334/gov.uscourts.dcd.287334.35.0.pdf"
+      }
+     ]
+    },
+    {
+     "id": "ledger:2025-10-31 The White House bars",
+     "date": "2025-10-31",
+     "line": "On October 31, 2025, the White House barred reporters from the press secretary's office, \"Upper Press,\" without an appointment with an authorized staff member; communications director Steven Cheung said some reporters had been caught secretly recording the offices.",
+     "why": "Reporters lost unscheduled access to the press secretary's office and now need an appointment with an authorized staff member to enter.",
+     "whyBasis": "stated",
+     "term": "second",
+     "quote": "are no longer permitted to access Room 140 without prior approval in the form of an appointment with an authorized White House Staff Member",
+     "quoteBy": "A National Security Council memo",
+     "inCount": true,
+     "sources": [
+      {
+       "text": "Reuters via KSL: White House restricts access to press secretary's office, other communications officials",
+       "url": "https://www.ksl.com/article/news/politics/white-house-restricts-access-to-press-secretarys-office-other-communications-officials/51398733"
+      },
+      {
+       "text": "U.S. Press Freedom Tracker: White House restricts reporter access to press secretary, staff's offices",
+       "url": "https://pressfreedomtracker.us/all-incidents/white-house-restricts-reporter-access-to-press-secretary-staffs-offices/"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "fcc",
+   "title": "The FCC and broadcast licenses",
+   "thesis": "Trump publicly urged a challenge to NBC's license in 2017 and called for taking away CBS's in 2024. In the second term Chairman Carr's FCC reinstated dismissed complaints against three networks' stations, and Carr warned ABC's affiliates hours before two station groups pulled Kimmel, warned broadcasters about their license renewals during the Iran war and said fake news shows would not qualify for the equal-time exemption. The FCC also ordered early reviews of ABC's licenses and voted to scrap the 39 percent ownership cap.",
+   "thesisBasis": [
+    "ledger:2017-10-11 Trump asks when it",
+    "ledger:2024-10-10 Trump posts \"TAKE AWAY",
+    "ledger:2025-01-22 Days after Brendan Carr",
+    "ledger:2025-09-17 FCC Chairman Carr tells",
+    "fcc-carr-trump-media-control",
+    "fcc-threatens-broadcasters-iran-war",
+    "fcc-disney-license-review-kimmel-melania-joke",
+    "fcc-ends-39-percent-national-tv-ownership-cap"
+   ],
+   "thesisInferred": false,
+   "beats": [
+    {
+     "id": "ledger:2017-10-11 Trump asks when it",
+     "date": "2017-10-11",
+     "line": "On October 11, 2017, Trump asked when it would be \"appropriate to challenge\" NBC's license, and the next day said network licenses \"must be challenged and if appropriate revoked.\"",
+     "why": "A first-term instance of the president publicly urging a challenge to a network's FCC license.",
+     "whyBasis": "inferred",
+     "term": "first",
+     "quote": "must be challenged and if appropriate revoked",
+     "quoteBy": "Donald Trump",
+     "inCount": true,
+     "sources": [
+      {
+       "text": "The American Presidency Project (UCSB), Trump tweets (Oct 11): Tweets of October 11, 2017",
+       "url": "https://www.presidency.ucsb.edu/documents/tweets-october-11-2017"
+      },
+      {
+       "text": "The American Presidency Project (UCSB), Trump tweets (Oct 12): Tweets of October 12, 2017",
+       "url": "https://www.presidency.ucsb.edu/documents/tweets-october-12-2017"
+      },
+      {
+       "text": "U.S. Press Freedom Tracker: Trump calls NBC ‘fake news’ and suggests FCC should challenge its broadcast license",
+       "url": "https://pressfreedomtracker.us/all-incidents/trump-calls-nbc-fake-news-and-suggests-fcc-should-challenge-its-broadcast-license/"
+      }
+     ]
+    },
+    {
+     "id": "ledger:2024-10-10 Trump posts \"TAKE AWAY",
+     "date": "2024-10-10",
+     "line": "In October 2024, Trump posted \"TAKE AWAY THE CBS LICENSE\" over 60 Minutes' edit of a Harris answer, and within ten days said the show should go off the air and that he would sue and subpoena records.",
+     "why": "A candidate threatened a broadcaster's license over an edit; the then-FCC chair said the commission does not revoke licenses over coverage.",
+     "whyBasis": "stated",
+     "term": "between",
+     "quote": "does not and will not revoke licenses",
+     "quoteBy": "FCC Chair Jessica Rosenworcel",
+     "inCount": true,
+     "sources": [
+      {
+       "text": "National Review: FCC Chief Condemns Trump for Calling to Revoke CBS License over Harris Interview Edit",
+       "url": "https://www.nationalreview.com/news/fcc-chief-condemns-trump-for-calling-to-revoke-cbs-license-over-harris-interview-edit/"
+      },
+      {
+       "text": "Boston Globe (New York Times): Trump's latest threat against the media: yanking broadcast licenses",
+       "url": "https://www.bostonglobe.com/2024/10/21/nation/donald-trump-media-broadcast-licenses/"
+      },
+      {
+       "text": "Roll Call Factba.se: Interview: Dan Bongino Interviews Donald Trump on His Syndicated Radio Show - October 18, 2024",
+       "url": "https://rollcall.com/factbase/trump/transcript/donald-trump-interview-dan-bongino-show-syndicated-radio-october-18-2024/"
+      }
+     ]
+    },
+    {
+     "id": "ledger:2025-01-22 Days after Brendan Carr",
+     "date": "2025-01-22",
+     "line": "Days after Brendan Carr became chairman in January 2025, the FCC reinstated complaints his predecessor had dismissed against ABC, CBS and NBC stations, over WPVI's debate fact-checking, WCBS's 60 Minutes edit and WNBC's Saturday Night Live appearance by Harris.",
+     "why": "Two of the reinstated matters were news-distortion complaints, per the FCC's orders; a similar complaint against Fox's Philadelphia station was not revived.",
+     "whyBasis": "stated",
+     "term": "second",
+     "inCount": true,
+     "sources": [
+      {
+       "text": "FCC: DA 25-85, News Distortion Complaint Involving CBS Broadcasting Inc., licensee of WCBS, New York, NY (Order, Jan. 22, 2025)",
+       "url": "https://docs.fcc.gov/public/attachments/DA-25-85A1.pdf"
+      },
+      {
+       "text": "FCC: DA 25-84, News Distortion Complaint Involving WPVI Television (Philadelphia), LLC (Order, Jan. 22, 2025)",
+       "url": "https://docs.fcc.gov/public/attachments/DA-25-84A1.pdf"
+      },
+      {
+       "text": "TheWrap: Complaints of Bias, 'News Distortion' Against CBS, ABC and NBC Reinstated by Trump-Appointed FCC Chair",
+       "url": "https://www.thewrap.com/fcc-complaint-news-bias-cbs-abc-nbc-trump-reinstated/"
+      }
+     ]
+    },
+    {
+     "id": "ledger:2025-09-17 FCC Chairman Carr tells",
+     "date": "2025-09-17",
+     "line": "On September 17, 2025, FCC Chairman Carr told ABC's affiliates they could do this the easy way or the hard way; within hours Nexstar and Sinclair pulled Jimmy Kimmel Live! and ABC suspended it. Carr later attributed it to ratings.",
+     "why": "A regulator's public warning to licensed affiliates was followed within hours by a show's removal; Republican Sen. Ted Cruz said Carr sounded like a mafioso.",
+     "whyBasis": "inferred",
+     "term": "second",
+     "quote": "These companies can find ways to change conduct and take actions on Kimmel, or there's going to be additional work for the FCC ahead.",
+     "quoteBy": "FCC Chairman Carr",
+     "inCount": true,
+     "sources": [
+      {
+       "text": "The Philadelphia Inquirer: Why did ABC suspend Jimmy Kimmel's show and will he return to TV? Here are the latest updates",
+       "url": "https://www.inquirer.com/politics/jimmy-kimmel-abc-suspended-return-date-news-updates-20250918.html"
+      },
+      {
+       "text": "Variety: FCC Chair Downplays His Role in Jimmy Kimmel Suspension",
+       "url": "https://au.variety.com/2025/tv/news/fcc-chairman-brendan-carr-downplays-role-jimmy-kimmel-suspension-28106"
+      },
+      {
+       "text": "News 12 Hudson Valley (wire copy): Nexstar Sinclair Wont Air Return Of Jimmy Kimmel On Its Abc Affiliates",
+       "url": "https://hudsonvalley.news12.com/nexstar-sinclair-wont-air-return-of-jimmy-kimmel-on-its-abc-affiliates"
+      }
+     ]
+    },
+    {
+     "id": "fcc-carr-trump-media-control",
+     "date": "2026-02-18",
+     "dateNote": "The entry's date; it reports the equal-time statement in January 2026 and the programming call in February 2026.",
+     "line": "In early 2026, FCC Chairman Carr said fake news shows would not qualify for the equal-time news exemption, confirmed an investigation of ABC's The View, and urged broadcasters to air pro-America programming.",
+     "why": "Made \"fake news,\" in the chairman's words, a test for the equal-time news exemption; ABC later called the View inquiry a First Amendment violation.",
+     "whyBasis": "inferred",
+     "term": "second",
+     "severity": "severe",
+     "quote": "if you're fake news, you're not going to qualify for the bona fide news exemption",
+     "quoteBy": "FCC Chairman Brendan Carr, to the Hollywood Reporter",
+     "inCount": true,
+     "sources": [
+      {
+       "text": "Deadline: FCC Chairman says 'fake news' won't qualify for equal time rule exemption (January 2026)",
+       "url": "https://deadline.com/2026/01/fcc-equal-time-rule-trump-fake-news-1236702396/"
+      },
+      {
+       "text": "Variety: FCC Chair calls on TV networks to air 'pro-America content' (February 2026)",
+       "url": "https://variety.com/2026/tv/news/trump-fcc-chairman-broadcasters-pro-america-programming-1236668371/"
+      },
+      {
+       "text": "House Democrats: FCC's efforts to eliminate media ownership caps violate the law and reek of political favoritism (2026)",
+       "url": "https://democrats-energycommerce.house.gov/media/press-releases/pallone-carr-fccs-efforts-eliminate-media-ownership-caps-violate-law-and-reek"
+      }
+     ]
+    },
+    {
+     "id": "fcc-threatens-broadcasters-iran-war",
+     "date": "2026-03-14",
+     "line": "On March 14, 2026, FCC Chair Brendan Carr shared a Trump post about fake news and warned broadcasters running hoaxes and news distortions to correct course before their license renewals come up; Trump publicly endorsed the threats.",
+     "why": "Put license renewals in play over war coverage; the entry notes the FCC has not denied a renewal in decades and the process takes years.",
+     "whyBasis": "stated",
+     "term": "second",
+     "severity": "serious",
+     "quote": "Broadcasters that are running hoaxes and news distortions have a chance now to correct course before their license renewals come up.",
+     "quoteBy": "FCC Chair Brendan Carr",
+     "inCount": true,
+     "sources": [
+      {
+       "text": "CNN: FCC chair threatens TV networks amid Iran war coverage (March 14, 2026)",
+       "url": "https://www.cnn.com/2026/03/14/media/fcc-brendan-carr-trump-iran-war-abc-nbc-cbs"
+      },
+      {
+       "text": "NPR: FCC chair threatens broadcasters' licenses over negative coverage of Iran war (March 16, 2026)",
+       "url": "https://www.npr.org/2026/03/16/nx-s1-5748570/fcc-chair-threatens-broadcasters-licenses-over-negative-coverage-of-the-war-in-iran"
+      },
+      {
+       "text": "Washington Post: FCC chief threatens broadcasters as Trump criticizes Iran war coverage (March 14, 2026)",
+       "url": "https://www.washingtonpost.com/business/2026/03/14/trump-carr-fcc-media-iran-war/"
+      }
+     ]
+    },
+    {
+     "id": "fcc-disney-license-review-kimmel-melania-joke",
+     "date": "2026-04-28",
+     "line": "On April 28, 2026, the FCC ordered Disney to file early license-renewal applications for its ABC-owned stations, days after Trump demanded Kimmel's firing over a joke about Melania Trump; ABC's suit was argued October 6 with no ruling.",
+     "why": "Put ABC's licenses under review well before renewal was due, with revocation possible; the FCC's stated ground was a Disney diversity probe, not coverage.",
+     "whyBasis": "stated",
+     "term": "second",
+     "severity": "severe",
+     "quote": "This is unprecedented, unlawful, and going nowhere.",
+     "quoteBy": "FCC Commissioner Anna M. Gomez (D), on X",
+     "inCount": true,
+     "sources": [
+      {
+       "text": "BBC: US regulator to review Disney broadcast licences after Jimmy Kimmel joke about Melania Trump (April 28, 2026)",
+       "url": "https://www.bbc.com/news/articles/c4g0zwxl3k0o"
+      },
+      {
+       "text": "Variety: Trump's FCC Orders ABC to File Broadcast TV License Renewals Within 30 Days in Wake of Jimmy Kimmel's Melania Joke",
+       "url": "https://variety.com/2026/tv/news/trump-fcc-review-abc-broadcast-licenses-jimmy-kimmel-melania-joke-1236732208/"
+      },
+      {
+       "text": "Politico: Brendan Carr's ABC license fight meets a skeptical judge",
+       "url": "https://www.politico.com/news/2026/10/06/judge-disney-brendan-carr-licenses-01108411"
+      }
+     ]
+    },
+    {
+     "id": "fcc-ends-39-percent-national-tv-ownership-cap",
+     "date": "2026-08-06",
+     "dateNote": "Vote date; the formal Report and Order was released Oct. 1, 2026.",
+     "line": "On August 6, 2026, the FCC voted 2-1 along party lines to repeal the rule barring one company from owning stations that reach more than 39 percent of U.S. TV households; a formal order followed October 1.",
+     "why": "Replaced a numeric limit with case-by-case review; Commissioner Gomez called it illegal because Congress set the figure, and cable groups said they would sue.",
+     "whyBasis": "inferred",
+     "term": "second",
+     "severity": "serious",
+     "quote": "has no business balancing the ideological content of the news in the first place",
+     "quoteBy": "FCC Commissioner Anna Gomez, who voted no",
+     "inCount": true,
+     "sources": [
+      {
+       "text": "CNBC: FCC ends 39% local TV station ownership cap (August 6, 2026)",
+       "url": "https://www.cnbc.com/2026/08/06/fcc-ends-39percent-local-tv-station-ownership-cap.html"
+      },
+      {
+       "text": "Variety: FCC Eliminates TV Station Ownership Cap in Win for Nexstar and Other Big Broadcasters (August 6, 2026)",
+       "url": "https://variety.com/2026/tv/news/fcc-eliminates-tv-station-ownership-cap-nexstar-broadcaster-1236829194/"
+      },
+      {
+       "text": "RBR+TVBR: FCC Formally Erases Congressionally-Mandated National TV Reach Cap (October 2, 2026)",
+       "url": "https://rbr.com/repealed-fcc-deletes-congressionally-mandated-national-tv-reach-cap/"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "publicmedia",
+   "title": "Defunding public media and cutting the government's broadcasters",
+   "thesis": "A first-term budget asked Congress to end public broadcasting funding, and the first-term head of the global media agency fired its networks' chiefs. In the second term Carr opened an underwriting probe of NPR and PBS, and the agency put 1,042 staff on leave and ended two networks' grants. A rescission law canceled the Corporation for Public Broadcasting's funding, while an executive order against NPR and PBS was later permanently blocked, and an inspector general found that the agency's cuts skipped key steps.",
+   "thesisBasis": [
+    "ledger:2017-03-16 Trump's first budget proposes",
+    "ledger:2020-06-17 Michael Pack, Trump's new",
+    "ledger:2025-01-29 Carr opens an FCC",
+    "ledger:2025-03-15 The global media agency",
+    "pbs-npr-defunding-cpb-shutdown",
+    "ledger:2025-06-03 The White House asks",
+    "usagm-inspector-general-voa-cuts-skipped-key-steps-paying-staff-on-leave"
+   ],
+   "thesisInferred": false,
+   "beats": [
+    {
+     "id": "ledger:2017-03-16 Trump's first budget proposes",
+     "date": "2017-03-16",
+     "line": "Trump's first budget blueprint, in March 2017, proposed that Congress eliminate funding for the Corporation for Public Broadcasting.",
+     "why": "Put the end of public-media funding on the record in the first term, as a request to Congress rather than an act that cut money.",
+     "whyBasis": "inferred",
+     "term": "first",
+     "inCount": true,
+     "sources": [
+      {
+       "text": "White House/OMB: America First: A Budget Blueprint to Make America Great Again",
+       "url": "https://www.govinfo.gov/content/pkg/BUDGET-2018-BLUEPRINT/pdf/BUDGET-2018-BLUEPRINT.pdf"
+      },
+      {
+       "text": "NPR: Trump Budget Cuts Funding For Arts, Humanities Endowments And Corporation For Public Broadcasting",
+       "url": "https://www.npr.org/2017/03/16/520401246/trumps-budget-plan-cuts-funding-for-arts-humanities-and-public-media"
+      }
+     ]
+    },
+    {
+     "id": "ledger:2020-06-17 Michael Pack, Trump's new",
+     "date": "2020-06-17",
+     "line": "In June 2020, Michael Pack, Trump's new head of the U.S. Agency for Global Media, fired the heads of Radio Free Europe/Radio Liberty, Radio Free Asia and the Middle East Broadcasting Networks.",
+     "why": "Network leadership changed at the appointee's order; the Office of Special Counsel later found a \"substantial likelihood of wrongdoing\" at the agency.",
+     "whyBasis": "inferred",
+     "term": "first",
+     "inCount": true,
+     "sources": [
+      {
+       "text": "CBS News: Trump administration purges news execs from U.S. agency meant to counter disinformation, leaving staff fearing more to come",
+       "url": "https://www.cbsnews.com/news/michael-pack-steve-bannon-trump-administration-purges-news-execs-from-u-s-agency-meant-to-counter-disinformation/"
+      },
+      {
+       "text": "NPR: Trump's New U.S. Media Chief Raises Concerns Of Politicization",
+       "url": "https://www.npr.org/transcripts/879873926"
+      },
+      {
+       "text": "NPR: 'Substantial Likelihood Of Wrongdoing' By VOA Parent Agency, Government Watchdog Says",
+       "url": "https://www.npr.org/2020/12/02/941673587/substantial-likelihood-of-wrongdoing-by-voa-parent-agency-government-watchdog-sa"
+      }
+     ]
+    },
+    {
+     "id": "ledger:2025-01-29 Carr opens an FCC",
+     "date": "2025-01-29",
+     "line": "On January 29, 2025, FCC Chairman Carr told NPR and PBS he had asked the Enforcement Bureau to investigate underwriting announcements on their member stations, and wrote that he saw no reason for Congress to keep funding them.",
+     "why": "A broadcast regulator paired a compliance investigation of the two public networks with doubts about their federal funding; both said they follow the rules.",
+     "whyBasis": "inferred",
+     "term": "second",
+     "quote": "I do not see a reason why Congress should continue sending taxpayer dollars to NPR and PBS.",
+     "quoteBy": "FCC Chairman Brendan Carr, in his letter to the heads of NPR and PBS",
+     "inCount": true,
+     "sources": [
+      {
+       "text": "FCC (Carr) letter to NPR and PBS, RE: Federal License Obligations of NPR and PBS Member Stations, Jan. 29, 2025",
+       "url": "https://static01.nyt.com/newsgraphics/documenttools/340343f285781674/6da3eb69-full.pdf"
+      },
+      {
+       "text": "NPR: Trump's FCC chief opens investigation into NPR and PBS",
+       "url": "https://www.npr.org/2025/01/30/nx-s1-5281162/fcc-npr-pbs-investigation"
+      }
+     ]
+    },
+    {
+     "id": "ledger:2025-03-15 The global media agency",
+     "date": "2025-03-15",
+     "line": "On March 15, 2025, the global media agency put 1,042 employees on administrative leave and ended the grants of Radio Free Europe/Radio Liberty and Radio Free Asia; two days later it told foreign service staff to shut down all transmitters.",
+     "why": "Cut the government's international broadcasters' staff and funding; Radio Free Asia stopped publishing on October 31, citing the cuts.",
+     "whyBasis": "stated",
+     "term": "second",
+     "quote": "This agency is not salvageable.",
+     "quoteBy": "The U.S. Agency for Global Media, in its March 15, 2025 release",
+     "inCount": true,
+     "sources": [
+      {
+       "text": "D.D.C.: Widakuswara v. Lake, Memorandum Opinion (Apr. 22, 2025)",
+       "url": "https://www.govinfo.gov/content/pkg/USCOURTS-dcd-1_25-cv-01015/pdf/USCOURTS-dcd-1_25-cv-01015-3.pdf"
+      },
+      {
+       "text": "Reuters via CNBC: Voice of America staff put on leave after Trump orders cuts",
+       "url": "https://www.cnbc.com/2025/03/15/trump-signs-order-to-gut-voice-of-america-other-agencies.html"
+      },
+      {
+       "text": "Al Jazeera: Radio Free Asia says halting news operations due to Trump admin cuts",
+       "url": "https://www.aljazeera.com/news/2025/10/31/radio-free-asia-says-halting-news-operations-due-to-trump-admin-cuts"
+      }
+     ]
+    },
+    {
+     "id": "pbs-npr-defunding-cpb-shutdown",
+     "date": "2025-05-01",
+     "dateNote": "Date of the executive order; the Corporation for Public Broadcasting voted to dissolve on January 6, 2026, and the court ruling came March 31, 2026.",
+     "line": "On May 1, 2025, Trump signed Executive Order 14290 to end federal funding for NPR and PBS; the Corporation for Public Broadcasting voted to dissolve in January 2026, and on March 31, 2026 Judge Moss permanently blocked the order.",
+     "why": "The ruling drew a First Amendment limit on cutting grants over content, after Congress had rescinded the funding and the corporation had dissolved.",
+     "whyBasis": "stated",
+     "term": "second",
+     "severity": "severe",
+     "quote": "It is difficult to conceive of clearer evidence that a government action is targeted at viewpoints that the President does not like",
+     "quoteBy": "Judge Randolph D. Moss",
+     "inCount": true,
+     "sources": [
+      {
+       "text": "Ending Taxpayer Subsidization Of Biased Media (White House Executive Order)",
+       "url": "https://www.whitehouse.gov/presidential-actions/2025/05/ending-taxpayer-subsidization-of-biased-media/"
+      },
+      {
+       "text": "Corporation for Public Broadcasting says it's shutting down (NPR)",
+       "url": "https://www.npr.org/2025/08/01/nx-s1-5489808/cpb-shut-down-public-broadcasting-trump"
+      },
+      {
+       "text": "NPR: Judge says Trump violated free speech when he ordered defunding of NPR (March 31, 2026)",
+       "url": "https://www.npr.org/2026/03/31/nx-s1-5768399/npr-pbs-trump-federal-funding"
+      }
+     ]
+    },
+    {
+     "id": "ledger:2025-06-03 The White House asks",
+     "date": "2025-07-24",
+     "dateNote": "Date Trump signed the rescission; the ledger dates the entry June 3, 2025, when the White House asked Congress for it.",
+     "line": "On July 24, 2025, Trump signed the Rescissions Act of 2025 (Public Law 119-28), canceling the Corporation for Public Broadcasting's funding for fiscal 2026 and 2027; the corporation announced on August 1 that it would wind down.",
+     "why": "Ended the corporation's funding through a law, a route separate from the executive order against NPR and PBS.",
+     "whyBasis": "inferred",
+     "term": "second",
+     "inCount": true,
+     "sources": [
+      {
+       "text": "Public Law 119-28, Rescissions Act of 2025 (H.R. 4), approved July 24, 2025",
+       "url": "https://www.govinfo.gov/content/pkg/PLAW-119publ28/html/PLAW-119publ28.htm"
+      },
+      {
+       "text": "CBS News: Trump signs rescissions bill clawing back foreign aid, NPR and PBS funding",
+       "url": "https://www.cbsnews.com/news/trump-signs-rescissions-package-foreign-aid-npr-pbs-funding/"
+      },
+      {
+       "text": "NPR: CPB to shut down after public media loses federal funding",
+       "url": "https://www.npr.org/2025/08/01/nx-s1-5489808/cpb-shut-down-public-broadcasting-trump"
+      }
+     ]
+    },
+    {
+     "id": "usagm-inspector-general-voa-cuts-skipped-key-steps-paying-staff-on-leave",
+     "date": "2026-10-02",
+     "dateNote": "Date of press coverage of the State Department inspector general's evaluation, which is dated September 2026.",
+     "line": "A State Department inspector general found the global media agency skipped key steps in its cuts under Executive Order 14238; press reports put 420 staff on paid leave in July 2026 and VOA's languages at seven, down from 49.",
+     "why": "An official check on the cuts: the inspector general found they diminished the agency's capacity to fulfill its statutory mission, and USAGM accepted six recommendations.",
+     "whyBasis": "stated",
+     "term": "second",
+     "severity": "serious",
+     "quote": "The reduction in operations diminished USAGM's capacity to fulfill its core statutory mission.",
+     "quoteBy": "State Department Office of Inspector General",
+     "inCount": true,
+     "sources": [
+      {
+       "text": "U.S. Department of State Office of Inspector General: Evaluation of the U.S. Agency for Global Media's Approach To Reducing Operations, AUD-AFA-IB-26-25 (September 2026)",
+       "url": "https://www.stateoig.gov/report/aud-afa-ib-26-25"
+      },
+      {
+       "text": "Politico: Trump tried to dismantle Voice of America. Now the government is paying to rebuild it. (October 2, 2026)",
+       "url": "https://www.politico.com/news/2026/10/02/trump-tried-to-dismantle-voice-of-america-now-the-government-is-paying-to-rebuild-it-01104914"
+      },
+      {
+       "text": "Washington Post: Trump administration is paying $1.6 million a week to keep Voice of America staff on leave (October 2, 2026)",
+       "url": "https://www.washingtonpost.com/business/2026/10/02/trump-administration-is-paying-16-million-week-keep-voice-america-staff-leave/"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "suits",
+   "title": "Suits, settlements and threats",
+   "thesis": "His campaign's 2020 suits against three outlets were dismissed, ABC paid $15 million to his library to settle a 2024 suit, and as president-elect he said suing the media \"should have been the Justice Department or somebody else.\" In the second term Paramount paid $16 million while its merger awaited FCC approval, which came three weeks later with conditions reaching CBS. The White House dropped the Journal from a pool after he sued it, he sued the BBC for $10 billion, and the White House counsel gave Politico 48 hours to correct or retract three stories.",
+   "thesisBasis": [
+    "ledger:2020-02-26 The Trump campaign sues",
+    "ledger:2024-03-18 Trump sues ABC News",
+    "ledger:2024-12-16 At a Mar-a-Lago news",
+    "media-tech-settlements-86-million-trump-library-ballroom",
+    "ledger:2025-07-24 The FCC approves Skydance's",
+    "ledger:2025-07-21 Three days after the",
+    "trump-sues-bbc-10-billion",
+    "white-house-counsel-politico-48-hours-retract-wiles-stories-apologize"
+   ],
+   "thesisInferred": false,
+   "beats": [
+    {
+     "id": "ledger:2020-02-26 The Trump campaign sues",
+     "date": "2020-02-26",
+     "line": "In February 2020, the Trump campaign sued the New York Times, then within ten days the Washington Post and CNN, over 2019 opinion pieces; all three suits were dismissed, the CNN suit for failure to plead actual malice.",
+     "why": "His campaign sued three outlets in the first term and courts dismissed all three; the CNN dismissal came with leave to amend.",
+     "whyBasis": "inferred",
+     "term": "first",
+     "inCount": true,
+     "sources": [
+      {
+       "text": "Committee to Protect Journalists: The Trump administration and the media",
+       "url": "https://cpj.org/reports/2020/04/trump-media-attacks-credibility-leaks/"
+      },
+      {
+       "text": "CNBC: Trump campaign loses New York Times lawsuit over Russia claim",
+       "url": "https://www.cnbc.com/2021/03/10/judge-dismisses-trump-campaign-lawsuit-against-new-york-times.html"
+      },
+      {
+       "text": "Reason (Volokh Conspiracy): Trump v. CNN Libel Suit Dismissed for Now",
+       "url": "https://reason.com/volokh/2020/11/12/trump-v-cnn-libel-suit-dismissed-for-now/"
+      }
+     ]
+    },
+    {
+     "id": "ledger:2024-03-18 Trump sues ABC News",
+     "date": "2024-03-18",
+     "line": "Trump sued ABC News and Stephanopoulos over the anchor's on-air statement that he had been found liable for rape, when the Carroll jury found him liable for sexual abuse; ABC settled in December 2024 with $15 million to his library.",
+     "why": "The first of the suits to end in a payment to his library, made before he returned to office.",
+     "whyBasis": "inferred",
+     "term": "between",
+     "inCount": true,
+     "sources": [
+      {
+       "text": "The National Desk via Fox 11: Trump sues George Stephanopoulos, ABC News over rape claims in Rep. Mace interview",
+       "url": "https://fox11online.com/news/nation-world/trump-sues-george-stephanopoulos-abc-news-over-rape-claims-in-rep-mace-interview-donald-trump-nancy-mace-e-jean-carroll-defamation-suit-lawsuit"
+      },
+      {
+       "text": "AP via Yahoo: ABC agrees to give $15 million to Donald Trump's presidential library to settle defamation lawsuit",
+       "url": "https://www.yahoo.com/news/abc-agrees-15-million-donald-205228716.html"
+      },
+      {
+       "text": "CNN: Why ABC News settled with Donald Trump for $15 million",
+       "url": "https://www.cnn.com/2024/12/16/media/george-stephanopoulos-trump-settlement-abc"
+      }
+     ]
+    },
+    {
+     "id": "ledger:2024-12-16 At a Mar-a-Lago news",
+     "date": "2024-12-16",
+     "line": "At a December 2024 Mar-a-Lago news conference, President-elect Trump said \"we have to straighten out the press\" and that suing the media \"should have been the Justice Department or somebody else.\"",
+     "why": "Words, not an act: before taking office he cast his own suits against the press as work for \"the Justice Department or somebody else.\"",
+     "whyBasis": "inferred",
+     "term": "between",
+     "quote": "It should have been the Justice Department or somebody else, but I have to do it.",
+     "quoteBy": "President-elect Trump, at a December 16, 2024 news conference at Mar-a-Lago",
+     "inCount": true,
+     "sources": [
+      {
+       "text": "Roll Call Factba.se: Press Conference: Donald Trump Speaks with Reporters at Mar-a-Lago - December 16, 2024",
+       "url": "https://rollcall.com/factbase/trump/transcript/donald-trump-press-conference-mar-a-lago-december-16-2024/"
+      },
+      {
+       "text": "Axios: Trump ramps up legal threats against news outlets",
+       "url": "https://www.axios.com/2024/12/17/trump-legal-threats-media"
+      },
+      {
+       "text": "Reporters Without Borders: USA: Trump's vengeful lawsuits against media lack legal basis, but harm American press freedom",
+       "url": "https://rsf.org/en/usa-trump-s-vengeful-lawsuits-against-media-lack-legal-basis-harm-american-press-freedom"
+      }
+     ]
+    },
+    {
+     "id": "media-tech-settlements-86-million-trump-library-ballroom",
+     "date": "2025-07-01",
+     "dateNote": "Date of Paramount's settlement as the entry states it; the entry itself is dated 2025-09-29.",
+     "line": "Paramount settled Trump's 60 Minutes suit on July 1, 2025 for $16 million toward his library while its Skydance merger awaited FCC approval and Carr had reopened a news-distortion complaint over the same interview.",
+     "why": "The settlement and a pending FCC approval shared a calendar; no company or official has said one depended on the other.",
+     "whyBasis": "stated",
+     "term": "second",
+     "severity": "serious",
+     "quote": "nothing to do with the work that we're doing at the FCC",
+     "quoteBy": "FCC Chair Brendan Carr, in April 2025, before the settlement",
+     "inCount": true,
+     "sources": [
+      {
+       "text": "The Wrap: FCC Chair Says CBS-Trump Settlement Talks Have Nothing to Do With Paramount-Skydance Deal Review (April 28, 2025)",
+       "url": "https://www.thewrap.com/fcc-brendan-carr-cbs-trump-settlement-talks-60-minutes-investigation/"
+      },
+      {
+       "text": "CBS News: Paramount, President Trump reach $16 million settlement over \"60 Minutes\" lawsuit (July 2, 2025)",
+       "url": "https://www.cbsnews.com/news/paramount-trump-60-minutes-lawsuit-settlement/"
+      },
+      {
+       "text": "CNN: Trump's FCC finally lets two media companies merge (July 24, 2025)",
+       "url": "https://www.cnn.com/2025/07/24/media/fcc-skydance-paramount-merger-approved"
+      }
+     ]
+    },
+    {
+     "id": "ledger:2025-07-21 Three days after the",
+     "date": "2025-07-21",
+     "line": "Three days after Trump sued the Wall Street Journal over its Epstein reporting, the White House dropped the paper from the press pool for his trip to Scotland, with Leavitt citing its \"fake and defamatory conduct.\"",
+     "why": "A pool seat was withdrawn from a named outlet, with the press secretary's account of its conduct given as the reason.",
+     "whyBasis": "stated",
+     "term": "second",
+     "quote": "Due to the Wall Street Journal's fake and defamatory conduct, they will not be one of the thirteen outlets on board.",
+     "quoteBy": "Karoline Leavitt, White House press secretary",
+     "inCount": true,
+     "sources": [
+      {
+       "text": "CNN (via ABC17News): Trump White House removes WSJ from Scotland trip press pool over Epstein report",
+       "url": "https://abc17news.com/news/2025/07/21/trump-white-house-removes-wsj-from-scotland-trip-press-pool-over-epstein-report/"
+      },
+      {
+       "text": "Business Insider (via Yahoo): White House pulls The Wall Street Journal from Scotland press pool over Trump-Epstein story",
+       "url": "https://www.yahoo.com/news/white-house-pulls-wall-street-220639933.html"
+      },
+      {
+       "text": "U.S. Press Freedom Tracker: WSJ reporter pulled from press pool in retaliation for Epstein article",
+       "url": "https://pressfreedomtracker.us/all-incidents/wsj-reporter-pulled-from-press-pool-in-retaliation-for-epstein-article/"
+      }
+     ]
+    },
+    {
+     "id": "ledger:2025-07-24 The FCC approves Skydance's",
+     "date": "2025-07-24",
+     "line": "On July 24, 2025, the FCC approved, 2-1, Skydance's purchase of Paramount, CBS's owner, after Skydance committed to a CBS ombudsman and to adopting no diversity programs, three weeks after the Paramount settlement.",
+     "why": "A merger approval followed the settlement by weeks, with conditions reaching CBS; the ledger records timing and a dissent, not that one caused the other.",
+     "whyBasis": "inferred",
+     "term": "second",
+     "quote": "a dark chapter in a long and growing record of abuse that threatens press freedom in this country",
+     "quoteBy": "FCC Commissioner Anna Gomez, dissenting",
+     "inCount": true,
+     "sources": [
+      {
+       "text": "FCC news release: FCC Approves Skydance's Acquisition of Paramount CBS",
+       "url": "https://docs.fcc.gov/public/attachments/DOC-413229A1.pdf"
+      },
+      {
+       "text": "CNN: FCC approves Skydance merger with Paramount, ending a yearlong saga of uncertainty",
+       "url": "https://www.cnn.com/2025/07/24/media/fcc-skydance-paramount-merger-approved"
+      },
+      {
+       "text": "Fox News: Paramount-Skydance merger approved after Trump settlement, Colbert cancellation",
+       "url": "https://www.foxnews.com/media/fcc-approves-paramount-skydance-merger-following-trump-settlement-colbert-cancellation"
+      }
+     ]
+    },
+    {
+     "id": "trump-sues-bbc-10-billion",
+     "date": "2025-12-16",
+     "line": "In December 2025, Trump sued the BBC for $10 billion over a Panorama edit of his January 6 speech, which the BBC had apologized for; on October 22, 2026, a magistrate judge ordered him deposed by December 11.",
+     "why": "His complaint claimed damage to his brand, and a judge held that this made his businesses' finances fair game for the BBC's discovery, the tracker entry reports.",
+     "whyBasis": "stated",
+     "term": "second",
+     "severity": "serious",
+     "quote": "Engaging in discovery is burdensome, but is a burden we undertake, especially if we file a lawsuit",
+     "quoteBy": "Magistrate Judge Enjolique Lett, to Trump's lawyers at an October 22, 2026 hearing, as CNN reported",
+     "inCount": true,
+     "sources": [
+      {
+       "text": "CNBC: Trump sues BBC for $10 billion, claims defamation from Panorama documentary",
+       "url": "https://www.cnbc.com/2025/12/16/trump-bbc-panorama-election-defamation-lawsuit.html"
+      },
+      {
+       "text": "Trump v. BBC (S.D. Fla.): BBC motion to compel deposition (ECF 181)",
+       "url": "https://storage.courtlistener.com/recap/gov.uscourts.flsd.703382/gov.uscourts.flsd.703382.181.0.pdf"
+      },
+      {
+       "text": "CNN: Judge insists Trump must be deposed in his $10B lawsuit against the BBC, warns it could be tossed in fight over records",
+       "url": "https://www.cnn.com/2026/10/22/politics/trump-deposition-10-billion-bbc-lawsuit"
+      }
+     ]
+    },
+    {
+     "id": "white-house-counsel-politico-48-hours-retract-wiles-stories-apologize",
+     "date": "2026-10-19",
+     "line": "On October 19, 2026, White House Counsel William Scharf gave Politico 48 hours to correct or retract three stories about chief of staff Susie Wiles and apologize, or face a review of its White House relationship and possible legal remedies.",
+     "why": "A retraction demand with a deadline came from the president's counsel; Politico corrected one story and refused to apologize.",
+     "whyBasis": "stated",
+     "term": "second",
+     "severity": "moderate",
+     "quote": "immediately correct or retract these publications, issue a prominent and public apology to the President of the United States and to Ms. Wiles",
+     "quoteBy": "William Scharf, White House Counsel, in his October 19, 2026 letter to Politico",
+     "inCount": true,
+     "sources": [
+      {
+       "text": "Office of White House Counsel: letter from William O. Scharf to Politico, October 19, 2026",
+       "url": "https://s3.documentcloud.org/documents/28827792/261019-scharf-ltr-to-greenberger.pdf"
+      },
+      {
+       "text": "Axios: White House to Politico: Retract stories or face \"consequences\"",
+       "url": "https://www.axios.com/2026/10/21/white-house-politico-retract-stories-or-face-consequences"
+      },
+      {
+       "text": "Fox News: White House threatens Politico with 'consequences' if it doesn't retract Susie Wiles stories",
+       "url": "https://www.foxnews.com/media/white-house-threatens-politico-consequences-doesnt-retract-susie-wiles-reporting"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "records",
+   "title": "Reporters' records and leak hunts",
+   "thesis": "In the first term, by Comey's account, Trump raised jailing reporters with the FBI director, Sessions announced a review of media subpoena rules, and the department took reporters' phone and email records, which surfaced months later. In June 2021, after the first term, the department said it would stop seizing reporters' records in leak cases. In April 2025 Bondi rescinded what NPR called Biden-era protections, after which the FBI searched a reporter's home, four Times reporters were subpoenaed and DHS obtained a journalist's phone records with a summons that needs no judge.",
+   "thesisBasis": [
+    "ledger:2017-02-14 Trump tells FBI Director",
+    "ledger:2017-08-04 Attorney General Jeff Sessions",
+    "ledger:2018-02-13 The Justice Department notifies",
+    "ledger:2021-01-05 In its final weeks",
+    "ledger:2025-04-25 Attorney General Bondi rescinds",
+    "ledger:2026-01-14 FBI agents search a",
+    "patel-white-house-nyt-air-force-one-leak-subpoenas",
+    "dhs-customs-summons-1509-journalist-georgia-fort-phone-records"
+   ],
+   "thesisInferred": false,
+   "beats": [
+    {
+     "id": "ledger:2017-02-14 Trump tells FBI Director",
+     "date": "2017-02-14",
+     "line": "According to James Comey's memo of a February 14, 2017 meeting, Trump told the FBI director that finding leakers may involve putting reporters in jail and that the FBI should go after the reporters.",
+     "why": "The account rests on Comey's memo of the meeting, first reported in May 2017 and made public in April 2018.",
+     "whyBasis": "stated",
+     "term": "first",
+     "quote": "may involve putting reporters in jail",
+     "quoteBy": "Trump, as recorded in James Comey's memo of the meeting",
+     "inCount": true,
+     "sources": [
+      {
+       "text": "CNN: Trump to Comey: Throw journalists in jail",
+       "url": "https://www.cnn.com/2017/05/22/politics/trump-comey-jail-journalists"
+      },
+      {
+       "text": "U.S. Press Freedom Tracker: Trump reportedly urges FBI director James Comey to jail journalists",
+       "url": "https://pressfreedomtracker.us/all-incidents/trump-allegedly-urges-comey-jail-journalists/"
+      },
+      {
+       "text": "Fox News: Comey memos detail Flynn conversations, claims Russian tape reports could be 'made up'",
+       "url": "https://www.foxnews.com/politics/comey-memos-detail-flynn-conversations-claims-russian-tape-reports-could-be-made-up.amp"
+      }
+     ]
+    },
+    {
+     "id": "ledger:2017-08-04 Attorney General Jeff Sessions",
+     "date": "2017-08-04",
+     "line": "In August 2017, Attorney General Jeff Sessions said leak investigations had more than tripled and that the Justice Department was reviewing its policies on subpoenas to the media.",
+     "why": "Signaled that the department's rules on subpoenaing reporters were open to change; the ledger reports the announced review, not its outcome.",
+     "whyBasis": "inferred",
+     "term": "first",
+     "quote": "is reviewing policies affecting media subpoenas",
+     "quoteBy": "Attorney General Jeff Sessions",
+     "inCount": true,
+     "sources": [
+      {
+       "text": "Committee to Protect Journalists: Trump administration says it is pursuing 3 times as many leak investigations as predecessor",
+       "url": "https://cpj.org/2017/08/trump-administration-says-it-is-pursuing-3-times-a/"
+      },
+      {
+       "text": "Fox 4 Dallas-Fort Worth (AP): Sessions vows crackdown on leaks of classified information",
+       "url": "https://www.fox4news.com/news/sessions-vows-crackdown-on-leaks-of-classified-information"
+      },
+      {
+       "text": "Al Jazeera: Jeff Sessions promises crackdown on leaks in the US",
+       "url": "https://www.aljazeera.com/news/2017/8/4/jeff-sessions-promises-crackdown-on-leaks-in-the-us"
+      }
+     ]
+    },
+    {
+     "id": "ledger:2018-02-13 The Justice Department notifies",
+     "date": "2018-02-13",
+     "dateNote": "Date the department notified Watkins; the seizure became public in June 2018.",
+     "line": "The Justice Department notified New York Times reporter Ali Watkins it had seized years of her phone and email records in a leak case; the seizure became public in June 2018, when a former Senate aide was indicted.",
+     "why": "Years of a reporter's records could be taken in a leak case and stay out of public view for months; Watkins was not charged.",
+     "whyBasis": "inferred",
+     "term": "first",
+     "inCount": true,
+     "sources": [
+      {
+       "text": "NPR: Former Senate Aide Charged With Lying To FBI About Contacts With Reporters",
+       "url": "https://www.npr.org/2018/06/07/618137477/ex-security-director-of-senate-intel-committee-charged-with-lying-to-fbi"
+      },
+      {
+       "text": "Chicago Tribune: Leak investigation that led to Senate aide’s indictment puts spotlight on New York Times reporter",
+       "url": "https://www.chicagotribune.com/2018/06/08/leak-investigation-that-led-to-senate-aides-indictment-puts-spotlight-on-new-york-times-reporter/"
+      },
+      {
+       "text": "Committee to Protect Journalists: The Trump administration and the media",
+       "url": "https://cpj.org/reports/2020/04/trump-media-attacks-credibility-leaks/"
+      }
+     ]
+    },
+    {
+     "id": "ledger:2021-01-05 In its final weeks",
+     "date": "2021-01-05",
+     "dateNote": "The ledger dates the sealed order January 5, 2021; the earlier phone-record seizures were in 2020 and were disclosed in May and June 2021.",
+     "line": "In its final weeks, Trump's Justice Department obtained a sealed order for four Times reporters' email logs, after secretly taking 2017 phone records of Times, Washington Post and CNN reporters in 2020; those seizures were disclosed in 2021.",
+     "why": "Records taken secretly surfaced months later; in June 2021, after the first term, the department said it would stop seizing reporters' records in leak cases.",
+     "whyBasis": "stated",
+     "term": "first",
+     "inCount": true,
+     "sources": [
+      {
+       "text": "Gulf News (New York Times): US waged secret legal battle to obtain emails of 4 New York Times reporters",
+       "url": "https://gulfnews.com/world/americas/us-waged-secret-legal-battle-to-obtain-emails-of-4-new-york-times-reporters-1.79694771"
+      },
+      {
+       "text": "Atlanta Journal-Constitution (AP): Trump Justice Department sought CNN reporter phone records",
+       "url": "https://www.ajc.com/news/nation-world/trump-justice-department-seized-cnn-reporters-phone-records/7LYQDM3VIZEGFNQCF4EL7WFYPU/"
+      },
+      {
+       "text": "CBS News: Justice Department says it will no longer seize reporters' records in leak investigations",
+       "url": "https://www.cbsnews.com/news/justice-department-leak-investigations-reporters/"
+      }
+     ]
+    },
+    {
+     "id": "ledger:2025-04-25 Attorney General Bondi rescinds",
+     "date": "2025-04-25",
+     "line": "On April 25, 2025, Attorney General Bondi rescinded the Justice Department's protections against subpoenaing reporters and seizing their records, restoring subpoenas, court orders and search warrants for journalists' information in leak cases; a May 2 final rule confirmed it.",
+     "why": "Restored subpoenas, court orders and search warrants for journalists' information in leak cases; the final rule says it \"rescinds the amendments of 2022,\" which NPR called Biden-era protections.",
+     "whyBasis": "stated",
+     "term": "second",
+     "quote": "the lack of independence of certain members of the legacy news media",
+     "quoteBy": "Attorney General Pam Bondi, in her memo",
+     "inCount": true,
+     "sources": [
+      {
+       "text": "Federal Register: Policy Regarding Obtaining Information From, or Records of, Members of the News Media; and Regarding Questioning, Arresting, or Charging Members of the News Media (90 FR 18785, May 2, 2025)",
+       "url": "https://www.govinfo.gov/content/pkg/FR-2025-05-02/pdf/2025-07566.pdf"
+      },
+      {
+       "text": "NPR: Justice Department revokes Biden-era protections for reporters in leak investigations",
+       "url": "https://www.npr.org/2025/04/25/nx-s1-5377624/pam-bondi-reporters-subpoena-leaks"
+      },
+      {
+       "text": "Reporters Committee for Freedom of the Press: US Justice Department rescinds Biden-era protections for press",
+       "url": "https://www.rcfp.org/doj-rescinds-news-media-guidelines-analysis/"
+      }
+     ]
+    },
+    {
+     "id": "ledger:2026-01-14 FBI agents search a",
+     "date": "2026-01-14",
+     "line": "In January 2026, FBI agents searched Washington Post reporter Hannah Natanson's home in an inquiry into a Pentagon contractor and took her phone and laptops; the warrant affidavit did not mention the Privacy Protection Act of 1980.",
+     "why": "A reporter's home and devices were searched in a contractor inquiry; a magistrate judge barred searching the devices February 24, and a district judge agreed.",
+     "whyBasis": "inferred",
+     "term": "second",
+     "inCount": true,
+     "sources": [
+      {
+       "text": "CPJ: In highly unusual move, FBI searches Washington Post reporter Hannah Natanson's home, seizes devices",
+       "url": "https://cpj.org/2026/01/in-highly-unusual-move-fbi-searches-washington-post-reporter-hannah-natansons-home-seizes-devices/"
+      },
+      {
+       "text": "RCFP: The FBI search of a Washington Post reporter's home: What we know and why it matters",
+       "url": "https://www.rcfp.org/fbi-raid-washington-post-explainer/"
+      },
+      {
+       "text": "CBS News: Judge blocks DOJ from searching Washington Post reporter's phone and laptop",
+       "url": "https://www.cbsnews.com/news/judge-blocks-doj-from-searching-washington-post-reporter-hannah-natanson-phone-and-laptop/"
+      }
+     ]
+    },
+    {
+     "id": "patel-white-house-nyt-air-force-one-leak-subpoenas",
+     "date": "2026-07-10",
+     "line": "The Times reported that the White House had Patel run a leak inquiry into its Air Force One reporting; four Times reporters got grand jury subpoenas July 10, 2026, which the department agreed July 23 to withdraw.",
+     "why": "Reporters' testimony and phone records were pursued in a leak case; the withdrawal followed a judge's questions about subpoenaing reporters first.",
+     "whyBasis": "inferred",
+     "term": "second",
+     "severity": "serious",
+     "quote": "reporters are not the targets, those leaking classified information are",
+     "quoteBy": "The Justice Department",
+     "inCount": true,
+     "sources": [
+      {
+       "text": "AP: New York Times reporters are subpoenaed after Air Force One stories, raising press freedom concerns (July 11, 2026)",
+       "url": "https://apnews.com/article/trump-nyt-air-force-one-qatari-jet-e2c798a95a1e41077d2cae969774df91"
+      },
+      {
+       "text": "New York Times: U.S. Sought Phone Records of Times Journalists and Their Relatives (July 20, 2026)",
+       "url": "https://www.nytimes.com/2026/07/20/business/media/new-york-times-subpoenas-phone-records.html"
+      },
+      {
+       "text": "NBC News: Justice Department agrees to withdraw subpoenas of New York Times journalists over Air Force One reporting (July 23, 2026)",
+       "url": "https://www.nbcnews.com/politics/justice-department/justice-department-withdraw-subpoenas-new-york-times-journalists-rcna588955"
+      }
+     ]
+    },
+    {
+     "id": "dhs-customs-summons-1509-journalist-georgia-fort-phone-records",
+     "date": "2026-08-29",
+     "dateNote": "Date of the Guardian report; the warrant requests were withdrawn by late March and the summonses followed less than a month later.",
+     "line": "After a magistrate judge twice refused warrants for journalists Georgia Fort's and Don Lemon's YouTube information, DHS used a customs-law summons that needs no judge; Google refused, and T-Mobile handed over six months of Fort's phone records.",
+     "why": "A judge's refusal of a warrant did not end the pursuit of a journalist's records, because the summons needs only a DHS official's sign-off.",
+     "whyBasis": "stated",
+     "term": "second",
+     "severity": "serious",
+     "quote": "There is no judge in the loop.",
+     "quoteBy": "Caitlin Vogus of the Freedom of the Press Foundation",
+     "inCount": true,
+     "sources": [
+      {
+       "text": "The Guardian: Trump's DHS is using an obscure law to secretly snoop on journalists, non-profits and unions: 'It's outrageous' (August 29, 2026)",
+       "url": "https://www.theguardian.com/us-news/2026/aug/29/trump-dhs-1509-summons-records-journalists-nonprofits"
+      },
+      {
+       "text": "Minnesota Spokesman-Recorder via Texas Metro News: DHS used obscure tariff law to secretly seize journalist Georgia Fort's phone records (September 2026)",
+       "url": "https://texasmetronews.com/132669/dhs-used-obscure-tariff-law-to-secretly-seize-journalist-georgia-forts-phone-records/"
+      },
+      {
+       "text": "Freedom of the Press Foundation: These secret subpoenas are targeting journalists (September 28, 2026)",
+       "url": "https://freedom.press/issues/these-secret-subpoenas-are-targeting-journalists/"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "info",
+   "title": "Briefings and public data",
+   "thesis": "Regular White House briefings stopped in March 2019, and in 2020 HHS moved COVID hospital data off the CDC's dashboards. In the second term HHS paused health agencies' public communications pending political sign-off, the White House declined to release visitor logs, and layoffs eliminated the CDC's records staff. Trump had the labor statistics commissioner removed after a weak jobs report, a satellite firm withheld Iran war imagery at the government's request, and federal datasets were deleted or altered across agencies.",
+   "thesisBasis": [
+    "ledger:2019-03-11 The White House holds",
+    "ledger:2020-07-15 HHS orders hospitals to",
+    "ledger:2025-01-21 HHS orders a pause",
+    "ledger:2025-02-11 The White House says",
+    "ledger:2025-04-01 HHS layoffs eliminate the",
+    "bls-commissioner-fired",
+    "satellite-imagery-blackout-iran-war",
+    "federal-data-deletion-campaign-rmp-prams-five-areas"
+   ],
+   "thesisInferred": false,
+   "beats": [
+    {
+     "id": "ledger:2019-03-11 The White House holds",
+     "date": "2019-03-11",
+     "line": "The White House held its last regular press briefing on March 11, 2019, after Trump posted that he told his press secretary \"not to bother\"; Stephanie Grisham, press secretary from July 2019 to April 2020, held none.",
+     "why": "Regular briefings stopped in March 2019, and the next press secretary held none during her time in the job.",
+     "whyBasis": "stated",
+     "term": "first",
+     "inCount": true,
+     "sources": [
+      {
+       "text": "NBC News: Stephanie Grisham named new White House press secretary",
+       "url": "https://www.nbcnews.com/politics/donald-trump/stephanie-grisham-named-new-white-house-press-secretary-n1021536"
+      },
+      {
+       "text": "Scripps (KXLF): Stephanie Grisham out as White House press secretary, went her entire tenure without briefing press",
+       "url": "https://www.kxlf.com/news/national-politics/stephanie-grisham-out-as-white-house-press-secretary-went-her-entire-tenure-without-briefing-press"
+      },
+      {
+       "text": "The American Presidency Project (UCSB), Trump tweets: Tweets of January 22, 2019",
+       "url": "https://www.presidency.ucsb.edu/documents/tweets-january-22-2019"
+      }
+     ]
+    },
+    {
+     "id": "ledger:2020-07-15 HHS orders hospitals to",
+     "date": "2020-07-15",
+     "line": "In July 2020, HHS ordered hospitals to send COVID-19 data to a new HHS system instead of the CDC, and the CDC's public dashboards went dark; on July 16 HHS directed the CDC to restore the data to its website.",
+     "why": "Public hospital data left the CDC's dashboards when collection moved; HHS directed its restoration the next day.",
+     "whyBasis": "stated",
+     "term": "first",
+     "inCount": true,
+     "sources": [
+      {
+       "text": "NPR (WHYY): White House: Hospitals to report COVID data to new system, not CDC",
+       "url": "https://whyy.org/npr-story/white-house-strips-cdc-of-data-collection-role-for-covid-19-hospitalizations/"
+      },
+      {
+       "text": "CNN: HHS directs CDC to put hospital data back on website",
+       "url": "https://edition.cnn.com/2020/07/16/health/hhs-cdc-coronavirus-data-website"
+      }
+     ]
+    },
+    {
+     "id": "ledger:2025-01-21 HHS orders a pause",
+     "date": "2025-01-21",
+     "line": "On January 21, 2025, an HHS memo from Acting Secretary Dorothy Fink barred guidance, press releases, website posts and Federal Register submissions from health agencies through February 1; the CDC's Morbidity and Mortality Weekly Report went unpublished.",
+     "why": "Put political sign-off ahead of public health reports for about ten days; a former HHS official told AP such pauses are not unusual in transitions.",
+     "whyBasis": "stated",
+     "term": "second",
+     "quote": "until it has been reviewed and approved by a presidential appointee",
+     "quoteBy": "HHS memo from Acting Secretary Dorothy Fink",
+     "inCount": true,
+     "sources": [
+      {
+       "text": "AP: Trump administration freezes many health agency reports and online posts",
+       "url": "https://apnews.com/article/trump-health-communications-cdc-hhs-fda-1eeca64c1ccc324b31b779a86d3999a4"
+      },
+      {
+       "text": "CIDRAP: Scope of the communications hold on federal health agencies expands",
+       "url": "https://www.cidrap.umn.edu/misc-emerging-topics/scope-communications-hold-federal-health-agencies-expands"
+      },
+      {
+       "text": "Healio: Famed CDC journal goes unpublished amid HHS communications freeze",
+       "url": "https://www.healio.com/news/infectious-disease/20250124/famed-cdc-journal-goes-unpublished-amid-hhs-communications-freeze"
+      }
+     ]
+    },
+    {
+     "id": "ledger:2025-02-11 The White House says",
+     "date": "2025-02-11",
+     "line": "In February 2025, the White House said it would not release its visitor logs, as in Trump's first term; the Biden White House had released them monthly.",
+     "why": "Keeps the record of White House visitors out of public view, ending monthly releases, while the White House calls its access unprecedented.",
+     "whyBasis": "inferred",
+     "term": "second",
+     "quote": "President Trump is giving the people and the press a level of access and transparency never seen before.",
+     "quoteBy": "A White House spokeswoman",
+     "inCount": true,
+     "sources": [
+      {
+       "text": "Washington Examiner: Trump White House will not release visitor logs",
+       "url": "https://www.washingtonexaminer.com/news/3316611/trump-white-house-will-not-release-visitor-logs/"
+      },
+      {
+       "text": "Fox News: White House will not release visitor logs during Trump's second term",
+       "url": "https://www.foxnews.com/politics/white-house-not-release-visitor-logs-during-trumps-second-term"
+      }
+     ]
+    },
+    {
+     "id": "ledger:2025-04-01 HHS layoffs eliminate the",
+     "date": "2025-04-01",
+     "line": "HHS layoffs in April 2025 eliminated the public-records staff at the CDC and other health agencies; NBC reported the CDC's Freedom of Information Act office \"has also been eliminated, according to two CDC officials.\"",
+     "why": "Requests for CDC records had no staff to process them, according to a Democrat on the House Oversight Committee.",
+     "whyBasis": "stated",
+     "term": "second",
+     "quote": "there are currently zero personnel available to process FOIA requests received by CDC",
+     "quoteBy": "A Democrat on the House Oversight Committee, in writing, as NPR reported",
+     "inCount": true,
+     "sources": [
+      {
+       "text": "NBC News: Widespread job cuts begin at health agencies",
+       "url": "https://www.nbcnews.com/health/health-news/widespread-job-cuts-begin-health-agencies-rcna198859"
+      },
+      {
+       "text": "NPR: House oversight Democrat demands answers on gutting of CDC public records office",
+       "url": "https://www.npr.org/sections/shots-health-news/2025/04/24/nx-s1-5375065/cdc-hhs-public-records-foia"
+      },
+      {
+       "text": "STAT: After RFK Jr.'s 'radical transparency' pledge, HHS shutters much of its communications, FOIA operations",
+       "url": "https://www.statnews.com/2025/04/01/hhs-rfk-job-cuts-communications-foia-operations/"
+      }
+     ]
+    },
+    {
+     "id": "bls-commissioner-fired",
+     "date": "2025-08-01",
+     "line": "After a weak July jobs report, Trump had Bureau of Labor Statistics commissioner Erika McEntarfer removed, a dismissal her predecessor Erica Groshen called \"unprecedented\"; Commerce Secretary Lutnick later called statisticians' independence \"nonsense.\"",
+     "why": "The official who runs the nation's jobs statistics was removed after a release; professional associations said it \"undermines the independence and reliability of federal statistics.\"",
+     "whyBasis": "stated",
+     "term": "second",
+     "severity": "severe",
+     "inCount": true,
+     "sources": [
+      {
+       "text": "Bureau of Labor Statistics: Employment Situation News Release, July 2025 results (Internet Archive copy of the Aug. 1 release)",
+       "url": "https://web.archive.org/web/20251220082717/https://www.bls.gov/news.release/archives/empsit_08012025.htm"
+      },
+      {
+       "text": "AP via PBS News: Trump fires Bureau of Labor Statistics commissioner after dismal employment report",
+       "url": "https://www.pbs.org/newshour/politics/trump-seeks-to-fire-bureau-of-labor-statistics-director-after-release-of-weak-jobs-report"
+      },
+      {
+       "text": "Government Executive: After firing of BLS chief, Lutnick tells federal statisticians that independence is 'nonsense'",
+       "url": "https://www.govexec.com/management/2025/08/after-firing-bls-chief-lutnick-tells-federal-statisticians-independence-nonsense/407404/"
+      },
+      {
+       "text": "Newsweek: Trump Gets Abysmal Jobs Figures After Firing BLS Chief (September 5, 2025)",
+       "url": "https://www.newsweek.com/trump-gets-abysmal-jobs-figures-after-firing-bls-chief-2125087"
+      }
+     ]
+    },
+    {
+     "id": "satellite-imagery-blackout-iran-war",
+     "date": "2026-04-05",
+     "dateNote": "Date the company's email to customers was reported; the withhold covers imagery back to March 9, 2026.",
+     "line": "Planet Labs, a major U.S. satellite imagery provider, told customers the government had asked for an indefinite withhold of imagery of Iran and the conflict region, back to March 9; it said it would comply, releasing images case by case.",
+     "why": "Outlets lost a major source of independent war images; a former Human Rights Watch director said monitoring gets harder.",
+     "whyBasis": "stated",
+     "term": "second",
+     "severity": "serious",
+     "quote": "indefinite withhold of imagery",
+     "quoteBy": "Planet Labs, in an email to customers",
+     "inCount": true,
+     "sources": [
+      {
+       "text": "Al Jazeera (AFP and Reuters): US satellite firm Planet Labs announces blackout on war on Iran images",
+       "url": "https://www.aljazeera.com/news/2026/4/5/us-satellite-firm-planet-labs-announces-blackout-on-war-on-iran-images"
+      },
+      {
+       "text": "The Times of Israel (Reuters): Satellite firm Planet Labs to indefinitely withhold Iran war images at request of US government",
+       "url": "https://www.timesofisrael.com/liveblog_entry/satellite-firm-planet-labs-to-indefinitely-withhold-iran-war-images-at-request-of-us-government/"
+      },
+      {
+       "text": "NPR: How governments have tried to hide information about the Iran war online",
+       "url": "https://www.npr.org/2026/04/10/nx-s1-5775780/us-iran-war-israel-satellite-imagery-planet-vantor-censorship"
+      }
+     ]
+    },
+    {
+     "id": "federal-data-deletion-campaign-rmp-prams-five-areas",
+     "date": "2026-05-07",
+     "dateNote": "Date The Guardian published its investigation; the entry says the EPA tool came down in April 2025 and gives the dataindex.us count as of August 2026.",
+     "line": "The Guardian documented the administration altering and removing decades of federal datasets across agencies, including an EPA tool showing nearby chemical plants; by August 2026, dataindex.us counted at least 28 datasets deleted and 338 modified across more than 60 agencies.",
+     "why": "Public tools like the EPA chemical-plant lookup came down; where surveys dropped gender-identity questions, the entry says that population is no longer counted.",
+     "whyBasis": "stated",
+     "term": "second",
+     "severity": "severe",
+     "quote": "Another layer of protection for environmental justice communities was taken down when they took away the RMP tool",
+     "quoteBy": "Nalleli Hidalgo of Tejas, a Houston environmental justice group",
+     "inCount": true,
+     "sources": [
+      {
+       "text": "DataIndex.us: tracker monitoring federal dataset availability, terminations and changes to collections",
+       "url": "https://dataindex.us/"
+      },
+      {
+       "text": "Global Biodefense: Federal Health Data Takes Biggest Hit as Trump Administration Purges Nearly 400 Government Datasets (August 18, 2026)",
+       "url": "https://globalbiodefense.com/2026/08/18/federal-health-data-takes-biggest-hit-as-trump-administration-purges-nearly-400-government-datasets/"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "limits",
+   "title": "What the law stopped, and what it did not",
+   "thesis": "A court ordered Acosta's pass returned in 2018, courts blocked Karem's suspension in 2019 and 2020, a court restored the hard passes of CNN, MS NOW and Politico in 2026, and an Iowa judge dismissed his poll suit with prejudice. But appeals courts stayed most of the AP injunction and parts of the Voice of America injunction, paused an order returning the agency's staff to work, and let the Pentagon keep enforcing its escort rule. The 2026 pass order also did not reach the press pool.",
+   "thesisBasis": [
+    "ledger:2018-11-07 The White House revokes",
+    "ledger:2019-08-16 The White House suspends",
+    "ledger:2025-02-11 The White House bars",
+    "ledger:2025-03-14 Trump orders the U.S.",
+    "ledger:2025-08-29 Kari Lake announces the",
+    "ledger:2026-03-23 The Pentagon Imposes New",
+    "trump-bans-cnn-ms-now-politico-white-house-hard-passes-confiscated",
+    "iowa-judge-dismisses-trump-suit-des-moines-register-selzer"
+   ],
+   "thesisInferred": false,
+   "beats": [
+    {
+     "id": "ledger:2018-11-07 The White House revokes",
+     "date": "2018-11-07",
+     "line": "The White House revoked CNN correspondent Jim Acosta's press pass after a heated exchange with Trump; on November 16, 2018, Judge Timothy Kelly ordered it returned on due-process grounds, and the White House restored it, with rules for questions.",
+     "why": "A court tied revoking a press pass to due process; the new rules made violations punishable by \"suspension or revocation\" of a pass.",
+     "whyBasis": "stated",
+     "term": "first",
+     "inCount": true,
+     "sources": [
+      {
+       "text": "ABC News: White House suspends credentials for CNN correspondent Jim Acosta after heated exchange with Trump",
+       "url": "https://abcnews.com/Politics/white-house-suspends-credentials-cnn-correspondent-jim-acosta/story?id=59045396"
+      },
+      {
+       "text": "Politico: Judge orders White House to return press credentials to CNN's Acosta",
+       "url": "https://www.politico.com/story/2018/11/16/judge-orders-white-house-to-return-press-credentials-to-cnns-acosta-995512"
+      },
+      {
+       "text": "ABC News: White House drops effort to suspend press pass for CNN's Jim Acosta; outlines rules to reporters",
+       "url": "https://abcnews.com/Politics/white-house-jim-acostas-press-pass-cnn-seeks/story?id=59291734"
+      }
+     ]
+    },
+    {
+     "id": "ledger:2019-08-16 The White House suspends",
+     "date": "2019-08-16",
+     "line": "The White House suspended Playboy reporter Brian Karem's press pass for 30 days after a confrontation with Sebastian Gorka; Judge Rudolph Contreras enjoined the suspension September 3, 2019, and the D.C. Circuit affirmed June 5, 2020 on due-process grounds.",
+     "why": "The appeals court's due-process holding limited how the White House may discipline a reporter's pass.",
+     "whyBasis": "stated",
+     "term": "first",
+     "inCount": true,
+     "sources": [
+      {
+       "text": "Washington Examiner: White House suspends Playboy reporter Brian Karem's press pass after fight with Sebastian Gorka",
+       "url": "https://www.washingtonexaminer.com/news/1350191/white-house-suspends-playboy-reporter-brian-karems-press-pass-after-fight-with-sebastian-gorka/"
+      },
+      {
+       "text": "Court of record: Karem v. Trump, Memorandum Opinion, No. 1:19-cv-02514 (D.D.C. Sept. 3, 2019)",
+       "url": "https://cases.justia.com/federal/district-courts/district-of-columbia/dcdce/1:2019cv02514/210388/33/0.pdf?ts=1567588638"
+      },
+      {
+       "text": "Court of record: Karem v. Trump, No. 19-5255, opinion of the U.S. Court of Appeals for the D.C. Circuit (decided June 5, 2020)",
+       "url": "https://media.cadc.uscourts.gov/opinions/docs/2020/06/19-5255-1845846.pdf"
+      }
+     ]
+    },
+    {
+     "id": "ledger:2025-02-11 The White House bars",
+     "date": "2025-02-11",
+     "line": "The White House barred the AP from the Oval Office and Air Force One until it used \"Gulf of America\"; a judge enjoined the ban April 8, 2025, but a divided D.C. Circuit panel stayed most of it June 6.",
+     "why": "Access was withheld over an outlet's wording and the injunction against it largely stayed; the appeal, argued in November 2025, is undecided.",
+     "whyBasis": "stated",
+     "term": "second",
+     "inCount": true,
+     "sources": [
+      {
+       "text": "D.D.C.: Associated Press v. Budowich, Memorandum Order (Apr. 8, 2025)",
+       "url": "https://www.govinfo.gov/content/pkg/USCOURTS-dcd-1_25-cv-00532/pdf/USCOURTS-dcd-1_25-cv-00532-0.pdf"
+      },
+      {
+       "text": "D.C. Cir.: Associated Press v. Budowich, No. 25-5109, Order (June 6, 2025)",
+       "url": "https://storage.courtlistener.com/recap/gov.uscourts.cadc.41932/gov.uscourts.cadc.41932.01208746547.0_1.pdf"
+      },
+      {
+       "text": "NPR: Judge orders White House to allow AP access to news events",
+       "url": "https://www.npr.org/2025/04/08/nx-s1-5342369/ap-white-house-court-ruling-oval-office-gulf-of-mexico-america"
+      }
+     ]
+    },
+    {
+     "id": "ledger:2025-03-14 Trump orders the U.S.",
+     "date": "2025-03-14",
+     "line": "In March 2025, Executive Order 14238 told Voice of America's parent agency to cut to the legal minimum; Judge Royce Lamberth enjoined the dismantling April 22, and the D.C. Circuit stayed parts of his order May 3.",
+     "why": "A court enjoined the dismantling, but the appeals court stayed parts of that order eleven days later.",
+     "whyBasis": "inferred",
+     "term": "second",
+     "inCount": true,
+     "sources": [
+      {
+       "text": "The White House: Continuing the Reduction of the Federal Bureaucracy",
+       "url": "https://www.whitehouse.gov/presidential-actions/2025/03/continuing-the-reduction-of-the-federal-bureaucracy/"
+      },
+      {
+       "text": "D.D.C.: Widakuswara v. Lake, Memorandum Opinion (Apr. 22, 2025)",
+       "url": "https://www.govinfo.gov/content/pkg/USCOURTS-dcd-1_25-cv-01015/pdf/USCOURTS-dcd-1_25-cv-01015-3.pdf"
+      },
+      {
+       "text": "D.C. Cir.: Widakuswara v. Lake, No. 25-5144, Order (May 3, 2025)",
+       "url": "https://storage.courtlistener.com/recap/gov.uscourts.cadc.41991/gov.uscourts.cadc.41991.01208736131.0_1.pdf"
+      }
+     ]
+    },
+    {
+     "id": "ledger:2025-08-29 Kari Lake announces the",
+     "date": "2025-08-29",
+     "line": "In August 2025, Kari Lake announced 532 job eliminations at Voice of America's parent agency at the President's direction; Judge Lamberth suspended the layoffs September 29, 2025, and ruled March 7, 2026 that Lake ran the agency unlawfully.",
+     "why": "The judge voided Lake's actions as acting chief and ordered staff on leave back to work, but the D.C. Circuit paused that order March 31.",
+     "whyBasis": "stated",
+     "term": "second",
+     "quote": "neither the statute nor the Constitution",
+     "quoteBy": "Judge Royce Lamberth",
+     "inCount": true,
+     "sources": [
+      {
+       "text": "CBS News: Trump administration to cut 500-plus jobs at Voice of America and its parent agency",
+       "url": "https://www.cbsnews.com/news/voice-of-america-job-cuts-trump-administration-kari-lake/"
+      },
+      {
+       "text": "NPR: U.S. Judge says Kari Lake broke law in overseeing Voice of America",
+       "url": "https://www.npr.org/2026/03/08/nx-s1-5741594/u-s-judge-kari-lake-broke-law-voice-of-america"
+      },
+      {
+       "text": "AP: Appeals court suspends order for Voice of America employees to return to work",
+       "url": "https://apnews.com/article/voice-of-america-lamberth-appeals-court-stay-5977c4179ae56a0a739a371b50e5088d"
+      }
+     ]
+    },
+    {
+     "id": "ledger:2026-03-23 The Pentagon Imposes New",
+     "date": "2026-07-16",
+     "dateNote": "Date of the second appellate stay; the revised rules were issued March 23, 2026 and found in violation of the court's order April 9.",
+     "line": "Judge Paul Friedman found April 9, 2026 that the Pentagon's revised rules violated his order and blocked its escort rule again June 30, but an appeals panel twice let enforcement continue, the second time 2-1 on July 16.",
+     "why": "District-court rulings against the Pentagon's press rules did not stop enforcement while appeals were pending.",
+     "whyBasis": "inferred",
+     "term": "second",
+     "severity": "serious",
+     "inCount": true,
+     "sources": [
+      {
+       "text": "CNN: Judge blocks Pentagon's latest bid to limit press access in scathing ruling",
+       "url": "https://www.cnn.com/2026/04/09/politics/pentagon-press-policy-judge"
+      },
+      {
+       "text": "Stars and Stripes: Appeals court lets Pentagon keep escort rule for journalists amid challenge of access policy",
+       "url": "https://www.stripes.com/theaters/us/2026-04-28/reporter-escorts-pentagon-appeal-21510954.html"
+      },
+      {
+       "text": "CBS News: Appeals court keeps in place Pentagon's escort policy for reporters",
+       "url": "https://www.cbsnews.com/news/appeals-court-new-york-times-julian-barnes-pentagon-escort-policy/"
+      }
+     ]
+    },
+    {
+     "id": "trump-bans-cnn-ms-now-politico-white-house-hard-passes-confiscated",
+     "date": "2026-09-18",
+     "line": "On September 18, 2026, Trump posted that he was banning CNN, MS NOW and Politico from the White House; the next morning their hard passes were deactivated and confiscated, and a court later ordered them restored and enjoined the revocations.",
+     "why": "The court found the ban likely unlawful viewpoint discrimination, but its order covers hard passes, not the press pool, and the Justice Department appealed.",
+     "whyBasis": "stated",
+     "term": "second",
+     "severity": "severe",
+     "quote": "effective immediately, I am banning Fake News CNN, MSNOW... and Politico... from the White House",
+     "quoteBy": "Trump, in a Truth Social post",
+     "inCount": true,
+     "sources": [
+      {
+       "text": "Associated Press: Trump says he is banning CNN, MS NOW and Politico from the White House (September 18, 2026)",
+       "url": "https://apnews.com/article/trump-cnn-msnow-politico-media-bans-bb675679fb10738a51bef90bde6c525a"
+      },
+      {
+       "text": "CNN: CNN, MS NOW and Politico denied access to White House after Trump 'ban' (September 19, 2026)",
+       "url": "https://www.cnn.com/2026/09/19/media/trump-msnow-cnn-politico-white-house-ban"
+      },
+      {
+       "text": "CNN v. Trump, No. 1:26-cv-03287 (D.D.C.): memorandum opinion (ECF 50)",
+       "url": "https://storage.courtlistener.com/recap/gov.uscourts.dcd.296754/gov.uscourts.dcd.296754.50.0_3.pdf"
+      }
+     ]
+    },
+    {
+     "id": "ledger:2024-12-16 Trump sues the Des Moines",
+     "date": "2026-09-23",
+     "line": "An Iowa judge dismissed with prejudice Trump's consumer-fraud suit against the Des Moines Register, Gannett and pollster J. Ann Selzer over the 2024 Iowa Poll, ruling it fails even if the poll was skewed; Trump's side said it will appeal.",
+     "why": "The court held that a poll is an estimate fraud law cannot reach, and that the plaintiff's identity does not change the First Amendment analysis.",
+     "whyBasis": "stated",
+     "term": "second",
+     "quote": "Under First Amendment principles, the identity of the party seeking the court to sanction speech is irrelevant.",
+     "quoteBy": "Judge Scott J. Beattie, Iowa District Court for Polk County",
+     "inCount": true,
+     "sources": [
+      {
+       "text": "Associated Press: Iowa judge dismisses Trump's lawsuit against Des Moines Register and pollster (September 23, 2026)",
+       "url": "https://apnews.com/article/trump-lawsuit-iowa-2024-poll-de7d37ffc006ae35a69753f8456ff078"
+      },
+      {
+       "text": "Courthouse News Service: Iowa judge dismisses Trump suit against Des Moines Register (September 23, 2026)",
+       "url": "https://www.courthousenews.com/trump-suit-against-des-moines-register-dismissed-by-iowa-judge/"
+      },
+      {
+       "text": "CNN Business: Judge dismisses Trump's lawsuit against Des Moines Register and pollster J. Ann Selzer (September 23, 2026)",
+       "url": "https://www.cnn.com/2026/09/23/media/trump-j-ann-selzer-des-moines-register-lawsuit-dismissed"
+      }
+     ],
+     "dateNote": "Date of the dismissal; the act in the count is the suit, filed December 16, 2024."
+    }
+   ]
+  }
+ ],
+ "gaps": [
+  "What no court reviewed: no verified beat says that no court reviewed the ABC or Paramount settlements. The limits section therefore does not claim it, and the two settlements appear only as facts in the suits section. A step on unreviewed settlements needs a sourced entry before it can be printed.",
+  "Justice Department rules: no beat names the regulation that Bondi rescinded. The records section uses NPR's phrase, 'Biden-era protections', and dates the department's pledge to stop seizing reporters' records to June 5, 2021, after the first term ended, without calling that pledge the end of the first-term practice. Naming the 2022 amendments needs a source in the beat.",
+  "Not in the verified set, so not printed: Trump's 2023 vows to scrutinize the media and to 'come down hard' on MSNBC, the Meta settlement, the CPB board firings, Carr's Comcast and Disney DEI probes (the Disney beat says only that the FCC's stated ground was a Disney diversity probe), license threats between the terms other than CBS in 2024, and the D.C. Circuit's finding that the AP was 'not likely to succeed' on its viewpoint claims. That last one has no beat text, so the limits section says only that the panel stayed most of the injunction.",
+  "Dropped from the access section: the 2024 Hillyard pool beat (ledger:2024-01-21). Its quote is Hillyard's account of what the campaign said, and the fragment leaves out the condition that the pool would be cut off only if he was NBC's pooler. The 2024 step now rests on the election-night credential denials, which named Politico, Axios and Puck.",
+  "Briefings: the only White House briefing step in the corpus is the March 2019 end of regular briefings. No verified beat records the White House briefing schedule in the second term. The NPR note that the Pentagon has held no news briefing since May is in the Hegseth 'treason' entry, which is left out.",
+  "Corpus conflicts that the outline follows the ledger on: the ledger and ECF 35 date the Pentagon credential ruling March 20, 2026, while tracker entry pentagon-media-rules-war-reporting-suppressed says March 21. The ledger dates Friedman's violation finding April 9, while the tracker says April 10. For the BLS firing, the ledger says August 1, 2025 and the tracker says August 15. [Update, October 27, 2026: the tracker entry now gives August 1, 2025, with a correction note.]",
+  "Out of scope or misfiled in the prior outline: the Pentagon's denial of Sen. Murphy's base visit is information withheld from Congress, not from the public, and is excluded. The Sanger and Hegseth 'treason' remarks are rhetoric, not removals of data or briefings, so they are left out rather than filed under data.",
+  "Left out for space or as acts the count itself records (the Shut Out thread among them). Access: the CNN TV-pool removal (Sept. 20, 2026), the state-dinner and Air Force One exclusions (Sept. 24 and 26), the antitrust probe of the pool networks (Oct. 9), Feinberg's removal from the pool (Oct. 21), the Pentagon's 'next generation' press corps, the CENTCOM blacklist, the March 23, 2026 Pentagon rules (covered by the limits step on the appellate stays). FCC: KCBS, Colbert, the View filing, Nexstar-Tegna, the ProPublica gala gifts, the Severs nomination, Welker, Kimmel's Talarico interview, the fake-polls warning, the ABC and NBC speech demand, the Paramount foreign-ownership waiver. Suits: the CBS suit (covered by the Paramount settlement line), the BBC $1 billion demand, the $15 billion New York Times suit and the order striking it, the WSJ dismissal with leave to amend, the 2024 Selzer filing (covered by the dismissal), the 2021 New York Times tax suit and fee award, the CNN 'investigation' post, the jail threat, the 'should be arrested' post, the Bolton suit. Public media: Pack's bias inquiries and Judge Howell's injunction (2020), CNN's Iran broadcasting report (single source). Records: the Hegseth leak task force, the FBI inquiry into a Times reporter, the Lemon and Fort arrests, the WSJ and Post subpoenas, the Cole subpoena, the Iran-leak prosecution demand, the leakers-jail post, Guevara's deportation, the review of foreign journalists' social media, the 240-day visa cap. Data: the CDC databases, the casualty counts, the IRS filing data, the Presidential Records Act opinion and injunction, the CDC COVID study, the 'gender ideology' takedown and its restoration, Hassett, the ICE mortality reviews, NOAA and Dorian, the EPA climate pages. Limits: the 2016 and 2018 libel promises, the Portland and Chicago restraining orders, the FTC injunction in the Media Matters case.",
+  "No section rests on fewer than two entries. Access rests on eight ledger items and no tracker entry. FCC rests on four tracker entries and four ledger items, public media on two and five, suits on three and five, records on two and six, data on three and five, and limits on two and six.",
+  "The WSJ pool step names the suit ('Trump sued the Wall Street Journal over its Epstein reporting') from the WSJ dismissal entry (trump-epstein-wsj-defamation-lawsuit-dismissed), which is not a step here. The pool beat's own text says only 'the suit'."
+ ],
+ "cautions": [
+  "Inferred whys: the 2017 Spicer briefing (access 'decided outlet by outlet'), the 2017 NBC license ('a first-term instance'), the Kimmel affiliates (sequence only, with Cruz's remark), Carr's equal-time statement (reading his words as a test), the ownership cap, the 2017 budget, Pack's firings (paired with the OSC finding), the underwriting probe, the rescission ('a route separate'), the 2020 campaign suits, ABC (first to end in a payment to his library), the Mar-a-Lago remark, the Skydance approval (timing, not cause), Sessions, Watkins, Natanson, the Times subpoenas, the visitor logs, EO 14238 and the Pentagon appellate stays.",
+  "Whys marked stated that carry an entry's or the ledger's own analysis rather than a finding: Iran war licenses (the entry's note on renewal history), the Disney review (the FCC's stated ground), the BBC suit (the entry's report of the judge's view of his finances), the DHS summons (the entry's account of who signs off), the data deletion (the entry's claim that the population stops being counted), the inspector general (the IG's finding), the satellite withhold (the claim that outlets lost a source rests on the entry), the 2024 credential denials (CNN's 'after critical coverage') and the BLS firing (the professional associations' words).",
+  "No thesis is marked inferred. Several state sequence only. The FCC thesis says Carr warned ABC's affiliates 'hours before' they pulled Kimmel. The suits thesis says FCC approval 'came three weeks later' than the Paramount settlement. The records thesis says the search and subpoenas came 'after' Bondi's rescission. None claims a cause. The public-media thesis says the rescission law canceled CPB funding and does not credit the cut to the blocked executive order.",
+  "Placeholder or differing dates: the 2016 Post credentials (term set to 'campaign'; the verifier flagged 'first' as wrong). Carr's equal-time statement (entry date; the statements were in January and February 2026). Paramount (settlement July 1, 2025; entry dated September 29). The rescission (signing July 24; the ledger dates the request June 3). The inspector general (press date; the report is dated September 2026). Watkins (notification date). The email logs (order date; the phone seizures were in 2020 and disclosed in 2021). The DHS summons (Guardian report date). BLS (ledger date August 1; the tracker gives August 15). The satellite withhold (report date; it covers imagery from March 9). The data deletion (Guardian date; the Guardian article is not among the beat's sources). The Pentagon stays (second-stay date; rules issued March 23, violation found April 9). EO 14290 (order date; the ruling came March 31, 2026). The Pentagon pledge (ruling March 20 per the ledger and ECF 35, March 21 per the tracker). [Update, October 27, 2026: the tracker entry now gives August 1, 2025, with a correction note.]",
+  "Cut quotations: 'phony and dishonest' (fragment); Palmeri (fragment); Leavitt on the pool (stops mid-sentence, before the spaces she named); the Pentagon Press Association (fragment); the Upper Press memo (starts mid-sentence); Trump's 2017 license post (fragment); Rosenworcel (fragment); Gomez on the cap (fragment); Carr on the Paramount talks (fragment, said April 28, 2025, before the settlement); Moss (the opening of a longer sentence that continues 'and seeks to squelch'); Lamberth (the ledger's own fragment); Scharf (a verbatim cut that omits the archive-removal demand); the Comey memo (fragment); Sessions (fragment); Bondi's memo (fragment); the Justice Department on the Times subpoenas (fragment); the HHS memo (fragment); the CDC FOIA quote (fragment); Planet Labs (fragment). The BLS step prints no quote, because the Trump post it quoted comes from the ledger, not from its tracker entry.",
+  "Alleged, disputed or preliminary: Comey's memo is his account of the meeting. That the White House had Patel run the Times leak inquiry is the Times's report, and the FBI disputed the account of the meeting. Palmeri's reason for her denial is her own account. The OSC's 'substantial likelihood of wrongdoing' was found against the agency, not specifically against Pack's firings. No company or official has said the Paramount approval depended on the settlement. The CNN pass ruling is a preliminary injunction under appeal. The AP appeal is undecided. ABC's suit against the license review had no ruling as of October 8, 2026. The Selzer dismissal faces an appeal Trump's side says it will file. The CDC FOIA quote's author, a House Oversight Democrat, is unnamed in the ledger, and nothing in the corpus says it was in a letter.",
+  "Reader-facing text: several whys keep 'the entry' or 'the ledger' (Skydance, Sessions, Iran war, BBC, data deletion). Page copy should replace these with attribution to the outlet or court before the story mode prints them, as the corruption edition does.",
+  "[Update, October 27, 2026: the BLS step's line had said she was the first BLS commissioner fired in the agency's 140-year history, as the tracker entry did; no record states that. The line now quotes former commissioner Erica Groshen's \"unprecedented\" (Newsweek, September 5, 2025), added to the tracker entry and to the step's sources that day.]"
+ ],
+ "critic": {
+  "missing": [
+   {
+    "what": "Theme (a), big settlements: Meta's $25 million settlement (about $22 million to the library fund), and the X and YouTube payments, are in the settlements entry, but the outline uses that entry only for Paramount. The ledger's Appendix A treats the platform suits as aimed at platforms rather than the press. If that is why Meta is left out, the outline should say so in its gaps.",
+    "found": true,
+    "id": "media-tech-settlements-86-million-trump-library-ballroom"
+   },
+   {
+    "what": "Theme (a), suits: the Wall Street Journal suit ($10 billion, July 18, 2025; dismissed without prejudice April 13, 2026; refiled) has no beat. It appears only as the cause named in the WSJ pool beat, and the suits thesis does not mention it. The ledger item the caution asks to confirm does exist.",
+    "found": true,
+    "id": "ledger:2025-07-18 Trump sues the Wall; trump-epstein-wsj-defamation-lawsuit-dismissed"
+   },
+   {
+    "what": "Theme (a), suits: the $10 billion BBC suit (December 16, 2025) is mentioned only inside the threat beat, and the suits thesis says Trump 'threatened the BBC', which understates it: he sued.",
+    "found": true,
+    "id": "trump-sues-bbc-10-billion"
+   },
+   {
+    "what": "Theme (a), merger probes: the conditions on the Skydance approval (a CBS ombudsman and a pledge to adopt no DEI programs; 2-1 vote; Gomez's dissent) are not in the Paramount beat, although the gaps say that item's facts are there.",
+    "found": true,
+    "id": "ledger:2025-07-24 The FCC approves Skydance's"
+   },
+   {
+    "what": "FCC: Carr's Comcast/NBC (February 11, 2025) and Disney/ABC (March 27, 2025) DEI investigations are absent. The Disney license-review beat rests its 'stated ground' on this probe, and Carr said he had 'a hard time seeing a path forward' for Disney 'to get a yes'.",
+    "found": true,
+    "id": "ledger:2025-02-11 Carr opens FCC investigations"
+   },
+   {
+    "what": "FCC and public media: Carr's January 29, 2025 investigation of underwriting on NPR and PBS stations, with his letter saying he saw no reason for Congress to keep funding them. This is a regulator's step against public media before the executive order and the rescission. It is absent, and not on the left-out list.",
+    "found": true,
+    "id": "ledger:2025-01-29 Carr opens an FCC"
+   },
+   {
+    "what": "FCC: the FCC actually voted 2-1 on August 6, 2026 to scrap the 39% ownership cap. The outline's beat still says Carr 'moved to end' it and that 'House Democrats say he cannot lift the cap', which is now out of date.",
+    "found": true,
+    "id": "fcc-ends-39-percent-national-tv-ownership-cap"
+   },
+   {
+    "what": "FCC/mergers: on September 17, 2026 the Media Bureau, by staff ruling with no commission vote, let Saudi, Emirati and Qatari funds take nearly half of Paramount's equity.",
+    "found": true,
+    "id": "fcc-media-bureau-paramount-gulf-sovereign-funds-49-percent-no-commission-vote"
+   },
+   {
+    "what": "Mergers and CNN: Trump said 'It's imperative that CNN be sold' while the Warner Bros. Discovery bids were under review, and the WSJ reported that Ellison gave administration officials assurances of changes at CNN.",
+    "found": true,
+    "id": "ledger:2025-12-10 As his administration weighs; ellison-media-empire-cnn-cbs-hbo-tiktok"
+   },
+   {
+    "what": "FCC: license threats between the terms are absent, so the section jumps from 2017 to 2025. They are CNN/NBC (January 16, 2024), ABC (September 11, 2024) and 'TAKE AWAY THE CBS LICENSE' (October 10, 2024). The last carries FCC Chair Rosenworcel's statement that the commission 'does not and will not revoke licenses' over coverage. Trump's second-term license posts are also absent: CBS (February 6, 2025, plus his April 13 call for Carr to impose 'maximum fines'), ABC/NBC (August 24, 2025) and September 18, 2025.",
+    "found": true,
+    "id": "ledger:2024-10-10 Trump posts TAKE AWAY; ledger:2024-01-16; ledger:2024-09-11; ledger:2025-02-06 Trump posts that CBS; ledger:2025-08-24"
+   },
+   {
+    "what": "Statements of intent before the second term: the September 24, 2023 post said Comcast/NBC/MSNBC should be investigated for 'Country Threatening Treason' and that the media would be 'thoroughly scrutinized' if he won. The November 28, 2023 post said the government should 'come down hard' on MSNBC. They do the same job as the Mar-a-Lago beat and name an outlet later banned as MS NOW.",
+    "found": true,
+    "id": "ledger:2023-09-24 Trump posts that Comcast; ledger:2023-11-28"
+   },
+   {
+    "what": "Access: on November 5, 2024 the campaign denied election-night credentials to Politico, Axios and Puck. This is a direct precursor of the Politico ban, and the access thesis's campaign-exclusion claim needs it more than it needs the Hillyard account.",
+    "found": true,
+    "id": "ledger:2024-11-05 The Trump campaign denies"
+   },
+   {
+    "what": "Access, Pentagon: Hegseth's May 23, 2025 escort memo was the first escort rule, before the pledge. Also absent: the December 1, 2025 exclusion of the Post, AP, CNN, Reuters, Newsmax and AFP from the new press corps' first briefings, and the June 1, 2026 redesignation of the press office as a SCIF. None of the three is on the left-out list.",
+    "found": true,
+    "id": "ledger:2025-05-23 Hegseth bars reporters; ledger:2025-12-01; ledger:2026-06-01 The Pentagon declares"
+   },
+   {
+    "what": "Public media/VOA: on March 15, 2025, USAGM put 1,042 employees on leave, ended the RFE/RL and RFA grants and ordered transmitters shut down. This was the immediate execution of EO 14238, and it is absent.",
+    "found": true,
+    "id": "ledger:2025-03-15 The global media agency"
+   },
+   {
+    "what": "Public media: Trump's April 28, 2025 move to fire three of the five CPB board members, and Judge Moss's June 8 statement that 'the president is not free to remove directors and then unilaterally to appoint their replacements'.",
+    "found": true,
+    "id": "ledger:2025-04-28 Trump moves to fire"
+   },
+   {
+    "what": "Public media/government-funded outlets: the Pentagon fired Stars and Stripes' top three staff a day after its USS Abraham Lincoln report. The entry is not on the left-out list.",
+    "found": true,
+    "id": "stars-and-stripes-staff-sue-pentagon-lincoln-retaliation"
+   },
+   {
+    "what": "Suits: the suits thesis says 'between terms he sued ABC and CBS', which leaves out the record of other suits filed between terms, most of them dismissed: the NYT tax-records suit (2021, dismissed, fees ordered), the CNN 'Big Lie' suit (2022, dismissed, affirmed), the Pulitzer board suit (2022, pending), the Woodward/Simon & Schuster suit (2023, dismissed) and the Selzer filing (December 16, 2024).",
+    "found": true,
+    "id": "ledger:2021-09-21; ledger:2022-10-03; ledger:2022-12-14; ledger:2023-01-30; ledger:2024-12-16 Trump sues the Des Moines"
+   },
+   {
+    "what": "Demands: earlier written legal demands are absent. They are Kasowitz's 2016 retraction demand to the NYT, refused, and the 2018 cease-and-desist to the publisher of Fire and Fury. Both are first-term-era precedents for the BBC and Politico demands.",
+    "found": true,
+    "id": "ledger:2016-10-13 Trump's lawyer demands; ledger:2018-01-04"
+   },
+   {
+    "what": "DOJ: Sessions's August 4, 2017 statement that leak investigations had tripled and that DOJ 'is reviewing policies affecting media subpoenas' is the first-term step toward the subpoena-rules theme, and it is absent.",
+    "found": true,
+    "id": "ledger:2017-08-04 Attorney General Jeff Sessions"
+   },
+   {
+    "what": "Limits: the FTC's records demand on Media Matters was enjoined as 'a straightforward First Amendment violation' and withdrawn. Also missing are the court orders barring federal force against journalists in Portland (2020) and Chicago (2025). These are 'where the law stopped' items the limits section omits.",
+    "found": true,
+    "id": "ledger:2025-05-20 The Federal Trade Commission; ledger:2020-07-23; ledger:2025-10-09"
+   },
+   {
+    "what": "Public data and briefings: several removals are absent and not on the left-out list. They are the HHS pause on CDC/FDA/NIH public communications (January 21, 2025), the DOJ deletion of hundreds of January 6 press releases (May 23, 2026), the CFPB's deletion of its pre-2025 newsroom (May 19, 2026), the globalchange.gov takedown (June 30, 2025) and the White House visitor-log refusals (2017 and February 11, 2025).",
+    "found": true,
+    "id": "ledger:2025-01-21 HHS orders a pause; doj-deletes-jan6-press-releases-partisan-propaganda; ledger:2026-05-19; ledger:2025-06-30; ledger:2025-02-11 The White House says it will not release"
+   },
+   {
+    "what": "Access/funding: the order telling agencies to stop subscribing to the NYT and Washington Post (2019), the cancellation of $8 million in Politico subscriptions on a false subsidy claim (2025) and the White House 'Media Offenders' site naming reporters (November 28, 2025).",
+    "found": true,
+    "id": "ledger:2019-10-24; ledger:2025-02-05; ledger:2025-11-28"
+   },
+   {
+    "what": "Theme (a), unreviewed settlements: no entry in the corpus or the ledger says whether any court reviewed the ABC or Paramount settlement. The outline correctly leaves this as a gap.",
+    "found": false
+   }
+  ],
+  "overreach": [
+   "Justice Department thesis: 'In the first term the Justice Department secretly took reporters' records until it said in June 2021 it would stop.' The June 5, 2021 pledge came after the first term, under the next administration. 'Until' makes it read as the end of the first-term practice. The thesis also does not say that the protections Bondi rescinded were the 2022 amendments.",
+   "Public media thesis: 'an executive order, a rescission law and mass layoffs cut NPR and PBS funding.' The entry says EO 14290 was permanently blocked, and the funding was ended by the rescission law. The thesis credits the cut to the order.",
+   "Suits thesis: 'said suing the press should have been the Justice Department's job' drops the qualifier in the ledger quote, 'the Justice Department or somebody else'.",
+   "Suits thesis: 'lost all three' 2020 suits. The ledger says all three were dismissed, the CNN suit with leave to amend. 'Dismissed' is the precise word.",
+   "Access thesis: 'Trump's campaigns ... conditioned pool access' states as fact what rests on Vaughn Hillyard's own account. The 2024 beat's why repeats it as fact ('A campaign conditioned the day's pool access...') with whyBasis 'stated', but the ledger says only that 'Hillyard wrote that the campaign said' it. The outline's own caution flags it as Hillyard's account.",
+   "January 22, 2025 FCC beat why: 'Revived news-distortion complaints against three networks' stations.' The ledger says only 'complaints'. The two cited FCC orders are news-distortion orders for WCBS and WPVI, but nothing in the corpus calls the WNBC/SNL complaint a news-distortion complaint.",
+   "Pentagon pledge beat why: 'Credentials became conditional on not gathering information the government had not authorized for release.' The ledger gives this as NPR's summary of the policy, not the policy text, yet the why states it as fact with whyBasis 'stated'.",
+   "fcc-carr-trump-media-control why: 'Gave the chairman a say over which shows count as news' recasts the entry's editorial line ('giving himself the power to decide which journalism is real') as a stated effect. The line's 'moved to end the 39 percent cap' and the why's 'House Democrats say he cannot lift the cap' are out of date: the FCC voted to scrap the cap on August 6, 2026 (fcc-ends-39-percent-national-tv-ownership-cap).",
+   "2016 libel beat why: 'so on this record, as of April 2017, the libel standard the press faced had not changed' is the outline's own inference. The ledger says only that PolitiFact found no specific proposal.",
+   "Limits thesis: 'Courts ordered revoked White House passes restored on due-process grounds in 2018 and 2019.' Karem's pass was suspended for 30 days, not revoked. The 2019 ruling enjoined the suspension, and the due-process holding came in the D.C. Circuit's 2020 affirmance.",
+   "Limits section balance: the thesis promises 'where it did not', but it leaves out the clearest appellate limits the outline already holds. Those are the D.C. Circuit's stay of most of the AP injunction (finding the AP 'not likely to succeed' on viewpoint claims), the May 3, 2025 stay in the VOA case and the March 31, 2026 pause of Lamberth's return-to-work order. All three appear only in other sections.",
+   "BLS beat: its quote ('directed my Team to fire this Biden Political Appointee, IMMEDIATELY') and the 73,000 figure are not in the beat's own entry (bls-commissioner-fired). They come from the ledger item. The quoteBy is correct, but the id does not hold the quote.",
+   "HHS FOIA beat quoteBy 'a House Oversight Democrat, as the ledger reports it' is an internal note, not an attribution a reader can use. It is accurate to the ledger, which does not name the member.",
+   "Left-out list: the 'Murphy base denial' is listed as a verified beat dropped for space, but the ledger's Appendix A excludes it from scope as information withheld from Congress, not from the public. The Sanger and Hegseth 'treason' remarks are filed under Data although they are rhetoric."
+  ],
+  "verdict": "The outline mostly holds up. All 16 tracker ids exist in the corpus, and every ledger-keyed beat matches its ledger item. Every quote has a quoteBy that matches the entry's or ledger's attribution, apart from the minor quoteBy notes in overreach. The causation discipline is sound: the Kimmel, Paramount, WSJ pool and Times subpoena beats state sequence only. Of the eight themes, these are covered with real entries: the pool takeover and the AP ban; the FCC's license threats and revived complaints; the defunding of public media and the dismantling of VOA; the rescission of the subpoena rules; the removal of public data and the firing of the BLS commissioner; the CNN, MS NOW and Politico ban and the ruling against it; and the Pentagon pledge. Two themes are only partly covered. The settlements and suits leave out Meta, and the WSJ and BBC suits appear only as references, never as beats. The merger probes leave out the Skydance conditions, Carr's Comcast and Disney DEI probes, the August 2026 vote to end the ownership cap and the Paramount foreign-ownership waiver. The biggest omissions of setup acts are these: Carr's January 2025 underwriting probe of NPR and PBS; USAGM's March 15, 2025 leave and grant terminations; the CPB board firings; the May 2025 Pentagon escort memo; the campaign's 2024 credential denials, which named Politico; Trump's 2023 vows to scrutinize the media and 'come down hard' on MSNBC; the license threats between the terms; and the suits filed between the terms, beyond ABC and CBS. Several of these are not even on the left-out list. Overreach is limited and fixable, and nothing is fabricated. The main fixes are these. The Justice Department thesis places the June 2021 pledge to stop in the wrong administration. The public-media thesis credits a blocked executive order with the funding cut. The access thesis and the Hillyard beat state one reporter's account as fact. The January 22 why calls all three revived complaints news distortion. The ownership-cap line is out of date. The limits section leaves out the appellate rulings that went the government's way. Fix those, add the three or four strongest missing steps (the underwriting probe, the USAGM leave, the 2024 Politico credential denial and the 2023 'come down hard' posts), and the outline meets the template's standard."
+ },
+ "pageFields": {
+  "note": "Fields the story page reads besides the outline’s own: quoteBy (the speaker the entry attributes a quote to, produced by the finders, checked by the verifiers and by a refuter per quote; a quote with no quoteBy is not rendered), dateNote (a placeholder or entry date that is not the event’s date), thesisInferred, inCount (computed against ledger.json when the file is assembled), ledgerId (a ledger act a step describes when its entry has no ledger link), flag and sourceGap (cautions shown on a step), readerNotes (the reader-facing form of the gaps and cautions, written from them and verified). A refuter per quote (wf_0d40135f-50e, 37 quotes) upheld 36 attributions and refuted one: the line about the AP and the Oval Office was the AP complaint’s account as quoted by the judge, not the press secretary’s words, so it is no longer shown as a quote; nine speakers were made more precise and the Pentagon Press Association line now carries its own hedge (“appears to be”). readerNotes (evening of October 26) is the reader-facing form of the gaps and cautions, with per-step lines; the working notes themselves are unchanged and the page folds them behind a disclosure."
+ },
+ "readerNotes": {
+  "generated": "2026-10-26",
+  "run": "wf_82555528-d0c",
+  "method": "Written from the gaps and cautions above by one agent under a no-new-claims rule, then checked line by line against them by another; each item names the notes it draws on.",
+  "intro": "This screen sets out what the prologue's records cannot support: reasons that rest on inference, dates that stand for other events, shortened quotations and matters still alleged or in court. The full working notes follow below.",
+  "items": [
+   {
+    "text": "This page does not say that no court reviewed the ABC or Paramount settlements, because no checked record says so. The two settlements appear only as facts in the section on suits.",
+    "from": [
+     "gap:0"
+    ],
+    "steps": [
+     "ledger:2024-03-18 Trump sues ABC News",
+     "media-tech-settlements-86-million-trump-library-ballroom"
+    ]
+   },
+   {
+    "text": "No step names the rule Attorney General Bondi rescinded; the page uses NPR's phrase for it, Biden-era protections.",
+    "from": [
+     "gap:1"
+    ],
+    "steps": [
+     "ledger:2025-04-25 Attorney General Bondi rescinds"
+    ]
+   },
+   {
+    "text": "The Justice Department's June 5, 2021 pledge to stop seizing reporters' records came after the first term ended. The page does not call that pledge the end of the first-term practice.",
+    "from": [
+     "gap:1"
+    ],
+    "steps": [
+     "ledger:2021-01-05 In its final weeks"
+    ]
+   },
+   {
+    "text": "The only White House briefing step is the end of regular briefings in March 2019. No checked record gives the White House briefing schedule in the second term.",
+    "from": [
+     "gap:4"
+    ],
+    "steps": [
+     "ledger:2019-03-11 The White House holds"
+    ]
+   },
+   {
+    "text": "No section summary is marked as going beyond what its records state. Several give only the order of events, and none claims that one event caused another.",
+    "from": [
+     "caution:2"
+    ],
+    "steps": []
+   },
+   {
+    "text": "The FCC summary says Carr warned ABC's affiliates hours before they pulled Kimmel; the suits summary says FCC approval of Paramount's merger came three weeks after its settlement. Both give order, not cause.",
+    "from": [
+     "caution:2"
+    ],
+    "steps": [
+     "ledger:2025-09-17 FCC Chairman Carr tells",
+     "ledger:2025-07-24 The FCC approves Skydance's",
+     "media-tech-settlements-86-million-trump-library-ballroom"
+    ]
+   },
+   {
+    "text": "The summary on reporters' records says the home search and the subpoenas came after Bondi's rescission. It gives order, not cause.",
+    "from": [
+     "caution:2"
+    ],
+    "steps": [
+     "ledger:2026-01-14 FBI agents search a",
+     "patel-white-house-nyt-air-force-one-leak-subpoenas",
+     "ledger:2025-04-25 Attorney General Bondi rescinds"
+    ]
+   },
+   {
+    "text": "The summary on public media says the rescission law canceled the Corporation for Public Broadcasting's funding. It does not credit the cut to the executive order against NPR and PBS, which was blocked.",
+    "from": [
+     "caution:2"
+    ],
+    "steps": [
+     "ledger:2025-06-03 The White House asks",
+     "pbs-npr-defunding-cpb-shutdown"
+    ]
+   },
+   {
+    "text": "Twenty steps give reasons drawn by inference, not stated in their records. On access and the FCC: the 2017 Spicer briefing, Trump's 2017 NBC license post, the Kimmel affiliates, Carr's equal-time statement and the ownership cap.",
+    "from": [
+     "caution:0"
+    ],
+    "steps": [
+     "ledger:2017-02-24 The White House press",
+     "ledger:2017-10-11 Trump asks when it",
+     "ledger:2025-09-17 FCC Chairman Carr tells",
+     "fcc-carr-trump-media-control",
+     "fcc-ends-39-percent-national-tv-ownership-cap"
+    ]
+   },
+   {
+    "text": "On public media and suits: the 2017 budget, Michael Pack's firings, Carr's underwriting probe, the rescission, the 2020 campaign suits, the ABC suit, the Mar-a-Lago remark and the FCC's approval of Skydance's purchase of Paramount.",
+    "from": [
+     "caution:0"
+    ],
+    "steps": [
+     "ledger:2017-03-16 Trump's first budget proposes",
+     "ledger:2020-06-17 Michael Pack, Trump's new",
+     "ledger:2025-01-29 Carr opens an FCC",
+     "ledger:2025-06-03 The White House asks",
+     "ledger:2020-02-26 The Trump campaign sues",
+     "ledger:2024-03-18 Trump sues ABC News",
+     "ledger:2024-12-16 At a Mar-a-Lago news",
+     "ledger:2025-07-24 The FCC approves Skydance's"
+    ]
+   },
+   {
+    "text": "On reporters' records, public data and the courts: Sessions's subpoena review, the Watkins seizure, the Natanson search, the Times subpoenas, the White House visitor logs, Executive Order 14238 and the appeals stays of rulings on Pentagon press rules.",
+    "from": [
+     "caution:0"
+    ],
+    "steps": [
+     "ledger:2017-08-04 Attorney General Jeff Sessions",
+     "ledger:2018-02-13 The Justice Department notifies",
+     "ledger:2026-01-14 FBI agents search a",
+     "patel-white-house-nyt-air-force-one-leak-subpoenas",
+     "ledger:2025-02-11 The White House says",
+     "ledger:2025-03-14 Trump orders the U.S.",
+     "ledger:2026-03-23 The Pentagon Imposes New"
+    ]
+   },
+   {
+    "text": "Nine reasons marked as stated carry a record's own analysis or another party's words rather than a finding: the Iran war license warning, Disney review, BBC suit, DHS summons, data deletions, inspector general, satellite withhold, 2024 credentials and BLS firing.",
+    "from": [
+     "caution:1"
+    ],
+    "steps": [
+     "fcc-threatens-broadcasters-iran-war",
+     "fcc-disney-license-review-kimmel-melania-joke",
+     "trump-sues-bbc-10-billion",
+     "dhs-customs-summons-1509-journalist-georgia-fort-phone-records",
+     "federal-data-deletion-campaign-rmp-prams-five-areas",
+     "usagm-inspector-general-voa-cuts-skipped-key-steps-paying-staff-on-leave",
+     "satellite-imagery-blackout-iran-war",
+     "ledger:2024-11-05 The Trump campaign denies",
+     "bls-commissioner-fired"
+    ]
+   },
+   {
+    "text": "Some dates mark a report, not the event: press coverage of the inspector general's evaluation, which is dated September 2026; the DHS summons; the satellite withhold, which reaches back to March 9, 2026; and the data deletions.",
+    "from": [
+     "caution:3"
+    ],
+    "steps": [
+     "usagm-inspector-general-voa-cuts-skipped-key-steps-paying-staff-on-leave",
+     "dhs-customs-summons-1509-journalist-georgia-fort-phone-records",
+     "satellite-imagery-blackout-iran-war",
+     "federal-data-deletion-campaign-rmp-prams-five-areas"
+    ]
+   },
+   {
+    "text": "Other dates fall on one event among several: the rescission (signed July 24, 2025, requested June 3), the Watkins notice, the email-logs order, the NPR and PBS order and the Pentagon appeals stays. Carr's step uses its record's date.",
+    "from": [
+     "caution:3"
+    ],
+    "steps": [
+     "fcc-carr-trump-media-control",
+     "ledger:2025-06-03 The White House asks",
+     "ledger:2018-02-13 The Justice Department notifies",
+     "ledger:2021-01-05 In its final weeks",
+     "pbs-npr-defunding-cpb-shutdown",
+     "ledger:2026-03-23 The Pentagon Imposes New"
+    ]
+   },
+   {
+    "text": "Records disagree on two dates, and the page follows this count’s own: the Pentagon credential ruling, March 20, 2026 (another says March 21); Friedman’s violation finding, April 9 (April 10).",
+    "from": [
+     "gap:5",
+     "caution:3"
+    ],
+    "steps": [
+     "ledger:2025-09-18 The Pentagon requires credentialed",
+     "ledger:2026-03-23 The Pentagon Imposes New"
+    ]
+   },
+   {
+    "text": "Many quotations are fragments of longer statements. On access and the FCC: Trump's 'phony and dishonest', Tara Palmeri, the Pentagon Press Association, the Upper Press memo, which starts mid-sentence, Trump's 2017 license post, Rosenworcel and Gomez on the ownership cap.",
+    "from": [
+     "caution:4"
+    ],
+    "steps": [
+     "ledger:2016-06-13 The Trump campaign revokes",
+     "ledger:2024-11-05 The Trump campaign denies",
+     "ledger:2025-05-23 Hegseth bars reporters",
+     "ledger:2025-10-31 The White House bars",
+     "ledger:2017-10-11 Trump asks when it",
+     "ledger:2024-10-10 Trump posts \"TAKE AWAY",
+     "fcc-ends-39-percent-national-tv-ownership-cap"
+    ]
+   },
+   {
+    "text": "Also fragments: Carr on the Paramount talks, said April 28, 2025, before the settlement; Comey's memo; Sessions; Bondi's memo; the Justice Department on the Times subpoenas; the HHS memo; the CDC records quotation; Planet Labs; and Judge Lamberth.",
+    "from": [
+     "caution:4"
+    ],
+    "steps": [
+     "media-tech-settlements-86-million-trump-library-ballroom",
+     "ledger:2017-02-14 Trump tells FBI Director",
+     "ledger:2017-08-04 Attorney General Jeff Sessions",
+     "ledger:2025-04-25 Attorney General Bondi rescinds",
+     "patel-white-house-nyt-air-force-one-leak-subpoenas",
+     "ledger:2025-01-21 HHS orders a pause",
+     "ledger:2025-04-01 HHS layoffs eliminate the",
+     "satellite-imagery-blackout-iran-war",
+     "ledger:2025-08-29 Kari Lake announces the"
+    ]
+   },
+   {
+    "text": "In three, the cut leaves out part of what was said: Leavitt's pool quotation stops before the spaces she named; Judge Moss's sentence continues 'and seeks to squelch'; Scharf's quotation omits the letter's demand for removal from archives.",
+    "from": [
+     "caution:4"
+    ],
+    "steps": [
+     "ledger:2025-02-25 The White House takes",
+     "pbs-npr-defunding-cpb-shutdown",
+     "white-house-counsel-politico-48-hours-retract-wiles-stories-apologize"
+    ]
+   },
+   {
+    "text": "Trump's words in the step on finding leakers come from Comey's memo, which is Comey's account of the meeting. Tara Palmeri's reason for her credential denial is her own account.",
+    "from": [
+     "caution:5"
+    ],
+    "steps": [
+     "ledger:2017-02-14 Trump tells FBI Director",
+     "ledger:2024-11-05 The Trump campaign denies"
+    ]
+   },
+   {
+    "text": "That the White House had Patel run the leak inquiry into the Times's Air Force One reporting is the Times's report; the FBI disputed the account of the meeting.",
+    "from": [
+     "caution:5"
+    ],
+    "steps": [
+     "patel-white-house-nyt-air-force-one-leak-subpoenas"
+    ]
+   },
+   {
+    "text": "The Office of Special Counsel's finding of a 'substantial likelihood of wrongdoing' was against the global media agency, not specifically against Michael Pack's firings.",
+    "from": [
+     "caution:5"
+    ],
+    "steps": [
+     "ledger:2020-06-17 Michael Pack, Trump's new"
+    ]
+   },
+   {
+    "text": "No company or official has said the FCC's approval of the Paramount merger depended on the settlement.",
+    "from": [
+     "caution:5"
+    ],
+    "steps": [
+     "media-tech-settlements-86-million-trump-library-ballroom",
+     "ledger:2025-07-24 The FCC approves Skydance's"
+    ]
+   },
+   {
+    "text": "Still in court: the ruling on CNN's, MS NOW's and Politico's White House passes is a preliminary injunction under appeal; the AP's appeal is undecided; ABC's suit over its license review had no ruling as of October 8, 2026.",
+    "from": [
+     "caution:5"
+    ],
+    "steps": [
+     "trump-bans-cnn-ms-now-politico-white-house-hard-passes-confiscated",
+     "ledger:2025-02-11 The White House bars",
+     "fcc-disney-license-review-kimmel-melania-joke"
+    ]
+   },
+   {
+    "text": "Trump's side says it will appeal the dismissal of his suit against the Des Moines Register and pollster J. Ann Selzer.",
+    "from": [
+     "caution:5"
+    ],
+    "steps": [
+     "ledger:2024-12-16 Trump sues the Des Moines"
+    ]
+   },
+   {
+    "text": "The quotation on the CDC's records staff is from a Democrat on the House Oversight Committee who is not named in this count's records; nothing in the tracker or those records says it was in a letter.",
+    "from": [
+     "caution:5"
+    ],
+    "steps": [
+     "ledger:2025-04-01 HHS layoffs eliminate the"
+    ]
+   },
+   {
+    "text": "The step on the Journal's pool seat says Trump's suit was over Epstein reporting; that detail comes from a separate record, on the suit's dismissal. The step's own record says only 'the suit'.",
+    "from": [
+     "gap:9"
+    ],
+    "steps": [
+     "ledger:2025-07-21 Three days after the"
+    ]
+   },
+   {
+    "text": "This page leaves out the Pentagon's denial of Sen. Murphy's base visit, which withheld information from Congress rather than the public, and the Sanger and Hegseth 'treason' remarks, words rather than removals of data or briefings.",
+    "from": [
+     "gap:6"
+    ],
+    "steps": []
+   },
+   {
+    "text": "Many related matters are left out for space or because the count records them as acts, among them the CNN TV-pool removal, the $15 billion New York Times suit and the Lemon and Fort arrests.",
+    "from": [
+     "gap:7"
+    ],
+    "steps": []
+   },
+   {
+    "text": "Some related matters are not printed because they were not among the checked records.",
+    "from": [
+     "gap:2"
+    ],
+    "steps": []
+   }
+  ],
+  "stepNotes": [
+   {
+    "id": "ledger:2016-06-13 The Trump campaign revokes",
+    "text": "This step falls in the 2016 campaign, not the first term.",
+    "from": [
+     "caution:3"
+    ]
+   },
+   {
+    "id": "ledger:2016-06-13 The Trump campaign revokes",
+    "text": "Trump's quotation, 'phony and dishonest', is a fragment.",
+    "from": [
+     "caution:4"
+    ]
+   },
+   {
+    "id": "ledger:2017-02-24 The White House press",
+    "text": "The reason given, that access was decided outlet by outlet, is inferred, not stated in the record.",
+    "from": [
+     "caution:0"
+    ]
+   },
+   {
+    "id": "ledger:2024-11-05 The Trump campaign denies",
+    "text": "'After critical coverage' is CNN's account, carried in the reason, not a finding.",
+    "from": [
+     "caution:1"
+    ]
+   },
+   {
+    "id": "ledger:2024-11-05 The Trump campaign denies",
+    "text": "Palmeri's quotation is a fragment.",
+    "from": [
+     "caution:4"
+    ]
+   },
+   {
+    "id": "ledger:2024-11-05 The Trump campaign denies",
+    "text": "Her reason for the denial is her own account.",
+    "from": [
+     "caution:5"
+    ]
+   },
+   {
+    "id": "ledger:2025-02-25 The White House takes",
+    "text": "Leavitt's quotation stops mid-sentence, before the spaces she named.",
+    "from": [
+     "caution:4"
+    ]
+   },
+   {
+    "id": "ledger:2025-05-23 Hegseth bars reporters",
+    "text": "The Pentagon Press Association's quotation is a fragment.",
+    "from": [
+     "caution:4"
+    ]
+   },
+   {
+    "id": "ledger:2025-09-18 The Pentagon requires credentialed",
+    "text": "The ruling date, March 20, 2026, follows this count's records and the court filing; another record says March 21.",
+    "from": [
+     "gap:5",
+     "caution:3"
+    ]
+   },
+   {
+    "id": "ledger:2025-10-31 The White House bars",
+    "text": "The memo's quotation starts mid-sentence.",
+    "from": [
+     "caution:4"
+    ]
+   },
+   {
+    "id": "ledger:2017-10-11 Trump asks when it",
+    "text": "The reason given, that this was a first-term instance, is inferred, not stated in the record.",
+    "from": [
+     "caution:0"
+    ]
+   },
+   {
+    "id": "ledger:2017-10-11 Trump asks when it",
+    "text": "Trump's quotation is a fragment of his post.",
+    "from": [
+     "caution:4"
+    ]
+   },
+   {
+    "id": "ledger:2024-10-10 Trump posts \"TAKE AWAY",
+    "text": "Rosenworcel's quotation is a fragment.",
+    "from": [
+     "caution:4"
+    ]
+   },
+   {
+    "id": "ledger:2025-09-17 FCC Chairman Carr tells",
+    "text": "The reason gives the order of events only, with Sen. Cruz's remark; it is inferred, not stated in the record.",
+    "from": [
+     "caution:0"
+    ]
+   },
+   {
+    "id": "fcc-carr-trump-media-control",
+    "text": "Reading Carr's words as a test for the news exemption is an inference, not stated in the record.",
+    "from": [
+     "caution:0"
+    ]
+   },
+   {
+    "id": "fcc-carr-trump-media-control",
+    "text": "The date is the record's; the statements were made in January and February 2026.",
+    "from": [
+     "caution:3"
+    ]
+   },
+   {
+    "id": "fcc-threatens-broadcasters-iran-war",
+    "text": "The note that the FCC has not denied a renewal in decades is the record's own, not a finding.",
+    "from": [
+     "caution:1"
+    ]
+   },
+   {
+    "id": "fcc-disney-license-review-kimmel-melania-joke",
+    "text": "That the FCC's stated ground was a diversity probe is the record's account, not a finding.",
+    "from": [
+     "caution:1"
+    ]
+   },
+   {
+    "id": "fcc-disney-license-review-kimmel-melania-joke",
+    "text": "ABC's suit against the review had no ruling as of October 8, 2026.",
+    "from": [
+     "caution:5"
+    ]
+   },
+   {
+    "id": "fcc-ends-39-percent-national-tv-ownership-cap",
+    "text": "The reason given is inferred, not stated in the record.",
+    "from": [
+     "caution:0"
+    ]
+   },
+   {
+    "id": "fcc-ends-39-percent-national-tv-ownership-cap",
+    "text": "Gomez's quotation is a fragment.",
+    "from": [
+     "caution:4"
+    ]
+   },
+   {
+    "id": "ledger:2017-03-16 Trump's first budget proposes",
+    "text": "The reason given is inferred, not stated in the record.",
+    "from": [
+     "caution:0"
+    ]
+   },
+   {
+    "id": "ledger:2020-06-17 Michael Pack, Trump's new",
+    "text": "Pairing the firings with the Office of Special Counsel's finding is an inference, not stated in the record.",
+    "from": [
+     "caution:0"
+    ]
+   },
+   {
+    "id": "ledger:2020-06-17 Michael Pack, Trump's new",
+    "text": "That finding was against the agency, not specifically against Pack's firings.",
+    "from": [
+     "caution:5"
+    ]
+   },
+   {
+    "id": "ledger:2025-01-29 Carr opens an FCC",
+    "text": "The reason given is inferred, not stated in the record.",
+    "from": [
+     "caution:0"
+    ]
+   },
+   {
+    "id": "pbs-npr-defunding-cpb-shutdown",
+    "text": "Dated to the executive order; the court ruling came March 31, 2026.",
+    "from": [
+     "caution:3"
+    ]
+   },
+   {
+    "id": "pbs-npr-defunding-cpb-shutdown",
+    "text": "Judge Moss's quotation is the opening of a longer sentence that continues 'and seeks to squelch'.",
+    "from": [
+     "caution:4"
+    ]
+   },
+   {
+    "id": "ledger:2025-06-03 The White House asks",
+    "text": "The reason given, a route separate from the executive order, is inferred, not stated in the record.",
+    "from": [
+     "caution:0"
+    ]
+   },
+   {
+    "id": "ledger:2025-06-03 The White House asks",
+    "text": "Dated to the signing, July 24, 2025; this count's records date it to the June 3 request.",
+    "from": [
+     "caution:3"
+    ]
+   },
+   {
+    "id": "usagm-inspector-general-voa-cuts-skipped-key-steps-paying-staff-on-leave",
+    "text": "The reason rests on the inspector general's finding, as the record reports it.",
+    "from": [
+     "caution:1"
+    ]
+   },
+   {
+    "id": "usagm-inspector-general-voa-cuts-skipped-key-steps-paying-staff-on-leave",
+    "text": "Dated to press coverage; the inspector general's report is dated September 2026.",
+    "from": [
+     "caution:3"
+    ]
+   },
+   {
+    "id": "ledger:2020-02-26 The Trump campaign sues",
+    "text": "The reason given is inferred, not stated in the record.",
+    "from": [
+     "caution:0"
+    ]
+   },
+   {
+    "id": "ledger:2024-03-18 Trump sues ABC News",
+    "text": "The reason given, that this was the first suit to end in a payment to his library, is inferred.",
+    "from": [
+     "caution:0"
+    ]
+   },
+   {
+    "id": "ledger:2024-12-16 At a Mar-a-Lago news",
+    "text": "The reason given is inferred, not stated in the record.",
+    "from": [
+     "caution:0"
+    ]
+   },
+   {
+    "id": "media-tech-settlements-86-million-trump-library-ballroom",
+    "text": "The date is the settlement's; the record itself is dated September 29, 2025.",
+    "from": [
+     "caution:3"
+    ]
+   },
+   {
+    "id": "media-tech-settlements-86-million-trump-library-ballroom",
+    "text": "Carr's quotation is a fragment, said April 28, 2025, before the settlement.",
+    "from": [
+     "caution:4"
+    ]
+   },
+   {
+    "id": "media-tech-settlements-86-million-trump-library-ballroom",
+    "text": "No company or official has said the merger approval depended on the settlement.",
+    "from": [
+     "caution:5"
+    ]
+   },
+   {
+    "id": "ledger:2025-07-21 Three days after the",
+    "text": "That the suit concerned Epstein reporting comes from a separate record, on its dismissal; this step's record says only 'the suit'.",
+    "from": [
+     "gap:9"
+    ]
+   },
+   {
+    "id": "ledger:2025-07-24 The FCC approves Skydance's",
+    "text": "The reason gives timing, not cause, and is inferred, not stated in the record.",
+    "from": [
+     "caution:0"
+    ]
+   },
+   {
+    "id": "ledger:2025-07-24 The FCC approves Skydance's",
+    "text": "No company or official has said the approval depended on the settlement.",
+    "from": [
+     "caution:5"
+    ]
+   },
+   {
+    "id": "trump-sues-bbc-10-billion",
+    "text": "That a judge held his finances fair game is the record's report of the judge's view.",
+    "from": [
+     "caution:1"
+    ]
+   },
+   {
+    "id": "white-house-counsel-politico-48-hours-retract-wiles-stories-apologize",
+    "text": "Scharf's quotation is cut and omits the letter's demand for removal from archives.",
+    "from": [
+     "caution:4"
+    ]
+   },
+   {
+    "id": "ledger:2017-02-14 Trump tells FBI Director",
+    "text": "The quotation is a fragment.",
+    "from": [
+     "caution:4"
+    ]
+   },
+   {
+    "id": "ledger:2017-02-14 Trump tells FBI Director",
+    "text": "Trump's words come from Comey's memo, which is Comey's account of the meeting.",
+    "from": [
+     "caution:5"
+    ]
+   },
+   {
+    "id": "ledger:2017-08-04 Attorney General Jeff Sessions",
+    "text": "The reason given is inferred, not stated in the record.",
+    "from": [
+     "caution:0"
+    ]
+   },
+   {
+    "id": "ledger:2017-08-04 Attorney General Jeff Sessions",
+    "text": "Sessions's quotation is a fragment.",
+    "from": [
+     "caution:4"
+    ]
+   },
+   {
+    "id": "ledger:2018-02-13 The Justice Department notifies",
+    "text": "The reason given is inferred, not stated in the record.",
+    "from": [
+     "caution:0"
+    ]
+   },
+   {
+    "id": "ledger:2018-02-13 The Justice Department notifies",
+    "text": "Dated to the notification; the seizure became public in June 2018.",
+    "from": [
+     "caution:3"
+    ]
+   },
+   {
+    "id": "ledger:2021-01-05 In its final weeks",
+    "text": "Dated to the sealed order; the phone-record seizures were in 2020 and disclosed in 2021.",
+    "from": [
+     "caution:3"
+    ]
+   },
+   {
+    "id": "ledger:2021-01-05 In its final weeks",
+    "text": "The June 2021 pledge came after the first term; this page does not call it the end of the first-term practice.",
+    "from": [
+     "gap:1"
+    ]
+   },
+   {
+    "id": "ledger:2025-04-25 Attorney General Bondi rescinds",
+    "text": "No step names the rule rescinded; 'Biden-era protections' is NPR's phrase.",
+    "from": [
+     "gap:1"
+    ]
+   },
+   {
+    "id": "ledger:2025-04-25 Attorney General Bondi rescinds",
+    "text": "The memo's quotation is a fragment.",
+    "from": [
+     "caution:4"
+    ]
+   },
+   {
+    "id": "ledger:2026-01-14 FBI agents search a",
+    "text": "The reason given is inferred, not stated in the record.",
+    "from": [
+     "caution:0"
+    ]
+   },
+   {
+    "id": "patel-white-house-nyt-air-force-one-leak-subpoenas",
+    "text": "The reason given is inferred, not stated in the record.",
+    "from": [
+     "caution:0"
+    ]
+   },
+   {
+    "id": "patel-white-house-nyt-air-force-one-leak-subpoenas",
+    "text": "The Justice Department's quotation is a fragment.",
+    "from": [
+     "caution:4"
+    ]
+   },
+   {
+    "id": "patel-white-house-nyt-air-force-one-leak-subpoenas",
+    "text": "That the White House had Patel run the inquiry is the Times's report; the FBI disputed the account of the meeting.",
+    "from": [
+     "caution:5"
+    ]
+   },
+   {
+    "id": "dhs-customs-summons-1509-journalist-georgia-fort-phone-records",
+    "text": "That the summons needs only a DHS official's sign-off is the record's account.",
+    "from": [
+     "caution:1"
+    ]
+   },
+   {
+    "id": "dhs-customs-summons-1509-journalist-georgia-fort-phone-records",
+    "text": "Dated to the Guardian's report.",
+    "from": [
+     "caution:3"
+    ]
+   },
+   {
+    "id": "ledger:2019-03-11 The White House holds",
+    "text": "This is the only White House briefing step; no checked record gives the second-term briefing schedule.",
+    "from": [
+     "gap:4"
+    ]
+   },
+   {
+    "id": "ledger:2025-01-21 HHS orders a pause",
+    "text": "The memo's quotation is a fragment.",
+    "from": [
+     "caution:4"
+    ]
+   },
+   {
+    "id": "ledger:2025-02-11 The White House says",
+    "text": "The reason given is inferred, not stated in the record.",
+    "from": [
+     "caution:0"
+    ]
+   },
+   {
+    "id": "ledger:2025-04-01 HHS layoffs eliminate the",
+    "text": "The quotation is a fragment.",
+    "from": [
+     "caution:4"
+    ]
+   },
+   {
+    "id": "ledger:2025-04-01 HHS layoffs eliminate the",
+    "text": "Its author, a House Oversight Democrat, is unnamed in this count's records; nothing in them or the tracker says it was a letter.",
+    "from": [
+     "caution:5"
+    ]
+   },
+   {
+    "id": "bls-commissioner-fired",
+    "text": "The reason quotes professional associations' words, not a finding.",
+    "from": [
+     "caution:1"
+    ]
+   },
+   {
+    "id": "satellite-imagery-blackout-iran-war",
+    "text": "That outlets lost a source of war images rests on the record, not a finding.",
+    "from": [
+     "caution:1"
+    ]
+   },
+   {
+    "id": "satellite-imagery-blackout-iran-war",
+    "text": "Dated to the report of the company's email; the withhold covers imagery back to March 9.",
+    "from": [
+     "caution:3"
+    ]
+   },
+   {
+    "id": "satellite-imagery-blackout-iran-war",
+    "text": "Planet Labs' quotation is a fragment.",
+    "from": [
+     "caution:4"
+    ]
+   },
+   {
+    "id": "federal-data-deletion-campaign-rmp-prams-five-areas",
+    "text": "That a population stops being counted where surveys dropped questions is the record's claim, not a finding.",
+    "from": [
+     "caution:1"
+    ]
+   },
+   {
+    "id": "federal-data-deletion-campaign-rmp-prams-five-areas",
+    "text": "Dated to the Guardian's investigation, which is not among this step's sources.",
+    "from": [
+     "caution:3"
+    ]
+   },
+   {
+    "id": "ledger:2025-02-11 The White House bars",
+    "text": "The AP's appeal is undecided.",
+    "from": [
+     "caution:5"
+    ]
+   },
+   {
+    "id": "ledger:2025-03-14 Trump orders the U.S.",
+    "text": "The reason given is inferred, not stated in the record.",
+    "from": [
+     "caution:0"
+    ]
+   },
+   {
+    "id": "ledger:2025-08-29 Kari Lake announces the",
+    "text": "Judge Lamberth's quotation is a fragment as this count's records give it.",
+    "from": [
+     "caution:4"
+    ]
+   },
+   {
+    "id": "ledger:2026-03-23 The Pentagon Imposes New",
+    "text": "The reason given is inferred, not stated in the record.",
+    "from": [
+     "caution:0"
+    ]
+   },
+   {
+    "id": "ledger:2026-03-23 The Pentagon Imposes New",
+    "text": "Dated to the second appeals stay; the rules were issued March 23, 2026 and found in violation April 9.",
+    "from": [
+     "caution:3"
+    ]
+   },
+   {
+    "id": "ledger:2026-03-23 The Pentagon Imposes New",
+    "text": "The April 9 date follows this count's records; another record says April 10.",
+    "from": [
+     "gap:5"
+    ]
+   },
+   {
+    "id": "trump-bans-cnn-ms-now-politico-white-house-hard-passes-confiscated",
+    "text": "The ruling is a preliminary injunction under appeal.",
+    "from": [
+     "caution:5"
+    ]
+   },
+   {
+    "id": "ledger:2024-12-16 Trump sues the Des Moines",
+    "text": "Trump's side says it will appeal.",
+    "from": [
+     "caution:5"
+    ]
+   }
+  ],
+  "omitted": [
+   {
+    "ref": "gap:0 (last sentence)",
+    "why": "Says what a step would need before it could be printed; it records how the file is built."
+   },
+   {
+    "ref": "gap:1 (naming the 2022 amendments)",
+    "why": "Names a rule change that no step sources; printing it would state a claim that was not checked."
+   },
+   {
+    "ref": "gap:2 (the list of unchecked matters, and the notes on the Disney and AP steps)",
+    "why": "Lists claims not checked and deliberately not printed; repeating them would print them before they are checked. The general point is kept. The two step notes only describe the page's own wording."
+   },
+   {
+    "ref": "gap:3",
+    "why": "Records a step dropped between versions and why it was dropped."
+   },
+   {
+    "ref": "gap:4 (the NPR note on Pentagon briefings)",
+    "why": "States a fact from a record the page leaves out."
+   },
+   {
+    "ref": "gap:6 ('misfiled in the prior outline')",
+    "why": "Records how an earlier version filed these matters; the scope reasons are kept."
+   },
+   {
+    "ref": "gap:7 (full list, and the Shut Out thread)",
+    "why": "The long list of left-out matters is cut to a few examples; the reasons for leaving them out are kept."
+   },
+   {
+    "ref": "gap:8",
+    "why": "Counts of records per section."
+   },
+   {
+    "ref": "caution:3 (that a check flagged 'first' as wrong for the 2016 step)",
+    "why": "Records a correction made while checking; the campaign placement is kept on the step."
+   },
+   {
+    "ref": "caution:4 (the step on the BLS firing prints no quote)",
+    "why": "Records why a quotation was not printed; nothing on the page is left to weigh."
+   },
+   {
+    "ref": "caution:6",
+    "why": "An instruction for revising page wording, not a limit of the record."
+   }
+  ]
+ }
+}

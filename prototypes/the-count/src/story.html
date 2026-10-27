@@ -1,0 +1,534 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Story | The Count (prototype)</title>
+<meta name="description" content="The Count told in order: a sourced prologue, then the count, era by era, with its threads and totals.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,700;1,9..144,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --paper: #f3eee4; --paper-2: #e9e2d3; --rule: #d9d0bd;
+  --ink: #1a1813; --ink-2: #4a463d; --ink-3: #6b6458; --ink-3l: #857d70;
+  --red: #b3261e; --red-soft: rgba(179, 38, 30, .12);
+  --serif-d: "Fraunces", Georgia, serif; --serif: "Source Serif 4", Georgia, serif; --mono: "IBM Plex Mono", "SF Mono", monospace;
+  --panel: 42vw; --strip: 36vh;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { background: var(--paper); scroll-snap-type: y mandatory; }
+body { font-family: var(--serif); color: var(--ink); background: var(--paper); -webkit-font-smoothing: antialiased; }
+::selection { background: var(--red-soft); }
+button { font: inherit; cursor: pointer; color: inherit; background: none; border: 0; }
+a { color: inherit; }
+
+.bar { position: fixed; top: 0; left: 0; right: 0; height: 3px; background: var(--rule); z-index: 40; }
+.bar i { display: block; height: 100%; width: 0; background: var(--red); transition: width .4s ease; }
+.top { position: fixed; top: 3px; left: 0; right: 0; height: 48px; display: flex; align-items: center; justify-content: space-between; padding: 0 28px; font: 500 11px/1 var(--mono); letter-spacing: .14em; text-transform: uppercase; color: var(--ink-3); z-index: 30; pointer-events: none; }
+.top a, .top span, .top button { pointer-events: auto; }
+.top a { color: inherit; text-decoration: none; }
+.top a:hover { color: var(--red); }
+.top .brand b { color: var(--ink); font-weight: 500; }
+.top .links { display: flex; gap: 20px; flex: 0 0 auto; white-space: nowrap; }
+.top .brand { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; margin-right: 16px; }
+.top .links a.caut { color: var(--red); }
+
+.panel { position: fixed; top: 51px; right: 0; bottom: 0; width: var(--panel); padding: 22px 32px 96px 26px; border-left: 1px solid var(--rule); display: flex; flex-direction: column; gap: 12px; background: var(--paper); z-index: 20; }
+.p-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; font: 400 11px/1.4 var(--mono); letter-spacing: .1em; text-transform: uppercase; color: var(--ink-3); flex: 0 0 auto; }
+.p-head b { font: 700 44px/1 var(--serif-d); color: var(--ink); letter-spacing: 0; text-transform: none; font-variant-numeric: tabular-nums; }
+.p-head b small { font: 400 11px var(--mono); color: var(--ink-3); margin-left: 8px; letter-spacing: .1em; text-transform: uppercase; }
+.p-note { font: 500 10.5px/1.4 var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--red); border-top: 1px solid var(--red); padding-top: 8px; flex: 0 0 auto; }
+.p-note[hidden] { display: none; }
+.p-note a { text-decoration: none; }
+.mix { display: grid; gap: 6px; flex: 0 0 auto; }
+.mix-top { font: 400 10.5px/1.4 var(--mono); letter-spacing: .06em; color: var(--ink-2); }
+.mix-top b { font-weight: 500; color: var(--ink); }
+.mix-rows { display: grid; grid-template-columns: 170px 1fr 26px; gap: 3px 8px; align-items: center; font: 400 10px/1.3 var(--mono); letter-spacing: .04em; color: var(--ink-2); }
+.mix-rows .mr-b { height: 6px; background: var(--paper-2); border-radius: 1px; overflow: hidden; }
+.mix-rows .mr-b i { display: block; height: 100%; background: var(--ink); width: 0; transition: width .6s cubic-bezier(.2,.7,.2,1); }
+.mix-rows .mr-n { text-align: right; color: var(--ink); font-weight: 500; }
+.mix-rows .is-zero { color: var(--ink-3); font-weight: 400; }
+.wall-key { flex: 0 0 auto; display: flex; align-items: center; gap: 8px; font: 400 11px/1.4 var(--mono); letter-spacing: .06em; color: var(--ink-3); }
+.wall-key .sw { display: inline-block; width: 14px; height: 2px; background: var(--red); opacity: .8; }
+#wall { flex: 1 1 auto; min-height: 60px; overflow: hidden; }
+#wall svg { width: 100%; height: 100%; display: block; }
+.strip { margin-top: auto; flex: 0 0 auto; cursor: default; user-select: none; }
+.strip svg { display: block; width: 100%; height: auto; }
+
+/* one screen per thing */
+section { min-height: 100vh; min-height: 100svh; scroll-snap-align: start; padding: 12vh calc(var(--panel) + 56px) max(15vh, 128px) 6vw; display: grid; align-content: center; }
+.eyebrow { font: 400 11.5px/1.5 var(--mono); letter-spacing: .14em; text-transform: uppercase; color: var(--ink-3); display: flex; gap: 14px; flex-wrap: wrap; align-items: center; }
+.eyebrow b { color: var(--red); font-weight: 500; }
+.tag { display: inline-block; font: 500 10px/1 var(--mono); letter-spacing: .14em; text-transform: uppercase; padding: 5px 8px; border: 1px solid var(--ink-3l); border-radius: 3px; color: var(--ink-2); }
+.tag.red { border-color: var(--red); color: var(--red); }
+.tag.ink { border-color: var(--ink); color: var(--ink); }
+.tag.dash { border-style: dashed; }
+h1 { font: 700 clamp(40px, 5.6vw, 88px)/0.98 var(--serif-d); letter-spacing: -0.02em; margin-top: 14px; }
+h1 em, h2 em { font-style: italic; color: var(--red); font-weight: 400; }
+h2 { font: 700 clamp(34px, 4.6vw, 64px)/1.0 var(--serif-d); letter-spacing: -0.02em; margin-top: 14px; }
+h2 small, .h-sub { display: block; font: 400 clamp(16px, 1.5vw, 21px)/1.35 var(--serif); color: var(--ink-2); margin-top: 12px; letter-spacing: 0; max-width: 60ch; }
+h3 { font: 700 clamp(26px, 3vw, 44px)/1.06 var(--serif-d); letter-spacing: -0.015em; margin-top: 14px; max-width: 28ch; text-wrap: balance; }
+h3.l { font-size: clamp(22px, 2.3vw, 34px); max-width: 36ch; }
+.dek { margin-top: 20px; font-size: 19px; line-height: 1.55; color: var(--ink-2); max-width: 58ch; }
+.dek strong { color: var(--ink); font-weight: 600; }
+.prose { margin-top: 20px; font-size: 18px; line-height: 1.6; color: var(--ink-2); max-width: 60ch; }
+.prose p + p { margin-top: 10px; }
+.frame { margin-top: 18px; max-width: 60ch; border-left: 3px solid var(--rule); padding: 4px 0 4px 16px; }
+.frame .lbl { font: 500 11px/1 var(--mono); letter-spacing: .14em; text-transform: uppercase; color: var(--ink-3); margin-bottom: 8px; }
+.frame p { font-size: 16.5px; line-height: 1.55; color: var(--ink-2); font-style: italic; }
+.why { margin-top: 22px; max-width: 60ch; border-left: 3px solid var(--red); padding: 4px 0 4px 16px; }
+.why .lbl { font: 500 10px/1 var(--mono); letter-spacing: .14em; text-transform: uppercase; color: var(--red); margin-bottom: 6px; display: flex; gap: 10px; align-items: center; }
+.why p { font-size: 17px; line-height: 1.55; color: var(--ink-2); }
+.srcs { margin-top: 14px; display: flex; flex-wrap: wrap; gap: 6px 14px; font: 400 11.5px/1.5 var(--mono); letter-spacing: .04em; }
+.srcs a { color: var(--ink-2); text-decoration: none; border-bottom: 1px solid var(--rule); }
+.srcs a:hover { color: var(--red); border-color: var(--red); }
+.srcs a.tr { color: var(--red); border-color: transparent; }
+.entry { margin-top: 10px; font: 400 11px/1.6 var(--mono); letter-spacing: .04em; color: var(--ink-3); }
+.cta { margin-top: 28px; display: flex; gap: 10px; flex-wrap: wrap; }
+.btn { font: 500 11.5px/1 var(--mono); letter-spacing: .12em; text-transform: uppercase; text-decoration: none; color: var(--ink); border: 1px solid var(--ink); border-radius: 3px; padding: 12px 16px; background: none; display: inline-block; cursor: pointer; }
+.btn.red { background: var(--red); border-color: var(--red); color: #fff; }
+.btn:hover { filter: brightness(.9); }
+.stats { display: grid; grid-template-columns: repeat(3, auto); gap: 10px 28px; margin-top: 22px; justify-content: start; }
+.stat b { display: block; font: 700 clamp(30px, 3.2vw, 44px)/1 var(--serif-d); letter-spacing: -0.02em; }
+.stat span { display: block; margin-top: 6px; font: 400 11px/1.4 var(--mono); letter-spacing: .1em; text-transform: uppercase; color: var(--ink-3); max-width: 26ch; }
+.stat.red b { color: var(--red); }
+.stat.kind span { text-transform: none; letter-spacing: .02em; font-size: 11.5px; max-width: 36ch; }
+@media (max-height: 820px) and (min-width: 861px) {
+  h2 { font-size: clamp(30px, 4vw, 52px); }
+  .dek { font-size: 17.5px; margin-top: 16px; } .prose { font-size: 16.5px; margin-top: 16px; }
+  .stats { margin-top: 16px; gap: 8px 24px; } .stat b { font-size: clamp(26px, 2.8vw, 36px); }
+  html .cave { margin-top: 14px; } html .cta { margin-top: 20px; }
+}
+.cave { margin-top: 18px; font: 400 11px/1.6 var(--mono); letter-spacing: .04em; color: var(--ink-3); max-width: 62ch; }
+.list { margin-top: 16px; display: grid; gap: 12px; max-width: 64ch; }
+.list li { list-style: none; font-size: 15.5px; line-height: 1.55; color: var(--ink-2); border-top: 1px solid var(--rule); padding-top: 10px; }
+.list li b { color: var(--ink); font-weight: 600; }
+.totals { margin-top: 20px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; max-width: 880px; }
+.total { border: 1px solid var(--rule); border-radius: 4px; padding: 12px 12px 10px; display: grid; gap: 5px; }
+.total b { font: 700 clamp(19px, 1.9vw, 26px)/1 var(--serif-d); letter-spacing: -0.015em; }
+.total p { font-size: 12.5px; line-height: 1.4; color: var(--ink-2); }
+.total .srcs { margin-top: 4px; font-size: 11px; }
+.pend { margin-top: 12px; font: 500 10.5px/1.5 var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--red); max-width: 62ch; }
+.quote .qby { display: block; margin-top: 6px; font: 400 11px/1.5 var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--ink-3); }
+h3.lab { font: 500 11px/1.6 var(--mono); letter-spacing: .14em; text-transform: uppercase; color: var(--ink-3); margin-top: 22px; max-width: none; }
+.stepnote { margin-top: 14px; max-width: 60ch; border-left: 3px solid var(--ink-3l); padding: 2px 0 2px 14px; font-size: 14.5px; line-height: 1.5; color: var(--ink-2); }
+.stepnote .lbl { font: 500 10px/1 var(--mono); letter-spacing: .14em; text-transform: uppercase; color: var(--ink-3); display: block; margin-bottom: 5px; }
+details.notes { margin-top: 28px; max-width: 64ch; border-top: 1px solid var(--rule); padding-top: 12px; }
+details.notes summary { cursor: pointer; font: 500 11px/1.6 var(--mono); letter-spacing: .12em; text-transform: uppercase; color: var(--ink-3); list-style: none; }
+details.notes summary::-webkit-details-marker { display: none; }
+details.notes summary::before { content: "+ "; color: var(--red); }
+details[open].notes summary::before { content: "\2212  "; }
+details.notes .list li { font-size: 14px; }
+.vh { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+.skip { position: fixed; left: 8px; top: 8px; z-index: 50; background: var(--ink); color: var(--paper); padding: 8px 12px; font: 500 11px var(--mono); letter-spacing: .08em; text-decoration: none; transform: translateY(-300%); }
+.skip:focus { transform: none; }
+:focus-visible { outline: 2px solid var(--red); outline-offset: 3px; border-radius: 2px; }
+section:focus { outline: none; }
+.btn.red:focus-visible, .ctl button.is-on:focus-visible { outline-color: var(--ink); }
+section a, section button { scroll-margin-block: 72px 110px; }
+.ctl { position: fixed; right: 32px; bottom: 22px; max-width: calc(var(--panel) - 58px); display: flex; flex-wrap: wrap; gap: 8px; align-items: center; z-index: 30; background: var(--paper); border: 1px solid var(--rule); border-radius: 4px; padding: 6px 8px; }
+.ctl button { font: 500 11px/1 var(--mono); letter-spacing: .12em; text-transform: uppercase; color: var(--ink); background: var(--paper); border: 1px solid var(--ink); border-radius: 3px; padding: 10px 14px; }
+.ctl button:hover { background: var(--ink); color: var(--paper); }
+.ctl button.is-on { background: var(--red); border-color: var(--red); color: #fff; }
+.ctl span { font: 400 11px var(--mono); color: var(--ink-3); letter-spacing: .06em; margin-left: 8px; }
+
+/* the wall, in ink, with the setup row */
+.mk { stroke: var(--ink); stroke-opacity: .15; stroke-width: 2; stroke-linecap: round; transition: stroke-opacity .3s, stroke .3s, stroke-width .3s; transition-delay: var(--d, 0ms); }
+.mk.is-past { stroke-opacity: .72; }
+.mk.is-lit { stroke: var(--red); stroke-opacity: .85; }
+.mk.is-now { stroke: var(--red); stroke-opacity: 1; stroke-width: 3.2; }
+.mk.setup { stroke: var(--red); stroke-opacity: .2; }
+.mk.setup.is-past { stroke-opacity: .8; }
+.halo { fill: var(--red); fill-opacity: .13; stroke: var(--red); stroke-opacity: .55; stroke-width: 1; transition: transform .35s cubic-bezier(.2,.7,.2,1), opacity .2s; }
+.halo.is-off { opacity: 0; }
+.yl { font: 400 10.5px var(--mono); fill: var(--ink-3); letter-spacing: .06em; }
+.yl.is-now { fill: var(--red); font-weight: 500; }
+.ch { font: 400 9.5px var(--mono); fill: var(--ink-3); letter-spacing: .14em; }
+.ch.setup { fill: var(--red); }
+.chl { stroke: var(--rule); stroke-width: 1; }
+.strip .era { fill: rgba(26,24,19,.025); } .strip .era.alt { fill: rgba(26,24,19,.06); }
+.strip .era-lbl { font: 400 10px var(--mono); letter-spacing: .12em; fill: var(--ink-3); }
+.strip .dens { fill: var(--ink); opacity: .14; }
+.strip .tick { stroke: var(--rule); } .strip .yr { font: 400 10px var(--mono); fill: var(--ink-3); }
+.strip .sp { fill: var(--red); }
+.strip .ph line { stroke: var(--red); stroke-width: 1.5; } .strip .ph path { fill: var(--red); }
+.strip .ph { transition: transform .45s cubic-bezier(.2,.7,.2,1); } .strip .ph.is-off { opacity: 0; }
+
+@media (max-width: 860px) {
+  :root { --panel: 0px; }
+  .top { padding: 0 16px; height: 40px; white-space: nowrap; }
+  .top .links a:not(.caut) { display: none; }
+  html { scroll-snap-type: y proximity; }
+  section a, section button { scroll-margin-top: calc(var(--strip) + 16px); }
+  .panel { top: 0; left: 0; right: 0; bottom: auto; width: auto; height: var(--strip); padding: 46px 16px 10px; border-left: 0; border-bottom: 1px solid var(--rule); gap: 8px; overflow: hidden; }
+  .p-head b { font-size: 26px; }
+  .mix-rows { display: none; }
+  section { padding: calc(var(--strip) + 24px) 20px 110px; }
+  h1 { font-size: clamp(34px, 9vw, 48px); } h2 { font-size: clamp(28px, 7.5vw, 40px); } h3 { font-size: clamp(22px, 6.2vw, 30px); }
+  .dek, .prose { font-size: 16.5px; }
+  .stats { grid-template-columns: repeat(2, auto); }
+  .totals { grid-template-columns: 1fr; }
+  .ctl { left: 0; right: 0; bottom: 0; max-width: none; padding: 10px 16px 14px; justify-content: space-between; background: var(--paper); border: 0; border-top: 1px solid var(--rule); border-radius: 0; }
+  .ctl span { display: none; }
+}
+@media (prefers-reduced-motion: reduce) { .mk, .halo, .bar i, .mix-rows .mr-b i, .strip .ph { transition: none; } html { scroll-behavior: auto; } }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to the story</a>
+<div class="bar" aria-hidden="true"><i id="bar"></i></div>
+<header class="top">
+  <span class="brand"><b>The Count</b> · the story · prototype</span>
+  <nav class="links" aria-label="Other readings"><a class="caut" href="#cautions">Cautions</a><a href="count.html" data-carry="count.html"><span id="lk-all">All at once</span> <span aria-hidden="true">→</span></a><a href="focus.html" data-carry="focus.html">One act at a time <span aria-hidden="true">→</span></a><a href="index.html" data-carry="index.html">Choose what to see</a></nav>
+</header>
+<nav class="ctl" aria-label="Story controls">
+  <button type="button" id="prev" aria-label="Previous screen">←</button>
+  <button type="button" id="next" aria-label="Next screen">→</button>
+  <button type="button" id="play">Play</button>
+  <span>← → screens · ↓ ↑ scroll within one</span>
+</nav>
+
+<aside class="panel" aria-label="Where this screen sits in the story">
+  <div class="p-head"><span id="p-where">The story</span><b><span id="p-n">0</span><small id="p-total"></small></b></div>
+  <p class="p-note" id="p-note" hidden><a href="#cautions">This prologue has gaps and cautions · read them →</a></p>
+  <div class="mix" id="mix" role="group" aria-label="So far"><p class="mix-top" id="mix-top"></p><div class="mix-rows" id="mix-rows"></div></div>
+  <p class="wall-key" id="wall-key"></p>
+  <div id="wall" aria-hidden="true"></div>
+  <div class="strip" id="strip" aria-hidden="true"></div>
+</aside>
+
+<p class="vh" id="live" aria-live="polite"></p>
+<main id="main"></main>
+
+<script type="module">
+const MONTHS = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sept','Oct','Nov','Dec'];
+const MONTHS_LONG = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+const parts = (d) => d.split('-').map(Number);
+const longDate = (d) => { const [y, m, day] = parts(d); return `${MONTHS_LONG[m - 1]} ${day}, ${y}`; };
+const monthYear = (d) => { const [y, m] = parts(d); return `${MONTHS_LONG[m - 1]} ${y}`; };
+const shortMonthYear = (d) => { const [y, m] = parts(d); return `${MONTHS[m - 1]} ${y}`; };
+const when = (it) => it.grain === 'day' ? longDate(it.date) : it.grain === 'month' ? monthYear(it.date) : it.date;
+const outlet = (t) => { const h = t.split(/:| - /)[0].replace(/\s*\([^)]*\)/g, '').trim(); return h.length > 40 ? h.slice(0, 38) + '…' : h; }; // a parenthetical after the outlet name (a renaming note) stays in the full citation only
+const smart = (s) => s.replace(/(^|[\s([{—–-])"/g, '$1“').replace(/"/g, '”').replace(/(\w)'(?=\w)/g, '$1’').replace(/(^|[\s([{“—–-])'/g, '$1‘').replace(/'/g, '’');
+const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+const inline = (s) => esc(smart(String(s))).replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+const md = (s) => { let out = '', last = 0; const re = /\[([^\]]+)\]\(([^)\s]+)\)/g; let m; while ((m = re.exec(s))) { out += inline(s.slice(last, m.index)); out += `<a href="${esc(m[2])}" target="_blank" rel="noopener">${inline(m[1])}</a>`; last = m.index + m[0].length; } return out + inline(s.slice(last)); };
+const nf = (n) => n.toLocaleString('en-US');
+const motionQ = matchMedia('(prefers-reduced-motion: reduce)'); let reduced = motionQ.matches; motionQ.addEventListener('change', (e) => { reduced = e.matches; });
+const $ = (id) => document.getElementById(id);
+const srcLinks = (ss, extra = '') => `<p class="srcs">${(ss || []).map((s) => `<a href="${esc(s.url)}" target="_blank" rel="noopener" title="${esc(s.text)}">${esc(outlet(s.text))}<span class="vh">: ${esc(s.text)} (opens in a new tab)</span></a>`).join('')}${extra}</p>`;
+const withQ = (page, set = {}, hash = '', drop = []) => { const q = new URLSearchParams(location.search); q.delete('v'); drop.forEach((k) => q.delete(k)); Object.entries(set).forEach(([k, v]) => v == null ? q.delete(k) : q.set(k, v)); const qs = q.toString(); return `${page}${qs ? '?' + qs : ''}${hash}`; };
+const dayOf = (d) => Date.UTC(+d.slice(0, 4), +d.slice(5, 7) - 1, +(d.slice(8, 10) || 1));
+
+let D, P = null, TT = {};
+// an edition may not have its prologue yet: then the story runs without part one (and its tracker titles are not asked for)
+const proLoad = document.documentElement.dataset.prologue === '0' ? Promise.resolve(null) : fetch('story/prologue.json').then((r) => r.ok ? r.json() : null).catch(() => null);
+try { [D, [P, TT]] = await Promise.all([fetch('ledger.json').then((r) => r.json()), proLoad.then(async (p) => [p, p ? await fetch('story/tracker-titles.json').then((r) => r.ok ? r.json() : {}).catch(() => ({})) : {}])]); }
+catch (e) { $('main').innerHTML = '<p class="pend" style="padding:140px 6vw 0">The ledger could not be loaded. Run build.cjs and serve this folder over http.</p>'; throw e; }
+const items = D.items, N = items.length;
+// everything about the edition's topic comes from the ledger: chapter names and spans, families, eras, terms and the story's own words
+const T = D.topic;
+const CHAP = Object.fromEntries(T.chapters.map((c) => [c.key, c]));
+const CH = Object.fromEntries(T.chapters.map((c) => [c.key, c.short]));
+// short family names for the panel: the lead of each ledger label, with no family reduced to its most loaded word
+const FAM_SHORT = Object.fromEntries(T.familyOrder.map((k) => [k, (T.families[k] && T.families[k].short) || k]));
+const FAM_LABEL = (k) => (D.families && D.families[k] && D.families[k].label) || (T.families[k] && T.families[k].label) || FAM_SHORT[k] || k;
+const FAMILY_ORDER = T.familyOrder.filter((k) => (D.families[k] && D.families[k].count) || !D.families[k]); // families with no acts in this edition stay off the panel
+const START_YEAR = +T.start.slice(0, 4);
+const PRO = !!(P && P.sections && P.sections.length), SECS = PRO ? P.sections : [];
+const lcFirst = (x) => x.charAt(0).toLowerCase() + x.slice(1);
+document.title = `The Story | ${T.name}, ${lcFirst(T.edition)} (prototype)`;
+{ const m = document.querySelector('meta[name="description"]'); if (m) m.content = smart(`${T.name}, ${lcFirst(T.edition)}, told in order: ${PRO ? `a sourced prologue on ${T.story.topicList}, then ` : ''}the count, era by era, with its threads and totals.`); }
+document.querySelector('.top .brand b').textContent = T.name;
+if (!PRO) document.querySelector('.top .links a.caut').remove();
+const trackerId = (it) => it.tracker ? new URL(it.tracker).searchParams.get('id') : null;
+
+// ── the prologue beats, tied to the count where they are in it ─────────────
+const findItem = (b) => {
+  if (b.id.startsWith('ledger:')) { const d = b.id.slice(7, 17), pre = b.id.slice(18).toLowerCase(); return items.find((it) => it.date === d && it.title.toLowerCase().startsWith(pre)) || null; }
+  // a beat may name the ledger act it describes when the entry has no ledger link of its own (ledgerId, set when the outline is assembled)
+  return items.find((it) => trackerId(it) === b.id) || (b.ledgerId ? findItem({ id: b.ledgerId }) : null);
+};
+let setupN = 0;
+const beats = SECS.flatMap((s, si) => s.beats.map((b, bi) => { const item = findItem(b); return { ...b, si, bi, section: s, item, setupIndex: item ? -1 : setupN++ }; }));
+const SETUP = beats.filter((b) => !b.item);
+const inCountN = beats.length - SETUP.length;
+// the outline's own in-count flags must agree with the match, and no act may be claimed by two steps
+const problems = [], claimed = new Map();
+beats.forEach((b) => { if (!!b.item !== !!b.inCount) problems.push(`${b.id}: the outline says ${b.inCount ? 'in' : 'not in'} the count, the page found ${b.item ? 'an act' : 'none'}`); if (b.item) { if (claimed.has(b.item.i)) problems.push(`${b.id} and ${claimed.get(b.item.i)} both claim act #${b.item.i + 1}`); claimed.set(b.item.i, b.id); } });
+if (problems.length) console.error('story: the prologue and the ledger disagree', problems);
+
+// ── eras ──────────────────────────────────────────────────────────────────
+const ERA_BOUNDS = Object.fromEntries(T.chapters.map((c) => [c.key, [c.from, c.to || D.stats.last]]));
+const eraItems = (key) => items.filter((it) => it.chapter === key);
+// the playhead marks an era's end only when most of its acts are dated inside the era (an era of acts adjudicated or returned later gets none)
+const eraEnd = (key) => { const b = ERA_BOUNDS[key], its = eraItems(key); if (!b || !its.length) return null; const inside = its.filter((it) => it.date >= b[0] && it.date <= b[1]).length; return inside * 2 >= its.length ? b[1] : null; };
+const days = (a, b) => Math.round((dayOf(b) - dayOf(a)) / 864e5);
+// pace over the span the era's own acts cover (first act to last act, or to the ledger's end for the current year); not shown for a handful of acts
+const eraRate = (key) => { const its = eraItems(key); if (its.length < 5) return null; const ds = its.map((it) => it.date).sort(); const first = ds[0], last = ds[ds.length - 1]; const d = days(first, last); return d > 0 ? { days: d, every: d / (its.length - 1), first, last } : null; };
+const TERM_OF = (it) => CHAP[it.chapter] ? CHAP[it.chapter].term : it.chapter;
+// the period filter's own labels, as a phrase: "Only the second term" reads "the second term"
+const TERM_LABEL = Object.fromEntries(T.terms.filter((x) => x.t).map((x) => [x.t, lcFirst(x.label.replace(/^Only /, ''))]));
+const termCount = (t) => items.filter((it) => TERM_OF(it) === t).length;
+const spanMonths = (a, b) => { const [y1, m1] = parts(a), [y2, m2] = parts(b); return (y2 - y1) * 12 + (m2 - m1) + 1; };
+const coverage = (its, key, hasRate) => { const tr = its.filter((it) => it.tracker).length, n = its.length; const how = tr === n ? `All ${n} of this era's acts come from the Trump Tracker${key === 'second26' ? ', which has followed the year day by day' : ''}.` : tr === 0 ? `None of this era's ${n} acts comes from the Trump Tracker; all ${n} were added by new research for the ledger.` : `${tr} of this era's ${n} acts ${tr === 1 ? 'comes' : 'come'} from the Trump Tracker; the other ${n - tr} were added by new research for the ledger.`; return `${how} A count of what is documented, not of everything that happened${hasRate ? '; the pace is not comparable across eras' : ''}.`; };
+// links that describe a whole term or a thread drop the reader's filter; the header links keep it
+const FILTER_KEYS = ['f', 'r', 'm', 'q'];
+const chosen = (() => { const q = new URLSearchParams(location.search); const out = []; const f = (q.get('f') || '').split(',').filter(Boolean); if (f.length) out.push(f.map((k) => FAM_LABEL(k)).join(', ')); const r = (q.get('r') || '').split(',').filter(Boolean); if (r.length) out.push(r.map((k) => k === 'none' ? 'not rated' : k).join(', ')); const t = q.get('t'); if (t && TERM_LABEL[t]) out.push(TERM_LABEL[t]); return out; })();
+// a thread follows the era its first moment falls in (one that starts before the first era, the first era)
+const threadEra = (t) => { const c = T.chapters.find((c) => t.first >= c.from && (!c.to || t.first < c.to)); return c ? c.key : t.first < T.chapters[0].from ? T.chapters[0].key : null; };
+const threadsIn = (key) => (D.threads || []).filter((t) => threadEra(t) === key);
+
+// ── the screens ───────────────────────────────────────────────────────────
+const coldRe = T.story && T.story.coldOpen ? new RegExp(T.story.coldOpen, 'i') : null;
+const cold = (coldRe && D.totals.find((t) => t.figure && coldRe.test(t.measure))) || D.totals.find((t) => t.figure);
+const threadsPhrase = (D.threads || []).length === 1 ? 'a thread' : 'their threads';
+let html = '';
+html += `<section class="hero" data-kind="hero" id="s-hero"><p class="eyebrow"><b>${esc(T.name)}</b><span>the story · ${esc(T.kicker)}, ${START_YEAR} to ${esc(monthYear(D.stats.last))}</span></p>${cold ? `<h1>${inline(cold.figure)}</h1><p class="dek"><strong>${md(cold.measure)}.</strong></p>${srcLinks(cold.sources)}` : `<h1>${esc(T.name)}</h1>`}<p class="prose">What else is on the record around it? This is the ledger read in the order it is told: ${PRO ? `a prologue of ${beats.length} sourced steps on ${inline(T.story.topicList)} (${SETUP.length ? `${inCountN} of them are acts in the count, ${SETUP.length} are not` : `all ${inCountN} of them acts in the count`}), then ` : ''}all ${nf(N)} documented acts, era by era, with ${threadsPhrase} and the totals.</p><div class="cta"><a class="btn red" href="#s-pro">Begin ↓</a><button class="btn" type="button" data-play>Play it</button><a class="btn" href="#era-before">Skip to the count</a></div><p class="cave">Scroll, swipe or press the arrow keys. ${PRO ? `Each step, act and total links its sources; the prologue's framing is marked as framing, and its gaps and cautions have their own screen.` : 'Each act and total links its sources.'}</p>${chosen.length ? `<p class="cave">You chose ${esc(chosen.join(' · '))}. The story is told whole; that choice waits in All at once and One act at a time.</p>` : ''}</section>`;
+if (PRO) html += `<section data-kind="pro-intro" id="s-pro"><p class="eyebrow"><b>Part one</b><span>the prologue</span></p><h2>${inline(P.title)}</h2><p class="h-sub">${beats.length} steps in ${SECS.length} sections. ${SETUP.length ? `${inCountN} of them are acts in the count. The other ${SETUP.length} are not, and they are drawn on their own row of the wall, above the count.` : `All ${inCountN} of them are acts in the count.`}</p><div class="frame"><p class="lbl">Framing · not a finding</p><p>${inline(P.framing)}</p></div><p class="cave">This prologue states its own gaps.${T.story.introGap ? ' ' + inline(T.story.introGap) : ''} <a href="#cautions">The gaps and cautions are one screen away at all times.</a></p></section>`;
+else html += `<section data-kind="pro-note" id="s-pro"><p class="eyebrow"><b>Part one</b><span>the prologue</span></p><h2>This edition's prologue is being written.</h2><p class="dek">Until it is ready, the story starts with the count: all ${nf(N)} documented acts, era by era, with ${threadsPhrase} and the totals.</p><div class="cta"><a class="btn red" href="#era-before">On to the count ↓</a></div></section>`;
+let stepNo = 0;
+SECS.forEach((s, si) => {
+  const inSec = s.beats.filter((b) => beats.find((x) => x.id === b.id && x.item)).length, unit = s.key === 'limits' ? 'items' : 'steps';
+  let secCave = s.key === 'limits' ? `A summary of the items that follow; each carries its sources. ${inSec === s.beats.length ? `All ${inSec}` : inSec} of these are acts in the count; the section cites them for the limit each one shows.` : `A summary of the steps that follow; each step carries its sources.`;
+  if (s.thesisInferred) secCave += ` Parts of this summary are inference; <a href="#cautions">see the cautions</a>.`;
+  const gapBeat = s.beats.find((b) => b.sourceGap);
+  const flagBeat = s.beats.find((b) => b.flag);
+  html += `<section data-kind="sec" data-si="${si}" id="sec-${s.key}"><p class="eyebrow"><b>Part one · section ${si + 1} of ${SECS.length}</b><span>${s.beats.length} ${unit}</span></p><h2>${inline(s.title)}</h2><p class="dek">${inline(s.thesis)}</p>${gapBeat ? `<p class="pend">Source pending · ${esc(gapBeat.sourceGap)}</p>` : ''}${flagBeat ? `<p class="pend">Caution · ${esc(flagBeat.flag)}</p>` : ''}<p class="cave">${secCave}</p></section>`;
+  s.beats.forEach((b, bi) => {
+    const k = beats.findIndex((x) => x.si === si && x.bi === bi); const bt = beats[k]; stepNo++;
+    const isLedger = bt.id.startsWith('ledger:');
+    const badge = bt.item ? (bt.item.date !== bt.date ? `<span class="tag ink">From the entry for one of the ${nf(N)} acts</span>` : `<span class="tag ink">One of the ${nf(N)} acts</span>`) : `<span class="tag red">Context · not in the count</span>`;
+    const basis = bt.whyBasis === 'stated' ? `<span class="tag">Stated in ${isLedger ? 'the ledger' : 'the tracker entry'}</span>` : bt.whyBasis === 'inferred' ? `<span class="tag dash">Attributed or inferred · <a href="#cautions">see the cautions</a></span>` : '';
+    const undated = /^Undated/i.test(bt.dateNote || '');
+    const dateCell = undated ? `<span>${esc(bt.dateNote)}</span>` : `<span>${esc(longDate(bt.date))}</span>`;
+    const dateLine = bt.dateNote && !undated ? `<p class="entry">About the date · ${inline(bt.dateNote)}</p>` : '';
+    const realTitle = isLedger ? (bt.item ? bt.item.title : '') : (TT[bt.id] || '');
+    const trHref = isLedger ? (bt.item && bt.item.tracker ? bt.item.tracker : '') : `https://thetrumptracker.com/controversy?id=${bt.id}`;
+    const tr = trHref ? `<a class="tr" href="${esc(trHref)}" target="_blank" rel="noopener">Tracker entry<span class="vh">: ${esc(realTitle || bt.line)} (opens in a new tab)</span> <span aria-hidden="true">→</span></a>` : '';
+    const quote = bt.quote && bt.quoteBy ? `<p class="prose quote">“${inline(bt.quote)}”<span class="qby">${inline(bt.quoteBy)}</span></p>` : '';
+    const pend = (bt.sourceGap ? `<p class="pend">Source pending · ${esc(bt.sourceGap)}</p>` : '') + (bt.flag ? `<p class="pend">Caution · ${esc(bt.flag)}</p>` : '');
+    const stepNotes = ((P.readerNotes && P.readerNotes.stepNotes) || []).filter((n) => n.id === bt.id);
+    const notes = stepNotes.length ? `<div class="stepnote"><span class="lbl">Caution</span>${stepNotes.map((n) => inline(n.text)).join(' ')}</div>` : '';
+    const logged = bt.item && bt.item.date !== bt.date ? `<p class="entry">The act in the count is dated ${esc(when(bt.item))}; this step is dated to the event it describes, recorded in the same entry.</p>` : '';
+    const entryLine = realTitle ? `<p class="entry">${isLedger ? 'Ledger item' : 'Tracker entry'} · ${inline(realTitle)}</p>` : '';
+    html += `<section class="beat" data-kind="beat" data-k="${k}" id="step-${stepNo}"><p class="eyebrow"><b>Prologue · ${stepNo} of ${beats.length}</b>${dateCell}<span>${esc(s.title)}</span>${badge}</p><h3 class="${bt.line.length > 150 ? 'l' : ''}">${inline(bt.line)}</h3>${bt.why ? `<div class="why"><p class="lbl">Why it is in the prologue ${basis}</p><p>${inline(bt.why)}</p></div>` : ''}${quote}${notes}${srcLinks(bt.sources, tr)}${pend}${dateLine}${logged}${entryLine}</section>`;
+  });
+});
+if (PRO) {
+const RN = P.readerNotes && P.readerNotes.items && P.readerNotes.items.length ? P.readerNotes : null;
+const notesLists = `<h3 class="lab">Gaps</h3><ul class="list">${P.gaps.map((g) => `<li>${inline(g)}</li>`).join('')}</ul><h3 class="lab">Cautions</h3><ul class="list">${P.cautions.map((c) => `<li>${inline(c)}</li>`).join('')}</ul>`;
+html += `<section data-kind="cautions" id="cautions"><p class="eyebrow"><b>Part one · gaps and cautions</b><span>what this prologue cannot support</span></p><h2>What this prologue cannot support.</h2>${RN ? `<p class="dek">${inline(RN.intro)}</p><ul class="list">${RN.items.map((it) => `<li>${inline(it.text)}</li>`).join('')}</ul><details class="notes"><summary>The checks' own working notes, unedited</summary>${notesLists}</details>` : `<p class="dek">The prologue came from a sweep of the tracker and the ledger, with each step checked against its entry. Below are the sweep's own working notes, unedited: what it could not support, and where its wording is inference rather than record. “The reader” in them is the request that prompted the prologue.</p>${notesLists}`}<div class="cta"><a class="btn red" href="#era-before">On to the count ↓</a></div></section>`;
+}
+let cum = 0;
+for (const ch of D.chapters) {
+  const its = eraItems(ch.key); const rate = eraRate(ch.key); const before = cum; cum += its.length;
+  const [t1, t2] = (() => { const t = ch.title.replace(/^Second term: /, 'Second term, '); const m = t.match(/^(.+?)(?::|,)\s*(.+)$/); return m ? [m[1], m[2]] : [t, '']; })();
+  const fams = {}; its.forEach((it) => { fams[it.family] = (fams[it.family] || 0) + 1; });
+  const kinds = FAMILY_ORDER.filter((k) => fams[k]).map((k) => ({ k, n: fams[k] })).sort((a, b) => b.n - a.n);
+  let kindStat = '';
+  if (kinds.length) { const top = kinds[0].n, leaders = kinds.filter((x) => x.n === top), rest = kinds.filter((x) => x.n < top), second = rest.length ? rest[0].n : 0, runners = rest.filter((x) => x.n === second); const names = (xs) => xs.map((x) => `“${esc(FAM_LABEL(x.k))}”`).join(' and '); kindStat = leaders.length > 1 ? `<div class="stat kind"><b>${top}</b><span>acts each filed first under ${names(leaders)}, tied as the era's most common family</span></div>` : `<div class="stat kind"><b>${top}</b><span>acts filed first under ${names(leaders)}, the era's most common family${runners.length ? `; then ${names(runners)}, ${second}${runners.length > 1 ? ' each' : ''}` : ''}</span></div>`; }
+  const term = TERM_OF({ chapter: ch.key });
+  html += `<section data-kind="era" data-ch="${ch.key}" data-before="${before}" data-after="${cum}" id="era-${ch.key}"><p class="eyebrow"><b>Part two · ${esc(CH[ch.key])}</b><span>${its.length} ${its.length === 1 ? 'act' : 'acts'}</span></p><h2>${esc(t1)}${t2 ? `<small>${esc(t2)}</small>` : ''}</h2><div class="prose">${ch.prose.map((p) => `<p>${md(p)}</p>`).join('')}</div><div class="stats"><div class="stat red"><b>${its.length}</b><span>acts documented</span></div>${rate ? `<div class="stat"><b>${rate.every >= 10 ? Math.round(rate.every) : rate.every.toFixed(1)}</b><span>days between documented acts, on average, from the era's first act (${esc(longDate(rate.first))}) to its last (${esc(longDate(rate.last))})</span></div>` : ''}${kindStat}</div><p class="cave">${esc(coverage(its, ch.key, !!rate))}</p><div class="cta"><a class="btn" href="${withQ('focus.html', { t: term }, `#a-${its.length ? its[0].i + 1 : 1}`, FILTER_KEYS)}">Walk ${TERM_LABEL[term]}, ${termCount(term)} acts, one at a time from here <span aria-hidden="true">→</span></a></div></section>`;
+  for (const t of threadsIn(ch.key)) {
+    html += `<section data-kind="thread" data-slug="${esc(t.slug)}" data-after="${cum}" id="thread-${esc(t.slug)}"><p class="eyebrow"><b>A thread</b><span>${esc(t.kicker)} · ${esc(shortMonthYear(t.first))} to ${esc(shortMonthYear(t.last))}</span></p><h2>${inline(t.title)}</h2><p class="h-sub">${inline(t.question)}</p><p class="dek">${inline(t.answer)}</p><p class="cave">${t.events.length} moments in ${t.months === spanMonths(t.first, t.last) ? `each of the ${t.months} months` : `${t.months} of the ${spanMonths(t.first, t.last)} months`} from ${esc(monthYear(t.first))} to ${esc(monthYear(t.last))}. The ${t.acts.length} acts lit on the wall are the count's items whose tracker entries this story is built on; the thread counts its moments on their own, not as acts. This thread comes from the Deep Dives story ${inline(t.title)}, shown from its own data, unchanged.</p><div class="cta"><a class="btn red" href="${withQ('count.html', { thread: t.slug }, '', FILTER_KEYS)}">Follow this thread on the count <span aria-hidden="true">→</span></a></div></section>`;
+  }
+}
+const tIntro = D.totals.find((t) => !t.figure), tRows = D.totals.filter((t) => t.figure);
+html += `<section data-kind="totals" id="s-totals"><p class="eyebrow"><b>Part three</b><span>the totals, as each source states them</span></p><h2>The record's totals, one figure at a time.</h2>${tIntro ? `<p class="dek">${md(tIntro.measure)}</p>` : ''}<div class="totals">${tRows.map((t) => `<div class="total"><b>${inline(t.figure)}</b><p>${md(t.measure)}</p>${srcLinks(t.sources)}</div>`).join('')}</div></section>`;
+html += `<section class="end" data-kind="end" id="s-end"><p class="eyebrow"><b>${esc(T.name)}</b><span>${esc(monthYear(D.stats.first))} to ${esc(monthYear(D.stats.last))}</span></p><h2>That is <em>${nf(N)}.</em></h2><p class="dek">${nf(N)} documented acts and ${nf(D.stats.sources)} sources cited in the ledger${PRO ? (SETUP.length ? `; ${SETUP.length} of the prologue's ${beats.length} steps are outside the count` : `; all ${beats.length} of the prologue's steps are among those acts`) : ''}. A count of what is documented, not of everything that happened.</p><div class="cta"><a class="btn red" href="${withQ('count.html', {}, '#explore')}">Zoom out <span aria-hidden="true">→</span></a><a class="btn" href="${withQ('focus.html')}">One act at a time</a><a class="btn" href="${withQ('count.html')}">All at once</a><a class="btn" href="#s-hero">Start over</a></div></section>`;
+if (problems.length) html = html.replace('<section class="hero" data-kind="hero" id="s-hero">', `<section class="hero" data-kind="hero" id="s-hero"><p class="pend">Data check failed: ${problems.length} disagreement${problems.length === 1 ? '' : 's'} between the prologue and the ledger; see the console.</p>`);
+$('main').innerHTML = html;
+const sections = [...document.querySelectorAll('section')];
+// each screen is focusable (for the keyboard and screen readers) and named by its heading
+sections.forEach((sec) => { sec.tabIndex = -1; const h = sec.querySelector('h1, h2, h3'); if (h) { h.id = 'h-' + sec.id; sec.setAttribute('aria-labelledby', h.id); } });
+$('lk-all').textContent = `All ${nf(N)} at once`;
+if (PRO && SETUP.length) $('wall-key').innerHTML = `<span class="sw" aria-hidden="true"></span>The prologue · ${SETUP.length} steps not in the count`; else $('wall-key').style.display = 'none';
+
+// ── the wall: the setup row, then the count ────────────────────────────────
+const groups = [];
+// a chapter with a row label (the record before the first term, a campaign) is one row; the others are a row a year
+const rowLabelOf = (it) => (CHAP[it.chapter] && CHAP[it.chapter].rowLabel) || null;
+for (const it of items) { const rl = rowLabelOf(it); const key = rl ? it.chapter : `${it.chapter}:${it.year}`; let g = groups[groups.length - 1]; if (!g || g.key !== key) groups.push((g = { key, chapter: it.chapter, label: rl || it.year, items: [] })); g.items.push(it); }
+let markEls = [], setupEls = [], yearEls = {}, halo = null, centers = [], setupCenters = [];
+function buildWall() {
+  const compact = innerWidth <= 860;
+  const W = Math.max(280, Math.round($('wall').clientWidth || (compact ? innerWidth - 32 : innerWidth * 0.42 - 60)));
+  // the label column fits the longest chapter row label (10.5px mono, about 6.93px a character), never narrower than 44px
+  const rowLabelW = Math.max(0, ...T.chapters.map((c) => c.rowLabel ? Math.ceil(c.rowLabel.length * 6.93 + 2) : 0));
+  const labelW = compact ? 0 : Math.max(44, rowLabelW), pitch = compact ? 4 : 6, H = compact ? 10 : 16, linePitch = compact ? 15 : 24, headH = compact ? 14 : 18;
+  const gateW = 3 * pitch, gatePitch = gateW + (compact ? 10 : 14), perLine = Math.max(1, Math.floor((W - labelW) / gatePitch)), r = compact ? 6 : 9;
+  let y = 8, svg = '';
+  const row = (list, cls, keyAttr) => { list.forEach((it, j) => { const gate = Math.floor(j / 5), k = j % 5, line = Math.floor(gate / perLine), gi = gate % perLine; const gx = labelW + gi * gatePitch, yy = y + line * linePitch; let x1, y1, x2, y2; if (k < 4) { x1 = x2 = gx + k * pitch; y1 = yy; y2 = yy + H; } else { x1 = gx - 2; y1 = yy + H; x2 = gx + gateW + 2; y2 = yy; } const c = { x: (x1 + x2) / 2, y: (y1 + y2) / 2 }; if (cls === 'setup') setupCenters[j] = c; else centers[it.i] = c; svg += `<line class="mk${cls ? ' ' + cls : ''}" ${keyAttr}="${cls === 'setup' ? j : it.i}" x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}"/>`; }); y += Math.ceil(Math.ceil(list.length / 5) / perLine) * linePitch + 2; };
+  // the prologue row first, when this edition has steps outside the count
+  if (SETUP.length) {
+  if (PRO) {
+  svg += `<text class="ch setup" x="0" y="${y + 9}">PROLOGUE · ${SETUP.length} NOT IN THE COUNT</text><line class="chl" x1="0" x2="${W}" y1="${y + headH - 3}" y2="${y + headH - 3}"/>`; y += headH + 3;
+  if (!compact) svg += `<text class="yl" x="0" y="${y + H - 3}">Prologue</text>`;
+  row(SETUP, 'setup', 'data-s'); }
+  }
+  let lastChapter = null;
+  const gs = compact ? (() => { const out = []; for (const it of items) { let g = out[out.length - 1]; if (!g || g.chapter !== it.chapter) out.push((g = { chapter: it.chapter, label: CH[it.chapter], items: [] })); g.items.push(it); } return out; })() : groups;
+  for (const g of gs) {
+    if (g.chapter !== lastChapter || compact) { svg += `<text class="ch" x="0" y="${y + 9}">${esc(CH[g.chapter].toUpperCase())} · ${D.stats.byChapter[g.chapter]}</text><line class="chl" x1="0" x2="${W}" y1="${y + headH - 3}" y2="${y + headH - 3}"/>`; y += headH + 3; lastChapter = g.chapter; }
+    if (!compact) svg += `<text class="yl" data-year="${g.label}" x="0" y="${y + H - 3}">${g.label}</text>`;
+    row(g.items, '', 'data-i');
+  }
+  svg += `<circle class="halo is-off" id="halo" r="${r}" cx="0" cy="0"/>`;
+  $('wall').innerHTML = `<svg viewBox="0 0 ${W} ${y + 4}" preserveAspectRatio="xMinYMin meet" aria-hidden="true">${svg}</svg>`;
+  markEls = []; document.querySelectorAll('.mk[data-i]').forEach((el) => { markEls[+el.dataset.i] = el; });
+  setupEls = []; document.querySelectorAll('.mk[data-s]').forEach((el) => { setupEls[+el.dataset.s] = el; });
+  yearEls = {}; document.querySelectorAll('.yl[data-year]').forEach((el) => { (yearEls[el.dataset.year] = yearEls[el.dataset.year] || []).push(el); });
+  halo = $('halo');
+  paint();
+}
+
+// ── the strip ─────────────────────────────────────────────────────────────
+const ERAS = T.eras;
+const T0 = dayOf(T.start), T1 = (() => { const [y, m] = parts(D.stats.last); return Date.UTC(y, m, 1); })();
+const monthKeys = Object.keys(D.stats.byMonth).sort();
+let stripW = 0, playheadEl = null, playheadDate = null;
+function buildStrip() {
+  const el = $('strip'); const W = el.clientWidth; if (!W) return; stripW = W;
+  const narrow = W < 520, H = narrow ? 40 : 48, barTop = narrow ? 9 : 11, barBase = H - 17, spanY = H - 15, tickY = H - 9;
+  const x = (t) => Math.round((t - T0) / (T1 - T0) * W);
+  let s = '';
+  ERAS.forEach((e, i) => { const x0 = x(dayOf(e.from)), x1 = e.to ? x(dayOf(e.to)) : W; s += `<rect class="era${i % 2 ? ' alt' : ''}" x="${x0}" y="0" width="${x1 - x0}" height="${H}"/>`; if (!narrow || (ERAS.length - 1 - i) % 2 === 0) s += `<text class="era-lbl" x="${x0 + 4}" y="9">${esc(e.label.toUpperCase())}</text>`; });
+  const max = Math.max(...Object.values(D.stats.byMonth)), span = barBase - barTop;
+  for (const m of monthKeys) { const [y, mm] = parts(m); const x0 = x(Date.UTC(y, mm - 1, 1)), x1 = x(Date.UTC(y, mm, 1)), w = Math.max(1, x1 - x0 - 1); const h = Math.round((D.stats.byMonth[m] || 0) / max * span); if (h) s += `<rect class="dens" x="${x0}" y="${barBase - h}" width="${w}" height="${h}"/>`; }
+  for (let y = T0 === Date.UTC(START_YEAR, 0, 1) ? START_YEAR : START_YEAR + 1; y <= +D.stats.last.slice(0, 4); y++) { const px = x(Date.UTC(y, 0, 1)); s += `<line class="tick" x1="${px}" x2="${px}" y1="${tickY - 4}" y2="${tickY - 1}"/>`; if (!narrow || y % 2) s += `<text class="yr" x="${px + 2}" y="${H - 1}">${y}</text>`; }
+  for (const t of (D.threads || [])) { const x0 = x(dayOf(t.first)), x1 = Math.max(x0 + 6, x(dayOf(t.last))); s += `<rect class="sp" x="${x0}" y="${spanY}" width="${x1 - x0}" height="4" rx="1"><title>${esc(t.title)}</title></rect>`; }
+  s += `<g class="ph is-off" id="playhead"><line x1="0" x2="0" y1="0" y2="${H}"/><path d="M-4 0 L4 0 L0 5 Z"/></g>`;
+  el.innerHTML = `<svg viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" aria-hidden="true">${s}</svg>`;
+  playheadEl = $('playhead'); if (playheadDate) setPlayhead(playheadDate);
+}
+function setPlayhead(d) { playheadDate = d; if (!playheadEl) return; if (!d) { playheadEl.classList.add('is-off'); return; } playheadEl.classList.remove('is-off'); playheadEl.style.transform = `translateX(${Math.round((dayOf(d) - T0) / (T1 - T0) * stripW)}px)`; }
+
+// ── state: what is dark, what is lit, what the panel says ──────────────────
+let activeEl = null, shown = 0, countRaf = 0;
+const state = { pastItems: new Set(), litItems: new Set(), nowItem: -1, pastSetup: 0, nowSetup: -1, stagger: null };
+function paint() {
+  markEls.forEach((el, i) => { el.style.setProperty('--d', state.stagger && state.stagger.has(i) ? `${state.stagger.get(i)}ms` : '0ms'); el.classList.toggle('is-past', state.pastItems.has(i)); el.classList.toggle('is-lit', state.litItems.has(i)); el.classList.toggle('is-now', i === state.nowItem); });
+  setupEls.forEach((el, j) => { el.classList.toggle('is-past', j < state.pastSetup); el.classList.toggle('is-now', j === state.nowSetup); });
+  const c = state.nowItem >= 0 ? centers[state.nowItem] : state.nowSetup >= 0 ? setupCenters[state.nowSetup] : null;
+  if (halo) { if (c) { halo.classList.remove('is-off'); halo.style.transform = `translate(${c.x}px, ${c.y}px)`; } else halo.classList.add('is-off'); }
+  const yr = state.nowItem >= 0 ? (rowLabelOf(items[state.nowItem]) || String(items[state.nowItem].year)) : null;
+  Object.entries(yearEls).forEach(([y, els]) => els.forEach((el) => el.classList.toggle('is-now', y === yr)));
+}
+function animateCount(to, dur) {
+  cancelAnimationFrame(countRaf); const from = shown, t0 = performance.now();
+  if (reduced || dur < 50 || from === to) { shown = to; $('p-n').textContent = nf(to); return; }
+  const tick = (t) => { const k = Math.max(0, Math.min(1, (t - t0) / dur)); const e = 1 - Math.pow(1 - k, 3); shown = Math.round(from + (to - from) * e); $('p-n').textContent = nf(shown); if (k < 1) countRaf = requestAnimationFrame(tick); };
+  countRaf = requestAnimationFrame(tick);
+}
+function mixRows(rows, topLine) {
+  const max = Math.max(1, ...rows.map((r) => r.n));
+  $('mix-rows').innerHTML = rows.map((r) => `<span class="mr-l${r.n ? '' : ' is-zero'}">${esc(r.l)}</span><span class="mr-b"><i style="width:${(100 * r.n / max).toFixed(1)}%"></i></span><span class="mr-n${r.n ? '' : ' is-zero'}">${r.n}</span>`).join('');
+  $('mix-top').innerHTML = topLine;
+}
+const famRows = (upto) => { const c = {}; for (let i = 0; i < upto; i++) { const f = items[i].family; c[f] = (c[f] || 0) + 1; } return FAMILY_ORDER.map((k) => ({ l: FAM_SHORT[k], n: c[k] || 0 })); };
+const famTop = (rows) => { const top = rows.filter((r) => r.n).sort((a, b) => b.n - a.n).slice(0, 3); return top.length ? `So far · ${top.map((r) => `${esc(r.l)} <b>${r.n}</b>`).join(' · ')}` : 'So far · nothing yet'; };
+const secRows = (uptoStep) => SECS.map((s, si) => ({ l: s.title.length > 18 ? s.title.slice(0, 17) + '…' : s.title, n: beats.filter((b, k) => b.si === si && k < uptoStep).length }));
+// which count items the prologue has reached so far (its in-count beats), and how many setup marks
+const proReached = (uptoStep) => { const past = new Set(), lit = new Set(); let setup = 0; beats.slice(0, uptoStep).forEach((b) => { if (b.item) { past.add(b.item.i); lit.add(b.item.i); } else setup++; }); return { past, lit, setup }; };
+const allBeatsReached = () => proReached(beats.length);
+
+function setSection(idx) {
+  const s = sections[idx]; if (!s) return; activeEl = s; const kind = s.dataset.kind;
+  state.stagger = null; state.litItems = new Set(); state.nowItem = -1; state.nowSetup = -1;
+  $('p-note').hidden = !(kind === 'pro-intro' || kind === 'sec' || kind === 'beat');
+  let total = '', where = '', n = 0, ph = null;
+  if (kind === 'hero') { state.pastItems = new Set(); state.pastSetup = 0; where = 'The story'; n = 0; total = `of ${nf(N)} acts`; mixRows(famRows(0), 'So far · nothing yet'); }
+  else if (kind === 'pro-note') { state.pastItems = new Set(); state.pastSetup = 0; where = 'The prologue'; n = 0; total = `of ${nf(N)} acts`; mixRows(famRows(0), 'So far · nothing yet'); }
+  else if (kind === 'pro-intro' || kind === 'sec' || kind === 'beat' || kind === 'cautions') {
+    const uptoStep = kind === 'pro-intro' ? 0 : kind === 'sec' ? beats.findIndex((b) => b.si === +s.dataset.si) : kind === 'beat' ? +s.dataset.k + 1 : beats.length;
+    const r = proReached(Math.max(0, uptoStep)); state.pastItems = r.past; state.litItems = r.lit; state.pastSetup = r.setup;
+    if (kind === 'beat') { const b = beats[+s.dataset.k]; if (b.item) state.nowItem = b.item.i; else { state.nowSetup = b.setupIndex; state.pastSetup = Math.max(state.pastSetup - 1, b.setupIndex); } const undated = /^Undated/i.test(b.dateNote || ''); ph = undated ? null : b.date; where = undated ? `${b.section.title} · undated` : `${longDate(b.date)} · ${b.section.title}`; }
+    else where = kind === 'cautions' ? 'The prologue · gaps and cautions' : kind === 'sec' ? `${SECS[+s.dataset.si].title}` : 'The prologue';
+    n = Math.max(0, uptoStep); total = `of ${beats.length} in the prologue`;
+    mixRows(secRows(Math.max(0, uptoStep)), `Prologue · ${Math.max(0, uptoStep)} of ${beats.length}`);
+  }
+  else if (kind === 'era') {
+    const before = +s.dataset.before, after = +s.dataset.after; const r = allBeatsReached(); state.pastSetup = r.setup;
+    state.pastItems = new Set(); for (let i = 0; i < after; i++) state.pastItems.add(i);
+    state.stagger = new Map(); for (let i = before; i < after; i++) state.stagger.set(i, reduced ? 0 : Math.min(2400, (i - before) * 18));
+    where = CH[s.dataset.ch]; n = after; total = `of ${nf(N)} acts`; ph = eraEnd(s.dataset.ch);
+    mixRows(famRows(after), famTop(famRows(after)));
+  }
+  else if (kind === 'thread') {
+    // the wall stays where the preceding era left it (ledger order, not dates); the thread's acts are lit even when they lie ahead
+    const t = (D.threads || []).find((x) => x.slug === s.dataset.slug); const after = +s.dataset.after; const r = allBeatsReached(); state.pastSetup = r.setup;
+    state.pastItems = new Set(); for (let i = 0; i < after; i++) state.pastItems.add(i);
+    state.litItems = new Set(t.acts.map((i) => i)); where = `A thread · ${t.title} · ${t.acts.length} acts lit`; n = t.events.length; total = 'moments'; ph = t.first;
+    mixRows(famRows(after), famTop(famRows(after)));
+  }
+  else { const r = allBeatsReached(); state.pastSetup = r.setup; state.pastItems = new Set(items.map((it) => it.i)); where = kind === 'totals' ? 'The totals' : 'The whole count'; n = N; total = 'acts'; mixRows(famRows(N), famTop(famRows(N))); ph = kind === 'end' ? D.stats.last : null; }
+  $('p-where').textContent = where; $('p-total').textContent = total;
+  if (pendingIdx === idx || pendingIdx >= 0) pendingIdx = -1;
+  const h = s.querySelector('h1, h2, h3'); $('live').textContent = h ? `${where}. ${h.innerText.trim().replace(/\s*\n\s*/g, ', ')}` : where;
+  animateCount(n, Math.min(1500, Math.abs(n - shown) * 10 + 300));
+  const frac = kind === 'hero' ? 0 : (idx) / Math.max(1, sections.length - 1); $('bar').style.width = (100 * frac) + '%';
+  setPlayhead(ph); paint();
+  history.replaceState(null, '', kind === 'hero' ? location.pathname + location.search : location.search + '#' + s.id);
+}
+// The active screen is the last one whose top has passed the middle of the viewport. The observer
+// watches a band at that height; the scroll handler applies the same rule, so a screen taller than
+// the viewport (the cautions, the totals) still takes the panel when it arrives.
+// one rule decides the active screen (the last one whose top has passed the middle); the observer only prompts a re-check
+const io = new IntersectionObserver(() => pickByScroll(), { rootMargin: '-45% 0px -50% 0px', threshold: 0 });
+sections.forEach((s) => io.observe(s));
+function pickByScroll() { const mid = innerHeight * 0.5; let idx = -1; for (let i = 0; i < sections.length; i++) { if (sections[i].getBoundingClientRect().top <= mid) idx = i; else break; } if (idx >= 0 && sections[idx] !== activeEl) setSection(idx); }
+addEventListener('scroll', pickByScroll, { passive: true });
+
+// ── moving ────────────────────────────────────────────────────────────────
+const activeIdx = () => Math.max(0, sections.indexOf(activeEl));
+let pendingIdx = -1; // the screen a jump is heading for, so a second key press during the scroll counts from it
+const navIdx = () => pendingIdx >= 0 ? pendingIdx : activeIdx();
+// focus follows the screen unless a control has it (then the live region announces the change and Pause stays reachable)
+const go = (idx, smooth = true) => { idx = Math.max(0, Math.min(sections.length - 1, idx)); const sec = sections[idx]; pendingIdx = idx; sec.scrollIntoView({ behavior: smooth && !reduced ? 'smooth' : 'auto', block: 'start' }); const ae = document.activeElement; if (!(ae && ae.closest && ae.closest('.ctl'))) sec.focus({ preventScroll: true }); };
+// a screen taller than the viewport (the cautions, the totals, long steps on a phone) scrolls in parts before the next screen comes
+const SLACK = 12; // px of overflow that count as none
+const overflowBelow = () => activeEl ? activeEl.getBoundingClientRect().bottom - innerHeight : 0;
+const step = (dir) => { const r = activeEl ? activeEl.getBoundingClientRect() : null, b = reduced ? 'auto' : 'smooth'; if (r && dir > 0 && r.bottom > innerHeight + SLACK) { scrollBy({ top: Math.min(innerHeight * .85, r.bottom - innerHeight), behavior: b }); return; } if (r && dir < 0 && r.top < -SLACK) { scrollBy({ top: Math.max(-innerHeight * .85, r.top), behavior: b }); return; } go(navIdx() + dir); };
+const next = () => step(1), prev = () => step(-1);
+$('next').addEventListener('click', next); $('prev').addEventListener('click', prev);
+let timer = 0;
+const atEnd = () => activeIdx() >= sections.length - 1 && overflowBelow() <= SLACK;
+// Play dwells longer on wordier screens (reading pace of about 3.5 words a second, 7 to 30 seconds), and 9 seconds on each part of a tall one;
+// the dwell is read 800 ms after a move so it describes the screen that arrived, and hidden link text is not counted
+const visibleWords = (el) => [...el.querySelectorAll('h1, h2, h3, .h-sub, .dek, .prose, .why, .frame, .list, .stat, .cave, .entry, .pend, .stepnote')].map((e) => e.textContent).join(' ').split(/\s+/).filter(Boolean).length;
+const dwellFor = () => { if (overflowBelow() > SLACK) return 9000; const words = activeEl ? visibleWords(activeEl) : 0; return Math.max(7000, Math.min(30000, words / 3.5 * 1000)); };
+function setPlay(on) {
+  clearTimeout(timer); timer = 0;
+  $('play').classList.toggle('is-on', on); $('play').textContent = on ? 'Pause' : 'Play';
+  if (on) { if (atEnd()) go(0); const after = (fn) => { timer = setTimeout(() => { timer = setTimeout(fn, Math.max(0, dwellFor() - 800)); }, 800); }; const tick = () => { if (atEnd()) { setPlay(false); return; } step(1); after(tick); }; after(tick); }
+}
+$('play').addEventListener('click', () => setPlay(!timer));
+document.addEventListener('click', (e) => { const b = e.target.closest('[data-play]'); if (b) { go(1); setPlay(true); } });
+document.addEventListener('keydown', (e) => {
+  if (e.altKey || e.ctrlKey || e.metaKey) return;
+  const el = e.target instanceof Element ? e.target : null;
+  if (el && el.matches('input, textarea, select, [contenteditable]')) return;
+  if (el && el.closest('a, button') && (e.key === ' ' || e.key === 'Enter')) return;
+  if (e.key === 'ArrowRight') { e.preventDefault(); setPlay(false); go(navIdx() + 1); }
+  else if (e.key === 'ArrowLeft') { e.preventDefault(); setPlay(false); go(navIdx() - 1); }
+  else if (['ArrowDown', 'PageDown'].includes(e.key) || (e.key === ' ' && !e.shiftKey)) { e.preventDefault(); setPlay(false); step(1); }
+  else if (['ArrowUp', 'PageUp'].includes(e.key) || (e.key === ' ' && e.shiftKey)) { e.preventDefault(); setPlay(false); step(-1); }
+  else if (e.key === 'Escape') setPlay(false);
+});
+['wheel', 'touchstart'].forEach((ev) => addEventListener(ev, (e) => { if (timer && !(e.target instanceof Element && e.target.closest('.ctl, [data-play]'))) setPlay(false); }, { passive: true }));
+$('main').addEventListener('focusin', (e) => { if (timer && !(e.target instanceof Element && e.target.matches('section'))) setPlay(false); });
+document.addEventListener('click', (e) => { const a = e.target instanceof Element && e.target.closest('a[href^="#"]'); if (a && timer && !a.closest('.ctl')) setPlay(false); });
+document.querySelectorAll('a[data-carry]').forEach((a) => { a.href = a.dataset.carry + location.search; });
+
+// ── go ────────────────────────────────────────────────────────────────────
+buildWall(); buildStrip();
+// the other readings offer the story first to anyone who has not seen it; opening it is what counts
+try { localStorage.setItem('thecount.' + (document.documentElement.dataset.topic || 'corruption') + '.story.seen', new Date().toISOString().slice(0, 10)); } catch {}
+let rt; addEventListener('resize', () => { clearTimeout(rt); rt = setTimeout(() => { buildWall(); buildStrip(); }, 150); });
+const start = location.hash && document.getElementById((() => { const h = location.hash.slice(1); try { return decodeURIComponent(h); } catch { return h; } })());
+if (start) { requestAnimationFrame(() => start.scrollIntoView({ behavior: 'auto', block: 'start' })); } else setSection(0);
+</script>
+</body>
+</html>
