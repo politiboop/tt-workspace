@@ -19,3 +19,8 @@
 - [feedback_urls_only_from_map_tsv.md](feedback_urls_only_from_map_tsv.md) — Citation URLs only via U()/map.tsv; a URL typed from a headline is a fabrication (Alaska Beacon slip, 2026-10-22)
 - [project_vercel_cli_pitfalls.md](project_vercel_cli_pitfalls.md) — Vercel CLI traps: unlinked-folder commands create projects; previews need auth; CLI redeploy skips the build cache
 - [project_corruption_chronology.md](project_corruption_chronology.md) — Sourced 317-item corruption ledger (2017-2026) at the workspace root, built 2026-10-25 behind a URL gate; how to extend it
+- [project_the_count_prototype.md](project_the_count_prototype.md) — "The Count" tally-mark prototype of the corruption ledger at prototypes/the-count (2026-10-26); build.cjs regenerates it; placement, labels, pacing and a take are still open
+- [feedback_story_first.md](feedback_story_first.md) — The Count's story is always in the reader's path; only an intentional skip leaves it out (door Skip goes to the story; count/focus offer it once)
+- [feedback_reader_copy_not_process.md](feedback_reader_copy_not_process.md) — Reader screens get reader copy; research notes (ids, beats, verifiers) fold away behind a disclosure, generated-and-verified text in front
+- [project_press_chronology.md](project_press_chronology.md) — Sourced 197-item press-freedom ledger (2015-2026) at the workspace root, built 2026-10-26 behind press-chronology/gate.py; how to extend it
+- [feedback_daily_update_delegation.md](feedback_daily_update_delegation.md) — The daily update runs as a chain of cheaper agents (Sonnet triage/research, Opus writer/cross-site); main only decides, reviews, commits, pushes; briefs in tools/sweep/

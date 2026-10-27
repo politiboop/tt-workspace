@@ -13,3 +13,21 @@ the saved texts and flags any new source URL that no `map.tsv` lists (a URL nobo
 - `apply.py`: `load`, `save`, `update(id, paras=, facts=, sources=[(text,url,type)], replace=, title=, severity=)`,
   `create(entry)`. Rejects duplicate source URLs, bad source types and dashes in titles; sets `updatedDate`.
 - `qcheck.py`: quote and URL tracing against the sweep folder it sits in.
+
+## Agent briefs (since b54, October 27, 2026)
+
+The sweep runs as a chain of cheaper agents; the main session decides, reviews, commits and pushes.
+Instantiate each brief into the sweep folder with `sed` (replace `bNN`, `<SWEEP_DIR>`, `<TODAY>`,
+`<CUTOFF>`, `<EXTRA_URLS>`, `<PRE_EXISTING_CHANGES>` as each template names them):
+
+- `TRIAGE.template.md` (Sonnet): parses the saved feeds, applies the scope rule, dedupes against the
+  corpus, writes `triage.tsv`, proposes research groups. No fetching, no search.
+- `RULES.template.md` (Sonnet research agents, two at a time): save texts and `map.tsv`, and also save
+  the final report as `<letter>/report.md` through Bash.
+- `WRITER.template.md` (Opus): entries and updates through `apply.py` with a `U()` map.tsv lookup for
+  every URL, then qcheck, sync, audit and verify-sources; `writer-report.md`. No commits.
+- `CROSS-SITE.template.md` (Opus): research fallback count and tickers, Rigged cards, Dives when a
+  seed changed, Civics as candidates only; `cross-site-report.md`. No commits.
+
+The main session writes `decisions.md` between triage and research (holds, severity ceilings, what to
+write) and reviews every diff before committing.
