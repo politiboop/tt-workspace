@@ -31,3 +31,11 @@ Instantiate each brief into the sweep folder with `sed` (replace `bNN`, `<SWEEP_
 
 The main session writes `decisions.md` between triage and research (holds, severity ceilings, what to
 write) and reviews every diff before committing.
+
+## Feeds
+
+Fetch into the sweep folder, a minute apart for Reddit (rate limit): `day.rss`
+(`https://www.reddit.com/r/politics/top/.rss?t=day&limit=100`), `week.rss` when sweeps are days apart
+(`...?t=week&limit=100`), and `justsecurity.rss` (`https://www.justsecurity.org/feed/`, added October 29,
+2026: its "Just the Docs" posts carry primary court documents, and its trackers, such as the
+"presumption of regularity" study, collect judges' findings against the administration with citations).

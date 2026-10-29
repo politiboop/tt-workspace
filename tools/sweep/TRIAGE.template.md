@@ -9,7 +9,14 @@ Sweep folder: <SWEEP_DIR>
 Feeds already saved there (do NOT refetch; the feed is rate-limited to about one call a minute):
   day.rss  (top of the day, 100 Atom entries)   week.rss  (top of the week, 100 entries)
 Keep every day.rss post, and every week.rss post whose <published> is after <CUTOFF> (the previous
-sweep's fetch time); drop week posts seen in day.rss (same article link). Also triage these
+sweep's fetch time); drop week posts seen in day.rss (same article link).
+Also saved there, when present: justsecurity.rss (Just Security's RSS feed, https://www.justsecurity.org/feed/,
+an RSS 2.0 feed with <item>, <title>, <link>, <pubDate>). Keep its items published after <CUTOFF>. Its
+"Just the Docs" posts link primary court filings and government documents: treat those as leads to the
+documents themselves. Skip its daily "Early Edition" news roundups and its pieces on foreign or
+international-law topics where Trump is not the actor. Analysis pieces are leads, not sources: the
+research agents cite the filings and rulings they point to, and attribute any count or characterization
+to Just Security. Also triage these
 user-dropped URLs as stories of their own: <EXTRA_URLS>
 
 ## Parse
