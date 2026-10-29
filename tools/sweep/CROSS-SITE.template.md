@@ -8,7 +8,7 @@ This sweep's entries (id, NEW/UPDATE, one line each): <SWEEP_DIR>/writer-report.
 The tracker's entry files: /Users/brock/dev/politiboop/controversial-trump/data/controversies/
 
 ## Research site (/Users/brock/dev/politiboop/controversial-trump-research)
-- Bump `src/data/tracker-stats.fallback.json` (`entryCount` = the number of entry files now, `asOf` =
+- Bump `src/data/tracker-stats.fallback.json` (`entryCount` = the committed count, `git -C /Users/brock/dev/politiboop/controversial-trump ls-tree --name-only HEAD data/controversies/ | grep -c '\.json$'`; not `ls` or `git ls-files`, which also count another session's untracked or staged entries; `asOf` =
   today).
 - Tickers: the first three `tickerItems` of a page are what readers see. For each new or updated entry,
   decide from the augmentation table in /Users/brock/dev/politiboop/CLAUDE.md (Part 3) whether a page
